@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/stories/lion.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+·The Lion and the Rabbit <br>
+· ျခေသၤ့နဲ႕ယုန္ကေလး<br><br>
+· =============<br>
+
+·A cruel lion lived in the forest.<br>
+
+·ေတာ္အုပ္ၾကီးထဲမွာ ရက္စက္တဲ့ ျခေသၤ့တစ္ေကါင္ေနပါတယ္..<br><br>
+
+·Every day, he killed and ate a lot of animals.<br>
+
+·ေန႕တိုင္းသူဟာ..တိရစၦာန္ေတ အမ်ားၾကီးသတ္စားပါတယ္<br><br>
+
+·The other animals were afraid the lion would kill them all.<br>
+
+·တစ္ျခားေသာ တိရစၦာန္ေတြဟာ..ျခင္ေသၤၾကီးရဲ႕အစားခံရမွာကိုုအရမ္းေၾကာက္ေနၾကတယ္<br><br>
+
+·The animals told the lion, “Let’s make a deal. If you promise to eat only one animal each day, then one of us will come to you every day. Then you don’t have to hunt and kill us.”<br>
+
+·တစ္ျခားတိရစၦာန္ေတြက ျခေသၤ့ၾကီးကိုေျပာလိုက္တယ္..”ငါတို႕အေပးယူတစ္ခုလုပ္ၾကမယ္၊ အသင္ျခေသၤ့မင္းသာ..တစ္ေန႕တိရစၦာန္ေကါင္သာ စားမယ္လို႕ကတိေပးရင္..ကၽြန္ေနာ္တို႕ထဲက တစ္ေယာက္ဟာ သင့္ဆီကို..ေန႕တိုင္းလာမယ္..ဒါဆို ခင္ဗ်ားလည္း အမဲလိုက္စရာ မလိုေတာ့ဘူးေလ..<br><br>
+
+·The plan sounded well thought-out to the lion, so he agreed, but he also said, “If you don’t come every day, I promise to kill all of you the next day!”<br>
+
+·အစီစဥ္ဟာ ျခေသၤ့ၾကီးအတြက္ အရမ္းေကါင္းသြားတယ္..ဒါေၾကာင့္ သူသေဘာတူလိုက္တယ္..ဒါေပမဲ့ သူကလည္းေျပာတယ္..မင္းတို႕သာ..ေန႕တိုင္မလာဘူးဆိုရင္..ေနာက္ေန႕မင္းတို႕အားလံုးကို ငါသတ္မယ္..<br><br>
+
+·Each day after that, one animal went to the lion so that the lion could eat it.<br>
+
+·အဲ့ေနာက္..ေန႕တိုင္း..ျခေသၤ့ၾကီးစားခံဖို႕..တိရစၦာန္တစ္ေကာင္စီ ျခေသၤ့ၾကီးဆီိသို႕သြားၾကရပါတယ္<br><br>
+
+·Then, all the other animals were safe.<br>
+
+·ဒါလိုဆိုေတာ့..တစ္ျခားေသာ တိရစၦာန္ေတြအားလံုး ေဘးကင္းလံုျခံဳၾကပါတယ္<br><br>
+
+·Finally, it was the rabbit’s turn to go to the lion.<br>
+
+·ေနာက္ဆံုးေတာ့..ျခေသၤ့ၾကီးဆီသြားဖို႕..ယုန္ကေလးအလွည့္ေရာက္လာပါတယ္<br><br>
+
+·The rabbit went very slowly that day, so the lion was angry when the rabbit finally arrived.<br>
+
+·အဲ့ဒီ ယုန္ကေလးဟာ အရမ္းေႏွးေကြးစြာသြားပါတယ္..ဒါေၾကာင့္..ေနာက္ဆံုးယုန္ကေလးေရာက္လာေတာ့.ျခေသၤ့ၾကီး ေဒါသအရမ္းထြက္ေနတယ္<br><br>
+
+·The lion angrily asked the rabbit, “Why are you late?”<br>
+
+· ျခေသၤ့ၾကီးက ယုန္ကေလးကိုေဒါသၾကီးစြာ..မင္းဘာလို႕ေနာက္က်သလဲလို႕ေမးလိုက္ပါတယ္ <br><br>
+
+·“I was hiding from another lion in the forest. That lion said he was the king, so I was afraid.”<br>
+
+·ေတာအုပ္ထဲက တစ္ျခားျခေသၤ့တစ္ေကါင္ကေနလြတ္ဖို႕..ငါပုန္းေနခဲ့ရတယ္..အဲ့ဒီျခေသၤ့ကေျပာတယ္..သူကဘုရင္႔လို႕..ဒါနဲ႕ကၽြန္ေနာ္..ေၾကာက္သြားတာေပါ့<br><br>
+
+·The lion told the rabbit, “I am the only king here! Take me to that other lion, and I will kill him.”<br>
+
+· ျခေသၤ့ၾကီးက ယုန္ကေလးကိုေျပာလုိက္တယ္…ဒီေတာအုပ္မွာ..ငါသာဘုရင္ပဲ..အဲ့ဒီတစ္ျခားျခေသၤတစ္ေကါင္ဆီ ငါ့ကိုေခၚသြား..ငါသူ႕ကိုသတ္မယ္..<br><br>
+
+·The rabbit replied, “I will be happy to show you where he lives.”<br>
+
+·သူဘယ္မွာေနတယ္ဆိုတာ..ကၽြန္ေနာ္မင္းကို..ျပေပးရတာ ဝမ္းသာပါတယ္..ယုန္ကေလးကျပန္ေျပာတယ္..<br><br>
+
+·The rabbit led the lion to an old well in the middle of the forest.<br>
+
+·ေတာအုပ္ၾကီးအလယ္က..ေရတြင္းအိုတစ္ခုဆီသို႕..ယုန္ကေလးဟာ ျခေသၤ့ၾကီးကို ေခၚသြားတယ္<br><br>
+
+·The well was very deep with water at the bottom.<br>
+
+·ေရတြက္ဟာ..ေအာက္မွာေရရွိျပီး..အရမ္းနက္ပါတယ္..<br><br>
+
+·The rabbit told the lion, “Look in there. The lion lives at the bottom.”<br>
+
+·ယုန္ကေလးက..ျခေသၤ့ၾကီးကိုေျပာလိုက္တယ္..အထဲကိုၾကည့္လိုက္..အဲ့ဒီျခေသၤ့..ေရတြင္းထဲမွာေနတာ.<br><br>
+
+·When the lion looked in the well, he could see his own face in-the water.<br>
+
+· ျခေသၤ့ၾကီး..ေရတြင္းထဲသို႕ၾကည့္လိုက္တယ္..သူဟာေရထဲမွာ..သူ႕မ်က္ႏွာသူျမင္ရတယ္..<br><br>
+
+·He thought that was the other lion.<br>
+
+·အဲ့ဒါဟာ..တစ္ျခားျခေသၤ့တစ္ေကါင္လို႕သူထင္တယ္.<br><br>
+
+·Without waiting another moment, the lion jumped into the well to attack the other lion.<br>
+
+·ေစာင့္လို႕မေနေတာ့ပဲ…တစ္ျခားျခေသၤ့တစ္ေကါင္ကိုတိုက္ခိုက္ဖို႕..ေရတြင္းထဲခုန္ဆင္းလိုက္တယ္..<br><br>
+
+·He never came out.<br>
+
+·သူဘယ္ေတာ့မွ ျပန္တက္မလာေတာ့ဘူး..<br><br>
+
+·All of the other animal in the forest were very pleased with the rabbit’s clever trick.<br>
+
+·ေတာ္အုပ္ၾကီးထဲက တစ္ျခားတိရစၦာေတြဟာ..ယုန္ကေလးရဲ႕လိမၼာပါးနပ္တဲ့.လွည့္စားခ်က္ကို..အရမ္းေက်နပ္သြားၾကတယ္ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

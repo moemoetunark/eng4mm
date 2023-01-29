@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/014. Do you mind... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you mind .........? ..ဆိုတာကေတာ့..စိတ္ဆိုးမွာလား၊စိတ္အေႏွာင့္ယွက္ျဖစ္မွာလား...စသည့္အဓိပၸါယ္မ်ားေဆာင္ပါတယ္။ မိမိကတစ္ခုခုလုပ္လုိက္လို႕..တစ္ပါးသူစိတ္အေႏွာင့္ယွက္..ျဖစ္မလား..လို႕
+ေမးခ်င္တဲ့အခါ သံုးပါတယ္။ တစ္နည္းေျပာရရင္ေတာ့...ယာဥ္ေက်းစြာ...ခြင့္ေတာင္းျခင္းျဖစ္ပါတယ္..နမူနာေလးေတြကို...ေလ့လာပါ...<br><br>
+I. EXAMPLES: - နမူနာ ဝါက်မ်ား..<br><br>
+
+ Would you mind if I smoke here? <br>
+ ဒီမွာ ငါေဆးလိပ္ေသာက္ရင္..မင္းအေႏွာင့္ရွက္..ျဖစ္မလား (ဒီမွာေဆးလိပ္ေသာက္လို႕ရမလား) <br><br>
+ Do you mind opening the window? It’s so stuffy in here. <br>
+ တံခါးဖြင့္လိုက္ရင္..အဆင္ေျပမလား...။ ဒီမွာအရမ္းမြန္းၾကပ္တယ္..<br><br>
+ Do you mind if I ask you a question? <br>
+ ေမးခြန္းေလးတစ္ခု...ေမးရင္..စိတ္အေႏွာင့္ယွက္ျဖစ္မလား..(ေမးလို႕ရလား) <br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+Employer: Well, you have been working with our company for 10 years now.<br>
+အလုပ္ရွင္ -- နင္အခု..ငါတို႕ကုမၸဏီမွာ..လုပ္ေနတာ...၁၀ႏွစ္ရွိေနျပီေနာ္...<br><br>
+Employee: Yes I know. It’s been a long time.<br>
+အလုပ္သမား -- ဟုတ္ပါတယ္..။ ေတာ္ေတာ္ၾကာပါျပီ <br><br>
+Employer: In all this time you have never asked for a raise. Do you mind if I ask you why?<br>
+အလုုပ္ရွင္-- ဒီအခ်ိန္တြင္း..မင္းတစ္ခါမွ..လစာတုိးေပးဖို႕မေတာင္းဆိုခဲ့ဘူးေနာ္..။ ဘာေၾကာင့္လဲဆိုတာ..ငါေမးလို႕ရမလား..<br><br>
+Employee: That’s because my wife is rich. <br>
+အလုပ္သမား - ငါ့မိန္းမက အရမ္းခ်မ္းသာလို႕ေလ..<br><br>
+Employer: Really? What does she do? <br>
+အလုပ္ရွင္ - တကယ္လား..သူမဘာလုပ္သလဲ..<br><br>
+Employee: Well, she owns your company. <br>
+အလုပ္သမား -- အင္း..သူမက ဒီကုမၸဏီကိုပိုင္တာေလ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

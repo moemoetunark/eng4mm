@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/077. There is nothing I like better than... - Basic English .mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+There is nothing I like better than.......... ထက္..ငါပိုၾကိဳက္တာ...မရွိဘူး..<br><br>
+တစ္ခုခုကိုအၾကိဳက္ဆံုးလို႕ေျပာခ်င္တဲ့အခါ..ဒီpattern ေလးကိုသံုးပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ There is nothing I like better than listening to the radio. <br>
+ ေရဒီယိုနားေထာင္ရတာထက္..ငါပိုႏွစ္သက္တာ..မရွိဘူး..<br><br>
+ There is nothing women like better than shopping. <br>
+ ေစ်းဝယ္ထြက္ရတာထက္..မိန္းမေတြပိုႏွစ္သက္တာ..မရွိဘူး..<br><br>
+ There is nothing she likes better than chatting with friends. <br>
+ သူငယ္ခ်င္းေတြနဲ႕စကားေျပာရတာထက္..ပိုျပီးသူမႏွစ္သက္တာ..မရွိဘူး..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: Did you just finish playing basketball? <br>
+Basketball ကစားျပီးတာပဲ ရွိေသးတာလား..<br><br>
+B: Yes and I’m so thirsty. <br>
+ဟုတ္တယ္..ငါအရမ္းေရဆာေနတယ္..<br><br>
+A: How about a Coke? <br>
+ကိုကာကိုလာ..ေသာက္မလား..<br><br>
+B: That sounds great! There’s nothing better than a cold Coke when you’re hot and thirsty. <br>
+ေကါင္းတာေပါ့...။ ပူျပီးေရဆာတဲ့အခါ..ကိုကာကိုလာ..အေအးဘူးထက္ပိုေကါင္းတာ..ဘာမွမရွိဘူး..<br><br>
+A: So how does it taste? <br>
+အရသာက ဘယ္လိုရွိလဲ..<br><br>
+B: Great! Thanks a million. <br>
+ေကါင္းတာေပါ့..ေက်းဇူးတစ္သန္းေနာ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

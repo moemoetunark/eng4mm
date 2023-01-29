@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/42-Architecture Building - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is the most impressive building you’ve visited? <br>
+မင္းလည္ပတ္ဖူးတဲ့ အေဆာက္အံုမွာ ဘယ္ဟာက အထင္ၾကီးဖို႕အေကါင္းဆံုးလဲ <br><br>
+It’s the Petronas Twin Tower in Malaysia. <br>
+မေလးရွားႏိုင္ငံက Petronas အမႊာညီေနာင္ တို္က္ျဖစ္တယ္..<br><br>
+Where is it located? <br>
+အဲ့ဒါ ဘယ္မွာတည္ရွိတာလဲ <br><br>
+It’s located in the capital of Malaysia, Kuala Lumpur. <br>
+မေလးရွားႏိုင္ငံရဲ႕ျမိဳ႕ေတာ္..ကြာလမ္လာပူမွာ တည္ရွိတယ္..<br><br>
+How tall is it? <br> 
+ဘယ္ေလာက္ျမင့္လဲ <br><br>
+They were the tallest buildings in the world from 1998 to 2004. It reaches the height of 451.9 meters. <br>
+အဲ့ဒါက ၁၉၉၈ခုကေန..၂၀၀၄ ခုႏွစ္အထိ..ကမၻာမွာအျမင့္ဆံုးျဖစ္ခဲ့တယ္။ အျမင့္ကေတာ့..မီတာ 451.9 ရွိတယ္..<br><br>
+Who was the architect? <br>
+ဗိသုကာ လက္ရာရွင္က ဘယ္သူလဲ <br><br>
+César Pelli, an Argentine American architect. <br>
+ဆီဆာ..ပီလီေလ..အာဂ်င္တီးနားႏြယ္ဖြား အေမရိကန္တစ္ေယာက္ေပါ့..<br><br>
+Is it well-known all over the world? <br>
+အဲ့ဒါက ကမၻာလံုးမွာ လူသိမ်ားလား..<br><br>
+Sure. Tourists can’t miss it when visiting Malaysia. <br>
+ေသခ်ာတာေပါ့..ခရီးသြားေတြ မေလးရွားကိုလည္ပတ္မယ္ဆို..မလြဲသင့္တဲ့ေနရာေလ..<br><br>
+Do you have to purchase a ticket in order to visit the tower? <br>
+အဲ့ဒီ ေမွ်ာ္စင္ကို လည္ပတ္ဖို႕..လက္မွတ္ ဝယ္ရလား <br><br>
+Yes, I do. It’s sold online. <br>
+ဟုတ္တယ္..အြန္လိုင္းေပၚမွာ ေရာင္းတယ္..<br><br>
+When did you see it? <br>
+မင္းဘယ္တုန္းက ျမင္ခဲ့တာလဲ..<br><br>
+I saw it 2 years ago. <br>
+လြန္ခဲ့တဲ့ ႏွစ္ႏွစ္က ျမင္ခဲ့တာ..<br><br>
+Will you come back there again? <br>
+အဲ့ဒီကို မင္းတစ္ဖန္ ျပန္လာမွာလား <br><br>
+Of course. I’m looking forward to seeing again someday. <br>
+တစ္ေန႕ေတာ့..တစ္ဖန္ေတြ႕ရမယ္လို႕..ေမွ်ာ္လင့္ေနတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/37-Outdoor Activities - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What outdoor activity do you participate in? <br>
+ဘယ္လို အိမ္ျပင္လႈပ္ရွားမႈမ်ိဳးမွာ မင္းပါဝင္သလဲ <br><br>
+I do many, but my favorite one is jogging. <br>
+ကၽြန္ေနာ္အမ်ားၾကီးလုပ္ပါတယ္..ဒါေပမဲ့ ငါ့အႏွစ္သက္ဆံုးကေတာ့..အေႏွးေလွ်ာက္ျခင္းျဖစ္ပါတယ္..<br><br>
+Where do you do it? <br>
+အဲ့ဒါကို မင္းဘယ္မွာ လုပ္သလဲ <br><br>
+I go jogging in the park near my place. <br>
+ငါေနတဲ့ေနရာနဲ႕နီးတဲ့ပန္းျခံမွာ လမ္းေလွ်ာက္တာျဖစ္ပါတယ္..<br><br>
+Who do you do outdoor activities with? <br>
+မင္းဘယ္သူနဲ႕အတူတကြအဲ့ဒီ လႈပ္ရွားမႈကိုလုပ္သလဲ <br><br>
+I usually go jogging with my family. <br>
+ပံုမွန္အားျဖင့္ င့ါမိသားစုနဲ႕အတူတကြေလွ်ာက္ျဖစ္တယ္..<br><br>
+Who shares the same interests as you? <br>
+မင္းနဲ႕ဝါသနာတူတဲ့သူက ဘယ္သူလဲ <br><br>
+My family, especially my dad. We usually jog together. <br>
+ငါ့မိသားစု..အထူးသျဖင့္..အေဖေပါ့၊ ငါတို႕ပံုမွန္အတူတကြ လမ္းေလွ်ာက္ၾကတယ္..<br><br>
+How often do you take part in outdoor activities? <br>
+အိမ္ျပင္လႈပ္ရွားမႈမင္း ဘယ္ေလာက္လုပ္ျဖစ္သလဲ...<br><br>
+Every morning, except on rainy days. <br>
+မနက္တိုင္းလုပ္ျဖစ္တယ္...မိုးရြာတဲ့ေန႕ေတြက လြဲရင္ <br><br>
+How do you feel after activities? <br>
+လႈရားမႈျပီးေတာ့..မင္းဘယ္လိုခံစားရတယ္..<br><br>
+I feel really relaxed and refreshed. <br>
+အေမာေျပ လန္းဆန္းသြားသလို ငါခံစားရတယ္..<br><br>
+What benefits can you get from outdoor activities? <br>
+အိမ္ျပင္ေလ့က်င့္မႈေတြကေန..ဘယ္လို အက်ိဳးေက်းဇဴးေတြရႏိုင္လဲ <br><br>
+It’s a good workout method. Jogging is also a good way for me to charge batteries for a long day working. <br>
+ေကါင္းတဲ့အားကစားေလ့က်င့္ခန္းတစ္ခုေပါ့။အေႏွးေလွ်ာက္တာဟာ...တစ္ေနကုန္အလုပ္လုပ္ဖို႕အတြက္..အင္အားေတြျဖည့္ျခင္းတစ္မ်ိဳးလည္းျဖစ္ပါတယ္..<br><br>
+Do you usually play sports outdoors? <br>
+အားကစားေတြကို ပံုမွန္အားျဖင့္ မင္းအျပင္မွာပဲ ကစားလား <br><br>
+Yes, I do. I play volleyball and swim outdoors. <br>
+ဟုတ္တယ္္..အျပင္မွာ..ေဘာလီေဘာကစားတယ္..ေရကူးတယ္..<br><br>
+Why are children less interested in outdoor activities nowadays? <br>
+ဒီေခတ္မွာ..အျပင္လႈပ္ရွားမႈေတြကို ကေလးေတြဘာလို႕စိတ္ဝင္စားမႈနည္းလာတာလဲ <br><br>
+Children nowadays prefer high-tech gadgets like computers, iPads, and phones to outdoor activities. <br>
+ဒီေန႕ေခတ္..ကေလးေတြက အျပင္လႈပ္ရွားမႈေတြထက္..အဆင့္ျမင့္နည္းပညာပစၥည္းေတြျဖစ္တဲ့ ကြန္ပ်ဴတာ..Ipads, နဲ႕ ဖုန္းေတြကိုပဲ ပိုၾကိုက္ၾကတယ္..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

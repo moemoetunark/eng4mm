@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/095. Whether or not... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Whether ...or ...not... <br>
+ဟုတ္သည္ျဖစ္ေစ..မဟုတ္သည္ျဖစ္ေစ..လုပ္သည္ျဖစ္ေစ..မလုပ္သည္ျဖစ္ေစ..စတဲ့အဓိပၸါယ္နဲ႕..whether ...or ...not ကိုသံုးႏိုင္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ Whether it rains or not, we’ll hold the sports meet. <br>
+ မိုးရြာသည္ျဖစ္ေသ..မရြာသည္ျဖစ္ေစ...ငါတို႕အားကစားေတြ႕ဆံုပြဲေတာ့..က်င့္ပမယ္..<br><br>
+ They’ll find out the truth, whether or not you tell it to them. <br>
+ မင္းသူတို႕ကိုေျပာသည္ျဖစ္ေစ..မေျပာသည္ျဖစ္ေစ..သူတို႕အမွန္တရားကို သိမွာပဲ..<br><br>
+ Whether or not we like it, we have to accept it. <br>
+ ငါတို႕ၾကိဳက္သည္ျဖစ္ေစ..မၾကိဳက္သည္ျဖစ္ေစ...အဲ့ဒါကိုလက္ခံရမွာပဲ..<br><br>
+ Whether you are willing or not, you have to do it. <br>
+ မင္းလုပ္ခ်င္သည္ျဖစ္ေစ..မလုပ္ခ်င္သည္ျဖစ္ေစ...မင္းအဲ့ဒါကို လုပ္ရမွာပဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: I don’t like this movie. <br>
+ဒီ ဇာတ္ကား ငါမၾကိဳက္ဘူး..<br><br>
+B: Look, I already paid for the tickets, so whether you like it or not we’re going to finish watching it. <br>
+ဒီမွာ..လက္မွတ္အတြက္ ေငြေပးျပီးျပီ..မင္းၾကိဳက္သည္ျဖစ္ေစ..မၾကိဳက္သည္ျဖစ္ေစ...ဆံုးေအာင္ေတာ့..ၾကည့္ရမွာပဲ..<br><br>
+A: Well, I’ll just read a book then. <br>
+ဒါဆုိ..ငါစာအုပ္ပဲ ဖတ္ေတာ့မယ္..<br><br>
+B: Don’t be such a stick in the mud. Just watch it with me. <br>
+အဲ့ေလာက္ထိ..အစြဲမၾကီးပါနဲ႕ကြာ..။ငါနဲ႕တူတူၾကည့္မယ္ေလ..<br><br>
+A: But I don’t like it. <br>
+ဒါေပမဲ့ ငါမွမၾကိဳက္တာ..<br><br>
+B: Come on, give it a chance. The movie just started. <br>
+ၾကည့္လိုက္စမ္းပါကြာ...ဇာတ္ကားက အခုမွစတာပဲ ရွိေသးတာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

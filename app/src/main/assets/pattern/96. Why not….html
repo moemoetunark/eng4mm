@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/096. Why not... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Why not....? ဆိုတာ..ဘာလို႕မလုပ္တာလဲ..လုပ္လိုက္ေလ..ဆိုတဲ့အဓိပၸါယ္ျဖစ္ပါတယ္..<br><br>
+
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+
+ Why not try to persuade him to give up smoking? <br>
+ သူေဆးလိပ္ျဖတ္ပို႕႕ဘာလို႕..မဖ်ားေယာင္းတာလဲ<br><br>
+ Why don’t you go ask the teacher? <br>
+ မင္းဆရာကို ဘာလို႕မေမးတာလဲ..(ဆရာကိုေမးလိုက္ေလ..)<br><br>
+ Why not buy some ready-made food? <br>
+ အသင့္စား..အစားစာဝယ္ၾကမယ္..ေလ..<br><br>
+ A: Let’s go to see a film tonight. <br>
+ ဒီည..ရုပ္ရွင္ၾကည့္သြားၾကမယ္ကြာ..<br><br>
+B: Sure, why not?<br>
+ေသခ်ာတာေပါ့..သြားမယ္.<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Teacher:  I’d like you to introduce the guest speaker at  the student assembly today. <br>
+ဒီေန႕ေက်ာင္းသားေတြ႕ဆံုပြဲမွာ..စကားေျပာသူအျဖစ္ မင္းကိုငါမိတ္ဆက္ေပးမယ္..<br><br>
+Student: Why me? I can’t do that. <br>
+ဘာလို႕ငါျဖစ္ရတာလဲ...အဲ့ဒါမလုပ္ႏိုင္္ဘူး..<br><br>
+Teacher: Why not? You’re a good student and I think you will do a great job. <br>
+ဘာလို႕မလုပ္ႏုိင္ရမွာလဲကြာ..။ မင္းကေတာ္တဲ့ေက်ာင္းသားတစ္ေယာက္ပါ..မင္းေကါင္းေကါင္းလုပ္ႏိုင္မယ္.ငါထင္တယ္.<br><br>
+Student:  But  I’ve never spoken in front of so many people before.  I wouldn’t know what to say.
+ဒါေပမဲ့ ငါအရင္တစ္ခါမွ..လူေတြမ်ားၾကီးေရွ႕..စကားမေျပာဖူးဘူးေလ..။ ဘာေျပာရမွာ..သိမွာမဟုတ္ဘူး..<br><br>
+Teacher: Don’t worry. I’ll help you prepare the speech. Why not give it a try? <br>
+မစိုးရိမ္ပါနဲ႕ကြာ...ေျပာမယ့္စကားကို ငါကူညီ ျပင္ဆင္ေပးမယ္..။ ၾကိဳးစားၾကည့္ေလ..<br><br>
+Student: OK, I guess I have nothing to lose. <br>
+အိုေက..ငါေတာ့.ဘာမွ ဆံုးရႈံးစရာ..မရွိႏုိင္ဘူး..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

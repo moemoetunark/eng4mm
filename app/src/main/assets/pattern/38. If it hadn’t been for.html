@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/038. If it hadn’t been for... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+If it hadn't been for + N,........မပါခဲ့ဘူးဆိုရင္.. <br>
+ဒီေနရာမွာ..If it hadn't been ကိုဘာသာျပန္မယ္ဆိုရင္...ေနာက္က နာမ္ပုဒ္ကိုလိုက္ျပီး ျပန္ရပါမယ္..<br>
+ဥပမာ...If it hadn't been for your help, မင္းအကူညီသာ မပါရင္..
+If it hadn't been for က အဓိပၸါယ္အားျဖင့္ without  - နဲ႕တူတူပါတယ္။ <br> 
+without ဆိုတာ..မရွိပဲ..မပါပဲ...လို႕အဓပၸါယ္ရပါတယ္..<br><br>
+I. EXAMPLES: - ဥပမာမ်ား..<br><br>
+ If it hadn’t been for your help, my experiments would have failed. <br>
+ မင္းအကူညီသာမပါခဲ့ရင္...ငါ့ရဲ႕စမ္သပ္မႈဟာ..က်ဆံုးလိမ့္မယ္..<br><br>
+ If it hadn’t been for the lifeboat, I would have drowned. <br>
+ အသက္ကယ္ေလွသာ..မရွိခဲ့ရင္...ငါေတာ့ ေရနစ္မွာပဲ..<br><br>
+ If it hadn’t been for her careful arrangement, the party would not have been a success. <br>
+ သူမရဲ႕ဂရုတစိုက္ စီမံခန္႕ခြဲတာသာ..မပါခဲ့ရင္...ပါတီပြဲဟာ ေအာင္ျမင္မွာ မဟုတ္ဘူး..<br><br>
+ Without my persuasion, he would not have come. <br>
+ ငါရဲ႕ဆြဲေဆာင္မႈသာ မပါပဲ..သူလာခဲ့မွာ..မဟုတ္ဘူး..<br><br>
+ Without your financial support, we could not have finished the project. <br>
+ မင္းရဲ႕ေငြေၾကးေထာက္ပံ့မႈမပါပဲ..ဒီစီမံကိန္းကို ငါတိုျပီးေအာင္ လုပ္ႏိုင္ခဲ့မွာ မဟုတ္ဘူး..<br><br>
+II. DIALOGUES: -ကစားေျပာခန္း..<br><br>
+
+Woman: Where’s my son?<br>
+မိန္းမ :    ငါ့သား ဘယ္မွာလဲ..<br><br>
+Fireman: Don’t worry, Miss, your son will be fine. We sent him to the hospital.<br>
+မီးသတ္သမား : မစိုးရိမ္ပါနဲ႕။ နင့္ရဲ႕သားအေျခေနေကါင္းတယ္။ ငါတို႕သူ႕ကိုေဆးရံုပို႕လိုက္တယ္..<br><br>
+Woman: Thank you so much. <br>
+မိန္းမ : ေက်းဇူးအရမ္းတင္ပါတယ္..<br><br>
+Fireman: You’re welcome. <br>
+မီးသတ္သမား : ၾကိဳဆိုပါတယ္..<br><br>
+Woman: Without your help my son would have died in that fire. <br>
+မိန္းမ း နင့္ရဲ႕အကူညီသာ မပါခ့ဲရင္္..ငါ့သားေတာ့..အဲ့ဒီမီးထဲမွာ..ေသခဲ့မွာပဲ..<br><br>
+Fireman:  We got here just  in time.  A minute  later and it would have been almost impossible to save him. <br>
+မီးသတ္သမား း ငါတို႕ဒီကို အခ်ိန္မွီေလးေရာက္တာ. တစ္မိနစ္ေလာက္ေနာက္က်သြားရင္ေတာ့..သူ႕ကိုကယ္ဖို႕ မျဖစ္ႏိုင္ေလာက္ဘူး..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

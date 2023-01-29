@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/47-Hometown - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Where is your hometown? <br>
+မင္းရဲ႕ဇာတိ ျမိဳ႕က ဘယ္မွာလဲ <br><br>
+My hometown is a coastal state of US. <br>
+င့ါရဲ႕ဇာတိျမိဳ႕က အေမရိကန္ရဲ႕..ကမ္းရိုးတန္းတစ္ခုမွာေပါ့..<br><br>
+Is it the city or the countryside? <br>
+အဲ့ဒါက ျမိဳ႕လား..ေက်းလက္ေဒသလား..<br><br>
+I live in a suburb area. <br>
+ငါကဆင္ေျခဖံုး..ဧရိယာမွာေနတာ..<br><br>
+What’s it known for? <br>
+အဲ့ဒီေနရာက ဘာနဲ႕လူေတြသိၾကလဲ <br><br>
+It’s famous for tobaccos. <br>
+ေဆးရြက္ၾကီးနဲ႕ နာမည္ေက်ာ္တယ္..<br><br>
+What do people do there? <br>
+လူေတြအဲ့ဒီမွာ ဘာလုပ္ၾကသလဲ <br><br>
+Agriculture is the main industry in my hometown. Most of the people here plant and sell tobaccos. <br>
+ငါ့ရဲ႕ဇာတိမွာေတာ့..စိုက္ပ်ိဳးေရးက အဓိကပဲ..ဒီမွာလူအမ်ားစုက..ေဆးရြက္စိုက္ျပီးေရာင္းၾကတယ္..<br><br>
+How is the atmosphere there? <br>
+အဲ့ဒီမွာ သဘာဝ ပတ္ဝန္းက်င္က ဘယ္လိုလဲ <br><br>
+Well, it’s quite peaceful. I enjoy the fresh air here. <br>
+ေအးခ်မ္းပါတယ္..ေလေကါင္းေလသန္႕ကို ငါႏွစ္သက္တယ္..<br><br>
+How are people there? <br>
+အဲ့မွာလူေတြက ဘယ္လိုလဲ <br><br>
+They’re friendly and hospitable. <br>
+သူတို႕က ေဖာ္ေရြၾကျပီး..ဧည့္ဝတ္ေက်ပြန္ၾကပါတယ္..<br><br>
+Would you like to live in your hometown or somewhere else? <br>
+မင္းရဲ႕ဇာတိမွာေနခ်င္လား..တစ္ျခားတစ္ေနရာမွာ..ေနခ်င္လား..<br><br>
+Yes, I would. I just wish I can live here forever. <br>
+ေနခ်င္တာေပါ့..ဒီမွာပဲထာဝရေနႏိုင္ဖို႕..ဆႏၵရွိတယ္..<br><br>
+Is it easy to find a job there? <br>
+အဲ့မွာ အလုပ္ရွာရတာ လြယ္လား <br><br>
+Manual work is easy to find. I’m not sure about the white -collar jobs. <br>
+လက္အလုပ္ေတြကေတာ့..ရွာရလြယ္ပါတယ္.။ ဒါေပမဲ့ အထက္တန္းလႊာ ပညာတတ္အလုပ္ကေတာ့..မေသခ်ာဘူး <br><br>
+Is it a good environment for young people? <br>
+လူငယ္ေတြအတြက္..ေကါင္းမြန္တဲ့..သဘာဝ ပတ္ဝန္းက်င္တစ္ခုလား <br><br>
+I don’t think so. The pace of life here is quite slow. If they want to work in a dynamic environment, they’d better move to the city. <br>
+ငါကေတာ့ မထင္ဘူး။ ဒီမွာက ဘဝေတြက သက္ဝင္လႈပ္ရွားမႈ ေႏွးတယ္။ တကယ္လို႕..ေကါင္းမြန္တဲ့..ပတ္ဝန္းက်င္တစ္ခုမွာ လုပ္ခ်င္တယ္ဆိုရင္ေတာ့..ျမိဳ႕ကိုပဲ ေျပာင္းသင့္တယ္..<br><br>
+Is traffic congestion a big problem in your hometown? <br>
+လမ္းပိတ္ဆို႕တာက ျပသနာၾကီးတစ္ခုလား မင္းတို႕ဇာတိျမိဳ႕မွာ <br><br>
+Not at all. We couldn’t be happier with the traffic system here. <br>
+လံုးဝမဟုတ္ပါဘူး။ ဒီမွာ..လမ္းစနစ္က..အေကါင္းဆံုးပါပဲ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/039. If there is one thing that... me, it’s... - Basic Engli.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+If there is one thing that ..........me, it is.... <br>
+ဒီ pattern ေလးအဓိပၸါယ္ကေတာ့..င့ါကိုစိတ္ပ်က္ေစတာတစ္ခုကေတာ့..ဘာျဖစ္တယ္..<br>
+ငါ့ကို အံ့ၾသေစတာတစ္ခုကေတာ့......ဘာျဖစ္တယ္ ...စတ့ဲအဓိပၸါယ္ျဖစ္ပါတယ္...<br>
+ေအာက္ပါ နမူနာ ဝါက်ေတြကို ေသခ်ာလ့လာပါ..<br><br>
+I. EXAMPLES: -နမူနာမ်ား..<br><br>
+ If  there is one thing that  annoys me,  it’s people who don’t keep their promises.<br>
+ငါ့ကိုစိတ္ပ်က္ေစတာတစ္ခုက..လူေတြကတိမတည္ၾကတာျဖစ္တယ္..<br><br>
+ If there is one thing that disappoints me, it’s his failure to arrange his time responsibly. <br>
+ ငါ့ကို စိတ္အေႏွာင့္ယွက္ျဖစ္ေစတာတစ္ခုကေတာ့..သူ႕အခ်ိန္ကို.တာဝန္ေက်ပြန္စြာ..မစီမံႏိုင္တာျဖစ္တယ္..<br><br>
+ If there is one thing that upsets me, it’s my forgetfulness. <br>
+ ငါ့ကို စိတ္ညစ္ေစတာတစ္ခုက..ငါ့ေမ့တတ္မႈပါပဲ..<br><br>
+ If there is one thing that surprises me, it’s his winning the competition. <br>
+ ငါ့ကို အံ့ၾသေစတာတစ္ခုက....သူျပိဳင္ပြဲမွာ ႏိုင္သြားတာပဲ..<br><br>
+ If there is one thing that interests me, it’s fashion design. <br>
+ ငါ့ကို စိတ္ဝင္စားေစတာတစ္ခုက..ဖက္ရွင္..ဒီဇိုင္းေတြျဖစ္တယ္..
+II. DIALOGUES:- စကားေျပာခန္း..<br><br>
+A: Is that pesky lady coming to the office again?<br>
+အဲ့ဒီ စိတ္ပ်က္ဖို႕ေကါင္းတဲ့မိန္းမ...ရံုးကိုထပ္လို႕မွာလာမွား..<br><br>
+B: Yeah, I’m afraid so. <br>
+အင္း..အဲ့ဒါစိတ္ပ်က္တယ္...<br><br>
+A: If there’s one thing that bugs me, it’s her critical attitude.<br>
+ငါ့ကို စိတ္ဆင္းရဲေစတာတစ္ခုက..သူမရဲ႕ေဝဖန္သန္တဲ့.အက်င့္ပဲ...<br><br>
+B: Yeah, well, that’s her personality, I guess. <br>
+အင္း..ဒါကေတာ့ သူမရဲ႕..စရိုက္လို႕ပဲထင္တယ္...<br><br>
+A: But it’s so annoying. She makes me feel so stupid sometimes. <br>
+ဒါေပမဲ့..အရမ္းစိတ္ပ်က္ဖို႕ေကါင္းတယ္။  တစ္ခါတစ္ေလ သူမလုပ္တာ ငါက ငတံုးက်ေနတာပဲ..<br><br>
+B: Just don’t pay any attention to her. She won’t stay long. <br>
+သူမကို အာရံုမစိုက္နဲ႕.။ သူမၾကာၾကာေနမွာမဟုတ္ဘူး.<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'http://www.moemoetun.me/app-pattern-mp3/027. How do you like... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+How do you like ....? ဆိုတာကေတာ့..တစ္ခုခုကို..ဘယ္ေလာက္ၾကိဳက္လဲ.<br>.အနည္းငယ္ၾကိဳက္လား..အမ်ားၾကိဳက္လား..စသည့္အဓိပၸါယ္ေတြေဆာင္ပါတယ္..<br><br>
+I. EXAMPLES: -နမူနာမ်ား..<br><br>
+ How do you like your new apartment? <br>
+မင္းရဲ႕အခန္းသစ္ကို..ဘယ္ေလာက္ၾကိဳက္လဲ..<br><br>
+How do you like your new colleagues? <br>
+မင္းရဲ႕..လုပ္ေဖာ္ကိုင္ဖက္အသစ္ကို..ဘယ္ေလာက္သေဘာက်လဲ..<br><br>
+How does your mother like the tea set? <br>
+မင္းရဲ႕အေမ ေကာ္ဖီခြက္ေတြကို ဘယ္ေလာက္ၾကိဳက္လဲ..<br><br>
+II. DIALOGUES: -စကားေျပာခန္း..<br><br>
+A: How long have you been in China? <br>
+မင္းတရုတ္မွာ..ဘယ္ေလာက္ၾကာျပီလဲ..<br><br>
+B: A few months. <br>
+လအနည္းငယ္ၾကာျပီ..<br><br>
+A: How do you like living here? <br>
+ဒီမွာေနရာ မင္းဘယ္ေလာက္ၾကိဳက္ႏွစ္သက္သလဲ..<br><br>
+B: Great! I’m having a great time. <br>
+ေကါင္းပါတယ္...ကၽြန္ေနာ္ဒီမွာ ေပ်ာ္တယ္..<br><br>
+A: How do you like the food here? <br>
+ဒီက အစားစာေတြ မင္းဘယ္ောလက္ၾကိဳက္လဲ..<br><br>
+B: It’s pretty good. I just can’t get used to using chopsticks. <br>
+အရမ္းေကါင္းတယ္။ ကၽြန္ေနာ္..တူနဲ႕စားရတာကိုေတာ့.က်င့္သားမရဘူး..<br><br>
+A: You’ll get used to them after a while. <br>
+အနည္းယ္ၾကာသြားရင္ေတာ့ မင္းက်င့္သားရသြားမွာပါ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

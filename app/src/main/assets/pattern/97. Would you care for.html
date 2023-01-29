@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/097. Would you care for ... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+->used for asking politely whether someone would like something <br>
+တစ္စံုတစ္ေယာက္ကို..တစ္ခုခုလုပ္ခ်င္လားလို႕..ယာဥ္ေက်းစြာ ေမးတဲ့အခါ သံုတာျဖစ္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား. <br><br>
+ Would you care for something to drink? <br>
+ မင္းတစ္ခုခုေသာက္ခ်င္လား..<br><br>
+ Would you care for some tea? <br>
+ မင္းလက္ဖက္ရည္ အနည္းငယ္..ေသာက္ခ်င္လား..<br><br>
+ Would you like to borrow my car? <br>
+ မင္းငါ့ကားကို ငွားခ်င္လား..<br><br>
+ Would you like to try yourself? <br>
+ မင္းကိုယ္တိုင္..ၾကိဳးစားခ်င္တာလား..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Waiter: How was your meal? <br>
+စားပြဲက ဘယ္လိုလဲ...<br><br>
+Customer: It was delicious. <br>
+အရမ္း အရသာရွိပါတယ္..<br><br>
+Waiter: Would you care for some dessert?
+အခ်ိဳပြဲနည္းနည္း စားမွာလား..<br><br>
+Customer: What do you recommend? <br>
+မင္းဘာကို...အၾကံျပဳခ်င္လဲ..<br><br>
+Waiter:  There’s a Greek pastry called baklava that’s made of  chopped nuts, butter and cinnamon all soaked in honey. Would you like to try it? <br>
+ပဲ..ေထာက္ပတ္..ပ်ားရည္ထုတ္ျပီးလုပ္ထားတဲ့.. baklava ဆိုတဲ့..ဂရိမုန္႕ဖက္ထုတ္..ရွိတယ္..။ မင္းစမ္းၾကည့္မလား..<br><br>
+Customer: Sure. It sounds delicious. <br>
+ေသခ်ာတာေပါ့..ၾကားရတာ.အရသာရွိမယ့္ ပံုပဲ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

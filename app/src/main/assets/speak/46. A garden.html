@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/46-A Garden - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Is there any garden that you like? <br>
+မင္းသေဘာက်တဲ့ ဥယာဥ္ျခံတစ္ခု ရွိလား <br><br>
+Yes, I love the strawberry garden in my neighborhood. <br>
+ငါ့အိမ္နီးခ်င္းမွာရွိတဲ့..စေတာ္ဘယ္ရီျခံကို ၾကိဳက္ႏွစ္သက္တယ္..<br><br>
+Where is it? <br>
+ဘယ္မွာရွိတာလဲ <br><br>
+It’s in the highland area where I live. <br>
+ငါေနတဲ့ ကုန္းျမင့္ေဒသမွာ ရွိတာ..<br><br>
+When did you first see it? <br>
+ပထမဆံုးအေနျဖင့္..မင္းဘယ္တုန္းက ျမင္ခဲ့တာလဲ <br><br>
+I accidentally saw it when I had a picnic in the highland. <br>
+ကုန္းျမင့္ေဒသကို..ေပ်ာ္ပြဲစားထြက္တုန္းက..မထင္မွတ္ပဲ ေတြ႕ခဲ့တာ..<br><br>
+What were planted in the garden? <br>
+ပန္းျခံထဲမွာ ဘာေတြစိုက္ထားလဲ <br><br>
+Strawberries, of course. There are also some boxes of cucumbers next to the strawberry beds. <br>
+စေတာ္ဘယ္ရီေပါ့..စေတာ္ဘယ္ရီနဲ႕ကပ္ျပီး သခြားသီးစိုက္ထားတာေတြလည္းရွိတယ္..<br><br>
+Why do you like the garden? <br>
+အဲ့ဒီ ပန္းျခံကို မင္းဘာလို႕ၾကိဳက္တာလဲ <br><br>
+I love picking red strawberries. The garden brings me closer to nature as well. <br>
+အနီေရာင္..စေတာ္ဘယ္ရီေတြ ခူးရတာ ငါၾကိဳက္တယ္..။ ပန္းျခံက ငါ့ကိုသဘာဝနဲ႕လည္း ပိုျပီးနီးစပ္ေစတယ္..<br><br>
+What is special about the garden? <br>
+ပန္းျခံရဲ႕ထူးျခားခ်က္က ဘာလဲ <br><br>
+The strawberries there are organic. <br>
+အဲ့ဒီမွာရွိတဲ့..စေတာ္ဘယ္ရီက..ဓာတုလံုးဝကင္းစင္တယ္..<br><br>
+How do people do the gardening? <br>
+လူေတြ ဥယာဥ္အလုပ္..ဘယ္လိုလုပ္ၾကလဲ <br><br>
+Keeping the beds mulched is important since it helps reduce water needs. <br>
+ေရလိုအပ္ခ်က္ကို ေလ်ာ့နည္းေစတဲ့အတြက္..ေျမာင္းေတြကို ထိမ္းသိမ္းထားဖို႕အေရးၾကီးတယ္..<br><br>
+How often do you visit the garden? <br>
+အဲ့ဒီျခံသို႕မင္း ဘယ္ေလာက္ လည္ပတ္ျဖစ္လဲ <br><br>
+Just when I have leisure time since I’m quite busy. <br>
+ငါကအရမ္းအလုပ္မ်ားေတာ့..အားတဲ့အခ်ိန္မွာပဲေပါ့...<br><br>
+Is there any relation between the green garden and your mood? <br>
+မင္းရဲ႕ခံစားခ်က္နဲ႕..ဥယာဥ္ျခံၾကား..မွာဆက္ႏြယ္မႈေတြရွိလား <br><br>
+Yes, at least for me. The green will help me chill out. <br>
+ဟုတ္တယ္..အနည္းဆံုးေတာ့ ငါ့အတြက္ေပါ့။ စိမ္းလန္းစိုေျပမႈ ငါ့ကို လန္းစိုေျပမႈက ငါ့ကိုလန္းဆန္းေစတယ္..<br><br>
+Do you want to be a gardener? <br>
+မင္း ဥယာဥ္မႈတစ္ေယာက္ ျဖစ္ခ်င္လား <br><br>
+Honestly, no. I’m not used to manual work. <br>
+ရိုးရိုးသားသားေျပာရရင္..မျဖစ္ခ်င္ဘူး။ လက္နဲ႕လုပ္ရတဲ့အလုပ္ကို ငါအက်င့္မရဘူး <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

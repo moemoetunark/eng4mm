@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/22-HOBBIES - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is your hobby? <br>
+မင္းရဲ႕ဝါသနာက ဘာလဲ <br><br>
+I like playing sports, especially swimming. <br>
+ငါအားကစာလုပ္ရတာႏွစ္သက္တယ္၊အထူးသျခင့္ကေတာ့  ေရကူးတာေပါ့ <br><br>
+Is your hobby common in your country? <br>
+မင္းရဲ႕ဝါသနာက..မင္းရဲ႕ႏိုင္ငံမွာ..အမ်ားၾကီးေတြ႕ရလား <br><br>
+Yes, kids, adults, and senior citizens all like swimming in my country. <br>
+ဟုတ္တယ္...ကၽြန္ေနာ့္ႏိုင္ငံမွာ..ကေလး..အရြယ္ေရာက္သူ၊..စီနီယာ ႏိုင္ငံသား အကုန္ေရကူးတာကိုႏွစ္သက္ၾကတယ္..<br><br>
+Is your hobby the same as when you were a child? <br>
+မင္းရဲ႕ဝါသနာက ကေလးဘဝတုန္းကဟာနဲ႕ အတူတူပဲလား <br><br>
+Yes, I was fond of swimming when I was a little girl. <br>
+ဟုတ္တယ္...ကၽြန္ေနာ္ ငယ္ငယ္ကတည္းက ေရကူးတာကို ႏွစ္သက္တယ္..<br><br>
+When did you start practicing that hobby? <br>
+အဲ့ဒီဝါသနာကို မင္းဘယ္တုနး္က စလုပ္ျဖစ္ခဲ့တာလဲ <br><br>
+I started swimming when I was 5 years old. <br>
+ငါ ငါးႏွစ္အရြယ္က..ေရစတင္ကူးခဲ့တယ္...<br><br>
+Is there anybody in your family who you share your hobby with? <br>
+မင္းတို႕မိသားစုမွာ...နင္နဲ႕ဝါသနာတူတဲ့..တစ္စံုတစ္ေယာက္ရွိသလား <br><br>
+My dad, he taught me how to swim. <br>
+ငါ့အေဖေပါ့..သူကငါ့ကို ေရကူးသင္ေပးခဲ့တာ..<br><br>
+How much time do you spend on your hobby? <br>
+မင္းရဲ႕ဝါသနာအတြက္ မင္းအခ်ိန္ဘယ္ေလာက္ သံုးလဲ <br><br>
+I usually go to the swimming pool twice a week. <br>
+ကၽြန္ေနာ္ ပံုမွန္အားျဖင့္ေရကူးကန္သို႕..တစ္ပတ္ႏွစ္ခါသြားတယ္..<br><br>
+What benefits do you get from it? <br>
+ဘယ္လို အက်ိဳးေက်းဇူးေတြ ရရွိလဲ   <br><br>
+Swimming is a really good workout. It helps me keep fit and chill out after a long day working. <br>
+ေရကူးတာ တကယ္ေကါင္းပါတယ္။ က်မ္းမာေစျပီး..တစ္ေနကုန္အလုပ္လုပ္ျပီးေနာက္...လန္းဆန္းေစတာေပါ့ <br><br>
+Have you ever heard of someone having a very unusual hobby? What was it? <br>
+မူမမွန္တဲ့ ဝါသနာပါတဲ့ သူတစ္ေယာက္ေယာက္ကို မင္းၾကာားဖူးလား၊ အဲ့ဒါက ဘာလဲ <br><br>
+Yes, my cousin loves tattooing vehicles. He puts stickers everywhere on his car. <br>
+ဟုတ္တယ္..ငါ့ရဲ႕ဝမ္းကြဲညီ..ကားေတြေပၚမွာ ေဆးမွင္ေၾကာင္လုပ္ရတာၾကိဳက္တယ္။ သူ႕ကားေနရားတိုင္းမွာ..စတစ္ကာေလးေတြကပ္ထားတယ္..<br><br>
+What do you think about someone having weird hobbies? <br>
+မူမမွန္တဲ့ ဝါသနာပါတဲ့သူတစ္ေယာက္ကို မင္းဘယ္လိုထင္လဲ        <br><br>
+I don’t think any hobby is weird. It’s just what you like to do, so I don’t judge others. <br>
+ဘယ္ဝါသနာျဖစ္ျဖစ္..မူမမွန္ဘူးလို႕ငါမထင္ဘူး။ မင္းလုပ္ခ်င္တာက ဝါသနာပဲေလ...ဒါေၾကာင့္.သူမ်ားကိုမဆံုးျဖတ္ဘူး <br><br>
+What hobbies are usually expensive in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ..ဘယ္ဝါသနာက ေစ်းၾကီးလဲ <br><br>
+Playing golf is a really expensive hobby. Only the rich can afford to buy golf supplies. <br>
+ေဂါက္သီးကစားတာ...တကယ့္ေစ်းၾကီးတဲ့ ဝါသနာပဲ။ ေဂါက္သီးကိရိယာေတြကို သူေဌးေတြပဲ ဝယ္ႏိုင္တာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

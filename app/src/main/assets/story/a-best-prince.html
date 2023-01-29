@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/stories/14.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+The Best Prince - အေတာ္ဆံုးမင္းသား <br>
+King Minos was very sick. <br>
+ဘုရင္ၾကီး မီႏိုစ္ အရမ္းေနမေကါင္းျဖစ္ေနတယ္ <br><br>
+His condition was getting worse. <br>
+သူ႕အေျခေနဟာ..ပိုျပီးဆိုးရြားလာတယ္..<br><br>
+He had three sons. <br>
+သူ႕မွာသားသံုးေယာက္ရွိပါတယ္..<br><br>
+He loved them all. <br>
+အားလံုးကို သူခ်စ္တယ္..<br><br>
+He had to announce who would become king. <br>
+ဘုရင္ ဘယ္သူျဖစ္မလဲ ဆိုတာ..သူေၾကညာဖို႕ရပါမယ္..<br><br>
+Two of the princes stood waiting outside the king’s room. <br>
+မင္းသားႏွစ္ပါးဟာ..ဘုရင့္အခန္းရဲ႕အျပင္ဖက္မွာ..ရပ္ျပီးေစာင့္ေနၾကပါတယ္..<br><br>
+Theseus was the oldest and strongest. <br>
+သီးစီးယပ္ဟာ..အၾကီးဆံုးသားျဖစ္ပါတယ္..<br><br>
+He thought his father would make him king. <br>
+သူက သူ႕အေဖက သူ႕ကိုဘုရင္ေျမွာက္ေပးမယ္ထင္ေနတာ..<br><br>
+Pelias, the second son, thought differently. <br>
+ဒုတိယသား..ပီလီယာစ္ကေတာ့..အဲ့သလို..မထင္ပါဘူး..<br><br> 
+He was an expert with weapons. <br>
+သူဟာ..လက္နက္ေတြနဲ႕ အရမ္းကၽြန္းက်င္တဲ့သူျဖစ္ပါတယ္..<br><br>
+He thought the king would choose him. <br>
+သူက..ဘုရင္ၾကီးက သူ႕ကို..ေရြးခ်ယ္လိမ့္မယ္လို႕ထင္ေနပါတယ္..<br><br>
+“When I’m king,” Theseus told Pelias, “I’ll let you contribute to the defense of our country. <br>
+သီးစီးယာစ္က ေျပာလိုက္တယ္..ငါဘုရင္ျဖစ္တဲ့အခါ...မင္းကိုငါ..ႏိုင္ငံရဲ႕..ကါကြယ္ေရးတာဝန္ေပးမယ္..<br><br>
+You can lead the army.” Pelias became angry. <br>
+မင္းလည္း စစ္တပ္ကို ေခါင္းေဆာင္ႏိုင္တာပဲလို႕...ပီလီယာစ္က ေဒါသတၾကီးေျပာလိုက္တယ္..<br><br>
+“Father knows I’m famous for my sword skills. <br>
+ဓားနဲ႕တိုက္ခုိက္တဲ့စြမ္းရည္ေၾကာင့္ ငါနာမည္ေက်ာ္တာ..အေဖက သိပါတယ္..<br><br>
+He’ll make me king.” <br>
+သူက ငါ့ကို ဘုရင္ ေျမွာက္မွာပဲ..<br><br>
+“You?” Theseus yelled. <br>
+ခင္ဗ်ားလား...သီးစီးယပ္က ေအာ္လိုက္တယ္..<br><br>
+“He won’t choose you!” “The kingdom is mine!” Pelias claimed. <br>
+မင္းကို သူက ေရြးမွာမဟုတ္ဘူး..ဘုရင္ႏိုင္ငံကို ငါပိုင္တယ္....ပီလီယာစ္က...ေၾကြးေၾကာ္လိုက္တယ္..<br><br>
+“Father will give it to me—or I’ll use force to take it!”  <br>
+အေဖက ငါ့ကိုေပးမွာပဲ..မဟုတ္ရင္..စစ္တပ္သံုးျပီး..ငါရယူမယ္..<br><br>
+Theseus made a sudden move to take out his sword. <br> 
+သီစီးယပ္စ သူ႕ဓားကို ရုတ္တရက္ဆိုသလို..ဆြဲထုတ္လုိက္ပါတယ္..<br><br>
+Then Pelias did the same. <br>
+အဲ့ေတာ့..ပီလီယာပ္စ္လည္း အလားတူ..ဓားကိုထုတ္လိုက္ပါတယ္..<br><br>
+“Beating me will be a challenge,” Theseus said. <br>
+ငါ့ကို အႏိုင္ယူဖို႕ဆိုတာ..စိတ္ေခၚမႈတစ္ခုပဲ...သီးစီယာပ္က ေျပာတယ္..<br><br>
+“Fight me now. <br>
+ငါ့ကို တိုက္ခိုက္စမ္းပါ..<br><br>
+The winner gets the kingdom!” <br>
+ႏိုင္တဲ့သူ..ဘုရင့္ႏိုင္ငံကို ရမယ္..<br><br>
+Pelias agreed. <br>
+ပီလီယပ္စ္ သေဘာတူလိုက္တယ္..<br><br>
+King Minos could hear his sons fighting. <br>
+ဘုရင္ၾကီး မီႏိုက..သူ႕သားေတြ တိုက္ခိုက္ေနၾကတာကိုၾကားလိုက္တယ္..<br><br>
+The youngest son, Jason, stood beside him. <br>
+အငယ္ဆံုးသား..ဂ်ာဆန္ ကေတာ့..သူ႕ေဘးနားမွာ ရပ္ေနတယ္..<br><br>
+He sensed his father’s sadness. <br>
+သူ႕အေဖ ဝမ္းနည္းေနတာကို..သူခံစားရပါတယ္..<br><br>
+The king laid his hand flat on Jason’s arm. <br>
+ဘုရင္ၾကီးက..သူ႕လက္ကို..ဂ်ာဆန္ရဲ႕လမ္းေမာင္းေပၚတင္လိုက္တယ္..<br><br> 
+“Your brothers fight too much,” the king told him. <br>
+မင္းအကိုေတြက..အရမ္းတိုက္ခုိက္တာ..မ်ားတယ္....ဘုရင္ၾကီးက သူ႕ကိုေျပာတ္..<br><br>
+“I must protect my kingdom from all harm. <br>
+ငါ့ရဲ႕ႏိုင္ငံကို..ရန္စြယ္အေပါင္းကေန ငါကာကြယ္ရမယ္..<br><br>
+They’ll divide it between them. <br>
+သူတို႕အၾကားမွာ..ႏိုင္ငံကြဲသြားလိမ့္မယ္..<br><br>
+The people won’t know what to do. <br>
+လူေတြက ဘာလုပ္ရမယ္ဆိုတာ..သိၾကမွာမဟုတ္ဘူး..<br><br>
+There’ll be war. <br>
+စစ္ပြဲေတြျဖစ္လိမ့္္မယ္..<br><br>
+I can’t allow either of them to be king. <br>
+သူတို႕ထဲက..ဘယ္သူ႕ကိုမွ..ငါဘုရင္ ျဖစ္ခြင့္မေပးႏိုင္ဘူး..<br><br> 
+Therefore, I’m making you king. <br>
+ဒါေၾကာင့္ ငါမင္းကို..ဘုရင္ေျမွာက္လိုက္တယ္..<br><br>
+Your kindness has always made you special. <br>
+မင္းရဲ႕ သနားစာနာတတ္တဲ့စိတ္ထားတာ..ထူးျခားတယ္..<br><br>
+It’s the difference between you and your brothers. <br>
+မင္းနဲ႕မင္းအကိုေတြၾကားမွာ..အမ်ားၾကီးကြာျခားမႈေတြရွိတယ္..<br><br>
+You can bring peace. <br>
+မင္းက ျငိမ္းခ်မ္းမႈေတြ..ေဆာင္ယူႏိုင္တယ္..<br><br>
+They can’t.” <br>
+သူတို႕က မလုပ္ႏုိင္ႏိုင္ဘူး...<br><br>
+Then the king died.<br>
+အဲ့ေနာက္မွာေတာ့..ဘုရင္ၾကီးေသသြားခဲ့ပါတယ္.<br><br>
+Theseus and Pelias heard that their youngest brother was king. <br>
+သီးစီးယပ္စ္နဲ႕.ပီလီယပ္တို႕က..ဘုရင္းၾကီးဟာ..အငယ္ဆံုးသားကို..ဘုရင္ေျမွာက္သြားတာ..ၾကားလိုက္ၾကတယ္..<br><br>
+They were surprised. <br>
+သူတို႕အရမ္းအံ့ၾသသြားတယ္..<br><br>
+They realized that their fighting was wrong. <br>
+သူတို႕တိုက္ခိုက္ေနတာ..မွားတယ္ဆိုတာ..သေဘာေပါက္သြားၾကတယ္..<br><br>
+It had kept them from saying goodbye to their father. <br>
+သူတို႕အေဖကိုေတာင္..သူတို႕ႏႈတ္ဆက္စကားမေျပာလိုက္ရပါဘူး..<br><br>
+They agreed to have Jason as their king. He was the best choice.<br>
+ဂ်ာဆန္ကို..ဘုရင္အျဖစ္..သူတို႕သေဘာတူလိုက္ၾကတယ္.။ သူကအေကါင္းဆံုး ေရြးခ်ယ္မႈတစ္ခုပါပဲ..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

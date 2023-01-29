@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/9-PRESENTS - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What kind of presents are popular in your country? <br>
+နင္တို႕ႏိုင္ငံမွာ ဘယ္လိုလက္ေဆာင္မ်ိဳးစားက လူၾကိဳက္မ်ားလဲ <br><br>
+It depends on the receivers. For children, toys are the best choice. For youth, souvenirs are recommended.<br>
+ဒါက လက္ခံတဲ့သူအေပၚမူတည္တယ္..ကေလးေတြအတြက္ေတာ့..ကစားစရာေတြက အေကါင္းဆံုးေရြးခ်ယ္မႈေပါ့။ လူငယ္ေတြအတြက္ကေတာ့..အမွတ္တရပစၥည္းေတြကသင့္ေတာ္တယ္..souvenirsouvenir
+Who gave presents to you? On what occasions? <br>
+ဘယ္သူကနင့္ကို..လက္ေဆာင္ေပးလဲ..ဘယ္လိုအေျခေနမွာေပးလဲ <br><br>
+I have received many presents, most of which were from my friends. They gave me gifts on my birthday. <br>
+လက္ေဆာင္ေတြငါ အမ်ားၾကီးလက္ခံရရွိတယ္..အားလံုးနီးပါးက ငါ့သူငယ္ခ်င္းေတြဆီကပဲ..ငါ့ေမြးေန႕လက္ေဆာင္အျဖစ္ေပးၾကတာ..<br><br>
+What was your last present? <br>
+ေနာက္ဆံုးရခဲ့တဲ့ လက္ေဆာင္က ဘာလဲ <br><br>
+It was a hand-made doll, given by my best friend when I moved to another city. <br>
+ငါတစ္ျခားျမိဳ႕သို႕ေျပာင္းတဲ့အခါ..င့ါအခင္ဆံုးသူငယ္ခ်င္းကေပးတဲ့ လက္လုပ္..ကစားစရာတစ္ခုေပါ့ <br><br>
+What was the one you like best? <br>
+နင္အၾကိဳက္ဆံုးတစ္ခုက ဘာလဲ <br><br>
+I loved my book Nepal a lot. It was given to me on my 23rd birthday by my brother. <br>
+နီေပါအေၾကာင္းေရးထားတဲ့စာအုပ္ကို အရမ္းႏွစ္သက္တယ္။ ငါ့ရဲ႕ ၂၃ႏွစ္ေျမာက္ေမြးေန႕မွာ..အေမဆီကေပးတာေလ..<br><br>
+Did you ever get a present you didn’t like?<br>
+နင္မႏွစ္သက္တဲ့ လက္ေဆာင္မ်ိဳးေကါရရွိလား <br><br>
+Yes, I have, but I still treasure and take care of them. <br>
+ဟုတ္ကဲ့ရရွိပါတယ္..ဒါေပမဲ့..ကၽြန္ေနာ္အဲ့ဒါေတြကို တန္ဖိုးထား ဂရုစိုက္ပါတယ္..<br><br>
+How do you thank people who give you presents? <br>
+လူေတက လက္ေဆာင္ေပးၾကတဲ့အခါ..သူတို႕ကိုဘယ္လို..ေက်းဇူးဆပ္လဲ <br><br>
+I gave them presents that they would like. <br>
+သူတို႕ၾကိဳက္တဲ့လက္ေဆာင္ေတြ ငါေပးမယ္ေလ...<br><br>
+What are the times of the year that people give presents in your country? <br>
+နင္တို႕ႏုိင္ငံမွာ လူေတြဟာႏွစ္တစ္ႏွစ္ရဲ႕ဘယ္အခ်ိန္မွာ လက္ေဆာင္ေပးၾကလဲ <br><br>
+Some special occasions are birthdays, weddings, graduation, New Year’s day, Valentine’s day, housewarming ceremonies, etc. <br>
+အထူးေပးတဲ့အခ်ိန္ေတြကေတာ့...ေမြးေန႕ေတြ..မဂၤလာေဆာင္ပြဲေတြ...ႏွစ္သက္ကူးေန႕ေတြ..ခ်စ္သူမ်ားေန႕..အိမ္သစ္တက္အခန္းနားေတြေပါ့..<br><br>
+Who was the last person you gave a present to? <br>
+ေနာက္ဆံုး ဘယ္သူ႕ကိုနင္ လက္ေဆာင္းေပးဘူးလဲ<br><br>
+My mom, I bought her a coat on a business trip to Bangkok. <br>
+ ငါ့အေမကိုေပါ.. လုပ္ငန္းနဲ႕ဘန္ေကါက္သို႕ခရီးထြက္တုန္းဝယ္လာခဲ့ကုတ္အဂ်ၤီေလတစ္ထည္ေလ..<br><br>
+Is giving presents important in daily life? <br>
+ေန႕စဥ္ဘဝက လက္ေဆာင္ေပးတာေတြက အေရးပါလား <br><br>
+Yes, it is. It’s one of the best ways to show your love and gratitude to someone. <br>
+ဟုတ္တယ္..တစ္စံုတစ္ေယာက္ကို..အခ်စ္နဲ႕ေက်းဇူးတရားကိုျပဖို႕အေကါင္းဆံုးနည္းလမ္းတစ္ခုေပါ့ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

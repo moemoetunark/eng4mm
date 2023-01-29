@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/stories/20.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+The First Peacock - ပထမဆံုးေသာ ဥေဒါင္း <br>
+Argos lived in Ancient Greece. <br>
+အာဂိုဟာ ဂရိႏိုင္ငံေရွ႕ေဟာင္းျမိဳ႕တစ္ခုမွာေနပါတယ္. <br><br>
+He was a husband and a proud father. <br>
+သူဟာအိမ္ရွင္ေယာက္်ားတစ္ေယာက္ျဖစ္ျပီး...ဂုဏ္ယူစရာေကါင္းတဲ့ဖခင္တစ္ေယာက္လည္းျဖစ္ပါတယ္..<br><br>
+He worked hard and did well at his job. <br>
+သူဟာ..သူ႕အလုပ္မွာ..ၾကိဳးစားျပီး..ေကါင္းေကါင္းမြန္မြန္လုပ္ပါတယ္..<br><br>
+But one thing about him wasn’t normal. <br>
+ဒါေပမဲ့ သူနဲ႕ပတ္သက္လို႕..ပံုမွန္မဟုတ္တာ..တစ္ခုရွိပါတယ္..<br><br>
+He was born with 100 eyes. <br>
+သူဟာ မ်က္လံုးတ ၁၀၀ နဲ႕ေမြးဖြားလာခဲ့ပါတယ္..<br><br>
+Having many eyes was usually a benefit to him. <br>
+မ်က္လံုးေပါင္းမ်ားစြာရွိတာကေတာ့..ပံုမွန္အားျဖင့္ သူ႕ကိုအက်ိဳးျဖစ္ေစပါတယ္ <br><br>
+He had a chance to see many things. <br>
+သူမ်ားစြာေသာ..အရာေတြကို..ျမင္ဖို႕..အခြင့္ေရးရတယ္..<br><br>
+Also, since he had so many eyes, he was very good at guarding things. <br>
+သူ႕မွာ မ်က္လံုးေတြ အမ်ားၾကီးရွိတဲ့အတြက္ေၾကာင့္..ပစၥည္းေတြေစာင့္ေရွာက္တဲ့ေနရာ..သူအရမ္းေတာ္ပါတယ္..<br><br>
+While sleeping, he only rested a few eyes at a time. <br>
+အိပ္ေနစဥ္...သူဟာ မ်က္လံုးအနည္းငယ္ကိုပဲ..အနားေပးပါတယ္..<br><br>
+The others stayed awake. <br>
+တစ္ျခား မ်က္လံုးေတြကေတာ့..မအိပ္ပါဘူး..<br><br>
+He worked for Hera, a great goddess. <br>
+သူဟာ..ဟာရာဆိုတဲ့ နတ္ဘုရားအတြက္..အလုပ္လုပ္ေပးပါတယ္.<br><br>
+His primary function was to guard a special cow. <br>
+သူ႕ရဲ႕အဓိက.အလုပ္ကေတာ့...ႏြားမတစ္ေကါင္ကို..ေစာင့္ေရွာက္ဖို႕ပါပဲ..
+The cow was very important to Hera. <br>
+အဲ့ဒီႏြားမဟာ..နတ္ဘုရား ဟာရာအတြက္..အလြန္အေရးၾကီးပါတယ္..
+It was her favorite pet. <br>
+သူမရဲ႕အၾကိဳက္ဆံုး ခ်စ္စႏိုးတိရစၦာန္ေလးေပါ့..<br><br>
+The most essential part of his job was to keep the cow alone. <br>
+သူ႕အလုပ္ရဲ႕ အဓိက အေရးၾကီးဆံုးအခ်က္က..ႏြားကကို..တစ္ေကာင္တည္း ထားဖို႕ပါပဲ..<br><br>
+It had to be kept separate from all the other cows and far away from people. <br>
+အဲ့ႏြားမကို..တျခားႏြားေတြကေန ခြဲထားရမယ္..ျပီးေတာ့..လူေတြရဲ႕အေဝးၾကီးမွာထားတယ္.<br><br>
+This was an easy job for Argos. <br>
+အာဂို အတြက္..ဒီအလုပ္ကေတာ့..လြယ္ကူပါတယ္..<br><br>
+The cow just ate grass all day. <br>
+ႏြားမဟာ..တစ္ေနကုန္ ျမက္ေတြကို စားေနပါတယ္..<br><br>
+But the god Zeus wanted the cow. <br>
+ဒါေပမဲ့ နတ္ဘုရား..ဇီးယပ္ဟာ..အဲ့ဒီႏြားမကို..လိုခ်င္ပါတယ္..<br>
+He wanted to take it away from Hera. <br>
+သူက အဲ့ဒီႏြားမကို..ဟာရာနဲ႕အေဝးၾကီးကို ယူသြားခ်င္တာ..<br><br>
+He had a plan. <br>
+သူ႕မွာအစီစဥ္တစ္ခုရွိပါတယ္..<br><br>
+He found a great music player. <br>
+သူဟာ..အရမ္းေတာ္တဲ့ ဂီတသမားတစ္ေယာက္ကို..ရွာတယ္..<br><br>
+He asked the man to play a beautiful song for Argos. <br>
+အဲ့ဒီလူကို..အာဂိုအတြက္.သာယာတဲ့..သီခ်င္းေလးေတြ..တီးခတ္ေပးဖို႕..ေတာင္းဆိုတယ္.
+Zeus was certain Argos would go to sleep. <br>
+အာဂို..အိပ္ေပ်ာ္သြားမယ္ဆိုတာ..ဇီးယက္ ကလံုးဝက်ိမ္းေသတာေပါ့..<br><br>
+The song had an immediate effect. <br>
+သီခ်င္းဟာ..ခ်က္ခ်င္း..သက္ေရာက္မႈ..ရွိပါတယ္..<br><br>
+Argos couldn’t focus on his job. <br>
+အာဂို..သူ႕အလုပ္ကို..အာရံုမစိုက္နိုင္ေတာ့ဘူး..<br><br>
+He fell asleep. <br>
+သူအိပ္ေပ်ာ္သြားခဲ့တယ္..<br><br>
+Zeus saw this, and he took the cow. <br>
+အဲ့ဒါကို..ဇီးယပ္က ျမင္ေတာ့..ႏြားမကို..ယူသြားတယ္..<br><br> 
+Hera was very angry with Argos. <br>
+ဟာရာဟာ..အာဂိုကို..အရမ္းေဒါသထြက္ေနတယ္.<br><br>
+She turned him into a peacock. <br>
+သူမဟာ သူ႕ကို..ဥေဒါင္းအျဖစ္ ေျပာင္းလို္က္တယ္..<br><br>
+She put his many eyes on his tail. <br>
+သူ႕အျမီးမွာလည္း မ်က္လံုးေတြ..ထည့္လိုက္တယ္..<br><br>
+Argos was very sad. <br>
+အာဂို အရမ္းဝမ္းနည္းတယ္.<br><br>
+Zeus saw how much trouble he had caused Argos.<br>
+အာဂိုအတြက္ ဒုကၡဘယ္ေလာက္ေရာက္သြားတာကို..ဇီးယပ္ျမင္တယ္..<br><br>
+He made another plan. <br>
+သူဟာ တစ္ျခားအစီစဥ္တစ္ခု..ခ်မွတ္တယ္..<br><br>
+He turned Argos into a group of stars. <br>
+သူဟာ အာဂို..ကို..ႏြယ္စုေတြအျဖစ္ ေျပာင္းလဲလိုုက္တယ္.<br><br>
+He wanted Argos to remain in the sky forever. <br>
+သူဟာ...အာဂိုကို..ေကါင္းကင္မွာ..တစ္သက္လံုး က်န္ေနေစခ်င္တယ္..<br><br>
+Even today, Argos’ image remains there, above the site where all his problems began. <br>
+ဒီေန႕အထိ...အာဂိုရဲ႕ပံုေတြ..က်န္ရွိေနတုန္းပါပဲ..ျပသနာေတြအားလံုးရဲ႕ အစေပါ့..<br><br>
+We can still see him in the night sky. <br>
+ငါတို႕သူ႕ကို..ညမွာ..ျမင္ေနရတုန္းပါပဲ..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

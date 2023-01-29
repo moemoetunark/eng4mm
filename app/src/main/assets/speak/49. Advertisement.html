@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/49-An Advertisement - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is your favorite advertisement? <br>
+မင္းရဲ႕အၾကိဳက္ဆံုး ေၾကာ္ျငာက ဘာလဲ <br><br>
+I’m quite impressed with the advertisement about Surf – a laundry detergent made by Unilever. <br>
+Surf ေၾကာ္ျငာကိုငါ အရမ္း..အထင္ၾကီးမိတယ္..ယူနီလီဗာကထုတ္တဲ့..အဝတ္ေလွ်ာ္ရည္ေပါ့   <br><br>
+Where did you see it? <br>
+မင္းဘယ္မွာ ျမင္ခဲ့တာလဲ <br><br>
+I accidentally saw it on TV 2 years ago. <br>
+လြန္ခဲ့တဲ့ ႏွစ္ႏွစ္ခန္႕က ငါ TV မွာျမင္ေတြ႕ခဲ့တာ..<br><br>
+What happened in the advertisement? <br>
+ေၾကာ္ျငာထဲမွာ ဘာေတြျဖစ္လဲ <br><br>
+The ad told a story of a family in which the children all loved their step-mother due to the white shirts she prepared for them. <br>
+ေၾကာ္ျငာက..ကေလးအားလံုးက..သူမျပင္ဆင္ေပးတဲ့..အျဖဴေရာင္အဂၤ်ီေတြေၾကာင့္..သူတို႕ရဲ႕မိေထြးကို ခ်စ္တဲ့..မိသားစု ပံုျပင္တစ္ခုကို ေဖာ္ျပတယ္..<br><br>
+Why do you like it? <br>
+မင္းအဲ့ဒါကုိ ဘာလို႕ၾကိဳက္တာလဲ <br><br>
+I just can’t stop loving the story in the ad. It’s such a sweet story. <br>
+ေၾကာ္ျငာမွာပါတဲ့ ပံုျပင္ကို မၾကိဳက္ပဲကို မေနႏိုင္တာ...ေတာ္ေတာ္ခ်ိဳျမိန္တဲ့ ပံုျပင္တစ္ခုပဲ <br><br>
+Was there any famous actor/ actress in the advertisement? <br>
+ေၾကာ္ျငာမွာ နာမည္ေက်ာ္..သရုပ္ေဆာင္ေတြ ပါလား <br><br>
+Not at all. The actors were not very well-known, I think. <br>
+မပါဘူး။ သရုပ္ေဆာင္ေတြက..သိပ္လူသိမ်ားမယ္..ငါမထင္ဘူး <br><br>
+Did it attract much attention? <br>
+လူေတြအာရံုကို ဆြဲေဆာင္ႏိုင္လား <br><br>
+I have no idea, but I saw it in many public places. <br>
+ငါလည္းမသိဘူး..ဒါေပမဲ့ အမ်ားျပည္သူ ေနရာေတာ္ေတာ္မ်ားမ်ားမွာေတာ့ ေတြ႕တယ္..<br><br>
+What do you like the most in the advertisement? <br>
+ေၾကာ္ျငာမွာ မင္းအၾကိဳက္ဆံုးက ဘာလဲ <br><br>
+Well, the vivid images and sound effects did attract me. <br>
+ၾကည္လင္ျပတ္သားတဲ့.ဓာတ္ပံုနဲ႕..ေကါင္းမြန္တဲ့ effects ေတြကေတာ့ ငါ့ကိုတကယ္ဆြဲေဆာင္ႏိုင္တယ္..<br><br>
+Do you believe in advertisements? <br>
+ေၾကာ္ျငာေတြကို မင္းယံုလား <br><br>
+Not really. Ads always say good things and neglect to mention bad things about a product for obvious reasons. <br>
+မယံုပါဘူး။ ေၾကာ္ျငာေတြက..ပစၥည္းေတြေကါင္းတာေျပာျပီး..မေကါင္းတဲ့အရာကိုေျပာဖို႕ကိုေတာ့..တစ္မင္တကာ လ်စ္လွ်ဴးရႈထားၾကတာ..<br><br>
+How have advertisements changed recently? <br>
+ေၾကာ္ျငာေတြ ေလာေလာဆယ္..ဘယ္လိုေျပာင္းလဲသြားလဲ <br><br>
+They’re more modern. Digital marketing has proved successful in many fields. <br>
+ပိုျပီးေခတ္မွီလာတယ္..ဒီဂ်စ္တယ္..အေရာင္းျမွင့္တင္ေရးက ေအာင္ျမင္မႈကိုနယ္ပါယ္မ်ားစြာမွာ..သက္ေသျပေနတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

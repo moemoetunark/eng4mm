@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/44-JobCareer - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is your desired job? <br>
+မင္းရဲ႕ ဆႏၵရွိတဲ့ အလုပ္က ဘာလဲ <br><br>
+Well, my dream changes in accordance to age. Up to now, I would like to be a great English teacher. <br>
+အင္း..အသက္အရြယ္ေၾကာင့္..ငါ့အိပ္မက္ေတြလည္း ေျပာင္းလဲလာတယ္။ အခုေတာ့..ငါက အဂၤလိပ္စာဆရာတစ္ေယာက္ျဖစ္ခ်င္တယ္..<br><br>
+Is that a demanding job? <br>
+အဲ့ဒီအလုပ္က..အရည္ခ်င္းေတြ..မ်ားၾကီးလုိတဲ့အလုပ္လား <br><br>
+Yes, I think so although people suppose that being a teacher is easy and boring. <br>
+လူေတြက..ဆရာတစ္ေယာက္လုပ္ရတာဟာ..လြယ္ကူျပီး..ပ်င္းဖို႕ေကါင္းတယ္လို႕ေျပာၾကေပမဲ့ ငါကေေတာ့..အဲ့လိုပဲထင္တယ္..<br><br>
+What challenge do you have when doing that job? <br>
+အဲ့ဒီလုပ္ကို လုပ္မဲ့အခ်ိန္..မင္းမွာဘယ္စိတ္ေခၚမႈေတြ..ရွိမွာလဲ <br><br>
+I have some problems with classroom management. Maybe I have to improve that skill a lot in order to be a good teacher. <br>
+စားသင္ခန္းစီမံတာနဲ႕ပတ္သက္လို႕..ငါက ျပသနာနည္းနည္းရွိတယ္..။ ဆရာေကါင္းတစ္ေယာက္ျဖစ္လို႕ အဲ့ဒီစြမ္းရည္ကို တုိးတက္ေအာင္လုပ္ရမယ္..<br><br>
+Is it hard to make your dream come true? <br>
+အိပ္မက္ေတြ တကယ္ျဖစ္လာေအာင္ လုပ္ရတာ ခက္လား <br><br>
+Every job needs time and effort, and teacher does as well. <br>
+အလုပ္တိုင္းက လံုးလဝီရီယာနဲ႕ အခ်ိန္လိုအပ္ပါတယ္..ဆရာလုပ္တာလည္း ထိုနည္းတူေပါ့ <br>
+Apart from the academic knowledge I was taught in university, I have to learn many other soft skills.
+တကၠသိုလ္မွာသင္ခဲ့တဲ့ စာေပဗဟုသုတေတြသာမက..တစ္ျခားေသာ စြမ္းရည္ေလးေတြကိုပါ သင္ရတယ္..<br><br>
+Why do you choose that job? <br>
+အဲ့ဒီလုပ္ကို မင္းဘာလို႕ေရြးခ်ယ္တာလဲ <br><br>
+I really admired my high school English teacher, and I want to be like her. <br>
+ငါ့ရဲ႕ အထက္တန္းအဂၤလိပ္စာ..ဆရာကိုအရမ္းေလးစားတာ..ျပီးေတာ့..ငါကသူမလိုျဖစ္ခ်င္တာ..<br><br>
+What requirements and characteristics do you need to do that job? <br>
+ဘယ္လိုစရိုက္ေတြ..လိုအပ္ခ်က္ေတြ..အဲ့ဒီအလုပ္ကိုလုပ္ဖို႕ လုိအပ္သလဲ <br><br>
+Let’s see. You need to be patient, thoughtful and sympathetic. <br>
+ၾကည့္လိုက္မယ္..သည္းခံဖို႕။ေထာက္ထားညွာတာတတ္ဖို႕။ သနားတတ္ဖို႕လိုတယ္..<br><br>
+Does the job have something to do with your major at university? <br>
+မင္းရဲ႕တကၠသုိလ္မွာတုန္းက အထူးျပဳလာသာနဲ႕..တစ္ခုခုဆက္စပ္ရွိလား အ့ဲအလုပ္က <br><br>
+Sure. I studied English Linguistics and Literature, majored in English teaching. The major does support me a lot in my career path. <br>
+ေသခ်ာတာေပါ့..အဂၤလိပ္စာအထူးျပဳနဲ႕..အဂၤလိပ္သာသာေဗဒနဲ႕စာေပကို..ငါသင္ခဲ့တာ..။ အထူးျပဳဘာသာကေတာ့.ငါ့အတြက္ သိပ္ျပီး အေထာက္ကူမျပဳဘူး <br><br>
+What does the society think about your job? <br>
+လူ႕အဖြဲ႕စည္းေတြက မင္းရဲ႕အလုပ္ကို ဘယ္လိုထင္ၾကလဲ <br><br>
+I’m not quite sure, but I’m proud to be a teacher, an honor job. <br>
+ငါသိပ္မသိဘူး..ငါေပမဲ့..ဆရာျဖစ္ရတာ ဂုဏ္ယူတယ္..ဂုဏ္ရွိတဲ့ အလုပ္တစ္ခုပါ..<br><br>
+Do you make much money with that job? <br>
+အဲ့ဒီအလုပ္နဲ႕ မင္းေငြအမ်ားၾကီးရလား <br><br>
+Not at all. Teacher’s one of the lowest paying jobs in my country. <br>
+မရပါဘူး..ဆရာေတြက ငါတို႕ႏိုင္ငံမွာ..အနိမ့္ဆံုးအဆင့္ကိုပဲ ရတယ္..<br><br>
+Have you ever thought of leaving your job? <br>
+မင္းအလုပ္ကေန ထြက္ဖို႕ စဥ္းစားဖူးလား <br><br>
+I haven’t thought of that before, but I believe in what I’m doing right now. <br>
+မေတြးဖူးပါဘူး..ငါက ငါလုပ္တဲ့အလုပ္ေပၚမွာ..ယံုၾကည္မႈရွိတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

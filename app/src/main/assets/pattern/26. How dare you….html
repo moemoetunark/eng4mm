@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/026. How dare you...! - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+How dare you.......? ....ရက္လိုက္တာ။ <br>
+နင္ေျပာရက္လိုက္တာ...လုပ္ရက္လိုက္တာ<br>..ဘယ္လိုေတာင္ လုပ္ရက္တာလဲ..ဆိုတဲ့အဓိပၸါယ္ေတြနဲ႕ <br>
+ဒီ pattern ေလးကိုသံုးႏိုင္ပါတယ္..<br>
+How dare you .......?  ကြက္လပ္ေနရာမွာေတာ့.V1 ေတြကို လိုက္ရပါတယ္.<br>
+I. EXAMPLES: - ဥပမာမ်ား..<br><br>
+ How dare you call me fat! <br>
+နင္ငါ့ကို ဖက္တီးလို႕ေခၚရက္တယ္ေနာ္..<br><br>
+ How dare you speak to me like that! <br>
+နင့္ငါ့ကို အဲ့လို..စကားေျပာရက္တယ္ေနာ္..<br><br>
+ How dare he do that to me! <br>
+သူငါ့ကို..အဲ့ဒါ လုက္ရက္လိုက္တာ..<br><br>
+ How dare you turn him down! <br>
+နင္သူ႕ကို..ဘယ္လိုေတာင္..ပယ္ခ်လိုက္တာလဲ..<br><br>
+II. DIALOGUES: -စကားေျပာခန္း..<br><br>
+Boss:  David,  more and more money has been missing from the company’s funds over the past six months. <br>
+ေဒးဗစ္..အရင္ေျခာက္လက..ကုမၸဏီေငြေတြ..ပိုပိုျပီးေပ်ာက္လာေနတယ္..<br><br>
+Employee: Really? What’s been happening? <br>
+တကယ္လား..ဘာေတြျဖစ္ေနတာလဲ..<br><br>
+Boss: Obviously somebody has been stealing the money. <br>
+ထင္ရွားေနတာပဲ...တစ္ေယာက္ေယာက္ကေတာ့..ခိုးယူေနျပီေပါ့..<br><br>
+Employee: Who do you think it could be? <br>
+ဘယ္သူျဖစ္ႏိုင္တယ္..ထင္လဲ..<br><br>
+Boss: Well, you’re the accountant. You tell me. <br>
+မင္းက..စာရင္းကိုင္ေလ...ကဲေျပာစမ္းပါဦး..<br><br>
+Employee: Do you think I did it? How dare you accuse me of stealing! <br>
+ငါလုပ္တယ္..မင္းထင္ေနတာလား..ငါ့ကိုေငြခိုးတယ္လို႕မင္းဘယ္လိုစြပ္စြဲရက္တာလဲ..
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

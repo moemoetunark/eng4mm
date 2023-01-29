@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/54-Transport - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is the most popular means of transport in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ လူသံုးအမ်ားဆံုး..သယ္ယူပို႕ေဆာင္ေရး..စနစ္ကဘာလဲ <br><br>
+Most people in my country travel by car. <br>
+ငါတို႕ႏိုင္ငံမွာ လူအမ်ားစုက..ကားျဖင့္ ခရီးသြားၾကတယ္..<br><br>
+How do you go to school or work? <br>
+ေက်ာင္းသို႕ သို႕မဟုတ္ အလုပ္သို႕..မင္းဘယ္လိုသြားလဲ <br><br>
+I prefer bus due to its convenience. I enjoy reading books while sitting on the bus. <br>
+အဆင္ေျပတာေၾကာင့္ ဘတ္စ္ကားကို ပိုၾကိဳက္တယ္..။ ဘတ္စ္ကားစီးေနစဥ္..စာအုပ္ဖတ္ရတာကို ႏွစ္သက္တယ္..<br><br>
+How often do you take busses? <br>
+မင္း ဘတ္စ္ကားဘယ္ေလာက္ စီးျဖစ္လဲ <br><br>
+Every day. I went to school by bus 2 years ago, and the bus is still my best choice. <br>
+ေန႕တိုင္းစီးတယ္..လြန္ခဲ့တဲ့ႏွစ္ႏွစ္က ေက်ာင္းကို ဘတ္စ္ကားနဲ႕တက္တယ္။ ဘတ္စ္ကားက ငါ့ရဲ႕အေကါင္းဆံုးေရြးခ်ယ္မႈတစ္ခုျဖစ္ေနတုန္းပဲ <br><br>
+Do people in your country like traveling by bus? <br>
+မင္းတို႕ႏိုင္ငံမွာ လူေတြ ဘတ္စ္ကား (လိုင္းကား)နဲ႕ခရီးသြားတာကို ႏွစ္သက္ၾကလား <br><br>
+Not really, they have their own cars. <br> 
+မၾကိဳက္ကပါဘူး။ သူတို႕မွာ ကိုယ္ပိုင္ကားရွိၾကတယ္..<br><br>
+What are some benefits of traveling by bicycle? <br>
+စက္ဘီးနဲ႕ခရီးသြားျခင္းရဲ႕ အက်ိဳးေက်းဇူးေတြက ဘာေတြလဲ <br><br>
+It’s a good way of doing exercise. We can protect our environment as well. <br>
+ေလ့က်င့္ခန္းလုပ္ဖို႕နည္းေကါင္းတစ္ခုေပါ့။ ငါတို႕ရဲ႕သဘာဝန္ပတ္ဝန္းက်င္ကိုလည္း ကါကြယ္ႏုိင္တာေပါ့ <br><br>
+Do you prefer public transport or private transport? <br>
+အမ်ားျပည္သူသံုး.သယ္ယူပို႕ေဆာင္ေရးနဲ႕..ကိုယ္ပိုင္..ဘယ္ဟာကို ပိုၾကိဳက္လဲ <br><br>
+Public transport is much cheaper. <br>
+အမ်ားျပည္သူသံုး သယ္ယူပို႕ေဆာင္ေရးက ေစ်းသက္တာတယ္..<br><br>
+Do you think bus should replace other means of transport? <br>
+တစ္ျခားသယ္ယူပို႕ေဆာင္ေရးစနစ္ကို ဘတ္စ္ကားနဲ႕ အစားထိုးသင့္တယ္လို႕မင္ထင္လား <br><br>
+Sure. In the future, busses should be used widely by commuters. <br>
+ထင္တာေပ့ါ။ အနာဂတ္မွာ..ပံုမွန္ခရီးေဝးသြားသူေတြ..ဘတ္စ္ကားကိုပဲ သံုးသင့္တယ္..<br><br>
+What do the government do to encourage people to use public transport? <br>
+အစိုးရက ျပည္သူေတြ အမ်ားျပည္သူသံုး သယ္ယူပို႕ေဆာင္ေရးစနစ္ကိုသံုးဖို႕..ဘယ္လိုတိုက္တြန္းႏႈိးေဆာ္လဲ <br><br>
+It’s a good idea to make public transport as convenient as private transport. Besides, more campaigns should be launched to raise the awareness of protecting our environment. <br>
+အမ်ားျပည္သူသံုး သယ္ယူပို႕ေဆာင္ေရးစနစ္ကို..ကိုယ္ပိုင္သယ္ယူပို႕ေဆာင္ေရးကဲ့သို႕..အဆင္ေျပေအာင္လုပ္ဖို႕ေကါင္းတယ္.။    ဒါ့အျပင္...ကၽြန္ေနာ္တို႕သဘာဝပတ္ဝန္းက်င္ကို ကါကြယ္ဖို႕..လူေတြသတိထား.လာေအာင္..ပိုျပီး လုပ္ေဆာင္သင့္တယ္..<br><br>
+How has the transport changed recently? <br>
+သယ္ယူပို႕ေဆာင္ေရးေတြ ေလာေလာဆယ္..ဘယ္လိုေျပာင္းလဲသြားလဲ <br><br>
+There are more cars in a household now than before, which partly leads to traffic jams in some cosmopolitan cities. <br>
+အိမ္ေတြမွာ..ကားေတြအရင္ကထက္မ်ားလာတယ္..ဒါက တစ္ခ်ို႕တစ္ဝက္အေနျဖင့္...ျမိဳ႕ၾကီးေတြမွာ..လမ္းပိတ္ဆို႕မႈေတြျဖစ္ေစတာေပါ့ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

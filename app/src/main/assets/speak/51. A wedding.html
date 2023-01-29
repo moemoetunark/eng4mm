@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/51-A wedding - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Have you ever attended someone’s wedding? Who was he/she? <br>
+တစ္စံုတစ္ေယာက္ရဲ႕လက္ထပ္ပြဲသို႕မင္းတက္ေရာက္ဖူးလား...သူ/သူမက ဘယ္သူလဲ <br><br>
+Yes, a lot, but the most memorable one is my best friends. <br>
+ဟုတ္ကဲ့..အမ်ားၾကီးတက္ဖူးပါတယ္..အမွတ္တရအျဖစ္ဆံုးကေတာ့..ငါ့အခင္ဆံုးသူငယ္ခ်င္းရဲ႕လပ္ထပ္ပြဲေပါ့ <br><br>
+Who went with you? <br>
+မင္းဘယ္သူနဲ႕အတူသြားတာလဲ <br><br>
+I went with one of my classmates. <br>
+ငါ့ရဲ႕အတန္းေဖာ္တစ္ေယာက္နဲ႕အတူတကြငါသြားခဲ့တာ..<br><br>
+Where was the wedding organized? <br>
+လက္ထပ္ပြဲကို ဘယ္မွာစီစဥ္တာလဲ <br><br>
+It was held in a restaurant downtown. <br>
+ျမိဳ႕ထဲက စားေသာက္ဆိုင္တစ္ခုမွာ စီစဥ္တာ..<br><br>
+What did people do in the wedding? <br>
+လက္ထပ္ပြဲမွာ လူေတြဘာလုပ္ၾကသလဲ <br><br>
+They enjoyed wedding feast, sang and danced together after giving the couple best wishes of an ever-lasting happiness. <br>
+မဂၤလာစံုတြဲကို..ေပ်ာ္ရႊင္မႈေတြ ထာဝရ.တည္ျမဲေစဖို႕..ဆုမြန္ေကါင္းေတြေတာင္းျပီးေနာက္ေတာ့..လပ္ထပ္ပဲြက စားေသာက္စရာေတြကို သူတို႕စားၾကတယ္..တူတူကၾက..သီခ်င္းဆိုၾကတယ္.. <br><br>
+What did the bride and groom wear? <br>
+သတို႕သမီးနဲ႕သတို႕သားဘာေတြ ဝတ္ဆင္ခဲ့ၾကလဲ <br><br>
+The bride wore a white wedding gown while the groom wore a black suit and tie. <br>
+သတို႕သားက အနက္ေရာင္.ဝတ္စံုဝတ္ျပီး..သတို႕သမီးကေတာ့..အျဖဴေရာင္ မဂၤလာဝတ္စံုကို ဝတ္တယ္..<br><br>
+What was the most interesting ritual in the wedding? <br>
+လက္ထပ္ပြဲမွာ.စိတ္ဝင္စားစရာေကါင္းတဲ့..ရိုးရာက ဘာလဲ <br><br>
+Exchanging rings is the ritual I’m quite interested in. <br>
+လပ္စြပ္လဲလွယ္ဝတ္ၾကတာကေတာ့..ငါစိတ္ဝင္စားတဲ့ ရိုးရာတစ္ခုပါပဲ <br><br>
+Are weddings a special event of one’s life in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ လပ္ထပ္ပြဲဟာ..လူတစ္ေယာက္ရဲ႕ ထူးျခားတဲ့အခိုက္တန္႕တစ္ခုလား <br><br>
+Yes, along with birthdays. <br>
+ဟုတ္တယ္...ေမြးေန႕ေရာေပါ့ <br><br>
+Do people in your country get married early? <br>
+မင္းတို႕ႏိုင္ငံမွာ လူေတြ..အိ္မ္ေထာင္ေစာေစာျပဳၾကလား <br><br>
+Not really. The average age to get married for women is 27 and for men is 29. <br>
+သိပ္ေတာ့ မေစာပါဘူး။ မိန္းမအတြက္ပ်ဥ္းမွ်လပ္ထပ္တဲ့အရြယ္က..၂၇ႏွစ္..ေယာက္်ားအတြက္ေတာ့..၂၉ႏွစ္ေပါ့ <br><br>
+What is the ideal age to get married in your opinion? <br>
+မင္းအထင္ရဆို..လက္ထပ္ဖို႕အေကါင္းဆံုးအခ်ိန္က ဘာလဲ <br><br>
+Well. 27 would be my ideal age. Women are most charming and mature at that age, I guess. <br>
+အင္း..၂၇ခုႏွစ္ဆိုေတာ့..အေကါင္းဆံုးျဖစ္တယ္။ အဲ့ဒီအရြယ္မွာ မိန္းမေတြကအရမ္းလွျပီး..ရင့္က်က္မႈလည္းရွိတယ္..ငါထင္တယ္..<br><br>
+How has wedding changed recently? <br>
+ေလာေလာဆယ္မွာ..လက္ထပ္ပြဲေတြ..ဘယ္လိုေျပာင္းလဲလာသလဲ <br><br>
+The most noticeable change is the reduce of rituals in a wedding. There used to be more steps in weddings years ago than there are now. <br>
+သတိထားစရာအေကါင္းဆံုးေျပာင္းလဲမႈက..လပ္ထက္ပြဲမွာ..ရိုးရာေတြနည္းပါးလာတာပဲ။ အရင္ႏွစ္ေတြက..လက္ထပ္ပြဲေတြမွာ..အဆင့္ဆင့္ေတြ ဒီထက္ပါေလ့ရွိတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

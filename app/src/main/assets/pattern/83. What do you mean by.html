@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/083. What do you mean by... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What do you mean by......? ဘာသေဘာလဲ./ဘာဆိုလိုတာလဲ..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+
+ What do you mean by saying that? <br>
+ အဲ့ဒါေျပာတာ..မင္းဘာသေဘာလဲ..<br><br>
+ What do you mean by canceling your performance? <br>
+ မင္းရဲ႕ပါဝင္ေဆာင္ရြက္ခ်က္ကို..ပယ္ဖ်က္မယ္ဆိုတာ..ဘာသေဘာလဲ..<br><br>
+ What do you mean by “out of the question”? <br>
+ ေမးစရာမရွိေတာ့ဘူး...ဆိုတာာ..မင္းဘာကိုဆိုလိုတာလဲ..<br><br>
+ What do you mean by asking such a question? <br>
+ အဲ့လိုေမးခြန္းမ်ိဳးေမးရတာ..ဘာသေဘာလဲ..<br><br>
+II. DIALOGUES: -စကားေျပာခန္း..<br><br>
+Boyfriend: Happy anniversary! <br>
+ေပ်ာ္ရႊင္တဲ့တလျပည့္ အခန္းနားေနာ္..<br><br>
+Girlfriend: What do you mean? <br>
+နင္ဘာကို ဆိုလိုတာလဲ..<br><br>
+Boyfriend: Today is our one-month anniversary of dating. <br>
+ဒီေန႕ဟာ ငါတို႕တြဲလာတာ..တလျပည့္တဲ့ေန႕ေလ..<br><br>
+Girlfriend: Oh, I see. You know everything has a beginning and an end. <br>
+အိုး..သိျပီ။ အရာရာတိုင္းဟာ..အစနဲ႕အဆံုးရွိတယ္ဆိုတာ...နင္သိတယ္ေနာ္..<br><br>
+Boyfriend: What do you mean by saying that? <br>
+အဲ့လိုေျပာရတာ.နင္ဘာသေဘာလဲ..<br><br>
+Girlfriend: Well, I think it’s time for us to break up. I’m sorry. <br>
+အင္း--.ငါတို႕ျဖတ္ဖို႕အခ်ိန္တန္ျပီ...ေဆာ္ရီးပါ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

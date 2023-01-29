@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/006. But this doesn’t mean that... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+ဒီစကားေျပာ pattern ေလးကိုေတာ့..ငါမင္းကိုခ်စ္တာ..မွန္တယ္..ဒါေပမဲ့ငါမင္းကိုအၾကြင္းမဲ့ယံုရမယ္လို႕...မဆိုလိုဘူး..စတဲ့အေျခေနေတြမွာ..သံုးႏိုင္ပါတယ္...<br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ We are your employees,  but  this doesn’t mean that  we must  obey you unconditionally. <br>
+ ငါတို႕က မင္းရဲ႕အလုပ္သမားေတြဟုတ္ပါတယ္..ဒါေပမဲ့.မင္းေျပာသမွ်ကို အၾကြင္းမဲ့နာခံရမယ္လို႕ေတာ့..မဆိုလိုဘူးေလ..<br><br>
+ You are much older than I am, but it doesn’t mean that you are right about everything. <br>
+ မင္းက ငါ့ထက္အမ်ားၾကီးအသက္ၾကီးတာမွန္တယ္..ဒါေပမဲ့..မင္းဟာအရာရာမွာ မွန္တယ္လို႕ေတာ့ မဆိုလုိဘူးေလ..<br><br>
+ I  support  this measure,  but  it  doesn’t mean that  I  support  you  without reservation. <br>
+ ငါမင္းကို ဒီေလာက္ထိ..ေထာက္ခံတာမွန္တယ္..ဒါေပမဲ့..အၾကြင္းမဲ့ေထာက္ခံမယ္လို႕ေတာ့..မဆိုလိုဘူး..<br><br>
+ I like you, but this doesn’t mean that I’ll marry you. <br>
+ ဒါနင့္ကို သေဘာက်တာပါတယ္..ဒါေပမဲ့..မင့္ကိုလက္ထပ္မယ္လို႕ေတာ့..မဆုိလိုဘူး..<br><br>
+ II. DIALOGUES: - စကားေျပာခန္း      <br><br>
+
+Wife: Dear, we have been driving around aimlessly for hours. Don’t you think we should ask for directions? <br>
+အခ်စ္..ငါတို႕ဦးတည္ရာမရွိ..ေမာင္းေနတာ...နာရီေတြၾကာေနျပီ..ငါတို႕လမ္းေမးသင့္တယ္လို႕..မင္းမထင္ဘူးလား..<br><br>
+Husband: Look honey, maybe we’ve been driving for a long time,  but  this doesn’t mean that we’re lost.
+ဟန္နီ...ငါတို႕အခ်ိန္ၾကာၾကီးေမာင္းေနတာ..ဟုတ္တယ္..ဒါေပမဲ့...ငါတို႕လမ္းေပ်ာက္ေနတာမွ..မဟုတ္တာ..<br><br>
+Wife: Really? Then what have we been doing all this time? <br>
+တကယ္လား...ငါတုိ႕လုပ္ေနတာ...ဘာေတြလဲ...<br><br>
+Husband: Well, we’re taking the scenic route. <br>
+သဘာဝလွပတဲ့ လမ္းကိုငါတို႕သြားေနတာေလ...<br><br>
+Wife:  Oh,  I see.  You just  don’t  want  to admit  that  we’re lost.  You know, sometimes you’re too proud.<br>
+ငါသိတယ္..ငါတုိ႕လမ္းေပ်ာက္ေနတာ..နင္မဝန္ခံခ်င္ဘူး..တစ္ခါတစ္ေလ..နင္ကေလ..ကိုယ့္ကိုယ္ကို..အရမ္းအထင္ၾကီးတတ္တာ..<br><br>
+Husband: OK, we’re lost, but this does not mean that you have to rub it in. <br>
+အိုေက...ငါတို႕လမ္းေပ်ာက္ေနျပီ--ဒါေပမဲ့နင္..စိတ္ညစ္ဖို႕ေတာ့.မလိုဘူးေလ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

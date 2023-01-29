@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/1-Family - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>How many people are there in your family? <br>
+နင့္မိသားစုမွာ လူဘယ္ႏွစ္ေယာက္ရွိလဲ         <br><br>
+There are 5 people in my family: my father, mother, brother, sister, and me. <br>
+ငါ့မိသားစုမွာ ငါးေယာက္ရွိတယ္..ငါ့အေဖရယ္..အေဖရယ္..အကိုရယ္..အစ္မရယ္..ျပီးေတာ့ငါေပါ့..<br><br>
+Does your family live in a house or an apartment?<br>
+နင့္မိသားစု အိမ္မွာေနလား တိုက္ခန္းမွာေနလား <br><br>
+We live in a house in the countryside. <br>
+ငါတို႕ေက်းလက္ေဒသက အိမ္မွာေနတယ္..<br><br>
+What does your father do? <br>
+နင့္အေဖ ဘာလုပ္သလဲ <br><br>
+My father is a doctor. He works at the local hospital. <br>
+သူကဆရာဝန္တစ္ေယာက္ပါ။ ေဒသေဆးရံုတစ္ခုမွာ သူလုပ္တယ္..<br><br>
+How old is your mother? <br>
+နင့္အေမအသက္ဘယ္ေလာက္ရွိျပီလဲ <br><br>
+She is 40 years old, 1 year younger than my father. <br>
+သူမအသက္ ၄၀ရွိျပီ။ ငါ့အေဖထက္ တစ္ႏွစ္ငယ္တာေပါ့ <br><br>
+Do you have any siblings? What’s his/her name? <br>
+နင့္မွာ ေမြးခ်င္းေတြရွိလား ..သူ/သူမနာမည္က ဘာလဲ <br><br>
+Yes, I do. I have 1 elder brother, David, and 1 younger sister, Mary. <br>
+ဟုတ္ကဲ့ရွိတယ္။ ေဒးဗစ္ဆိုတဲ့ အကိုတစ္ေယာက္...ျပီးေတာ့...Mary ဆိုတဲ့ညီမတစ္ေယာက္ရွိတယ္..<br><br>
+Are you the oldest amongst your brothers and sisters? <br>
+ညီအကိုေမာင္ႏွစ္မေတြထဲ နင္ကအၾကီးဆံုးလား <br><br>
+No, I’m not. I’m the second child in my family. <br>
+မဟုတ္ပါဘူး..ငါ့မိသားစုမွာ ငါဒုတိယေျမာက္<br><br>
+What do your mother/father like? <br>
+နင့္အေမ/အေဖဘာေတြကိုႏွစ္သက္သလဲ <br><br>
+My father likes playing football and my mother likes cooking. <br>
+ငါ့အေဖက ေဘာလံုးကိုႏွစ္သက္တယ္..အေမကေတာ့..အခ်က္ျပဳတ္ကိုႏွစ္သက္တယ္..<br><br>
+Do your parents let you stay out late? <br>
+နင့္မိဘ နင့္ကိုအျပင္မွာ ေနာက္က်တဲ့အထိေနခြင့္ေပးလား <br><br>
+Of course not. They always ask me to get home before 10 pm each night. <br>
+မေပးဘူး..ညတိုင္း ၁၀နာရီမတိုင္ခင္ အိမ္ျပန္လာဖို႕သူတို႕ငါ့ကိုေျပာတယ္..<br><br>
+Do you stay with your parents? <br>
+နင့္မိဘေတြနဲ႕ နင္တူတူေနလား <br><br>
+Right now, no, but I used to. <br>
+အခုေတာ့ မေနဘူး...ဒါေပမဲ့ ငါေနလဲ့ရွိခ့ဲတယ္..<br><br>
+Does your family usually have dinner together? <br>
+နင့္မိသားစု ညေနစာကို တူတူစားၾကလား <br><br>
+Yes, we do. My mom always prepares delicious meals for us.<br>
+ဟုတ္တယ္။ အေမက အရသာရွိတဲ့ ဟင္းေတြငါ့တို႕အတြက္ အျမဲလုပ္ေပးတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

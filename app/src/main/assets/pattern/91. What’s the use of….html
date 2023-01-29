@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/091. What’s the use of... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What's the use of + V-ing? .....ဘာအက်ိဳးထူးမွာလဲ <br>
+အဲ့ဒါလုပ္လို႕..ငိုေနလို႕..ျငင္းခံုေနလို႕..ဘာအသံုးဝင္မလဲ..ဘာအက်ိဳးထူးလာမွာလဲ..စတဲ့အဓိပၸါယ္ေတြနဲ႕..ဒီ pattern ေလးကိုသံုးႏိုင္ပါတယ္..<br><br>
+
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ What’s the use of talking about it? <br>
+ အဲ့ဒီေၾကာင့္ေျပာေနလို႕..ဘာထူးမွာလဲ..<br><br>
+ What’s the use of crying over spilt milk? <br>
+ မျဖစ္ႏိုင္တာ..ငိုေနလို႕..ဘာထူးလာမလဲ..<br><br>
+ What’s the point of arguing with her? <br>
+ သူမနဲ႕ျငင္းခံုေနလို႕..ဘာထူးမွာလဲ..<br><br>
+ What’s the point of worrying about it? <br>
+ အဲ့ဒါ စိုးရိမ္ေနလို႕..ဘာထူးမွာလဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: How long have you been studying English? <br>
+မင္းအဂၤလိပ္စာ သင္ေနတာ..ဘယ္ေလာက္ၾကာျပီလဲ..<br><br>
+B: Over ten years now, but my English is not very fluent at all. <br>
+အခုဆို..၁၀ ႏွစ္ေက်ာ္ေနျပီ..။ ဒါေပမဲ့ငါ့ အဂၤလိပ္စကားက..လံုးဝမေကါင္းဘူး.<br><br>
+A: Why not? <br>
+ဘာလို႕လဲ..<br><br>
+B: I don’t like speaking English because I’m afraid of making mistakes. <br>
+အမွားလုပ္မိမွာ..ေၾကာက္ေတာ့..ငါအဂၤလိပ္စကားေျပာရတာကို..မၾကိဳက္ဘူး..<br><br>
+A: What’s the use of studying English if you won’t speak it? <br>
+စကားမေျပာဘူးဆိုရင္..အဂၤလိပ္စာေလ့လာေနလို႕..ဘာထူးမွာလဲ..<br><br>
+B:  You’re right. I should try to speak out more and not be so afraid of making mistakes. <br>
+မင္းမွန္ပါတယ္.။ ငါစကားပိုျပီးေျပာသင့္တယ္..ျပီးေတာ့..အမွားလုပ္မွာကိုလည္.း မေၾကာက္သင့္ဘူး..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

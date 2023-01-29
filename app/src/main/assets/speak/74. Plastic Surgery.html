@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/74-Plastic Surgery - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Is plastic surgery popular in your country? <br>
+ပလတ္စတစ္အစားထိုးခြဲစိတ္တာ..မင္းတို႕ႏိုင္ငံ လူၾကိဳက္မ်ားလား..<br><br>
+Not really. People in my country are not so interested in plastic surgery. <br>
+မမ်ားပါဘူး...ငါတို႕ႏိုင္ငံကလူေတြ..ပလတ္စတစ္အစားထိုးခြဲစိတ္တာကို သိပ္စိတ္မဝင္စားၾကဘူး..<br><br>
+What do you think about people having plastic surgery? <br>
+ပလတ္စတစ္အစားထိုးခြဲစိတ္တဲ့လူေတြကို..ဘယ္လိုထင္လဲ...<br><br>
+It’s hard to say. As long as they find happiness in what they’re doing, it’s fine with me. <br>
+ေျပာရခက္တာေပါ့။ သူတို႕လုပ္ေနတာက..သူတို႕အတြက္ေပ်ာ္ရႊင္မႈေပးသမွ်ကါလပတ္လံုးေတာ့....ငါဘာေျပာစရာလိုမလဲ..<br><br>
+Why do you think people do it? <br>
+လူေတြ ဘာလို႕ လုပ္ၾကတယ္လို႕မင္းထင္လဲ..<br><br>
+They want to gain a better look, I believe. That’s understandable. <br>
+သူတို႕ပုိလွခ်င္ၾကလို႕..ငါယံုၾကည္တယ္။ ဒါက နားလည္ေပးႏိုင္ပါတယ္.။ <br><br>
+Is plastic surgery bad? <br>
+ပလတ္စတစ္အစားထိုးခြဲစိတ္တာ..ဆိုးလား..<br><br>
+It’s bad for health in the long run. <br>
+ေရရွည္မွာ က်မ္းမာေရးအတြက္ ဆိုးတာေပါ့..<br><br>
+Does it do harm to your health? <br> 
+က်န္းမာေရးကို တကယ္ပဲ..ထိခိုက္ေစလား..<br><br>
+Sure, there are several unhealthy substances in the medical treatments which may be harmful to your body. <br>
+ေသခ်ာတာေပါ့....လူခႏၶာကိုယ္ကို..ထိခိုက္ေစႏိုင္တဲ့..အရာေတြ..အမ်ားၾကီး ပါဝင္တယ္။ <br><br>
+Do you think changing your look is a good thing? <br>
+မင္းရဲ႕ရုပ္ရည္ကို ေျပာင္းလဲတာ. ေကါင္းတယ္လို႕ထင္လး..<br><br>
+Yes, I can’t deny that changing for a better appearance is what people should do. But don’t abuse plastic surgery or you will face serious health problems later on. <br>
+ပိုလွဖို႕အတြက္ ေျပာင္းလဲတာဟာ..လူေတြလုပ္သင့္တာ ဆိုတာ..ငါမျငင္းႏိုင္ဘူး။ ပလတ္စတစ္အစားထိုးခြဲမႈကိုေတာ့..တလြဲမလုပ္နဲ႕...ဆိုးရြားတဲ့က်မ္းမာေရး ျပသနာေတြ ေနာက္ျဖစ္လာလိမ့္မယ္..<br><br>
+Do you think the development of plastic surgery is a positive or negative trend? <br>
+ပလတ္စတစ္အစားထိုးခြဲစိတ္မႈ..တိုးတက္လာတာဟာ..အေပါင္းလကၡဏာ..သို႕မဟုတ္..အႏုတ္လကၡဏာလို႕မင္းထင္လား...<br><br>
+It’s more a positive trend, I guess. Thanks to plastic surgery, people who think they don’t look good can now make themselves more attractive. <br>
+အေပါင္းလကၡဏာက ပိုမ်ားပါတယ္။ ပလတ္စတစ္အစားထိုးခြဲစိတ္မႈရဲ႕ေက်းဇဴးေၾကာင့္ အခု..သူတို႕ကိုယ္သူတို႕မလွလို႕ထင္သူေတြ..ဟာ..ပိုျပီးဆြဲေဆာင္မႈရွိေအာင္..လုပ္ႏိုင္ျပီေလ...<br><br>
+Do you care more about your outlook or inner soul? <br>
+မင္းရဲ႕အတြင္းစိတ္ထက္..အျပင္ပန္း ရုပ္ရည္ကို မင္းပိုလို႕ဂရုစိုက္လား..<br><br>
+As for me, the inner soul does matter more although outside appearance is important, too. <br>
+ငါ့အတြက္ေတာ့..အျပင္ပန္းဟာ အေရးၾကီးတယ္ဆိုေပမဲ့...အတြင္းစိတ္က..ပိုျပီးအေရးၾကီးပါတယ္..
+What is a part of your face that you wish to change? <br>
+မင္းရဲ႕မ်က္ႏွာမွာ..ေျပာင္းလဲခ်င္တဲ့..အစိပ္ပိုင္းက ဘာလဲ..<br><br>
+Although I have some imperfect parts, I have no wish to change anything. I love the natural appearance my parents gave me. <br>
+မျပည့္စံုတဲ့ အစိတ္ပိုင္းေတြ ရွိေပမဲ့..ေျပာင္းလဲဖို႕ေတာ့..ငါဆႏၵမရွိဘူး။ ငါ့မိဘက ေပးတဲ့ သဘာဝ ရုပ္ရည္ကိုပဲ ပိုၾကိဳက္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

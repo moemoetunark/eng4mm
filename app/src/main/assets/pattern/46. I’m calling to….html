@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/046. I’m calling to... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I'm calling to.......ဆိုတာ ဖုန္းဆက္ရတာ၊ဖုန္းဆက္ေနတာ..ဆိုတဲ့အဓိပၸါယ္ျဖစ္ပါတယ္. <br>
+ငါဖုန္းဆက္တာ..မင္းကို တစ္ခုခုေျပာမလို႕..စတဲ့အေျခေနမ်ိဳးမွာ သံုးပါတယ္...<br><br>
+နမူနာေတြမွာ ေသခ်ာေလ့လာပါ..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ I’m calling to say goodbye to you. <br>
+ ငါမင္းကို ႏႈတ္ဆက္စကားေျပာမလို႕..ဖုန္းဆက္တာ..<br><br>
+ I’m calling to tell you that the concert begins at 7:00. <br>
+ ရႈိးပြဲ..၇နာရီစမယ္ဆိုတာ ေျပာဖို႕ငါဖုန္းဆက္တာ..<br><br>
+ I’m calling to book two tickets for tonight’s film. <br>
+ ဒီည ဇာတ္ကားအတြက္..လက္မွတ္ႏွစ္ေစာင္ ျဖတ္မလို႕ ဖုန္းဆက္ေနတာ..<br><br>
+ I’m calling to warn you of the coming storm. <br>
+ မုန္တိုင္းလာမယ္ဆိုတာ..သတိေပးမလို႕ငါမင္းကို ဖုန္းဆက္ေနတာ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Teammate: Hello?  <br>
+အသင္းသား     း   ဟလို...<br><br>
+Coach: Hello! Is this Peter? <br>
+နည္းျပ      း  ဟလို..ဒါ ပီတာလား..<br><br>
+Teammate: Yes. Hello! Coach. <br>
+အသင္းသား း ဟုတ္တယ္...ဟလို..နည္းျပေရ..<br><br>
+Coach: I’m calling to remind you that we have practice tomorrow. <br>
+နည္းျပ း မနက္ျဖန္..ေလ့က်င့္ခန္းရွိတယ္ဆိုတာ..သတိေပးမလို႕ငါဖုန္းဆက္တာ..<br><br>
+Teammate: What time does it begin?<br>
+အသင္းသား း ဘယ္အခ်ိန္စမလဲ...<br><br>
+Coach: We’ll start at 6 a.m. So don’t be late.  <br>
+နည္းျပ း ငါတို႕..မနက္..၆နာရီစမယ္။ ေနာက္မက်ေစနဲ႕ေနာ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/13-A Favorite Subject - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What subjects did you learn in school? <br>
+ေက်ာင္းမွာ မင္းဘယ္ဘာသာကို သင္ယူလဲ <br><br>
+I learned Math, Science, Physics, Biology, Geography, History, Literature, English, Art, and Music. <br>
+ကၽြန္ေနာ္ သခ်ၤာ၊သိပၸံ၊ရူပေဗဒ၊ဇီဝေဗး၊ဘူမိေဗဒ၊သမိုင္း၊စာေပ၊အႏုပညာႏွင့္ <br><br>ဂီတကိုသင္ယူတယ္
+What subject did you like the most when you were at school? Were you good at it? <br>
+ေက်ာင္းမွာတုန္းက မင္းဘယ္ဘာသာကို အၾကိဳက္ဆံုးလဲ..အဲ့ဘာသာမွားေတာ္ခဲ့လား <br><br>
+I liked Biology the most although I was excellent at Literature. <br>
+စာေပမွာေတာ္ေပမဲ့..ငါကေတာ့..ဇီဝေဗဒကိုအႏွစ္သက္ဆံုးပဲ <br><br>
+Did your friends like that subject too? <br>
+မင္းသူခ်င္းေတြေကါ အဲ့ဘာသာကို ၾကိဳက္ၾကလား..<br><br>
+Yes, they did. They enjoyed every single Biology lesson. <br>
+သူတို႕ၾကိဳက္ၾကပါတယ္။ ဇီဝေဗဒကိုသခၤန္းစာတိုင္းကို သူတို႕ႏွစ္သက္ၾကတယ္..<br><br>
+Was the textbook written in English or any other language? <br>
+ျပဌာန္းစာအုပ္ကို အဂၤလိပ္ဘာသာ သို႕မဟုတ္..တစ္ျခားဘာသာတစ္ခုနဲ႕ေရးထားတာလား <br><br>
+It was written in English. <br>
+အဂၤလိပ္ဘာသာနဲ႕ေရးထားတယ္..<br><br>
+Who taught that subject? <br>
+အဲ့ဘာသာကို ဘယ္သူသင္သလဲ <br><br>
+My teacher was Ms. Karen, from the USA. <br>
+ငါ့ရဲ႕ဆရာက..အေမရိကန္က...Ms. Karen ျဖစ္တယ္..<br><br>
+How was that subject helpful to you? <br>
+အဲ့ဘာသာက မင္းကို ဘယ္လိုအေထာက္ကူျဖစ္ခဲ့လဲ <br><br>
+It helped me a lot in becoming a Biology teacher. <br>
+ဇီဝေဗဒေက်ာင္းဆရာတစ္ေယာက္ျဖစ္ဖို႕..အမ်ားၾကီးေထာက္ကူျဖစ္ခဲ့တယ္..<br><br>
+How often did you learn that subject? <br>
+မင္းအဲ့ဒီ ဘာသာကို ဘယ္ေလာက္သင္ျဖစ္လဲ <br><br>
+I often had Biology lessons 5 times a week. <br>
+တစ္ပတ္ကို..ဇီဝေဗဒကိုသခၤန္းစာငါးၾကိမ္ခဲ့..ငါ့မွာရွိတယ္..<br><br>
+How long did you spend on that subject at home? <br>
+အိမ္မွာ မင္းအဲ့ဒီဘာသာအတြက္..အခ်ိန္ဘယ္ေလာက္ေပးလဲ <br><br>
+I spent roughly 2 hours per day studying Biology at home. <br>
+ဇီဝေဗဒကိုအိမ္မွာ..အၾကမ္းဖ်င္း တစ္ရက္ကိုႏွစ္နာရီေလာက္အခ်ိန္ေပးတယ္..<br><br>
+Have you ever attended any extra classes for that subject? <br>
+အတန္းပိုေတြေကါ..အဲ့ဒီဘာသာအတြက္ မင္းတက္ခဲ့လား <br><br>
+Yes, I have. I usually attended evening classes. <br>
+ဟုတ္တယ္..ညေနခင္းသင္တန္းကို..ပံုမွန္တက္တယ္..<br><br>
+Is it important to study hard on both social sciences and natural sciences? <br>
+လူမႈသိပၸနဲ႕..သဘာဝသိပၸံႏွစ္ခုလံုးကို..ေလ့လာဖို႕.အေရးၾကီးလား <br><br>
+No, it isn’t. Students should study the ones they like and those that are helpful to their career path. <br>
+မၾကီးပါဘူး....ေက်ာင္းသားေတြက သူတို႕ၾကိဳက္တဲ့.ဘာသာကို ေလ့လာသင့္တယ္..အဲ့ဒါက သူတို႕သက္ေမြးဝမ္းေက်ာင္းတြက္ေထာက္ကူျဖစ္တယ္...<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

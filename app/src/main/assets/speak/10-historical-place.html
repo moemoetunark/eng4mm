@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/10-HISTORICAL PLACE - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Which tourist attractions do you prefer when traveling? Historical places or natural landmarks? <br>
+ခရီးသြားတဲ့အခါ ဘယ္လိုေနရာမ်ိဳးကိုနင္ပိုႏွစ္သက္လဲ...သမိုင္ဝင္ေနရာမ်ား..သို႕မဟုတ္..သဘာဝပန္းဝန္းက်င္<br><br>
+Well, historical places are always my first choice when traveling. <br>
+ခရီးသြားတဲ့အခါ သမိုင္းဝင္ေနရာေတြကါ ငါ့ရဲ႕ပထမေရြးခ်ယ္မႈပဲ..<br><br>
+What do you usually do when visiting historical places? <br>
+သမိုင္းဝင္ေနရာေတြကို လည္ပတ္တဲ့အခါ..နင္ဘာေတြလုပ္လဲ..<br><br>
+I usually listen to the tour-guide introducing the sights and take notes about important historical events. <br>
+အည့္လမ္းညႊန္ကေနရာေတြကိုရွင္းျပတဲ့အခါ ပံုမွန္လိုနားေထာင္တယ္..အေရးၾကီးတဲ့သမိုင္ဝင္အျဖစ္ပ်က္ေတြကို မွတ္စုထားတယ္..<br><br>
+Can you name some historical places you have visited?<br>
+နင္လည္ပတ္ဖူးတဲ့ သမိုင္းဝင္ေနရာေတြရဲ႕ နာမည္ေတြကို ေျပာျပႏိုင္မလား <br><br>
+Whenever I travel to a foreign country, I always visit its famous historical places. <br>
+ဘယ္ႏိုင္ငံခားတိုင္းျပည္ကိုလည္ပတ္သည္ျဖစ္ေစ..ကၽြန္ေနာ္အျမဲသမိုင္းဝင္ေနရာေတြကို..လည္ပတ္တယ္..<br>
+Some of them are the Pyramids in Egypt, Angkor Wat in Cambodia, Stonehenge in England and the Taj Mahal in India.
+အဲ့ဒါေတြတစ္ခ်ိဳ႕ကေတာ့..အီဂ်စ္က ပရစ္မစ္ေတြ..ကေမၻာဒီယားက အန္ေကါဝပ္ေက်ာင္း...အဂၤလန္က..Stonehenge, အိႏၵိယက..Mahal စသည္ေပါ့ <br><br>
+What’s your most favorite historical place? Why?<br>
+နင့္အၾကိဳက္ဆံုး သမိုင္းဝင္ေနရာက ဘာလဲ...ဘာလို႕လဲ <br><br>
+I love the Pyramids the most. <br>
+ပရစ္မစ္ကို ငါႏွစ္သက္ဆံုးပဲ <br>
+Taking a tour around the Pyramids, I can not only enjoy the gorgeous architecture but also learn cultural and historical values of the ancient Egyptian culture.
+ပရစ္မစ္တစ္ေလွ်ာက္လည္ပတ္ေတာ့..လွပတဲ့ဗိသုကာေတြကို ခံစားႏိုင္ငံသာမက...အီဂ်စ္ႏိုင္ငံရဲ႕..တန္ဖိုးရွိတဲ့..ယာဥ္ေက်းမႈေတြကိုပါ သသင္ယူႏိုင္တယ္...<br><br>
+What is the most famous historical place in your country?<br>
+နင္တို႕ႏို္င္ငံမွာ..ဘယ္သမိုင္းဝင္ေနရာက အေက်ာ္ၾကားဆံုးလဲ <br><br>
+It’s definitely the Statue of Liberty in New York city. <br>
+နယူးေယာက္ျမိဳ႕က Liberty ရုပ္ထုျဖစ္တာေတာ့ ေသခ်ာတယ္..<br><br>
+What’s special about it?<br>
+အဲ့ဒါက ဘယ္ဟာထူးျခားေနလို႕လဲ <br><br>
+The statue was gifted by the people of France. <br>
+ရုပ္ထုတ္ကို ျပင္သစ္ျပည္သူေတြကေပးတာ..<br>
+It is a symbol of freedom for the US as well as a welcoming sight to people coming to the US from another country.<br>
+အေမရိကန္ႏိုင္ငံအတြက္..လြတ္လပ္မႈလကၡဏာတစ္ခုျဖစ္သလို.အျခားႏိုင္ငံက    .အေမရိကန္ႏိုင္ငံကိုလာတဲ့လူေတြကို ၾကိဳဆိုတဲ့ ျမင္ကြင္းတစ္ခုလည္းျဖစ္တယ္..<br><br>
+Where is it located?<br>
+ဘယ္ေနရာမွာ ရွိတာလဲ..<br><br>
+It’s located on Liberty island in New York Harbor, NYC.<br>
+နယူးေယာက္ရဲ႕ Liberty ကၽြန္းမွာတည္ရွိတယ္..<br><br>
+Should the youth visit historical places instead of other places?<br>
+တစ္ျခားေနရာေတြအျခား..သမုိင္းဝင္ေနရာေတြကို..လူငယ္ေတြက လည္ပတ္သင့္လား..<br><br>
+Sure. Nowadays the youth should visit these kind of places more often in order to preserve historical and cultural values of their country.<br>
+ေသခ်ာတာေပါ့။ဒီေခတ္မွာ..လူငယ္ေတြဟာ သူတို႕ႏိုင္ငံရဲ႕..ယာဥ္ေက်းမႈတန္ဖိုးေတကို..နားလည္းဖို႕ အဲ့လိုေနရာမ်ိဳးကို ပိုျပီးေလ့လာသင့္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

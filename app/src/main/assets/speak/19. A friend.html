@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/19-A FRIEND - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Who’s your best friend? <br>
+နင့္အခင္ဆံုးသူငယ္ခ်င္းက ဘယ္သူလဲ <br><br>
+It’s Jenny. She’s my best friend. <br>
+Jenny ေပါ့။ သူမကငါ့ရဲ႕အခင္ဆံုးသူငယ္ခ်င္း<br><br>
+What does she look like? <br>
+သူမပံုသ႑ဘယ္လိုလဲ <br><br>
+She has shoulder-length brown hair. I just love her lovely smile. <br>
+ပုခံုထိရွည္တဲ့အညိုေရာင္ဆံပင္နဲ႕. ငါကသူမရဲ႕အျပံဳးကိုပဲခ်စ္တာ..<br><br>
+How and when did you meet? <br>
+ဘယ္လို..ဘယ္အခ်ိန္က နင္သူမကိုေတြ႕တာလဲ <br><br>
+I first met her when we were in high school. <br>
+ငါသူမကိုပထမဆံုးေတြ႕တာ..ငါတို႕အထက္တန္းေက်ာင္းတုန္းကေပါ့..<br><br>
+How often do you see this friend? <br>
+အဲ့ဒီသူငယ္ခ်င္းကို နင္ဘယ္ႏွစ္ၾကိမ္ေတြ႕ျဖစ္လဲ <br><br>
+I see her every day. We’re in the same class. <br>
+ငါသူမကိုေန႕တိုင္းေတြ႕တယ္.။ ငါတို႕ကအတန္းတူတူေလ..<br><br>
+What’s she like? <br>
+သူမရဲ႕ပံုစံ(စိတ္ေနစိတ္ထား) ကဘယ္လိုလဲ <br><br>
+She’s not only thoughtful but also very understanding. She’s always by my side to cheer me up whenever I’m in trouble. <br>
+သူမကသနားတတ္.ကူညီတတ္သလို..နားလည္းေပးတတ္တယ္။ ငါ့ဒုကၡေရာက္တဲ့အခါ..သူမကငါ့ကိုအားေပးဖို႕င့ါေဘးနားအျမဲရွိတယ္..<br><br>
+Do you and her share anything in common? <br>
+နင္နဲ႕သူမ..စရိုက္တူ..ဝါသနာတူတာေတြရွိလား <br><br>
+Yes, a lot. We both love shopping and playing sports. <br>
+အမ်ားၾကီးေပါ့..ငါတို႕ႏွစ္ေယာက္လံုး..ေစ်းဝယ္ထြက္ရတာၾကိဳက္သလို..အားကစားလုပ္ရတာကိုလည္းၾကိဳက္တယ္..<br><br>
+What do you and her do together? <br>
+နင္နဲ႕သူမဘာေတြ တူတူလုပ္ၾကသလဲ <br><br>
+We usually do homework and read books together. <br>
+ငါတို႕အိမ္စာတူတူပံုမွန္လုပ္ၾကတယ္..ျပီးရင္..စာအုပ္တူတူဖတ္ၾကတယ္..<br><br>
+Have you and her ever quarreled? <br>
+နင္နဲ႕သူမရန္ျဖစ္ဖူးလား <br><br>
+Yes, but we seldom quarrel. When we do argue, afterwards we seem to understand more about each other. <br>
+ဟုတ္တယ္...ဒါေပမဲ့တစ္ခါတစ္ေလ ေလးပါပဲ..ငါတို႕ျငင္းၾကျပီးေနာက္ေတာ့..တစ္ေယာက္ကိုတစ္ေယာက္ ပိုျပီးေတာင္.နားလည္လာၾကတယ္..<br><br>
+Does she know how to cook? <br>
+သူမခ်က္တတ္သလား <br><br>
+Yes, but she’s not a great cook. <br>
+သူမခ်က္တတ္ပါတယ္..ဒါေပမဲ့...အခ်က္ေတာ္တဲ့သူေတာ့မဟုတ္ဘူး <br><br>
+Do your parents like her? <br>
+နင္မိဘေတြ သူမကို သေဘာက်လား <br><br>
+Yes, a lot. They always ask Jenny to come over for dinner. <br>
+ဟုတ္တယ္..အမ်ားၾကီးသေဘာက်ၾကတယ္...သူတို႕က Jenny ကိုညေနစာ စာဖို႕အျမဲဖိတ္ေခၚတယ္..<br><br>
+Why is a friend important in life? <br>
+ဘဝမွာ သူငယ္ခ်င္းက ဘာလို႕အေရးၾကီးလဲ <br><br>
+A good friend can make your life better in many ways. I don’t think anyone can stand loneliness. <br>
+သူငယ္ခ်င္းေကါင္းဆိုတာ..ပံုစံမ်ိဳးစံုနဲ႕ မင္းဘဝကို တိုးတက္ေစတယ္။ အထီးက်န္မႈကို ခံႏိုင္တဲ့သူလည္း ရွိမယ္ငါမထင္ဘူး <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/099. You can never... too... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+You can never .........too..... <br> ......
+”You can never be too careful driving”  means that you should always be very careful, and that there is no such thing as being TOO careful, since the more careful you are, the better.
+ဒီ pattern ေလးရဲ႕အဓိပၸါယ္ကေတာ့...ကားေမာင္ရင္..သတိဆိုတာ..ပိုတယ္လို႕မရွိဘူး..သတိထားေလ..ေကါင္းေလ...ဆိုတဲ့အဓိပၸါယ္ျဖစ္ပါတယ္..<br><br>
+တစ္ခုခုလုပ္တဲ့အခါ...သတိဆိုတာ..ပိုတာမရွိ..လိုတာသာရွိ....သတိအတတ္ႏိုင္ဆံုးထားပါ..စတဲ့အဓိပၸါယ္ျဖစ္ပါတယ္...<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ You can never be too careful driving. <br>
+ ကါးေမာင္းရင္ သတိဆိုတာ..ပိုတယ္မရွိပါဘူး..<br><br>
+ We cannot praise him enough as a hero. <br>
+ သူ႕ကိုငါတို႕သူရဲေကါင္းလိုခ်ီးတာေတာင္..မလံုေလာက္ဘူး..<br><br>
+ One cannot practice enough when learning a foreign language. <br>
+ ႏိုင္ငံျခားဘာသာတစ္ခုကို သင္တဲ့အခါ..လက္ေတြ႕ေလ့က်င့္တာ..ပိုတယ္မရွိပါဘူး..<br><br>
+ You can never overestimate Shakespeare’s plays. <br>
+ ရွိတ္စပီးယား ျပဇာတ္ေတြကို အထင္ၾကီးတာ.မ်ားတယ္မရွိဘူး..<br><br>
+ You can never over-emphasize the importance of physical training. <br>
+ က်မ္းမာေရးေလ့က်င့္မႈေတြရဲ႕အေရးပါမႈကို...ဂရုစိုက္တယ္ဆိုတာ..လြန္တယ္မရွိဘူး..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: Where is Allen? He’s late. <br>
+အလန္..ဘယ္မွာလဲ..သူေနာက္က်တယ္ေနာ္..<br><br>
+B: Did you give him directions on how to get here? <br>
+ဒီကို ဘယ္လိုလာရမယ္ဆိုတာ..သူ႕ကို လမ္းညႊန္ခဲ့လား..<br><br>
+A: He told me he already knew how to get here. <br>
+သူဒီကို ဘယ္လိုလာရမွာ..သိျပီးျပီလို႕ငါ့ကိုေျပာတယ္..<br><br>
+B: You can never be too sure with him. <br>
+သူက သိပ္ျပီးေသခ်ာေျပာလို႕ရတာ မဟုတ္ဘူး..<br><br>
+A: Why is that?<br>
+ဘာလို႕လဲ..<br><br>
+B: Because he has a bad sense of direction and he always gets lost. <br>
+သူက ဘယ္လိုသြားရမွာ..သိပ္မမွတ္တတ္ဘူး..လမ္းအျမဲေပ်ာက္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

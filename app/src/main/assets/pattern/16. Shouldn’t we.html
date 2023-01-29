@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/016. Shouldn't we... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+should ဆိုတာ.အဂၤလိပ္စကားမွာ..တစ္ခုခုကို လုပ္သင့္တယ္လို႕..အၾကံေပးတဲ့အခါ..သံုးပါတယ္.။ ဒီလိုဆိုရင္...Shouldn’t we....ဆိုရင္ေတာ့...ငါတို႕မလုပ္သင့္ဘူးလား...အဓိပၸါယ္ရပါတယ္..<br><br>
+I. EXAMPLES: -နမူနာမ်ား..<br><br>
+
+ Shouldn’t we ask for permission first? <br>
+ ငါတို႕ပထမဆံုး..ခြင့္ျပဳခ်က္.မေတာင္းသင့္ဘူးလား..<br><br>
+ Shouldn’t we read the directions before we install the air conditioner? <br>
+ အဲယားကြန္းမတတ္ဆင္မွီ..ငါတို႕..ညႊန္ၾကားခ်က္ေတြ..မဖတ္သင့္ဘူးလား..<br><br>
+ Shouldn’t we check the weather before we go out? <br>
+ မျပင္မထြက္မီ..ငါတို႕...ရာသီဥတု..မစစ္ေဆးသင့္ဘူးလာ..<br><br>
+ Shouldn’t you try to save some money rather than spend it all? <br>
+ သံုးလိုက္တာထက္.ေငြနည္းနည္းစုဖို႕..ငါတို႕..မၾကိဳးစားသင့္ဘူးလား...<br><br>
+II. DIALOGUES: - စကားေျပာခန္း.<br><br>
+
+A: Are you ready to go to the beach? <br>
+မင္းကမ္းေျခသို႕..သြားဖို႕အဆင္သင့္ျဖစ္ျပီလား..<br><br>
+B: Wait. Shouldn’t we check the weather report before we leave? <br>
+ေနဦး။ ငါတို႕မထြက္ခြာမွီ..မိုးေလဝသ..အစီရင္ခံခ်က္..မစစ္ေဆးသင့္ဘူးလား..<br><br>
+A: No, it’s a beautiful day and the sun is out. <br>
+မလိုပါဘူး..သာယာေနပါတယ္..ျပီးေတာ့ ေနလည္းထြက္တယ္ေလ..<br><br>
+B: I heard on the news last night that there was a forecast for rain. <br>
+မေန႕က..မိုးရြာမယ္..ခန္႕မွန္းတာကို..ငါသတင္းမွာ ၾကားခဲ့တယ္..<br><br>
+A: You shouldn’t believe everything you hear on TV. <br>
+တီဗြီမွာ ၾကားသမွ်အကုန္လံုး မင္းမယံုသင့္ဘူးေလ...<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

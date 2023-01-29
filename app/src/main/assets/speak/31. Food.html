@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/31-FOOD - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you like to cook? <br>
+နင္ခ်က္ျပဳတ္ရတာ ႏွစ္သက္လား 
+Yes, I do. Cooking helps me feel relaxed after long hours working. <br>
+ဟုတ္ကဲ့-ႏွစ္သက္ပါတယ္။ အလုပ္ေတြနာရီၾကာၾကီးလုပ္ျပီးေနာက္..ခ်က္ျပဳတ္ျခင္းက ငါ့ကုိလန္းဆန္းေစတယ္..<br><br>
+Is there any kind of food you don’t like? <br>
+မင္းမၾကိဳက္တဲ့အစားစာမ်ိဳးစား ရွိလား <br><br>
+I don’t really like fried chicken, which is very high in fat. <br>
+အဝလြန္ေစတဲ့. ၾကက္ေၾကာ္ကို ငါတကယ္မၾကိဳက္ဘူး..
+Do you eat out or cook at home? <br>
+မင္းအျပင္မွာစားလား သို႕မဟုတ္ အိမ္မွာခ်က္လား <br><br>
+I usually cook at home, sometimes when I’m busy, I go out to eat. <br>
+ပံုမွန္အားျဖင့္ေတာ့..အိမ္မွာခ်က္တယ္..ဒါေပမဲ့တစ္ခါတစ္ေလ..အလုပ္မ်ားရင္..အျပင္ထြက္စားတယ္..<br><br>
+How often do you cook? <br>
+မင္းဘယ္ေလာက္ခ်က္ျပဳတ္သလဲ <br><br>
+Just when I have free time. My mom is often responsible for preparing meals. She’s the best cook ever. <br>
+ငါအားတဲ့အခါေလာက္ပါပဲ...အေမက အစားစာေတြျပင္ဆင္တဲ့ တာဝန္ကိုယူတာမ်ားတယ္။ သူမက အေတာ္ဆံုး ခ်က္ျပဳတ္သူတစ္ေယာက္ပဲ <br><br>
+What’s your favorite food? <br>
+မင္းရဲ႕ ..အႏွစ္သက္ဆံုး..အစားစာက ဘာလဲ <br><br>
+I’m addicted to sushi. I can eat sushi every day. <br>
+ငါက စုရွီကို စြဲေနတာ၊ စုရွီဆိုရင္..ေန႕တိုင္းစားႏိုင္တယ္..<br><br>
+Is it Western or Asian cuisine? <br>
+အဲ့ဒါက အာရွာသို႕မဟုတ္..အေနာက္အစားစာလား <br><br>
+It’s Asian cuisine. Sushi is derived from Japan. <br>
+ဒါက အာရွအစားစာ၊ စုရွီက ဂ်ပန္ကေန ဆင္းသက္လာတာ..<br><br>
+Is it easy to make your favorite food? <br>
+မင္းရဲ႕အႏွစ္သက္ဆံုးအစားစာကို ျပဳလုပ္ရတာ လြယ္ကူသလား <br><br>
+Yes, I guess. The recipe is quite simple. <br>
+ဟုတ္တယ္.ထင္တယ္...ခ်က္နည္းက ရိုးရွင္းပါတယ္..<br><br>
+What ingredients do you need to make that food? <br>
+အဲ့ဒီအစားစာကို လုပ္ဖို႕..ဘယ္ပစၥည္းေတြလိုသလဲ <br><br>
+I would need rice, eggs, meat, seafood, and vegetables. <br>
+ဆန္ရယ္..ၾကက္ဥရယ္..အသား..ပင္လယ္စာနဲ႕..အသီးရြက္ေတြလိုအပ္တယ္..<br><br>
+What do you think about fast food? <br>
+အသင့္စား အစားစာေတြကို မင္းဘယ္လိုထင္လဲ <br><br>
+I don’t really like fast food. It’s not healthy at all. <br>
+အသင့္စား အစားစာေတြကို ငါတကယ္မၾကိဳက္ဘူး။ က်မ္းမာေရးနဲ႕လံုးဝမကိုက္ညီဘူး <br><br>
+Would you say that you have a healthy diet? <br>
+မင္းဟာ က်မ္းမာေရးနဲ႕ညီစြာ စားေသာက္တယ္လို႕ ေျပာႏိုင္မလား <br><br>
+Yes, I would. I prefer eating vitamins, protein and less fat. <br>
+ေျပာႏိုင္ပါတယ္..ကၽြန္ေနာ္..ဗီတာမင္..အသားဓာတ္..ပါတဲ့ဟာေတြနဲ႕..အဆီဓာတ္နည္းတာေတြကိုစားတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

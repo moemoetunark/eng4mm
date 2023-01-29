@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/18-A TEACHER - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Who is your favorite teacher? <br>
+နင္ရဲ႕အႏွစ္သက္ဆံုးဆရာက ဘယ္သူလဲ <br><br>
+I like Mr. Tom the most, he is my English teacher. <br>
+Mr. Tom ကိုငါအႏွစ္သက္ဆံုးပဲ၊ သူကငါ့ရဲ႕အဂၤလိပ္စာဆရာေလ..<br><br>
+Is he a foreign teacher? <br>
+သူကႏိုင္ငံျခားကဆရာလား <br><br>
+Yes, he’s from the US. <br>
+ဟုတ္တယ္..သူကအေမရိက ကပဲ <br><br>
+What do you like about his lessons? <br>
+သူ႕သခၤန္းစာနဲ႕ပတ္သက္လို႕နင္ဘာကိုၾကိဳက္လဲ <br><br>
+I have fallen in love with his American accent and he always shows us something new about the world outside of textbooks. <br>
+ငါကသူ႕ရဲ႕အေမရိကန္ အသံကိုၾကိဳက္ေနတာ..ျပီးေတာ့...သူက ျပဌာန္းစာအုပ္မွာမပါတဲ့..ကမၻာၾကီးနဲ႕ပတ္သက္တဲ့အေၾကာင္းေတြကို အျမဲ ယူေဆာင္လာတယ္...<br><br>
+What’s he like? <br>
+သူ႕ရဲ႕ က ဘယ္လိုပံုစံလဲ   <br><br>
+He’s not only knowledgeable but also very friendly. He always treats us like friends, not students. <br>
+သူက ဗဟုသုတျပည့္စံုရံုတင္မက..ေဖာ္ေရႊမႈလည္းရွိတယ္။ သူကငါ့တို႕ကို ေက်ာင္းသားလိုမဟုတ္..သူငယ္ခ်င္းလိုအျမဲဆက္ဆံတာ..<br><br>
+What does he usually wear when coming to class? <br>
+အတန္းသို႕လာတဲ့အခါ..သူပံုမွန္ဘာကိုဝတ္ဆင္သလဲ <br><br>
+He usually wears a gray suit when he comes to class. <br>
+သူအတန္းလာခဲ့အခါ..မီးခိုေရာင္ဝတ္စံုကို ပံုမွန္အားျဖင့္ဝတ္တယ္..<br><br>
+Do you love his subject? <br>
+သူသင္တဲ့ဘာသာကို နင္ၾကိဳက္လား <br><br>
+Yes, I enjoy English a lot. <br>
+ဟုတ္တယ္..ငါက အဂၤလိပ္စာကိုအရမ္းႏွစ္သက္တာ..<br><br>
+Do students in your class like him? <br>
+အတန္းထဲကေက်ာင္းသားေတြေကါ..သူ႕ကိုၾကိဳက္ၾကလား <br><br>
+Yes, all of us admire him. <br>
+ဟုတ္တယ္..ငါတို႕အားလံုးသူ႕ကို ရိုေသၾကတယ္..<br><br>
+Do you want to be a teacher like him?<br>
+သူ႕လိုဆရာတစ္ေယာက္နင္ျဖစ္ခ်င္လား <br><br>
+No, although I like him, my dream is not to become a teacher. I would like to be a chef. <br>
+မျဖစ္ခ်င္ဘူး..ငါကသူ႕ကိုၾကိဳက္တယ္ဆိုေပမဲ့..ငါ့အိပ္မက္က..ဆရာတစ္ေယာက္ျဖစ္ဖို႕မဟုတ္ဘူး၊ ငါစားဖိုမွဴးျဖစ္ခ်င္တယ္..<br><br>
+Have you ever been punished by him? <br>
+နင္သူ႕ရဲ႕အျပစ္ေပးတာကို ခံဖူးလား <br><br>
+No, he rarely punishes anyone. <br>
+မခံဖူးပါဘူး၊ သူကဘယ္သူ႕ကိုမဆို..မျပစ္ေပးတာ အရမ္းနည္းတယ္..<br><br>
+Do you want to see him again? <br>
+နင္သူ႕ကိုတစ္ဖန္ေတြ႕ခ်င္လား <br><br>
+Of course, he’s a great mentor. <br>
+ဟုတ္တာေပါ့...သူကဆရာေကါင္းတစ္ေယာက္ျဖစ္တယ္..<br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

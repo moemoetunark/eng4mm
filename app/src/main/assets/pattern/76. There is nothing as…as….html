@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/076. There is nothing as...as... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+There is nothing as adj as.......ကဲ့သို႕.........ဘာမွမရွိဘူး <br><br>
+ဒီ pattern ေလးကိုေတာ့..တစ္စံုတစ္ခုေလာက္..ကဲ့သို႕..အေရးၾကီးတာ..တန္ဖိုးရွိတာ..မရွိဘူးဆိုတဲ့ အဓိပၸါယ္ျဖစ္ပါတယ္..<br>
+ဥပမာ...ေမတၱာတရားကဲ့သို႕..ေအးခ်မ္းတာ..ဘာမွမရွိဘူး...စသည္ျဖင့္ျဖစ္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာဝါက်မ်ား..<br><br>
+ There is nothing as exciting as meeting an old friend unexpectedly. <br>
+ မိတ္ေဆြေဟာင္းကို..မထင္မွတ္ပဲေတြ႕တာေလာက္..စိတ္ဝင္စားစရာေကါင္းတာ..ဘာမွမရွိဘူး..<br><br>
+ For me, there is nothing as enjoyable as reading a novel on the grass. <br>
+ ငါ့အတြက္ေတာ့..ျမက္ျခင္းေပၚမွာ..ဝတၳဳဖတ္တာေလာက္..ေပ်ာ္စရာေကါင္းတာ..ဘာမွမရွိဘူး..<br><br>
+ There is nothing as pleasant as spending a weekend in the countryside. <br>
+ အားရက္ေတြကို..ေက်းလက္ေဒသမွာ..ကုန္းဆံုးတာေလာက္..ေပ်ာ္စရာေကါင္းတာ..ဘာမွမရွိဘူး..<br><br>
+ There is nothing as refreshing as having a good rest. <br>
+ အနားေကါင္းေကါင္းယူတာေလာက္...လန္းဆန္းေစတာ..ဘာမွမရွိဘူး..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+A: Do you cook for yourself? <br>
+မင္းကုိယ့္ဟာကိုယ္..ခ်က္စားလား..<br><br>
+B: Yes, I do, but it’s not the same as what my mother makes. <br>
+ဟုတ္တယ္..ဒါေပမဲ့ ငါ့အေမခ်က္ေပးတာနဲ႕ေတာ့..မတူဘူးေပါ့..<br><br>
+A: I know what you mean. There’s nothing as good as home cooking. <br>
+မင္းဆိုလိုတာ..ငါသိပါတယ္..။ အိမ္မွာခ်က္တာေလာက္.ေကါင္းတာ...မရွိပါဘူး..<br><br>
+B: My mom’s given me some recipes, but when I make them they don’t come out the same as when she cooks. <br>
+အေမက ငါ့ကို..ခ်က္နည္းတစ္ခ်ိဳ႕ေတာ့ေပးတယ္..ဒါေပမဲ့.ငါအဲ့ဒီနည္းေတြလုပ္တဲ့အခါ..အေမခ်က္တာနဲ႕တူတူ..မျဖစ္ဘူး..<br><br>
+A: Maybe you should just ask her to cook for you. <br>
+မင္းသူမကိုပဲ..ခ်က္ခိုင္းသင့္တယ္..<br><br>
+B: No, I’d rather try and learn myself. <br>
+ႏိုး..ငါ့ဘာသာၾကိဳးစားျပီး သင္ယူခ်င္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

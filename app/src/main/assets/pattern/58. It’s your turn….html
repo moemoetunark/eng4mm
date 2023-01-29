@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/058. It’s your turn... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+It's your turn.....မင္းအလွည့္ပဲ...<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ It’s your turn to tell a story. <br>
+ ပံုျပင္ေျပာဖို႕..မင္းအလွည့္ေရာက္ျပီ...<br><br>
+ It’s your turn to cook. <br>
+ ခ်က္ျပဳတ္ဖို႕မင္းအလွည့္ေရာက္ျပီ..<br><br>
+ It’s your turn to sweep the floor. <br>
+ တံျမက္စည္းလွည္းဖို႕..မင္းအလွည့္က်ျပီး...<br><br>
+ It’s your turn to give a presentation. <br>
+ presentation လုပ္ဖို႕မင္းအလွည့္က်ျပီ..<br><br>
+ It’s your turn to perform. <br>
+ မင္းေဆာင္ရြက္ဖို႕အလွည့္ေရာက္ျပီ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: I have been washing the dishes for over a week now. <br>
+ငါ ဟင္းခြက္ေတြေဆးေနတာ...တစ္ပတ္ေက်ာ္ျပီ...<br><br>
+B: Well, I think you are very good at doing the dishes, so maybe you should do them for another week. <br>
+မင္းက ဟင္းခြက္ေတြေဆးတာ ေတာ္တယ္လို႕ငါထင္တယ္..ဒါေၾကာင့္ ေနာက္တစ္ပတ္ေလာက္ မင္းလုပ္သင့္တယ္..<br><br>
+A: No, we made an agreement that we would take turns doing the dishes. Now it’s your turn to do them. <br>
+မဟုတ္ဘူး...ဟင္းခြက္ေတြေဆးတာ ငါတို႕အလွည့္က်လုပ္မယ္လို႕..သေဘာတူထားၾကတယ္.။ အခုမင္းလုပ္ရမယ့္အလွည့္ေရာက္ျပီ..<br><br>
+B: OK, I’ll do them. But I’ll warn you I don’t think I can do them as well as you. <br>
+အိုေက..ငါလုပ္မယ္.။ ဒါေပမဲ့..မင္းေလာက္ေကါင္းေကါင္း ငါဒီဟာကို လုပ္ႏိုင္မယ္လို႕မထင္လို္က္..သတိေပးလိုက္မယ္..<br><br>
+A: That’s OK. I’ll give you plenty of chances to practice until you get really good at it. <br>
+ရပါတယ္..။ မင္းအဲ့ဒါေကါင္းေကါင္းလုပ္ႏုိုင္တဲ့အထိ..ငါမင္းကို မခြင့္ေရးေတြ ေပးမယ္..<br><br>
+B: I knew you would say something like that. <br>
+အဲ့လိုဟာမ်ိဳးပဲ မင္းေျပာမယ္ဆိုတာ..ငါသိပါတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

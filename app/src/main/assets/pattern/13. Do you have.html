@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/013. Do you have... available - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+<b> available - ရႏိုင္ေသးေသာ၊ရွိေသးတယ္၊အဆင္သင့္ရွိေနတယ္..စသည့္အဓိပၸါယ္မ်ားထြက္ပါတယ္...</br><br><br>
+I. EXAMPLES:- နမူနာမ်ား <br><br>
+
+ Do you have any single rooms available? <br>
+ တစ္ေယာက္အိပ္ခန္း..ရႏိုင္ေသးလား..             <br><br>
+ Do you have any tickets available? <br>
+ လက္မွတ္ေတြ ရႏိုင္ေသးလား..<br><br>
+ Do you have any shoes in size 20 available? <br>
+ နံပါတ္ ၂၀ ရႈိးဖိနပ္ေတြ ရႏိုင္ေသးလား၊ရွိလား၊
+II. DIALOGUES: -စကားေျပာခန္း  <br><br>
+
+Store Owner: Hello, can I help you?<br>
+ဆိုင္ပုိင္ရွင္ :    ဟလို..ကၽြန္ေနာ္ ကူညီေပးရမလား...<br><br>
+Customer: Yes, I’m looking to buy a leather jacket.<br>
+ေဖာက္သည္: ဟုတ္ကဲ့..ကၽြန္ေနာ္..သားေရ..ဂ်ာကင္တစ္လံုးရွာေနတာ..<br><br>
+Store Owner: What kind of leather jacket are you interested in?<br>
+ဆိုင္ပုိင္ရွင္ : ဘယ္လို သားေရ..ဂ်ာကင္ကုိ မင္းစိတ္ဝင္စားလဲ <br><br>
+Customer: I was wondering, do you have any black leather jackets available?<br>
+ေဖာက္သည္ : အနက္ေရာင္..သားေရ..ဂ်ာကင္တစ္လံုး ရႏိုင္လား..<br><br>
+Store Owner: Sure we do. Why don’t you sit down and I’ll get you some to try on.<br>
+ဆိုင္ပုိင္ရွင္ : ဟုတ္ကဲ့။ ရွိပါတယ္။ ထိုင္ပါလား...ကၽြန္ေနာ္..အစမ္းဝတ္ၾကည့္ဖို႕..တစ္ခ်ိဳ႕ယူလိုက္မယ္..<br><br>
+Customer: OK. Thanks. <br>
+ေဖာက္သည္: အိုေက။ ေက်းဇူး။ <br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

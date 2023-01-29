@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/6-ACCIDENT - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Have you ever been in any traffic accident? <br>
+ကားလမ္းေပၚနင္ မေတာ္တစ္ဆမႈျဖစ္ဖူးလား <br><br>
+Yes, three years ago.<br>
+ဟုတ္တယ္..လြန္ခဲ့တဲ့ သံုးႏွစ္က <br><br>
+What happened? <br>
+ဘာေတြျဖစ္ခဲ့တာလဲ <br><br>
+I was hit by a car while crossing the road. <br>
+လမ္းကိုျဖတ္ကူးေနတုန္း..ငါ့ကိုကားတစ္စီးကတိုက္တာ..<br><br>
+How did you feel then? <br>
+ဘယ္လိုခံစားလိုက္ရလဲ <br><br>
+I felt really terrible because of my injuries.<br>
+ငါ့ဒဏ္ရာေၾကာင့္..ငါအရမ္းေၾကာက္သြားတယ္..<br><br>
+Who was involved in the accident? <br>
+မေတာ္တစ္ဆမႈမွာ ဘယ္သူေတြပါလဲ <br><br>
+The car driver, his family (inside the car), and me. <br>
+ကားေမာင္းတဲ့သူ...သူ႕မိသားစု..ျပီးေတာ့ငါေပါ့..<br><br>
+Did the insurance company pay for repair service? <br>
+အာမခံကုမၸဏီက ျပန္ျပင္ဖို႕ေလ်ာ္ေၾကးေပးလား <br><br>
+I was walking so I did not require any car repair services. <br>
+ငါကလမ္းေလွ်ာက္ေနတာေလ..ဒါေၾကာင့္ ဘာျပန္ျပင္မႈမွ မလိုအပ္ပဘူး <br><br>
+Did you need a lawyer? <br>
+ေရွ႕ေနေကါ..လိုအပ္ခဲ့လား <br><br>
+I hurt my lower back just a little, so I didn’t call a lawyer. <br>
+ငါ့ေက်ာကုန္းေအာက္ပိုင္းနည္းနည္းနာသြားတာ..ဒါေၾကာင့္ ေရွ႕ေနမေခၚလိုက္ဘူး <br><br>
+Did you report the issue to the police? <br>
+အျဖစ္ပ်က္ကို ရဲတိုင္လိုက္လား <br><br>
+No, we didn’t want to get the police involved. <br>
+မတိုင္ဘူး..ရဲပါဝင္လာဖို႕..ငါတို႕အလိုမရွိခဲ့ဘူး <br><br>
+Were you sent to the hospital after the accident? <br>
+မေတာ္တဆမႈျပီးေနာက္..ေဆးရံုတင္လုိက္ရလား..<br><br>
+No, the injury wasn’t really serious. <br>
+မတင္လိုက္ရဘူး..ဒဏ္ရာက သိပ္မျပင္းထန္ဘူး <br><br>
+Do you have a driving license? <br>
+နင့္မွာ ကားေမာင္းလုိင္စင္ ရွိလား <br><br>
+Yes, I do. I always keep it in my purse. <br>
+ဟုတ္ကဲ့ရွတယ္..ငါ့ပိုက္ဆံအိတ္ထဲ အျမဲထည့္ထားတယ္..<br><br>
+Why should people obey traffic regulations? <br>
+လမ္းစည္းကမ္းေတြကို..လူေတြဘာလို႕လို္က္နာသင့္လဲ <br><br>
+To protect themselves and others. The best ways are to wear a helmet, wait for traffic lights and stay in the appropriate vehicle/pedestrian lanes. <br>
+သူတို႕ကိုယ္တိုင္နဲ႕ တစ္ျခားသူေတြကို ကာကြယ္ဖို႕ေပါ့..။အေကါင္းဆံုးနည္းေတြကေတာ့ ဦးထုပ္ေဆာင္းတာ..မီးအခ်က္ျပတာကိုေစာင့္တာ..နဲ႕..ကားရပ္သင့္တဲ့ေနရာမွာ..ေနတာေတြေပါ့ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

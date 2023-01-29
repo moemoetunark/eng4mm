@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/071. Speaking of... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Speaking of ......ေျပာမယ္ဆိုရင္/ ေျပာရမယ္ဆိုရင္...<br><br>
+I. EXAMPLES:- ဥပမာ ဝါက်မ်ား..<br><br>
+
+ Speaking of the movies, have you seen “The Patriot”? <br>
+ ရုပ္ရွင္အေၾကာင္းေျပာရမယ္ဆို...မင္း " The Patriot" ကားကိုၾကည့္ျပီးျပီလား..<br><br>
+ Speaking of honesty, I know a lot of people who don’t pay bus fares. <br>
+ ရိုးသားတဲ့အေၾကာင္းေျပာရရင္...ဘတ္စ္ကားဖိုးမေပးတဲ့လူေတြ ငါအမ်ားၾကီးသိတယ္..<br><br>
+ Speaking of Ben, have you seen him recently? <br>
+ ဘန္အေၾကာင္းေျပာရရင္..မင္းသူ႕ကိုေလာေလာဆယ္..ေတြ႕ျပီးျပီလား..<br><br>
+ Speaking of bicycles, China is called “the kingdom of bicycles”. <br>
+ စက္ဘီးအေၾကာင္းေျပာရရင္..တရုတ္ႏိုင္ငံကို..စက္ဘီးႏိုင္ငံလို႕ေခၚၾကတယ္..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: I can’t wait until Valentine’s Day. <br>
+ခ်စ္သူမ်ားေန႕ထိ ငါမေစာင့္ႏုိင္ေတာ့ဘူး..<br><br>
+B: Speaking of Valentine’s Day, how is your girlfriend? <br>
+ခ်စ္သူမ်ားေန႕အေၾကာင္းေျပာရရင္..မင္းရည္းစား ဘယ္လုိလဲ..<br><br>
+A: She’s doing well. I took her out to dinner last night. <br>
+သူမေနေကါင္းပါတယ္..။ မေန႕ညကပဲ ငါသူမကို..ညေနစာ..လိုက္ေကၽြးတယ္..<br><br>
+B: Did you have a good time? <br>
+ေပ်ာ္စရာအခ်ိန္ေတြ ရွိခဲ့ၾကလား..<br><br>
+A: Yeah, the food was delicious. <br>
+ဟုတ္တယ္..အစားစာေတြက အရမ္းအရသာရွိတယ္..<br><br>
+B: Hey, speaking of food, are you hungry? Let’s grab a bite to eat. <br>
+အစားစာေၾကာင္းေျပာရရင္..မင္းအခု ဗိုက္ဆာေနျပီလား..။ တစ္ခုခုသြားစားၾကမယ္ေလ...<br><br>
+A: That sounds great. Let’s get some Chinese food. <br>
+ေကါင္းျပီေလ...တရုတ္အစားစား သြားစားၾကမယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

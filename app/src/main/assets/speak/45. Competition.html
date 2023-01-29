@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/45-CompetitionContest - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is the most impressive competition you’ve entered? <br>
+မင္းဝင္ျပိဳင္ဖူးတဲ့..အထင္ၾကီးေလးစားစရာအေကါင္းဆံုး ျပိုင္ပြဲကဘာလဲ <br><br>
+I took part in an eloquence competition, organized by my university last year. <br>
+မႏွစ္က တကၠသုိလ္က စီစဥ္က်င့္ပတဲ့ စကားေျပာ ျပိဳင္ပြဲမွာ ပါဖူးတယ္.<br><br>
+What was it about? <br>
+ဘယ္အေၾကာင္းရာလဲ <br><br>
+The competition was to find out the best public speaker in the university. <br>
+ျပိဳင္ပြဲ႕ကေတာ့..တကၠသုိလ္က အေကါင္းဆံုး အမ်ားျပည္သူေရွ႕စကားေျပာႏုိင္သူကို ရွာေဖြဖို႕ပဲ..<br><br>
+Were there many participants in the competition? <br>
+ျပိဳင္ပြဲမွာ ပါဝင္သူေတြ အမ်ားၾကီးပဲ လား<br><br>
+Yes, there were around 500 participants totally. <br>
+ဟုတ္တယ္..အားလံုး ငါးရာခန္႕ေလာက္ရွိတယ္..<br><br>
+What prize did you get? <br>
+မင္းဘာဆုရခဲ့လဲ <br><br>
+Well, I didn’t get a very high prize, but it didn’t matter, I was still happy with the result. <br>
+အင္း..ငါကေတာ့..အျမင့္ဆုကုိေတာ့ မရပါဘူး..ဒါေပမဲ့ အဲ့ဒါက အေရးမၾကီးပါဘူး။ ရလာဒ္ကုိေတာ့..ေက်နပ္တုန္းပဲ <br><br>
+What could you learn from the competition? <br>
+ျပိဳင္ပြဲကေန မင္းဘာေတြ သင္ယူႏိုင္သလဲ <br><br>
+I learned the way to develop ideas for a speech beside some body language tips in public speaking. <br>
+အမ်ားျပည္သူေရွ႕စကားေျပာတဲ့့အခါ..ကိုယ္ဟန္လက္ဟန္.အၾကံျပဳမႈေတြအျပင္..စကားေျပာဖို႕အတြက္..အေတြးေခၚတစ္ခုကို ဘယ္လို.တိုးတက္ေအာင္ လုပ္ရမလဲဆိုတာကို သင္ယူခဲ့တယ္..<br><br>
+Did you have to prepare a lot for the competition? <br>
+ျပိဳင္ပြဲအတြက္ အရမ္းျပင္ဆင္ခဲ့ရလား <br><br>
+Yes, I did. I read various materials about eloquence, as well as rehearsed a lot. <br>
+ဟုတ္တယ္..စကားေျပာပံုအခ်က္လက္ေတြကို ေတာ္ေတာ္ဖတ္ခဲ့တယ္.ျပီးေတာ့ သုေတသနလည္းလုပ္ခဲ့တယ္..<br><br>
+How did you know about the competition? <br>
+ျပိဳင္ပြဲကို မင္းဘယ္လိုသိတာလဲ <br><br>
+The competition was informed in the school poster. <br>
+ျပိဳင္ပြဲကို ေက်ာင္းမွာ ပိုစတာနဲ႕ အသိေပးတယ္..<br><br>
+Did you do your best then? <br>
+မင္းအေကါင္းဆံုးလုပ္ႏိုင္ခဲ့ရဲ႕လား <br><br>
+Yes, I think so. After the competition, I know I have to try more. <br>
+လုပ္ႏိုင္ခဲ့တယ္..ထင္ပါတယ္..ျပိဳင္ပြဲျပီးေတာ့..ငါပိုျပီးၾကိဳးစားရဦးမွာ သိလာတယ္..<br><br>
+Is the competition useful, in your opinion? <br>
+မင္းအထင္အရ...ျပိဳင္ပြဲဟာ..အသံုးဝင္ရဲ႕လား <br><br>
+Sure. It helps students learn soft skills as well as become more confident in life. <br>
+ဝင္တာေပါ့..အႏုစားစြမ္းရည္ေတြကိုသင္ဖို႕အေထာက္ကူျဖစ္သလို..ဘဝမွာပိုျပီး..ယံုၾကည္မႈတိုးလာတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

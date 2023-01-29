@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/078. We'd be better off without... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+We'd better off without .........မရွိရင္..ပိုေကါင္းမယ္.<br><br>
+ရွိတာထက္..မရွိတာက..ပိုေကါင္းမယ္..ဆိုတဲ့အဓိပၸါယ္နဲ႕သံုးႏိုင္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာ ဝါက်မ်ား..<br><br>
+ We’d be better off without them as neighbors. <br>
+ သူတို႕ကို..အိမ္နီးခ်င္းအျဖစ္...မရွိတာပဲ..ပိုေကါင္းပါတယ္..<br><br>
+ We’d be better off without him at the party. <br>
+ ပါတီပြဲမွာ..သူမရွိတာ..ပိုေကါင္းပါတယ္..<br><br>
+ They’d be better off without their wives around them. <br>
+ သူတို႕မိန္းမေတြ..သူတို႕နားမပါတာ..ပိုေကါင္းတယ္..<br><br>
+ I’d be better off without the incident on my mind. <br>
+ အဲ့ဒီျဖစ္ဖ်က္..ငါ့စိတ္ထဲ..မထားတာပဲ ပိုေကါင္းပါတယ္..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+A: Our new dog has been howling all night long. <br>
+ငါတို႕ေခြးအသစ္က..တစ္ညလံုးေဟာင္ေနတာပဲ..<br><br>
+B: I know. It’s really getting on my nerves. <br>
+သိတယ္..ငါအရမ္းစိတ္ပ်က္ေနတာ..<br><br>
+A: We should have gotten a quieter pet, like a fish. <br>
+ငါးလို..ျငိမ္ျငိမ္ေလးေနတဲ့.အိမ္ေမြးတိရစၦာန္ပဲ..ငါတို႕ထားသင့္တာ..<br><br>
+B: I agree. I think we’d  be better off without a dog. <br>
+သေဘာတူတယ္..။ ေခြးမရွိတာပဲ..ပိုေကါင္းတယ္..လို႕ငါထင္တယ္..<br><br>
+A: So what are we going to do? <br>
+ဒါဆို..မင္းဘာလုပ္မွာလဲ..<br><br>
+B: I guess we’ll have to bring it back to the animal shelter. <br>
+ေခြးေစာင့္ေရွာက္ေရး..ေဂဟာသို႕..ငါတို႕ျပန္ပို႕သင္တယ္..ထင္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

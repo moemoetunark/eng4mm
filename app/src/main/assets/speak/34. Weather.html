@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/34-WEATHER - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What’s the weather like in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ ရာသီဥတုက ဘယ္လိုလဲ <br><br>
+Well, there are 4 seasons: Spring, Summer, Fall, and Winter, which vary considerably in characteristics. <br>
+ေႏြဦးရာသီ၊ေႏြရာသီ၊ေဆာင္းဦးရာသီ၊ေဆာင္းရာသီဆိုျပီး ရာသီေလးမ်ိဳးရွိတယ္..တစ္ခုခ်င္းစီက ကြဲျပားတယ္..ာသီ ေလးမ်ိဳးရွိတယ္..ေႏ
+What kind of weather do you like? <br>
+ဘယ္ရာသီဥတုမ်ိဳးကို မင္းႏွစ္သက္သလဲ <br><br>
+I enjoy hot weather. There are more things to do when it’s sunny. I love swimming and sunbathing. <br>
+ပူတဲ့ရာသုဥတုကို ငါၾကိဳက္တယ္။ ေနသာေတာ့ လုပ္စရာေတြ အမ်ားၾကီးေပ့ါ။ ေနဆာလႈံတာ..ေရကူးတာကို ငါသေဘာက်တယ္<br><br>
+What months have the best weather in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ..ဘယ္လမွာ..ရာသီဥတု အေကါင္းဆံုးလဲ <br><br>
+I believe it depends. For me, the best weather is from June to August when it’s warm across the country. <br>
+ဒါက လူအေပၚမူတည္မယ္လို႕ငါယံုၾကည္တယ္။ ငါ့အတြက္ေတာ့.တစ္ႏိုင္ငံလံုးမွာေႏြးတဲ့အခ်ိန္ျဖစ္တဲ့  ဇြန္လကေန..ၾသဂုတ္လအထိ..ဟာ အေကါင္းဆံုးအခ်ိန္ပဲ <br><br>
+Do you like it when it rains? <br>
+မိုးရြာတဲ့အခ်ိန္ကို မင္းႏွစ္သက္လား <br><br>
+Not at all. I hate raining. <br>
+မၾကိဳက္ဘူး၊ မိုးရြာတာ မုန္းတယ္.<br><br>
+How does the weather affect your feelings? <br>
+မင္းရဲ႕ခံစားမႈ္ေတြကို ရာသီဥတုက ဘယ္လိုအက်ိဳးသက္ေရာက္မႈရွိလဲ <br><br>
+I usually have a bad mood when it rains. The rain reminds me of sad memories. <br>
+မိုးရြာတဲ့အခ်ိန္ဆို..ငါခံစားခ်က္မေကါင္းဘူး။ မိုးရြာတာက..ဝမ္းနည္းစရာေကါင္းတဲ့ အရာေတြကို သတိရေစတယ္..<br><br>
+How has the weather changed recently? <br>
+ေလာေလာဆယ္ရာသီဥတု ဘယ္လိုေျပာင္းသြားသလဲ <br><br>
+Due to global warming, the weather has become more and more unpredictable. It’s boiling hot in summer and freezing cold on winter days. <br>
+ကမၻာၾကီးက ပူေႏြးလာေတာ့..ရာသီဥတုက ပိုပိုျပီးခက္မွန္းရခက္လာတယ္..။ေႏြရာသီမွာ အပူလြန္ျပီၚ။ေဆာင္းရက္ေတြမွာလည္း အေအးလြန္တယ္။ <br><br>
+Do you usually watch the weather forecast? <br>
+ရာသီဥတု ခန္႕မွန္းခ်က္ကို မင္းပံုမွန္ၾကည့္လား <br><br>
+No, not very often. <br>
+သိပ္မၾကည့္ျဖစ္ပါဘူး <br><br>
+What’s your favorite season? Why? <br>
+မင္းရဲ႕အၾကိဳက္ဆံုးရာသီက ဘာလဲ..ဘာလို႕လဲ <br><br>
+Let’s see. I love spring when trees and flowers blossom. <br>
+ဟုတ္ျပီ...သစ္ပင္နဲ႕..ပန္းပြင့္ေတြ..ပြင့္လန္းတဲ့ေႏြဦးရာသီကို ႏွစ္သက္တယ္..<br><br>
+What do you like to do when it’s windy? <br>
+ေလတိုက္တဲ့အခါ မင္းဘာလုပ္ခ်င္သလဲ <br><br>
+When it’s windy, I like flying a kite with my friends. That’s interesting. <br>
+ေလတုိက္တဲ့အခါ..သူငယ္ခ်င္းေတြနဲ႕ စြန္လႊတ္ရတာကိုၾကိဳက္တယ္..စိတ္ဝင္စားစရာပဲ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

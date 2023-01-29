@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/069. On one hand...on the other hand... - Basic English Spea.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+-> use this expression when you are speaking about two different facts or two opposite ways of thinking about a situation. <br>
+မတူတဲ့အေျခေနႏွစ္ခုကို..ႏွိင္းယွန္ျပရန္..ဒီ pattern ေလးကိုသံုးပါတယ္..ဥပမာ...တစ္ဖက္မွာက..ဒီလို..တစ္ျခားတစ္ဖက္မွာက..ဟိုလို..စတဲ့အဓိပၸါယ္ျဖစ္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+
+ On one hand, it’s convenient, but on the other hand, it’s time-consuming. <br>
+ တစ္ဖက္မွာက..သက္ေတာင့္သက္သာရွိတယ္..ဒါေပမဲ့တစ္ျခားတစ္ဖက္မွာက..အကုန္ေတာ္ေတာ္ကုန္တယ္..<br><br>
+ On one hand, he is very obedient to his wife; on the other hand, he treats his parents badly. <br>
+ တစ္ဖက္မွာ..သူက သူ႕မိန္းမစကားအရမ္းနားေထာင္တယ္..တစ္ျခားတစ္ဖက္မွာ..သူ႕မိဘေတြကို..ဆိုးရြားစြာဆက္ဆံတယ္..<br><br>
+ On one hand,  Jason does everything in the  office;  on the other hand,  he does nothing at home. <br>
+ တစ္ဖက္မွာက..သူရံုးမွာဆို.အကုန္လုပ္တယ္..တစ္ျခားတစ္ဖက္မွာ..သူ႕အိမ္မွာ..သူဘာမွမလုပ္ဘူး..<br><br>
+ As a teacher, he is very patient in class; but on the other hand, he is not so patient with his own child. <br>
+ ဆရာတစ္ေယာက္အေနျဖင့္...သူကအရမ္းသည္းခံတတ္တယ္..တစ္ျခားတစ္ဖက္မွာ..သူ႕သားသမီးေတြဆို..သူကသိပ္သည္းမခံတတ္ဘူး..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: What do you think of Shakespeare? <br>
+ရွိတ္စပီးယားကို ဘယ္လိုသေဘာရလဲ..<br><br>
+B:  On one hand his plays are very interesting to watch but on the other hand they are hard to read. <br>
+တစ္ဖက္မွာက..သူ႕ျပဇာတ္ေတြၾကည့္ရတာ..စိတ္ဝင္စားစရာ.တစ္ျခားတစ္ဖက္မွာ ဖတ္ရတာေတာ့ခက္တယ္..<br><br>
+A: I feel the same way sometimes. <br>
+တစ္ခါတစ္ေလ..ငါလည္းတူတူပဲခံစားဂတယ္..<br><br>
+B: So what do you do? <br>
+အာ့ဆို မင္းဘာလုပ္လဲ..<br><br>
+A: I just try to catch the general meaning of each sentence. <br>
+ဝါက်တစ္ခုခ်င္းစီရင္..ေယဘုယ်အဓိပၸါယ္ကိုနားလည္ေအာင္ ၾကိဳးစားတယ္..<br><br>
+B: That sounds like a good idea. <br>
+အၾကံေကါင္းပဲ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

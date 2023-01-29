@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/55-Politician - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Who is your favorite politician? <br>
+မင္းအၾကိုက္ဆံုး ႏိုင္ငံေရးသမားက ဘယ္သူလဲ <br><br>
+She’s Hillary Diane Rodham Clinton, an American politician. <br>
+သူမကေတာ့..ဟင္လာရီ..ဒိုင္ယာနီ..ရိုဟန္..ကလင္တန္ေပါ့..အေမရိကန္..ႏိုင္ငံေရးသမားတစ္ေယာက္ပဲ <br><br>
+Where is she from? <br>
+သူမက ဘယ္ကလဲ <br><br>
+She comes from the USA. <br>
+သူမ အေမရိကန္ကေလ..<br><br>
+Does she appear on TV? <br>
+သူမ TV မွာေကါ လာသလား <br><br>
+Yes, quite often. She usually shows up on TV in news programs. <br>
+ဟုတ္ကဲ့..မၾကာခဏကိုလာတာ။ သတင္းအစီးစဥ္ေတြမွာ သူမ ပံုမွန္လာတာ..<br><br>
+What is appealing about her? <br>
+သူမနဲ႕ပတ္သက္ရင္..ဘယ္ဟာက စိတ္ဝင္စားစရာ ေကါင္းတာလဲ
+She’s a democratic politician. <br>
+သူမက ဒီမိုကေရစီ..ႏိုင္ငံေရးသမားေလ..<br><br>
+Is she famous? <br>
+သူမ နာမည္ေက်ာ္လား <br><br>
+Yes, she’s well-known all over the world. <br>
+ဟုတ္တယ္..သူမ တစ္ကမၻာလံုးမွာ သိၾကတယ္..<br><br>
+Does she have a great influence on people? <br>
+သူမက လူေတြအေပၚ အမ်ားၾကီး ၾသဇာလႊမ္းမိုးမႈရွိလား <br><br>
+Yes. I think so. She fights for humans rights. She has a very controversial and influential speech that ‘human rights are women’s rights and women’s rights are human rights.’<br>
+ငါ အဲ့လိုထင္တယ္.။ သူမလူ႕အခြင့္ေရးအတြက္ တိုက္ပြဲဝင္တယ္။ မိန္းမေတြရဲ႕အခြင့္ေရးဟာလူ႕အခြင့္ေရးျဖစ္သလို..လူ႕အခြင့္ေရးဆိုတာလည္း..မိန္းမအခြင့္ေရးျဖစ္တယ္ဆိုတဲ့..အျငင္းပြားစရာလည္းျဖစ္..ၾသဇာလည္းၾကီးတဲ့..ေျပာၾကားခ်က္ေတြ....ရွိတာေပါ့..<br>
+Do you want to be like her? <br>
+နင္ သူမလိုျဖစ္ခ်င္လား <br><br>
+Being a politician has never been my dream, actually. <br>
+တကယ္က..ႏိုင္ငံေရးသမားတစ္ေယာက္ျဖစ္ဖို႕ဟာ ငါ့အိပ္မက္ မဟုတ္ပါဘူး <br><br>
+Why do you admire her? <br>
+နင္သူမကို ဘာလို႕ ေလးစားတာလဲ <br>
+She’s one of the few women who succeed in politics. <br>
+သူမက ႏိုင္ငံေရးမွာ ေအာင္ျမင္တဲ့ မိန္းမအနည္းငယ္ထဲက တစ္ေယာက္ေလ <br><br>
+What did she do that you can tell others? <br>
+သူမ်ားေတြကို ေျပာျပႏုိင္တဲ့အရာတစ္ခု သူမဘာလုပ္ခဲ့သလဲ <br><br>
+Oh, a lot of things. She cares for people’s health. She also tackles the issues of adoption and family safety. <br>
+မ်ားစြာပဲ။ သူမဟာလူေတြရဲ႕က်န္းမာေရးကိုလည္း..ဂရုစိုက္တယ္။ ေမြးစားမႈနဲ႕...မိသားစု လံုျခံဳေရးျပသနာကိုလည္း သူမေျဖရွင္းလိုက္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

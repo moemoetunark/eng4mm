@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/11-NEWSPAPER MAGAZINE - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What are the benefits of reading a newspaper/magazine? <br>
+သတင္းစာ/မဂၢဇင္းေတြကိုဖတ္တဲ့အက်ိဳးေက်းဇူးေတြက ဘာေတြလဲ <br><br>
+Newspapers/magazines can broaden your mind about thousands of things without the need to travel.<br>
+သတင္းစာ/မဂၢဇင္းေတြကိုဖတ္ျခင္းက သြားစရာမလိုအပ္ပဲ..ေထာင္ေပါင္းမ်ားစြာေသာအရာဝတၳဳေတြနဲ႕ပတ္သက္ျပီးသင့္ရဲ႕အသိဥဏ္ကို က်ယ္ျပန္ေစတယ္<br><br>
+How often do you read it? <br>
+မင္းဘယ္ေလာက္ဖတ္ျဖစ္လဲ <br><br>
+I read it every day. <br>
+ေန႕တိုင္းဖတ္ျဖစ္တယ္..<br><br>
+What’s the best time to read the newspaper? <br>
+သတင္းစာကိုဖတ္ဖို႕အေကါင္းဆံုးအခ်ိန္က ဘာလဲ <br><br>
+I think the best time is in the morning when you start a new day. <br>
+ေန႕သစ္တစ္ခုကိုစတဲ့မနက္ခင္းအခ်ိန္က အေကါင္းဆံုးလို႕ငါထင္တယ္..<br><br>
+What types of magazines do you usually read? <br>
+ဘယ္မဂၢဇင္းမ်ိဳးစားကိုမင္းဖတ္သလဲ <br><br>
+I usually read politics and fashion magazines. I also enjoy reading about culture and tourism. <br>
+ႏိုင္ငံေရးနဲ႕..ဖက္ရွင္ မဂၢဇင္းေတြကို ပံုမွန္ဖတ္ျဖစ္တယ္။ ခရီးသြားျခင္းနဲ႕ယာဥ္ေက်းမႈအေၾကာင္းေတြကိုဖတ္ရတာကိုလည္း ႏွစ္သက္တယ္..<br><br>
+What’s your favorite magazine? <br>
+မင္းရဲ႕အႏွစ္သက္ဆံုး မဂၢဇင္းကဘာလဲ <br><br>
+My favorite is The New York Times, which writes about all sorts of things: business, sports, movies, travel, books, jobs, education, and real estate. <br>
+စီးပြားေရး၊အားကစား၊ရုပ္ရွင္၊ခရီးသြားျခင္း၊စာအုပ္၊ပညာေရးႏွင့္ အိမ္ျခံေျမစတဲ့ အကုန္ေရးတဲ့ The New York Time မဂၢဇင္းကို ငါအႏွစ္သက္ဆံုးပဲ <br><br>
+Do you read the paper or online news? <br>
+စာရြက္သတင္းစာကိုဖတ္လား..အြန္လိုင္းကဖတ္လား <br><br>
+I prefer online news to save money. <br>
+ေငြေခၽြတာတဲ့အေနျဖင့္..အြန္လိုင္းသတင္းဖတ္ရတာ ပိုႏွစ္သက္တယ္..<br><br>
+How much does it cost you to buy paper newspaper per month? <br>
+လစဥ္စာရြက္သတင္းစာကိုဝယ္ဖို႕..ဘယ္ေလာက္ကုန္က်သလဲ <br><br>
+I only buy a monthly newspaper, so it doesn’t cost much money. Around $5/month. <br>
+တစ္လတစ္ခါထုတ္တဲ့..သတင္းစာကိုပဲကၽြန္ေနာ္ဝယ္တယ္..ဒါေၾကာင့္ ေငြသိပ္မကုန္ဘူး...ငါးေဒၚလာခန္႕ေပါ့ <br><br>
+What is the most popular magazine in your country? <br>
+နင္တို႕ႏိုင္ငံမွာ လူၾကိဳက္အမ်ားဆံုး မဂၢဇင္းကဘာလဲ <br><br>
+I think it would be Forbes magazine, a leading source for reliable business news and financial information. <br>
+ေငြေၾကးဆိုင္ရာအခ်က္လက္နဲ႕..စီးပြားေရးသတင္းေတြမွာ ေရွ႕ေျပးေနတဲ့ Forbes မဂၢဇင္းျဖစ္မယ္လို႕ငါထင္တယ္..<br><br>
+With the popularity of Internet, do you think newspapers and magazines will disappear? <br>
+အင္တာနက္ကို လူၾကိဳက္အမ်ားလာတာနဲ႕အမွ်သတင္းစာနဲ႕ မဂၢဇင္းေတြဟာ ေပ်ာက္ကြယ္သြားမယ္လို႕မင္းထင္လား <br><br>
+Yes, unfortunately it’s just a matter of time. <br>
+ဟုတ္တယ္..ကံမေကါင္းစြာပါပဲ..အခ်ိန္ကါလက ပိုင္းျဖတ္လာတာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/084. ...what-do-you-call-it (what·cha·ma·call·it) - Basic En.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+.......what-do-you-call-it. <br>
+ကိုယ္မသိ...အမွတ္မိတဲ့ လူတစ္ေယာက္..သို႕မဟုတ္..အရာဝတၳဳတစ္ခုကို..ေဖာ္ျပရန္..သံုးပါတယ္...<br><br>
+I. EXAMPLES: -နမူနာမ်ား..<br><br>
+
+ I’ve got the what-do-you-call-it for you. <br>
+ ငါ့မွာရွိတာ...အဲ့ဒါဘယ္လိုေခၚတယ္..<br><br>
+ I cannot find the what-do-you-call-it. <br>
+ ဘယ္လိုေခၚလဲ...အဲ့ဒါ...ငါရွာမေတြ႕ဘူး..<br><br>
+ She’s just gone out with old what’s-his-name. <br>
+ သူမအတူတြဲေနတာ...သူ႕နာမည္က..ဘာလဲ...(သတိမရတရ)..<br><br>
+ What’s-his-name called you this morning? <br>
+ ဒီမနက္..မင္းေခၚတာေလ..သူ႕နာမည္က..ဘာလဲ.......<br><br>
+ Where did you put the what-do-you-call-it? <br>
+ ဘယ္လိုေခၚလဲ..အဲ့ဒါ...မင္းဘယ္မွာထားလိုက္လဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+Wife: Honey, you’ve been trying to fix that sink for hours.<br>
+ဟန္နီ..အဲ့ဒီ..sink ကိုငါ ျပင္ဖို႕ၾကိဳးစားေနတာ..နာရီေတြၾကာေနျပီ..<br><br>
+* sink - ဆိုတာ..ေရခလုတ္ဖြင့္ျပီး..မ်က္ႏွာသစ္..လက္ေဆးတဲ့..ေနရာ..ကိုေခၚတာျဖစ္ပါတယ္..<br><br>
+Husband: I know, I know. My back is killing me. <br>
+သိပါတယ္.....င့ါေက်ာကုန္းး...နာေနလို႕..<br><br>
+Wife: Well, how can I help you? <br>
+ ငါဘာကူညီေပးရမလဲ.....<br>
+Husband: Hand me that what-do-you-call-it. <br>
+အဲ့ဒါဘာေခၚလဲ...အဲ့ဒါကိုလွမမ္းေပးလိုက္..<br><br>
+Wife: You mean the wrench? <br>
+ဒီ ခြ ကိုဆိုလိုတာလား...<br><br>
+Husband: Yeah that’s it. <br>
+အင္း..ဟုတ္တယ္...အဲ့ဒါ.<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

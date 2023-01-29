@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/15-A Favorite Movie - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Have you ever travelled abroad? If yes, what country was it? <br>
+နင္းႏိုင္ငံျခားသို႕ခရီးသြားဖူးသလား..သြားဖူးတယ္ဆိုရင္..ဘယ္ႏိုင္ငံလဲ <br><br>
+Yes, I have. I traveled to the USA last year with my family. <br>
+ဟုတ္ကဲ့..သြားဖူးတယ္။ မႏွစ္ကကၽြန္ေနာ္ မိသားစုနဲ႕အတူ..အေမရိကသို႕သြားတယ္..<br><br>
+Where is that country located? <br>
+အဲ့ဒီႏိုင္ငံက ဘယ္မွာတည္ရွိတာလဲ <br><br>
+The USA is located in North America. <br>
+အေမရိကန္က..ေျမာက္အေမရိကတိုက္မွာ တည္ရွိတယ္..<br><br>
+What is it famous for? <br>
+အဲ့ဒီႏိုင္ငံ..ဘယ္ဟာနဲကနာမည္ေက်ာ္သလဲ..<br><br>
+The USA is known for its cultural achievements and landmarks. <br>
+အေမရိကဟာ..၄င္းရဲ႕ေအာင္ျမင္မႈနဲ႕တိုးတက္မႈေတြေၾကာင့္..လူသိမ်ားတယ္..<br><br>
+What are the special food and drinks of that country? <br>
+အဲ့ႏိုင္ငံရဲ႕ အထူးအစားစာနဲ႕ေသာက္စရာက ဘာလဲ <br><br>
+There are many. They are known for fast food, dairy, and many beverages. <br>
+မ်ားၾကီးရွိပါတယ္။ အသင့္စားအစားစာ၊ႏို႕ထြက္ပစၥည္း၊နဲ႕အေဖ်ာ္ယမကာေတြကို လူသိမ်ားတယ္<br><br>
+What do you like about that country? <br>
+အဲ့ႏိုင္ငံနဲ႕ပတ္သက္လို႕..မင္းဘယ္ဟာကို ႏွစ္သက္လဲ <br><br>
+I like the fast pace of life and the various sub-cultures. <br>
+မတူကြဲမ်ားတဲ့..ယာဥ္ေက်းမႈေတြနဲ႕.တက္ၾကြလွတဲ့ေန႕စဥ္ဘဝကို သေဘာက်တယ္..<br><br>
+How many citizens are there in that country? <br>
+အဲ့ဒီႏိုင္ငံမွာ ႏိုင္ငံသား ဘယ္ေလာက္ရွိလဲ <br><br>
+The current population of the United States of America was over 324 million in 2016, which accounts for 4.3% of the total world population. <br>
+၂၀၁၆ခုႏွစ္..အခုလက္ရွိ အေမရိကန္လူဦးေရဟာ..သန္း ၃၂၄သန္းေက်ာ္တယ္။ အဲ့ဒါက..ကမၻာ့လူဦးေရရဲ႕..4.3 ရာခိုင္ႏႈန္းေပါ့.<br><br>
+What language do people there speak? <br>
+လူေတြ ဘယ္ဘာသာစကားကိုေျပာၾကသလဲ..<br><br>
+The national language is English, but many people also speak Spanish, French, German, and Chinese. <br>
+ႏိုင္ငံေတာ္ ဘာသာစကားကေတာ..အဂ္လိပ္ဘာသာျဖစ္တယ္..ဒါေပမဲ့..မ်ားစြာေသာလူေတြဟာ..စပိန္..ျပင္သစ္၊ဂ်ာမနီႏွင့္ တရုတ္ဘာသာစကားေတြကိုလည္းေျပာၾကတယ္..<br><br>
+Do you want to go back there again? <br>
+မင္းအဲ့ဒီကို ျပန္လို႕သြားခ်င္လား <br><br>
+Sure. <br>
+ေသခ်ာတာေပါ့ <br><br>
+Why do people like to travel abroad? <br>
+လူေတြဘာလို႕ႏိုင္ငံျခားသို႕ခရီးထြက္ခ်င္ၾကတာလဲ <br><br>
+They just want to discover new places, learn new cultures and maybe speak new languages. <br>
+သူတို႕ေနရာအသစ္ေတြ၊ယာဥ္ေက်းမႈအသစ္ေတြကိုရွာေဖြခ်င္ၾကတယ္..ျပီးေတာ့ ဘာသာစကားသစ္လည္းေျပာခ်င္ၾကတာျဖစ္ႏိုင္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

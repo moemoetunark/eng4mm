@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/14-A MUSEUM - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What type of museum is popular in your country? <br>
+ဘယ္လို ျပတိုက္မ်ိဳးေတြ မင္းတို႕ႏို္င္ငံမွာ..လူၾကိဳက္မ်ားလဲ <br><br>
+There are many types of museums, but the most popular are historical museums. <br>
+ျပတိုက္မ်ိဳးစား ေတြမ်ားၾကီးရွိပါတယ္..ဒါေပမဲ့ သမုိင္းဆိုင္ရာျပတိုက္ေတြက လူၾကိဳက္အမ်ားဆံုးေပါ့..<br><br>
+What is the most famous museum in your country? <br>
+နင္တို႕ႏိုင္ငံမွာ ..ဘယ္ျပတိုက္က နာမည္အေက်ာ္ဆံုးလဲ <br><br>
+That would be The British Museum, located in London. <br>
+လန္ဒန္မွာရွိတဲ့ ျဗိတိန္ျပတိုက္ျဖစ္လိမ့္မယ္..<br><br>
+What’s special about it? <br>
+အဲ့ဒါက ဘာေတြထူးျခားလို႕လဲ <br><br>
+I’m impressed by its large amount of historical, art, and cultural work. <br>
+မ်ားစြာေသာယာဥ္ေက်းမႈ၊အႏုပညာ၊သမိုင္းဆိုင္ရာေတြေၾကာင့္ျဖစ္တယ္..<br><br>
+How many times have you visited that museum? <br>
+အဲ့ဒီျပတိုက္ကို မင္းဘယ္ႏွစ္ၾကိမ္ေလ့လာျပီးျပီလဲ <br><br>
+I have visited the museum twice. <br>
+ကၽြန္ေနာ္ႏွစ္ခါ ေလ့လာျပီးျပီ <br><br>
+What do you usually do when visiting a museum? <br>
+ျပတိုက္တစ္ခုကို ေလ့လာတဲ့အခါ မင္းပံုမွန္အားျဖင့္ဘာလုပ္သလဲ <br><br>
+I usually listen to the tour guide and take notes about important information. <br>
+ကၽြန္ေနာ္ ပံုမွန္အားျဖင့္ အည့္လမ္းညႊန္ကို နားေထာင္တယ္..ျပီးရင္အေရးၾကီးတဲ့ အခ်က္လက္ေတြကို မွတ္စုမွတ္တယ္..<br><br>
+Are you allowed to take pictures there? <br>
+အဲ့ဒီမွာ ဓာတ္ပံုရိုက္ခြင့္ရွိလား <br><br>
+No, the guards did not allow us to bring the camera in. <br>
+မရွိဘူး..အေစာင့္ကငါတို႕ကို ကင္မရာကို အထဲသို႕ယူခြင့္မေပးဘူး <br><br>
+How did you feel after visiting there? <br>
+အဲ့ဒီကို လည္ပတ္ျပီးေနာက္..မင္းဘယ္လိုခံစားရလဲ <br><br>
+The overall experience was fantastic, and I learned so many things in just a few hours. <br>
+အေတ႕ၾကံဳအားလံုးျခံဳေျပာရရင္..ေကါင္းပတယ္..ကၽြန္ေနာ္နာရီအနည္းငယ္တြင္..မ်ားစြာေသာအရာေတြကို သင္ယူခြင့္ရတယ္ေလ<br><br>
+What do you think is the importance of museums in history? <br>
+သမိုင္းမွာ..ျပတိုက္ရဲ႕အေရးၾကီးမႈက ဘာျဖစ္မယ္လို႕မင္းထင္လဲ <br><br>
+Museums are an integral part of any country’s history, and they keep history alive.<br>
+ျပတိုက္ဆိုတာ..ႏိုင္ငံတစ္ႏိုင္ငံရဲ႕သမိုင္းစိတ္ပိုင္းျဖစ္တယ္..ျပီးရင္..သမိုင္းကိုလည္း.ရွင္သန္ေစတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

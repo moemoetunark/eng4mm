@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/057. It’s up to... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+It's up to............ကိုသံုးပံုကေတာ့...<br>
+It's up to you. မင္းရဲ႕သေဘာပဲေလ...<br>
+ႈIt's up to luck. ကံတရားပဲေလ...<br>
+It's up to her. သူမရဲ႕သေဘာပဲေလ...<br>
+It's up to us. ငါတို႕သေဘာပဲေလ...ဆိုတဲ့ အဓိပၸါယ္ေတြနဲ႕ သံုးပါတယ္..<br><br>
+I. EXAMPLES: - အသံဖိုင္ ဝါက်မ်ား..<br><br>
+ A: Do you want to eat a Western or Chinese meal? <br>
+ မင္းတရုတ္အစားစာ သို႕မဟုတ္..အေနာက္တိုင္းအစားစာ စားခ်င္လား..<br><br>
+B: It’s up to you. <br>
+မင္းရဲ႕သေဘာပဲေလ...<br><br>
+ It’s up to us to help those in need. <br> 
+ အကူညီလုိအပ္ေနတဲ့သူေတြကို.ကူညီမယ္ဆိုတာ..ငါတို႕ရဲ႕သေဘာပါပဲ..<br><br>
+ It’s not up to you to tell me how to do my job. <br>
+ ငါ့အလုပ္ ဘယ္လိုလုပ္ရမယ္ဆိုတာေျပာဖို႕..မင္းနဲ႕မဆိုင္ဘူး..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Father: I’m looking forward to our son’s graduation this weekend. <br>
+ဒီအပတ္ တနဂၤေႏြစေန..ငါ့သားဘြဲ႕ရမွာကို..ငါေမွ်ာ္လင့္ေစာင့္စားေနတာ..<br><br>
+Mother: Yes, so am I. But what will he do after graduation? He really needs to go to college. <br>
+ငါလည္းတူတူပါပဲ..ဒါေပမဲ့..ဘြဲ႕ရျပီးသူ ဘာလုပ္မွာလဲ..။ သူေကါလိပ္တက္ဖို႕လိုအပ္မယ္ထင္တယ္..<br><br>
+Father: Well, Dear, we can’t force him to go to college. It’s up to him. <br>
+အင္းပါ..ခ်စ္ရာ...ေကါလိပ္တက္ဖို႕..သူ႕ကိုငါတို႕အတင္းတိုက္တြန္းလို႕မရဘူး။ အဲ့ဒါသူ႕သေဘာပဲေလ..<br><br>
+Mother: I know that but he has to learn to be independent. He can’t just keep living at home. <br>
+ကၽြန္မသိပါတယ္..ဒါေပမဲ့..သူေျခေထာက္ေပၚသူရပ္ႏိုင္ေအာင္..သင္ရမယ္..။ သူ႕ကိုအိမ္မွာပဲထားလို႕မရဘူး..<br><br>
+Father: You’re right. I’ll talk to him about getting a job. Maybe he can work at my store. <br>
+မင္းမွန္ပါတယ္..။ အလုပ္တစ္ခုလုပ္ဖို႕...ငါသူ႕ကိုေျပာၾကည့္မယ္..။ ငါ့ရဲ႕စတိုးမွာ သူလုပ္မယ္ဆို..လုပ္လို႕ရပါတယ္..<br><br>
+Mother: That’s  up to you, Dear. You just have to make sure that he does his work and doesn’t loaf around. <br>
+ဒါက နင့္ရဲ႕သေဘာပဲ။ သူ႕အလုပ္သူလုပ္ျပီး..မပ်င္းရေအာင္..လုပ္ေပးဖို႕ပဲလိုတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

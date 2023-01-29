@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/009. Did you use to... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+အခ်ိန္တစ္ခုၾကာသည္အထိ..တစ္ခုခုကို လုပ္ေနခဲ့သလား..လုပ္လဲ့ရွိသလား..စတဲ့အေျခေနမ်ိဳးမွာ..ဒီ pattern ေလးကိုသံုးႏိုင္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ Did you use to live in Tokyo? <br>
+ မင္း တိုက်ိဳျမိဳ႕မွာ ေနလဲ့ရွိခဲ့သလား..<br><br>
+ Did you use to get up early? <br>
+ မင္း ေစာေစာအိပ္ရာထေလ့ ရွိခဲ့သလား..<br><br>
+ You used to smoke heavily, didn’t you? <br>
+ မင္း ေဆးလိပ္အရမ္းေသာက္ခဲ့တယ္ေနာ္...မဟုတ္ဘူးလား..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+A: Did you use to have any really bad habits? <br>
+ဆိုးတဲ့အေလ့ထတစ္ခု မင္းမွာရွိခဲ့လား..<br><br>
+B: I used to bite my toenails when I was younger but now I don’t. <br>
+ငါငယ္စဥ္က...ေျခသည္းကို ကိုက္ေလ့ရွိခဲ့တယ္..ဒါေပမဲ့ အခုမလုပ္ေတာ့ဘူး..<br><br>
+A: What made you stop? <br>
+ဘယ္ဟာက မင္းကို ရပ္လိုက္တာလဲ..<br><br>
+B: One day I bit my toenail too deeply and my toe started bleeding. So I learned my lesson and didn’t bite my toenails again. <br>
+တစ္ေန႕..ငါ့ေျခသည္းကို..အရမ္းကိုက္မိေတာ့..ေသြးေတြထြက္တာေပါ့..ဒါေၾကာင့္..သခၤန္းစာရျပီး..ထပ္မကိုက္ေတာ့တာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

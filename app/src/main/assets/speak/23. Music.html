@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/23-MUSIC - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What kind of music do you like? <br>
+မင္း ဘယ္ဂီတ အမ်ိဳးစားကို ႏွစ္သက္လဲ <br><br>
+I’m crazy about Pop music. <br>
+ငါက ေပါ့ပ္ဂီတကို အရမ္းရူးသြပ္တာ..<br><br>
+Is that the kind of music preferred in your country? <br>
+မင္းတို႔ႏိုင္ငံမွာ အဲ့ဒီ ဂီတကိုပိုျပီး လူၾကိဳက္ၾကလား..<br><br>
+It varies. Normally the youth enjoy Rock and Pop while middle-aged citizens prefer country music. <br>
+ဒါက..မတူဘူးေလ...ပံုမွန္အားျဖင့္..လူငယ္ေတြက..ေရာ့ခ္နဲ႕ ေပါ့ပ္ကိုႏွစ္သက္ၾကတယ္..အလယ္လတ္လူေတြကေတာ့...country music ကိုႏွစ္သက္ၾကတာေပါ့ <br><br>
+Who is your favorite singer? <br>
+မင္းရဲ႕အၾကိဳက္ဆံုး အဆိုေတာ္က ဘယ္သူလဲ <br><br>
+I’m a big fan of Miley Cyrus, a talented US singer, songwriter, and actress. <br>
+ငါက မိုင္လီ စိုင္းရပ္ရဲ႕ ပရိတ္သတ္ပဲ..အရမ္းေတာ္တဲ့ အေမရိကန္.အဆိုေတာ္..ေတးေရးနဲ႕..သရုပ္ေဆာင္ေလ။  <br><br>
+What piece of music do you like? Who sang that song? <br>
+မင္းဘယ္သီခ်င္း အစိတ္ပိုင္းကိုၾကိဳက္လဲ။ အဲ့သီခ်င္းကို ဘယ္သူဆိုသလဲ <br><br>
+My favorite song is Jolene, sung by Miley Cyrus. <br>
+ငါ့ရဲ႕အၾကိဳက္ဆံုးသီခ်င္းက Jolene ပါ။ မိုင္လီ စိုင္းရပ္ဆိုထားတာ..<br><br>
+How much time a day do you spend listening to music? <br>
+တစ္ေန႕ကို သီခ်င္းနားေထာင္ဖို႕ အခ်ိန္ဘယ္ေလာက္သံုးသလဲ <br><br>
+I usually listen to music all day with an MP3 player. <br>
+ငါ့ရဲ႕ mp3စက္နဲ႕..ငါသီခ်င္း တေနကုန္ နားေထာင္တာ..<br><br>
+Do you feel relaxed listening to music? <br>
+သီခ်င္းနားေထာင္ရင္ စိတ္လန္းဆန္းတာကို ခံစားရလား <br><br>
+Sure. I feel like there are no more worries in the world. <br>
+ေသခ်ာတာေပါ့။ ကမၻာၾကီးမွာ စိုးရိမ္ေသာကေတြ မရွိေတာ့သလိုခံစားရတယ္...<br><br>
+Why is music important to us? <br>
+ငါတို႕အတြက္ ဘာလို႕ ဂီတက အေရးၾကီးတာလဲ <br><br>
+Music has the power of beautifying our life. <br>
+ဘဝကိုအလွဆင္ေနတဲ့ရာမွာ..ဂီတဟာ..အင္အားရွိတယ္..<br><br>
+Do you usually go to bars or clubs? <br>
+ကလပ္န႕ဲအရက္ဘီယာဆိုင္ မင္းပံုမွန္သြားလား <br><br>
+Not often. I sometimes go there on weekends. <b>
+သိပ္ျပီးေတာ့မသြားဘူး။ တနဂၤေႏြ၊စေနရက္ေတြမွာ တစ္ခါတစ္ေလသြားတယ္.<br><br>
+What do you think about the teenagers’ music style? <br>
+လူငယ္ေတြရဲ႕..ဂီတပံုစံကို မင္းဘယ္လိုထင္လဲ <br><br>
+Teenagers tend to choose loud and fast music like Rock or Rap. Everyone has their own taste of music though. <br>
+လူငယ္ေတြက..ေရာ့ခ္နဲ႕ေပါ့လို..ျမန္ျပီးက်ယ္ေလာင္တဲ့..သီခ်င္းကိုပိုေရြးၾကတယ္.။ လူတိုင္းမွာေတာ့..ကိုယ္ၾကိဳက္တာ ကိုယ္စီရွိၾကပါတယ္...<br><br>
+Have you ever thought of forming a music band? <br>
+ဂီတဝိုင္းတစ္ခုေထာင္ဖို႕..မင္းစဥ္းစားဖူးလား <br><br>
+No, I don’t have any talent for music. <br>
+ႏိုး...ဂီတနဲ႕ပတ္သက္လို႕ငါမွာ...အထုံပါရမီ မပါဘူး <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/060. I have been... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I've been + v-ing + obj. ......ၾကာျပီ. <br>
+တစ္ခုခုကို လုပ္ေနတာ..ဘယ္ေလာက္ၾကျပီ ဆိုတာကို ေဖာ္ျပရန္ သံုးပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ I have been learning English for almost ten years. <br>
+ ငါ အဂၤလိပ္စာသင္ေနတာ..၆ႏွစ္ၾကာျပီ..<br><br>
+ I have been living here for thirty years. <br>
+ ငါဒီမွာေနတာ...ႏွစ္သံုးဆယ္ၾကာျပီ..<br><br>
+ Where have you been? We have been looking for you everywhere. <br>
+ နင္ဘယ္ေရာက္ေနတာလဲ...ငါတို႕နင့္ကို..ေနရာကုန္ လိုက္ရွာေနတာ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: What’s the matter? You look so tired lately.
+ဘာျဖစ္တာလဲ....နင္ဒီေန႕အရမ္း ပင္ပန္းေနသလိုပဲ..<br><br>
+B: I haven’t been sleeping very well these past few nights. <br>
+လြန္ခဲ့တဲ့ညေတြမွာ..ငါေကါင္းေကါင္းမအိပ္ႏိုင္ခဲ့ဘူး..<br><br>
+A: Why not? <br>
+ဘာေၾကာင့္ မအိပ္ႏိုငိတာလဲ..<br><br>
+B: I’ve been worried about my financial troubles and when I try to go to bed I can’t sleep. <br>
+ငါ့ရဲ႕ ေငြေရးျပသနာကို..စိုးရိမ္ေနတယ္..ျပီးေတာ့...အိပ္ရာဝင္တဲ့အခါ..အိပ္မရဘူး..<br><br>
+A: Why don’t you try reading before you go to bed? Maybe that will make you tired. <br>
+အိပ္ရာ မဝင္မွီ စာဖတ္ေလ.။ ဒါဆို မင္းပင္ပန္းမွာပဲ..(ပင္ပန္းျပီးအိပ္ႏိုင္)။ <br><br>
+B: I’ve tried that but it doesn’t work. I end up reading books about money. <br>
+ငါၾကိဳးစားတယ္..ဒါေပမဲ့ အလုပ္မျဖစ္ဘူး.။ ေငြအေၾကာင္းစာအုပ္ေတြဖတ္ရင္းးအဆံုးသတ္သြားတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

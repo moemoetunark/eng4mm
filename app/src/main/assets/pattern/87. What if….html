@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/087. What if... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What if..........မယ္ဆိုရင္..ဘာလုပ္ၾကမလဲ..<br><br>
+တစ္ခုခုျဖစ္လာခဲ့ရင္..ဘယ္လိုလုပ္ၾကမလဲ..ဘာလုပ္ၾကမလဲ..ဆိုတဲ့အဓိပၸါယ္နဲ႕ what if ကိုသံုးပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ What if it rains when we have no umbrella with us? <br>
+ ငါတို႕ထီးမပါတဲ့အခ်ိန္...မိုးရြာရင္..ဘာလုပ္ၾကမလဲ...<br><br>
+ What if they are against us? <br>
+ သူတို႕ငါတို႕ကိုဆန္႕က်င္ရင္..ဘယ္လိုလုပ္မလဲ..<br><br>
+ What if we get lost in the jungle? <br>
+ ေတာအုပ္ၾကီးထဲ..ငါတို႕လမ္းေပ်ာက္သြားရင္..ဘယ္လိုလုပ္မလဲ..<br><br>
+ What if they don’t approve of our earning some money in our spare time? <br>
+ ငါတို႕အခ်ိန္ပိုေလးမွာရတဲ့ေငြ..သူတို႕..အတည္မျပဳရင္..ဘယ္လိုလုပ္မလဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+A: Did you hear the weather forecaster’s  prediction for rain tomorrow? <br>
+မနက္ျဖန္အတြက္..မိုးေလဝသခန္႕မွန္႕ခ်က္..မင္းၾကားခဲ့လား..<br><br>
+B:  Yeah,  but  I never believe the weather reports because they are usually wrong. <br>
+ဟုတ္တယ္...ဒါေပမဲ့...မိုးလဝသ..အစီရင္ခံခ်က္..ငါတစ္ခါမွ..မယံုဘူး...သူတို႕က.မွားေနက်ပါ..<br><br>
+A: But what if he’s right? <br>
+ဒါေပမဲ့..မွန္မယ္ဆိုရင္ေကါ...<br><br>
+B: I guess we’ll have to change our plans for tomorrow. <br>
+ငါတို႕ရဲ႕မနက္ျဖန္..အစီစဥ္ကို ေျပာင္းလဲရမယ္ထင္တယ္..<br><br>
+A: That means we can’t go to the beach. <br>
+ဆိုလိုတာ..ငါတို႕ကမ္းေျခသို႕..မသြားႏုိင္ေတာ့ဘူးေပါ့..<br><br>
+B: Only if it rains. <br>
+မိုးရြာမွ..ပါကြာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

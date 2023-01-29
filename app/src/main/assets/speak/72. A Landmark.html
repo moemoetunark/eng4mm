@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/72-A Landmark - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is a famous landmark in your hometown? <br>
+မင္းတို႕ ဇာတိျမိဳ႕မွာ..ထင္ေပၚေက်ာ္ၾကားတဲ့ ေနရာက ဘာလဲ..<br><br>
+Well, I can’t hide my proud to talk about the Statue of Liberty. <br>
+Liberty ရုပ္ထုတ္ကိုေတာ့.ဂုဏ္ယူစြာ...ေျပာျပရမွာေပါ့..<br><br>
+When was it built? <br>
+ဘယ္တုန္းက တည္ေဆာက္ခဲ့တာလဲ..<br><br>
+I read on newspapers that It was constructed in 1886. <br>
+အဲ့ဒီဟာကို..၁၈၈၆ခုႏွစ္မွာ..တည္ေဆာက္တယ္ဆိုတာ...သတင္းစာမွာဖတ္ရတယ္..<br><br>
+Where is it? <br>
+ဘယ္မွာတည္ရွိလဲ...<br><br>
+It’s located on Liberty island in New York Harbor. <br>
+နယူးေယာက္ဆိမ္ကမ္း၊ Liberty ကၽြန္းမွာရွိတယ္..<br><br>
+How does it look like? <br>
+ဘယ္လိုပံုစံလဲ..<br><br>
+That’s a woman, known as the Roman goddess, bearing a torch and a broken chain lies at her feet. <br>
+ေျခေထာက္မွာ..ျပတ္ေနတဲ့သံၾကိဳးနဲ႕..မီးရွဴိးပန္းတိုင္ကိုင္ထားတဲ့..ရိုမန္နတ္ဘုရားမယ္..တစ္ပါးေလ..<br><br>
+What was it made of? <br>
+ဘယ္ဟာနဲ႕လုပ္ထားတာလဲ..<br><br>
+The main material was copper. <br>
+အဓိက ပစၥည္းကေတာ့..ေၾကးနီျဖစ္ပါတယ္..<br><br>
+Who was the architect? <br>
+ဗိသုကာရွင္က ဘယ္သူလဲ..<br><br>
+Mr.Gustave Eiffel, who also designed the tower of Eiffel. <br>
+Mr. Gustave Eiffel ဆိုသူေလ...Eiffel ေမွ်ာ္္စင္ကိုလည္း ဒီဇိုင္းဆြဲသူေပါ့..<br><br>
+What is special about it? <br>
+အဲ့ဒီဟာရဲ႕ထူးျခားခ်က္က ဘာလဲ..<br><br>
+Actually, it was gifted to my country, the USA from the people of France. <br>
+အမွန္က..ျပင္သစ္ျပည္သူေတြကေန..အေမရိကန္ျပည္သူေတြဆီကို..လက္ေဆာင္ေပးထားတာ..<br><br>
+Does it symbolize something? <br>
+အဲ့ဒါက တစ္ခုခုကို ကိုယ္စားျပဳလား..<br><br>
+The statue is a symbol of freedom. We all love it and are so proud to share with international friends about it. <br>
+ရုပ္ထုက..လြတ္လပ္မႈရဲ႕ ျပယုဂ္တစ္ခုျဖစ္ပါတယ္.။ ငါတို႕အားလံုးအဲ့ကို ခ်စ္ၾကျပီး..အဲ့ဒီအေၾကာင္းနဲ႕ပတ္သက္ျပီး ႏိုင္ငံတကာက သူငယ္ခ်င္းေတြကို မွ်ေဝရတာကိုလည္း ဂုဏ္ယူတယ္..<br><br>
+Does it attract many tourists to come? <br>
+အဲဒီဟာက ခရီးသြားေတြ မ်ားစြာကို ဆြဲေဆာင္လား..<br><br>
+Yup. It attracts 4 million visitors each year according to the statistic. <br>
+စရင္းဇယားေတြအရ..ႏွစ္တိုင္း ခရီးသြား..၄သန္းေလာက္..ဆြဲေဆာင္ႏုိင္တယ္လို႕..သိရတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

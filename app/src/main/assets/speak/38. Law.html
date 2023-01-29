@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/38-Law - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What law do you like? <br>
+ဘယ္ ဥပေဒကို မင္းသေဘာက်သလဲ <br><br>
+I like the traffic law of wearing the helmet when traveling by motorbike. <br>
+ဆိုင္ကယ္နဲ႕ထြက္တဲ့အခါ ဦးထုပ္ေဆာင္းရမယ္ဆိုတဲ့ လမ္းစည္းကမ္းကို သေဘာက်တယ္..<br><br>
+Is that an international law? <br>
+အဲ့ဒါက ႏိုင္ငံတကာ ဥပေဒလား <br><br>
+Yes, people around the world follow this law. <br>
+ဟုတ္ပါတယ္..ကမၻာတလႊားကလူေတြ ဒီဥပေဒကိုလိုက္နာက်င့္သံုးၾကတယ္..<br><br>
+When was it issued? <br>
+ဘယ္တုန္းက ထုတ္ျပန္တာလဲ <br><br>
+I’m not quite sure, but I guess a long time ago. <br>
+ငါသိပ္ေတာ့မေသခ်ာဘူး..ဒါေပမဲ့ ေတာ္ေတာ္ၾကာျပီေတာ့ ထင္တယ္..<br><br>
+Who told you that law? <br>
+မင္းကို အဲ့ဒီဥပေဒကို ဘယ္သူေျပာျပတာလဲ <br><br>
+I learned it at school. <br>
+ငါေက်ာင္းမွာ သင္ခဲ့ရတာ <br><br>
+Is it easy to follow that law? <br>
+အဲ့ဒီ ဥပေဒကိုလိုက္နာဖို႕လြယ္ကူလား <br><br>
+Yes, it is. It doesn’t cause any inconvenience at all. <br>
+လြယ္ပါတယ္၊ အဆင္မေျပစရာ..ခက္ခဲစရာဘာမွ မရွိပါဘူး <br><br>
+What do you think about that law? <br>
+အဲ့ဒီ ဥပေဒကို မင္းဘယ္လို သေဘာရလဲ <br><br>
+The traffic law is so necessary for traffic participants when they’re on the road. <br>
+လမ္းဥပေဒဆိုတာ လမ္းသြားေနလူတိုင္းအတြက္ လိုအပ္ပါတယ္..<br><br>
+What benefit can you get from following that law? <br>
+အဲ့ဒီ ဥပေဒကို လိုက္နာလို႕ ဘာအက်ိဳးေက်းဇူးေတြရႏိုင္လဲ..<br><br>
+It may keep me safe from traffic accidents. <br>
+လမ္းမေတာ္တဆမႈကေန..ကါကြယ္ႏိုင္မယ္..ထင္ပါတယ္..<br><br>
+Why should people obey the law strictly? <br>
+ဘာလို႕လူေတြ ဥေပေဒကို တင္က်ပ္စြာ လုိက္နာသင့္သလဲ <br><br>
+Following law is a good way to protect themselves as well as others. <br>
+ဥပေဒကို လုိက္နာတယ္ဆိုတာ..မိမိကိုယ္တိုင္နဲ႕သူတပါးကို ကာကြယ္ဖို႕..နည္းေကါင္းတစ္ခုပါပဲ <br><br>
+What can be done to encourage people to follow the law? <br>
+ဥပေဒကို လိုက္နာရန္ လူေတြကို အားေပးဖို႕..ဘာေတြလုပ္ႏိုင္သလဲ <br><br>
+Obeying law is people’s responsibility. If they against the law, they’ll put themselves in trouble. <br>
+ဥပေဒကို လိုက္နာဖို႕က လူေတြရဲ႕တာဝန္ျဖစ္ပါတယ္။ တကယ္လို႕သူတို႕ဥပေဒကိုဆန္႕က်င္ရင္..သူတို႕ကိုယ္တိုင္ကို ဒုကၡေရာက္ေအာင္လုပ္တာ ျဖစ္ပါတယ္..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

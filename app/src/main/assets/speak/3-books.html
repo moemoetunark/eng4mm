@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/Easy Dialogue 1. Caught a Cold.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+How often do you read books? <br>
+နင္စာအုပ္ ဘယ္ေလာက္ဖတ္ျဖစ္လဲ <br><br>
+I read books almost every night before I go to bed. <br>
+အိပ္ရာမဝင္ခင္..ညတိုင္းနီပါး ငါစာအုပ္ဖတ္တယ္..<br><br>
+What’s your favorite type of book? <br>
+ဘယ္စာအုပ္အမ်ိဳးစားက နင့္ရဲ႕အၾကိဳက္လံုးလဲ <br><br>
+I love reading about different cultures. <br>
+မတူတဲ့ယဥ္ေက်းမႈေတြအေၾကာင္းဖတ္ရတာ ငါႏွစ္သက္တယ္..<br><br>
+What can you learn from books? <br>
+စာအုပ္ေတြဆီကေန နင္ဘာသင္ယူႏိုင္သလဲ <br><br>
+Books can broaden my horizon about thousands of things around the world, and books are also my best friends. <br>
+ကမၻာၾကီးနဲ႕ပတ္သက္တဲ့ငါရဲ႕ဗဟုသုတေတြကိုစာအုပ္ေတြက က်ယ္ျပန္႕ေစတယ္..ျပီးေတာ့..စာအုပ္ေတြက ငါ့ best friend ေတြေလ..<br><br>
+Where do you read books? <br>
+နင္ဘယ္မွာ စာအုပ္ဖတ္ျဖစ္လဲ <br><br>
+I read books at home, sometimes in the library. <br>
+စာအုပ္ကို အိမ္မွာဖတ္တယ္..တစ္ခါတစ္ေလ..စာၾကည့္တိုက္မွာဖတ္တယ္..<br><br>
+What’s the most interesting book you have ever read? <br>
+နင္ဖတ္ဖူးတဲ့စာအုပ္ထဲမွာ ဘယ္စာအုပ္က စိတ္ဝင္စားဖို႕အေကါင္းဆံုးလဲ <br><br>
+I think that would be Nepal, a book written about the country of Nepal, published in 1999. <br>
+၁၉၉၉ခုႏွစ္ကထုတ္တဲ့ ႏိုင္ေပါႏိုင္ငံအေၾကာင္းေရးထားတဲ့စာအုပ္ျဖမယ္လိ႕ထင္တယ္..<br><br>
+How long does it take you to finish a book? <br>
+စာအုပ္တစ္အုပ္ျပီးဖို႕နင္အတြက္ ဘယ္ေလာက္ၾကာလဲ        <br><br>
+Well, it depends on the length of the book, but it usually takes me a week to finish a 300-page book. <br>
+ဒါက စာအုပ္ရွည္တဲ့အေပၚမူတည္တာေပါ့...ဒါေပမဲ့ ပံုမွန္အားျဖင့္ေတာ့..စာမ်က္ႏွာသံုးရာပါတဲ့စာအုပ္ကို တစ္ပတ္ၾကာတယ္..<br><br>
+Do you usually bring books with you when you travel? <br>
+ခရီးထြက္တဲ့အခါ နင္စာအုပ္ေတြကို သယ္ယူျဖစ္လား <br><br>
+Yes, I do. When I’m at the airport or bus station, I read books to kill time. <br>
+ဟုတ္တယ္..ေလဆိပ္သို႕မဟုတ္...ကားဂိတ္ေတြမွာ..အခ်ိန္ကုန္ဖို႕..ကၽြန္ေနာ္စာအုပ္ဖတ္တယ္..<br><br>
+Is there any bookstore or library in your area? <br>
+နင္တို႕ေနရာမွာ စာအုပ္ဆိုင္သို႕မဟုတ္...စာၾကည့္တိုက္ရွိလား <br><br>
+Unfortunately, there are none near my house. The nearest one is 3 kilometers away. <br>
+ကံမေကါင္းစြာပဲ..ငါ့အိမ္နားမွာ..တစ္ခုမွ မရွိဘူး...အနီးဆံုးကေတာ့ သံုးကီလိုမီတာ ေဝးတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

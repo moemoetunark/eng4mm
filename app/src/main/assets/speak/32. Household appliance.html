@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/32-HOUSEHOLD APPLIANCE - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What’s the most useful household appliance that you have? <br>
+မင္းမွာရွိတဲ့ အသံုးအဝင္ဆံုး..အိမ္သံုးၾကိယာက ဘာလဲ <br><br>
+That’s definitely the washing machine. <br>
+ဒါကေတာ့..အဝတ္ေလွ်ာ္စက္ျဖစ္တာ..ေသခ်ာတယ္..<br><br>
+When did you buy it? <br>
+မင္းဘယ္တုန္းက ဝယ္ခဲ့တာလဲ <br><br>
+I bought it 2 years ago. Actually, my mom gave it to me as a birthday present. <br>
+ငါအရင္ႏွစ္ႏွစ္ေက်ာ္က ဝယ္ခဲ့တာ။ တကယ္က ငါ့အေမက ငါ့ကိုေမြးေန႕လက္ေဆာင္အျဖစ္ေပးတာ..<br><br>
+Is it expensive? <br>
+အဲ့ဒါ ေစ်းၾကီးလား..<br><br>
+I don’t think it cost that much. <br>
+အရမ္းၾကီး ကုန္က်မယ္ေတာ့ ငါမထင္ဘူး <br><br>
+Is it easy to use? <br>
+သံုးရတာ လြယ္ကူသလား<br><br>
+Yes, it’s pretty simple. <br>
+ဟုတ္ပါတယ္..ရိုးရွင္းပါတယ္..<br><br>
+How does it work? <br>
+အဲ့ဒါ ဘယ္လို အလုပ္လုပ္သလဲ <br><br>
+Just put clothes in, press the desired button and everything will be done within several minutes. <br>
+အဝတ္စားေတြကို အထဲထည့္လိုက္..လိုအပ္တဲ့..ခလုတ္ကိုႏွိပ္..မိနစ္ေတာ္ၾကာျပီးရင္..အားလံုးျပီးစီးလိမ့္မယ္..<br><br>
+How often do you use it? <br>
+မင္းအဲ့ဒါကို ဘယ္ေလာက္ အသံုးျပဳလဲ <br><br>
+I wash my clothes twice a week. <br>
+ငါ့အဝတ္စားေတြကို တစ္ပတ္ႏွစ္ခါ ေလ်ာ္တယ္..<br><br>
+Will you replace it with a more modern one? <br>
+ပိုျပီး.ေခတ္မွီတဲ့တစ္ခုနဲ႕ အဲဒါကို လဲမွာလား <br><br>
+No, because it was a present and it’s still working well. <br>
+မလဲပါဘူး၊ ဒါက လက္ေဆာင္ရထားတာေလ..ျပီးေတာ့..အလုပ္လည္းေကါင္းေကါင္းလုပ္ေနပါေသးတယ္..<br><br>
+How does your life change with that household appliance? <br>
+အဲဒီ အိမ္သံုးပစၥည္းနဲ႕..မင္းဘဝ ဘယ္လို ေျပာင္းလဲသြားလဲ <br><br>
+It makes our life more convenient. We can save time as well. <br>
+ငါတို႕ဘဝကို ပိုျပီးအဆင္ေျပေစတာေပါ့၊ အခ်ိန္ကုန္လည္း သက္သာတယ္..<br><br>
+Do you think that household appliances will make people lazier and lazier? <br>
+အိမ္သံုးပစၥည္းေတြကို လူေတြကို ပိုျပီး ပိုျပီး ပ်င္းလာေစတယ္လို႕ မင္းထင္လား..<br><br>
+Yes, to some extent. With the help of electronic equipment, people tend to forget manual tasks and become lazier. <br>
+တစ္ခ်ို႕တစ္ဝက္ေတာ့..ဟုတ္မင္ထင္တယ္။ လွ်ပ္စစ္ၾကိယာရဲ႕အကူညီနဲ႕..လူေတြဟာ..လက္နဲ႕လုပ္ရမွာေတြကို ေမ့ထားၾကတယ္..ျပီးေတာ့..ပိုျပီးပ်င္းလာၾကတာေပါ့ <br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

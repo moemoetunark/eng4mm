@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/051. It is... that... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+It's ....... that .... ဒီ pattern ကိုေတာ့..တစ္ခုခုကိုလုပ္လိုက္တာ...ဘယ္သူျဖစ္တယ္...ဘာျဖစ္တယ္ဆိုတာကို..ထိုးျပဖို႕သံုးတာျဖစ္ပါတယ္..<br>
+I. EXAMPLES:- နမူနာမ်ား..<br><br>
+ It was Jack who broke the window when we were playing football. <br>
+ ငါတို႕ေဘာလံုးစကားေနစဥ္တံခါးကိုခြဲလိုက္တာ..Jack ျဖစ္ပါတယ္..<br><br>
+ It is Jane that I want to marry. <br>
+ ကၽြန္ေနာ္လက္ထပ္ခ်င္တာ..ဂ်ိမ္းျဖစ္ပါတယ္..<br><br>
+ It was here in the supermarket that he met his first love. <br>
+ သူ႕ရဲ႕ပထမဆံုးအခ်စ္ကိုေတြ႕တာ..ဒီ ကုန္တိုက္မွာပဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: Who ate all the cookies? <br>
+ဘီစကြတ္စ္ ေတြအကုန္လံုး.ဘယ္သူစားလိုက္တာလဲ...<br><br>
+B: I think it was the dog that ate them. <br>
+အဲ့ဒါေတြစားလိုက္တာ..ေခြးလို႕ထင္တယ္...<br><br>
+A: Are you sure? <br>
+မင္းေသခ်ာလို႕လား..<br><br>
+B: It’s possible. <br>
+ျဖစ္ႏိုင္တယ္...<br><br>
+A: I think it was you who ate all the cookies but you’re trying to cover it up. <br>
+ဘီစကြတ္စ္ေတြအားလံုးစားလိုက္တာ..မင္းျဖစ္မယ္လို႕ထင္တယ္..ဒါေပမဲ့ မင္းအဲ့ဒါကို...ဖံုးကြယ္ဖို႕ၾကိဳးစားေနတာ...<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

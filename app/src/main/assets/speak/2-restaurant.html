@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/2-RESTAURANT - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+How often do you eat out? Who do you go with? <br>
+ဘယ္ႏွစ္ၾကိမ္ နင္အျပင္မွာထြက္စားလဲ ။ ဘယ္သူနဲ႕သြားလဲ    <br><br>
+I often eat out on weekends, when I hang out with my friends. <br>
+တနဂၤေႏြ၊စေနရက္ေတြသူငယ္ခ်င္းေတြနဲ႕ေလွ်ာက္လည္တဲ့အခါ..မၾကာခဏ အျပင္မွာစားျဖစ္တယ္..<br><br>
+What restaurant do you usually visit? <br>
+ဘယ္စားေသာက္ဆိုင္ကို ပံုမွန္အားျဖင့္သြားေလ့ရွိလဲ <br><br>
+Well, there are not many restaurants in my neighborhood, so my best choice is the deli in convenient stores like the Circle K, Mini-Stop, B-smart. <br>
+ငါ့အိမ္နားဝန္းက်င့္ စားေသာက္ဆိုင္ေတြက သိပ္မရွိဘူး..ဒါေၾကာင့္ ငါ့အတြက္အေကါင္းဆံုးေရြးစရာက B-smart, Mini-Stop, Circle K ေတြလို ဆိုင္ေတြမွာေပါ့ <br><br>
+What type of food do you enjoy to eat? Western or Asian? <br>
+ဘယ္အစားစာမ်ိဳးကို စားရတာ နင္ၾကိဳက္လဲ...အေနာက္တိုင္းလား..အေရွ႕တိုင္းလား            <br>
+I’m interested in Asian food, Western food is not my thing. <br>
+အေရွ႕တိုင္းအစားစာကို ငါသေဘာက်တယ္..အေနာက္တိုင္းစားစာကေတာ့ ငါၾကိဳက္တာမဟုတ္ဘူး<br><br>
+How much do you usually pay when you eat out? <br>
+အျပင္မွာစားတဲ့ခါ.ပံုမွန္ ဘယ္ေလာက္ ေပးရလဲ <br><br>
+It’s not very expensive, just around $5 for each meal. <br>
+သိပ္ေစ်းမၾကီးပါဘူး..အစားစာတစ္ခုအတြက္ ငါး ေဒၚလာခန္႕ေလာက္ပါပဲ <br><br>
+Do you enjoy spicy food? <br> စပ္တဲ့အစားစာေတြကို နင္ၾကိဳက္လား
+Yes, I do, especially on cold days. <br>
+ဟုတ္တယ္..ၾကိဳက္တယ္..အထူးသျဖင့္ ပူတဲ့ေန႕ေတြမွာေပါ့  <br><br>
+Are the servers there friendly to you? <br>
+ဝန္ေဆာင္မႈေပးတဲ့လူေတြက ေဖာ္ေရႊၾကရဲ႕လား <br><br>
+Yes, they are. Most of them are really helpful. <br>
+ဟုတ္ကဲ့..သူတို႕ေဖာ္ေရြၾကပါတယ္...သူတို႕အမ်ားစုကတကယ္.အကူညီရပါတယ္..<br><br>
+Have you ever tried Italian food? <br>
+အီတလီအစားစာကို စားဖူးလား <br><br>
+Yes, at least once, when I was in my friend’s wedding party. <br>
+အနည္းဆံုးတစ္ခါစားဖူးတယ္..ကၽြန္ေနာ္သူငယ္ခ်င္း မဂၤလာေဆာင္ပြဲမွာေလ..<br><br>
+Are you concerned about calories when eating out? <br>
+အျပင္မွာထြက္စားေတာ့ ကယ္လိုရီပါတာ..စိုးရိမ္မိလား <br><br>
+Yes, I am. I’m on diet now, so this really matters to me. <br>
+ဟုတ္ကဲ့...အခုကၽြန္ေနာ္..က်မ္းမစားေရးနဲ႕ညီညြတ္ေအာင္စားေနတာ..ဒါေၾကာင့္ ငါ့အတြက္အေရးပါတာေပါ့ <br><br>
+Are fast food restaurants like KFC or McDonald’s famous in your country? <br>
+McDonald’s ႏွင့္ KFC လို အသင့္စား စားေသာက္ဆိုင္ေတြ နင့္ရဲ႕ႏိုင္ငံမွာ..လူၾကိဳက္မ်ားလား <br><br>
+Yes, they are. The youth in my country are big fans of fast food. <br>
+ဟုတ္တယ္..ငါတို႕ႏိုင္ငံက လူငယ္ေတြက..အသင့္စား အစားစာေတြရဲ႕ အမာခံပရိတ္သတ္ေတြေပါ့ <br><br>
+Do you often drink alcohol when eating out? <br>
+အျပင္ထြက္စားတဲ့အခါ အရက္ေကါ ေသာက္လား <br><br>
+No, not often. Just when I have parties with my friends. <br>
+မၾကာခဏမေသာက္ပါဘူး...သူငယ္ခ်င္းေတြနဲ႕..ပါတီရွိမွပဲ ေသာက္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

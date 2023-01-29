@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/30-FESTIVAL - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+How many popular festivals are there in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ..လူၾကိဳက္မ်ားတဲ့ ပြဲေတာ္ဘယ္ႏွစ္ခုရွိလဲ <br><br>
+There are many: New Year’s day, Martin Luther King day, Valentine’s day, St. Patrick day, Easter, etc. <br>
+အမ်ားၾကီးရွိပါတယ္၊ ႏွစ္သစ္ကူးေန႕၊မာတင္လူသာကင္ူေန႕၊ခ်စ္သူမ်ားေန႕၊ St Patrick ေန႕၊ Easter အစရွိသျဖင့္ေပါ့ <br><br>
+What is the most important festival in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ အေရးၾကီးဆံုးပြဲေတာ္က ဘာလဲ <br><br>
+I believe that New Year’s day is the most important one since it’s a chance for family reunion and parties. People gather together to welcome the new year. <br>
+မိသားစုေတြျပန္ဆံုၾကတာ..ပါတီပြဲေတြေၾကာင့္..ႏွစ္သစ္ကူးရက္က အေရးပါဆံုးလို႕ငါထင္တယ္၊ လူေတြက ႏွစ္သစ္ကို ၾကိဳဆိုဖို႕ စုစည္းၾကတယ္..<br><br>
+When does it take place? <br>
+ဘယ္အခ်ိန္ က်ေရာက္သလဲ <br><br>
+It occurs on January 1st. <br>
+ဇန္နဝါရီ ပထမေန႕မွာ က်ေရာက္တယ္..<br><br>
+Where’s the festival celebrated? <br>
+ပြဲေတာ္ကို ဘယ္မွာ က်င္းပသလဲ <br><br>
+The New Year’s day is celebrated all over the country. Each family has its own way to celebrate the day. <br>
+ႏွစ္သစ္ကူးေန႕ကို တစ္ႏိုင္ငံလံုး က်င့္ပၾကတယ္..၊အဲ့ဒီေန႕ကို..က်င္းပတဲ့ပံုစံကေတာ့..မိသားစုလိုက္..ကိုယ္စီရွိၾကတာေပါ့ <br><br>
+What do people do to prepare for the festival? <br>
+ပြဲေတာ္အတြက္ လူေတြ ဘာေတြျပင္ဆင္ၾကလဲ <br><br>
+Before New Year’ day, people go shopping for food and drinks, repair the house or put up decor. <br>
+ႏွစ္သစ္ကူးေန႕မတိုင္မီလူေတြဟာ..အစားစာနဲကေသာက္စရာေတြအတြက္ ေစ်းဝယ္ထြက္ၾကတယ္၊ အိမ္ကို ျပဳျပင္ၾကတယ္..သို႕မဟုတ္..အခန္းေတြကို အလွဆင္ၾကတယ္..<br><br>
+Who can join the festival? <br>
+ပြဲေတာ္ကို ဘယ္သူေတြ..ပါဝင္ႏိုင္သလဲ..<br><br>
+It’s a day for everybody. <br>
+အဲ့ဒီေန႕က လူတိုင္းအတြက္ျဖစ္ပါတယ္..<br><br>
+What do people do in the festival? <br>
+ပြဲေတာ္မွာ လူေတြဘာလုပ္ၾကသလဲ <br><br>
+On New Year’ Eve, people have a party with traditional food and drinks. After that, they may visit friends or relatives, go to the movies or watch sports. <br>
+ႏွစ္တစ္ႏွစ္ရဲ႕ေနာက္ဆံုးေန႕မွာ လူေတြဟာ..ရိုးရာအစားစာ..ေသာက္စရာေတြနဲ႕ ပါတီပြဲက်င့္ပၾကတယ္..၊ အဲ့ျပီးေနာက္ေတာ့...သူငယ္ခ်င္းသို႕မဟုတ္..ေဆြးမ်ိဳးေတြဆီလည္ပတ္ၾကတယ္..သို႕မဟုတ္..အားကစားၾကည္ဖို႕..ရုပ္ရွင္ၾကည့္ဖို႕သြားၾကတယ္..<br><br>
+What’s special about that festival? <br>
+အဲ့ဒီပြဲေတာ္ရဲ႕ထူးျခားခ်က္က ဘာလဲ<br><br>
+It marks the end of a year and celebrates a new year. People believe that the things they do on the first day will bring good luck and prosperity to them during the whole year. <br>
+ႏွစ္တစ္ႏွစ္ရဲ႕..အဆံုးကိုသတ္မွတ္ျပီး..ႏွစ္သစ္တစ္ခုကို...ၾကိဳဆိုတာေပါ့၊ လူေတြက ႏွစ္တစ္ႏွစ္ရဲ႕ ပထမဆံုးေန႕မွာ..လုပ္တဲ့အခါေတြဟာ..တစ္ႏွစ္လံုး..ကံေကါင္းျခင္းနဲ႕ စီးပြားေရးတိုးတက္မႈကို ေဆာင္းေၾကးေပးႏုိင္တယ္လို႕ ယံုၾကည္ၾကတယ္..<br><br>
+Is the festival culturally related? <br>
+ပြဲေတာ္ကယာဥ္ေက်းမႈနဲ႕ ဆက္စပ္မႈရွိလား <br><br>
+Sure, the festival is an integral part of culture. <br>
+ေသခ်ာတာေပါ့၊ ပြဲေတာ္ဟာ..ယာဥ္ေက်းပြဲရဲ႕အစိတ္ပုိင္းတစ္ခုပါ၊
+Why is a festival important? <br>
+ပြဲေတာ္တစ္ခု ဘာလို႕အေရးၾကီးလဲ <br><br>
+It adds structure to our social lives and connects us with our families and backgrounds. <br>
+ဒါက ငါတို႕လူေနမႈဘဝတစ္ခုျဖစ္ျပီး...ကၽြန္ေနာ္တို႕ကို.မိသားစုေတြနဲ႕..ဆက္သြယ္ေပးတာေပါ့ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

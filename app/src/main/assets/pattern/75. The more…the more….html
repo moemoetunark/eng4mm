@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/075. The more...the more... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+The more..........The more.........ေလ..........ေလ        <br><br>
+တစ္ခုခုကိုလုပ္ရင္...တစ္ခုခုကပိုျပီးဆိုလာမယ္..ေကါင္းလာမယ္..စတဲ့အဓိပၸါယ္ျဖစ္ပါတယ္..<br>
+ဥပမာ.ေဆးလိပ္ေသာက္ေလေလ...က်မ္းမားေရးဆိုးေလေလ...<br><br>
+ဒီေနရာမွာ မွတ္ထားရမွာ...တစ္ခုက...The more ရဲ႕ေနာက္မွာ...comparative adjective- လိုက္တာျဖစ္ပါတယ္..<br>
+Comparative Adjective ဆိုတာ...Better, sooner, earlier, more စတာေတြျဖစ္ပါတယ္..<br><br>
+I. EXAMPLES: - ဥပမာမ်ား..<br><br>
+ The more you put your heart into English, the more you’ll be interested in it. <br>
+ အဂၤလိပ္စာကိုမင္း..ႏွစ္လံုးသားနဲ႕ေလ့လာေလေလ...မင္းပိုျပီး..စိတ္ဝင္စားေလေလပဲ..<br><br>
+ The more you pay, the more you will gain. <br>
+ ေပးေလ...ရေလပါပဲ..<br><br>
+ The sooner, the better. <br>
+ ျမန္ေလေလ...ေကါင္းေလ..<br><br>
+ The earlier you set about your work, the sooner you will finish it. <br>
+ အလုပ္ေစာေစာစတင္ေလ...ေစာေစာျပီးေလပဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+A: Are you still selling your car? <br>
+မင္းရဲ႕ေကါင္းကို ေရာင္ထားတုန္းပဲလား..<br><br>
+B: Yeah, but the more I think about it, the more I want to keep it.
+ဟုတ္တယ္..ဒါေပမဲ့..အဲ့ကားအေၾကာင္းစဥ္းစားေလ...သိမ္ထားခ်င္ေလပဲ..(မေရာင္းခ်င္)<br><br>
+A: Why’s that? <br>
+ဘာလို႕လဲ..<br><br>
+B: Because buying a new car would be very expensive and I wouldn’t be able to afford the insurance. <br>
+ကားသစ္တစ္စီးဝယ္မွာက.အရမ္းေစ်းၾကီးသလို...အာမခံေၾကးေတြကိုလည္း..ငါမတတ္ႏိုင္ဘူး..<br><br>
+A: But you already put an ad in the paper. <br>
+မင္းစာေစာင္ေတြမွာ..ေၾကာ္ျငာထည့္ျပီးသြားျပီေလ..<br><br>
+B: I know but if anybody calls, I’ll just tell them it’s not for sale anymore. <br>
+ငါသိပါတယ္..ဒါေပမဲ့..တစ္ေယာက္ေယာက္က ဖုန္းဆက္ရင္..ကားကေရာင္းဖို႕မဟုတ္ေတာ့ဘူးလို႕..ပဲျပန္ေျပာလိုက္မယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

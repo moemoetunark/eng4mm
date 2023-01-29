@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/26-ANIMALS - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Are you an animal lover? <br>
+မင္းတိရစၦန္ေတြကိုခ်စ္တတ္လား <br><br>
+Yes, I am. I love animals. <br>
+ဟုတ္တယ္..ငါတိရစၦာန္ေတြကိုခ်စ္တယ္..<br><br>
+Are you raising any pets? <br>
+မင္း အလွေမြးတိရစၦာန္ ေမြးထားလား..<br><br>
+Yes, I have a pitbull puppy at home. <br>
+ဟုတ္တယ္..ငါ့အိမ္မွာ Pitbull ေခြးေပါက္စတစ္ေကါင္ရွိတယ္..<br><br>
+What is it like? <br>
+ဘယ္လိုလဲ..အဲ့ေကာင္က <br><br>
+My puppy is friendly, highly intelligent and well-behaved. He always waves his tail and licks my hand to welcome me home. <br>
+ငါ့ရဲ႕ေခြးေလးက..ေဖာ္ေရြတယ္..ညာဏ္ေကါင္းတယ္..ျပီးရင္ အမူရာယာဥ္ေက်းတယ္။ ငါ့ကိုအိမ္သို႕ၾကိဳဆိုတဲ့အေနျဖင့္ငါ့ရဲ႕လက္ကိုယက္တယ္..ျပီးရင္ အျမီးကို လႈပ္ျပတယ္..<br><br>
+What does it look like? <br>
+သူ႕(ရုပ္ရည္)ပံုစံက ဘယ္လိုလဲ <br><br>
+He’s a medium-sized puppy with a strong neck, broad chest and brown hair. <br>
+အရြယ္ကေတာ့..လယ္လတ္စား...လည္ပင္းအေမြးထူတယ္..က်ယ္ျပန္႕တဲ့ရင္...ညိုတဲ့အေမႊးရွိတယ္..<br><br>
+What are its habits? <br>
+သူ႕ရဲ႕ဝါသနာက ဘာလဲ <br><br>
+My Pitbull puppy loves doing exercise every day. When he plays, he plays to win. <br>
+ငါ့ရဲ႕ ေခြးေလးက ေလ့က်င့္ခန္းလုပ္ရတာ ႏွစ္သက္တယ္..သူကစားတဲ့အခါ..အႏိုင္ကစားတာ..<br><br>
+What do you usually do with it? <br>
+အဲ့ေခြးနဲ႕ မင္းဘာေတြ လုပ္လဲ <br><br>
+We usually play tennis together. My puppy helps me pick up tennis balls. <br>
+ငါတို႕ပံုမွန္အားျဖင့္ တင္းနစ္ကစားၾကတယ္...ငါ့ေခြးေလးက တင္းနစ္ေဘာကို ကူလို႕ေကါက္ေပးတယ္..<br><br>
+What does it like to eat? <br>
+သူက ဘာစားရတာကို ၾကိဳက္လဲ..<br><br>
+He loves beef, chicken and some dairy products. <br>
+သူကအမဲသား၊ၾကက္သားနဲ႕၊ႏို႕ထြက္ပစၥညးေတြႏွစ္သက္တယ္..<br><br>
+What do you learn from it? <br>
+သူ႕ဆီကေန မင္ဘာေတြ သင္ယူလဲ <br><br>
+He teaches me loyalty. An adult pitbull may make me feel safe. <br>
+သူက ငါ့ကို သစၥာတရာကို သင္ေပးတယ္..။ အရြယ္ေရာက္ျပီးတဲ့ pitbull ေခြးဟာ အႏၱရယ္ေတြ ကါကြယ္ေပးတယ္..<br><br>
+Why do people keep pets? <br>
+လူေတြဘာလို႕..အလွေမြးတိရစၦာန္ေတြ ထားၾကတာလဲ <br><br>
+They consider pets as their loyal companions which make their life better. <br>
+သူတို႕က..အလွေမြးတိရစၦာန္ေတြဟာ သူတို႕ရဲ႕သစၥာရွိတဲ့အေဖာ္လို႕ခံယူၾကတာ..
+Are pets well looked after in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ..အလွေမြးတိရစၦာန္ေတြကို..ေသေသခ်ာခ်ာ..ေစာင့္ေရွာက္ၾကလား <br><br>
+Yes. People in my country love pets. <br>
+ဟုတ္တာေပါ့..ငါတို႕ႏိုင္ငံကလူေတြ အလွေမြးတိရစၦာန္ေတြကိုအရမးခ်စ္ၾကတာ..
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

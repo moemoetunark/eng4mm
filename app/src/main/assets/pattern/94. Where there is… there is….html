@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/094. Where there is... there is... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Where there is/are.........there is/are..........<br>
+ဒီ pattern ေလးကိုေတာ့..အခက္ခဲဆိုတာရွိရင္..လြယ္ကူတာဆိုတာရွိမယ္။ ဆင္းရဲတာရွိရင္..ခ်မ္းသာတာ..ဆိုတာရွိမယ္..စတဲ့ <br>
+အဓိပၸါယ္ေတြနဲ႕သံုးတာျဖစ္ပါတယ္..ေအာက္မွာေပးထားတဲ့ နမူနာေလးေတြကို ေသခ်ာေလ့လာပါ..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+
+ Where there are difficulties, there are ways to get over them. <br>
+ အခက္ခဲဆိုတာရွိရင္...အဲ့ဒါကိုေျဖရွင္းဖို႕နည္းလမ္းဆိုတာ..ရွိပါတယ္..<br><br>
+ Where there is opposition, there are rebellions. <br>
+ အတိုက္ခံရွိရင္..သူပုန္ဆိုတာ..ရွိမွာပဲ..<br><br>
+ Where there is contact, there is friction. <br>
+ ဆက္သြယ္မႈရွိရင္ေတာ့..ထိေတြ႕မႈဆိုတာ.ရွိမွာပဲ..<br><br>
+ Where there are women, there are jealousy and suspicion. <br>
+ မိန္းမဆိုတာရွိရင္..မနာလိုသဝန္တိုတာနဲ႕..သံသယကေတာ့ရွိမွာပဲ..<br><br>
+ Where there is a will, there is a way. <br>
+ စိတ္ဓာတ္ရွိရင္...နည္းလမ္းဆိုတာ..ရွိပါတယ္..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Son:  Dad,  I’ll be having my college interview with  Harvard University  next week. <br>
+သား--- အေဖေရ...ေနာက္အပတ္ဆို..ကၽြန္ေနာ္..ဟားဗတ္တကၠသိုလ္မွာ..အင္တာဗ်ဴးေျဖမယ္..<br><br>
+Father: That’s great son, I’m glad to hear that. <br>
+အေဖ-- ေကါင္းတာေပါ့..သားေရ။ ၾကားရတာ ဝမ္းသာပါတယ္..<br><br>
+Son:  Yeah, but the problem is the competition to get into that college is very stiff. <br>
+သား -- ဟုတ္ကဲ့..ဒါေပမဲ့..ျပသနာက..ေကါလိပ္ဝင္ဖို႕ျပိဳင္ဆိုင္ရတာ..အရမ္းၾကပ္တယ္..<br><br>
+Father: Well, are you sure you really want to go there? <br>
+အေဖ-- မင္းအဲ့ဒီမွာ တက္ခ်င္တာ..ေသခ်ာလား..<br><br>
+Son: Yes, I’ve wanted to go to that college since I was in junior high school. <br>
+သား --- ဟုတ္တယ္..ကၽြန္ေနာ္..အထက္တန္းတုန္းကတည္းက..အဲ့ဒီေကါလိပ္ကိုတက္ခ်င္ခဲ့တာ..<br><br>
+Father: Don’t worry, Son. If you really want to go there, then I’m sure you will get in. Remember, where there’s a will there’s a way. <br>
+အေဖ--- မစိုးပါနဲ႕..သား။ မင္းသာတကယ္သားခ်င္တယ္ဆိုရင္..မင္းဝင္ခြင့္ရမွာေသခ်ာပါတယ္.။ စိတ္ဓာတ္ရွိရင္..နည္းလမ္းဆိုတာ..ရွိတယ္ဆိုတာ...မွတ္ထားစမ္းပါကြာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

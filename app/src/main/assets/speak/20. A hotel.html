@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/20-A HOTEL - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is your favorite hotel? Where is it located? <br>
+နင့္ရဲ႕အႏွစ္သက္ဆံုး ဟိုတယ္ကဘာလဲ..ဘယ္မွာတည္ရွိလဲ <br><br>
+It’s the Sheraton, a five-star hotel located in Saigon, Vietnam. <br>
+ဗီယက္နမ္မွာရွိတဲ့..ၾကယ္ငါးပြင့္အဆင့္ရွိတဲ့..Sheraton ဟုိတယ္ျဖစ္တယ္..<br><br>
+How do you know that hotel? <br>
+အဲ့ဒီ ဟိုတယ္ကို နင္ဘယ္လိုသိလဲ <br><br>
+Before coming to Vietnam for traveling, I searched on the Internet. It’s one of the best hotels in Vietnam. <br>
+ငါဗီယက္နမ္သို႕..ခရီးမထြက္ခင္....အင္တာနက္မွာရွာတာေပါ့။ အဲ့ဒါက ဗီယက္နမ္ရဲ႕..အေကါင္းဆံုး ဟိုတယ္တစ္ခုပဲ <br><br>
+Why do you choose to stay in that particular hotel? <br>
+အဲ့လိုထူးျခားတဲ့ဟိုတယ္မွာ တည္ဖို႕နင္ဘာလို႕ေရြးခ်ယ္တာလဲ <br><br>
+I like the architecture there, and online all the reviews about the hotel are positive.
+Is it by the beach? <br>
+ကမ္းေျခနဲ႕နီးလား <br><br>
+No, Saigon is not a beach-side city. <br>
+မနီးပါဘူး...Saigon ကကမ္းေျချမိဳ႕တစ္ခုမဟုတ္ပါဘူး <br><br>
+Does it attract many tourists? <br>
+ခရီးသြားေတြမ်ားစြာကို ေဆြးေဆာင္ႏိုင္သလား <br><br>
+Yes, I guess. When I stayed there, it was completely booked. <br>
+ဟုတ္မယ္.ထင္တာပဲ..ငါအဲ့မွာတုန္းတုန္းက..အားလံုးBooking လုပ္ထားၾကျပီ <br><br>
+What type of room did you stay in and what facilities did you get from the hotel? <br>
+နင္ဘယ္လိုအခန္းမ်ိဳးစားမွာတည္းခဲ့သလဲ...ဘယ္လိုအသံုးေဆာင္ပစၥည္းေတြ ဟိုတယ္မွာ ပါသလဲ <br><br>
+I stayed in a double-bed room. The room is equipped with air-conditioner, a flat-screen TV, wardrobe, etc. <br>
+ကုတင္ႏွစ္ထပ္ပါတဲ့အခန္းမွာတည္းခဲ့တယ္..အခန္းက အဲယားကြန္း..TV, အဝတ္စားဗီရိုၾကီးပါတယ္..<br><br>
+What do you like about that hotel? <br>
+အဲ့ဟိုတယ္နဲ႕ပတ္သက္လို႕မင္းဘာကို ႏွစ္သက္လဲ <br><br>
+A gymnasium, swimming pool, and BBQ area are available. I also love the green space surrounding the hotel. <br>
+အားကစားရံုတစ္ရံု၊ေရကူးကန္၊ အကင္ဆိုင္တစ္ခုရွိတယ္။ စိတ္လန္စိုေျပတဲ့ဟိုတယ္ပတ္ဝန္းက်င္ကိုလည္း သေဘာက်တယ္..<br><br>
+Is all the staff friendly and helpful? <br>
+အကူေတြအားလံုးက ကူညီတတ္ျပီး..ေဖာ္ေရြၾကလား <br><br>
+Yes, definitely. They all are professional. <br>
+ဟုတ္တယ္..သူတို႕ကအလုပ္လုပ္တာ ပီသတယ္..<br><br>
+How much does it cost a night? <br>
+တစ္ညကို ဘယ္ေလာက္ကုန္က်လဲ <br><br>
+It costs me around $250/night. <br>
+တစ္ညကို ေဒၚလာ..၂၅၀ ကုန္တယ္..<br><br>
+Do you recommend that hotel to friends? <br>
+သူငယ္ခ်င္းေတြကိုေကါ အဲ့ဒီဟိုတယ္ကို..ညႊန္းလိုက္သလား <br><br>
+Yes, if they come to Vietnam. I love everything there. <br>
+ဟုတ္တယ္..သူတို႕ဗီယက္နမ္ကိုလာရင္ေပါ့။ ငါဒီမွာ အကုန္လံုးကိုသေဘာက်တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

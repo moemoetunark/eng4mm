@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/41-TV Program - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is your favorite TV program? <br>
+မင္းရဲ႕အၾကိဳက္ဆံုး TV အစီစဥ္္ကဘာလဲ       <br> <br>
+Well, I watch a lot, but the one I like best is “How’s it made”. <br>
+ကၽြန္ေနာ္ အမ်ားၾကီးၾကည့္ပါတယ္..ဒါေပမဲ့ အၾကိဳက္ဆံုးတစ္ခုကေတာ့.."How's it made" ဆိုတဲ့အစီစဥ္ပါပဲ <br><br>
+Is that an international TV program? <br>
+အဲ့ဒါက ႏိုင္ငံတကာ TV အစီစဥ္တစ္ခုလား <br><br>
+Yes, it is. It’s available in Canada, Europe, Australia, New Zealand, Southeast Asia, and so on. <br>
+ဟုတ္တယ္..အဲ့ဒီအစီစဥ္က..ကေနဒါ..ဥေရာပ..ၾသစေၾတးလ်..နယူးဇီလန္..အေရွ႕ေတာင္အာရွ..နဲ႕တစ္ျခားေနရာေတြမွာ..ၾကည့္လို႕ရတယ္..<br><br>
+What is the TV program about? <br>
+အဲ့ဒီ အစီစဥ္က ဘာအေၾကာင္းရာလဲ <br><br>
+Its name somehow describes the content, which is about the process of making things like lipsticks, balls, candy, toys, chocolate and so on. <br>
+နာမည္ေပးထားတဲ့အတိုင္း..ႏႈတ္ခမ္းနီးဆိုးေတးေတြ..ေဘာလံုး..သၾကားလံုး..ကစားစရာ..ေခ်ာ့ကလပ္လုပ္ပံုစတာေတြကိုေပါ့..<br><br>
+How often do you watch that TV program? <br>
+အဲ့ဒီအစီစဥ္ကို မင္းဘယ္ေလာက္ၾကည့္ျဖစ္လဲ <br><br>
+Almost every day after dinner. <br>
+ညေနစာ စားျပီးေနာက္..ေန႕တိုင္းနီးပါးၾကည့္ျဖစ္တယ္..<br><br>
+Who watches that program with you? <br>
+အဲ့ဒီအစီစဥ္ကို မင္းနဲ႕အတူ ဘယ္သူၾကည့္လဲ <br><br>
+My family watches it together. My younger brother can’t wait to turn on the TV. <br>
+ငါ့မိသားစု အတူတကြၾကည့္ၾကတယ္..။ င့ါညီငယ္က TV ဖြင့္ဖို႕ဆို မေစာင့္ႏိုင္ေအာင္ကို ျဖစ္ေနတာ..<br><br>
+What channel is it on? <br>
+အဲ့ဒါ ဘယ္လိုင္းမွာ လာတာလဲ <br><br>
+A very common one, Discovery channel, which focuses on popular science, technology, and history. <br>
+လူၾကည့္မ်ားတဲ့တစ္ခုေလ..သမိုင္း..နည္းပညာနဲ႕..သိပၸံပညာေတြကို လႊင့္တဲ့ Discovery လိုင္းေပါ့ <br><br>
+Why do you like that TV program? <br>
+အဲ့ဒီအစီစဥ္ကို နင္ဘာလို႕ၾကိဳက္တာလဲ <br><br>
+I love learning new things, especially about how everything is produced. I would love to run a business about hand-made cosmetics. <br>
+ငါက အသစ္ဆန္းေတြသင္ရတာကိုၾကိဳက္တယ္..အထူးသျဖင့္ေတာ့..ပစၥည္းေတြဘယ္လိုထုတ္လုပ္တယ္ဆိုတာကိုေပါ့။ လက္လုပ္ အလွကုန္စီးပြားေရးလုပ္ငန္းတစ္ခု ငါတည္ေထာင္ခ်င္တယ္..<br><br>
+How does that TV program change you? <br>
+အဲ့ဒီ TV အစီစဥ္က မင္းကို ဘယ္လိုေျပာင္းလဲေစလဲ <br><br>
+I know more about the world around me. It also supports me in my career path to make my dream come true. <br>
+မိမိကမၻာၾကီးအေၾကာင္းပိုနားလည္လာတယ္.။ င့ါအိပ္မက္ေတြ..တကယ္ျဖစ္လာဖို႕.အတြက္လည္း အေထာက္ကူအမ်ားၾကီးျဖစ္ပါတယ္..<br><br>
+Who is its target audience? <br>
+ပစ္မွတ္ထားတဲ့ ပရိတ္သတ္ေတြက ဘယ္သူေတြလဲ <br><br>
+It particularly aims at families and younger audiences. <br>
+အထူးသျဖင့္..မိသားစုနဲ...လူငယ္ပရိတ္သတ္ေတြ ပစ္မွတ္ထားတယ္..<br><br>
+Would you recommend that TV program to your friends? <br>
+အဲ့ဒီ TV အစီစဥ္ကို မင္းသူငယ္ခ်င္းေတြကို ညႊန္ေပးမွာလား..<br><br>
+Yes, of course. They would be crazy about the program, I bet. <br>
+ဟုတ္တာေပါ့..သူတို႕အဲ့ဒီအစီစဥ္ကို အရူးမူးၾကိဳက္ၾကမွာ..ငါေလာင္းရဲတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

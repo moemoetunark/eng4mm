@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/085. What do you say... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What do you say........? မင္းဘယ္လိုသေဘာရလဲ..<br><br>
+တစ္စံုတစ္ေယာက္ရဲ႕..အၾကံျပဳခ်က္..ထင္ျမင္ခ်က္ေမးတဲ့အခါ..သံုးပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ What do you say about going to the cinema this afternoon? <br>
+ ဒီေန႕လည္..ရုပ္ရွင္ရံုသြားမွာ..မင္းဘယ္လိုသေဘာရလဲ..<br><br>
+ Let’s go by plane. What do you say? <br>
+ ေလယာဥ္နဲ႕သြားၾကမယ္...မင္းဘယ္လိုသေဘာရလဲ..<br><br>
+ What do you say about some light music? <br>
+ Light ဂီတအမ်ိဳးစား..မင္းဘယ္လိုသေဘာရလဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+A: I’m so upset. <br>
+ငါအရမ္းစိတ္ပ်က္ေနတယ္..<br><br>
+B: What’s the matter? <br>
+ဘာျဖစ္တာလဲ..<br><br>
+A: My girlfriend broke up with me today. <br>
+ငါ့ရည္းစားနဲ႕..ဒီေန႕ျပတ္သြားတယ္..<br><br>
+B: I’m sorry to hear that. Hey, what do you say you and I go to the movies this afternoon? Maybe that will cheer you up. <br>
+ၾကားရတာ..စိတ္မေကါင္းပါဘူး။ ေဟး..မင္းနဲ႕ငါ..ဒီေန႕လည္...ရုပ္ရွင္ၾကည့္သြားမယ္..ဘယ္လိုသေဘာရလဲ....မင္းကိုေပ်ာ္ေစႏိုင္ရင္...ေပ်ာ္ေစႏိုင္မွာေပါ့..<br><br>
+A: That sounds like a good idea. <br>
+အၾကံေကါင္းတယ္...<br><br>
+B: Sure it is. It will get your mind off of your girlfriend, I mean your ex-girlfriend. <br>
+ေသခ်ာတာေပါ့။ မင္းရဲ႕စိတ္ထဲကေန..မင္းရည္းစားကို ထုတ္ႏိုင္လိမ့္မယ္..ငါဆိုလိုတာ..အရင္ရည္းစား..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

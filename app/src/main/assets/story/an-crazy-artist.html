@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/stories/24.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Frenhofer was the best artist in the world. <br>
+ဖရန္႕ဟိုဖာ..ဟာကမၻာမွာ..အေတာ္ဆံုး..အႏုပညရွင္တစ္ေယာက္ျဖစ္ပါတယ္.
+Everyone loved him. <br>
+လူတိုင္းသူ႕ကိုခ်စ္ၾကပါတယ္..<br><br>
+The quality of his paintings was very high. <br>
+သူ႕ပန္းခ်ီကားေတြရဲကအရည္ေသြးဟာ..အရမ္းျမင့္တယ္..<br><br>
+He always used the best materials. <br>
+သူဟာအျမဲတမ္း..အေကါင္းဆံုး..ပစၥည္းေတြကိုပဲသံုးတယ္..<br><br>
+He made a big profit from his paintings. <br>
+သူ႕ပန္းခ်ီကားေတြဆီကေန..သူအက်ိဳးျမတ္ၾကီးရပါတယ္..<br><br>
+He had delicious meals with his rich neighbors. <br>
+သူ႕ရဲ႕ခ်မ္းသားတဲ့အသိုင္းဝန္းနဲ႕သူ..အစားစာေတြတူတူစားတယ္..<br><br>
+He taught art classes. <br>
+အႏုပညာ သင္တန္းတစ္ခု သူပို႕ခ်ပါတယ္..<br><br>
+Life was good. <br>
+ဘဝက လံုးဝအဆင္ေျပေနတယ္..<br><br>
+Then his attitude changed. <br>
+အဲ့ေနာက္ေတာ့..သူ႕သေဘာထားေျပာင္းသြားတယ္..<br><br>
+He stopped selling paintings and teaching. <br>
+သူဟာ..သူ႕ပန္းခ်ီကားေရာင္းတာနဲ႕..စာသင္တာကို ရပ္တန္႕လိုက္ပါတယ္..<br><br>
+He tried a new method of painting. <br>
+သူဟာ...ပန္းခ်ီးဆြဲတဲ့နည္းစနစ္အသစ္တစ္ခုကို..စမ္းသပ္တယ္..<br><br>
+He stayed alone in his apartment all day. <br>
+သူဟာ..သူ႕အခန္းမွာ..တစ္ေယာက္တည္းတစ္ေနကုန္ေနတယ္..<br><br>
+He worked all day and all night, rarely eating. <br>
+သူဟာ..တစ္ခါတစ္ေလသာ..အစာစားျပီးေန႕ေရာညပါ အလုပ္လုပ္တယ္..<br><br>
+Soon Frenhofer became very thin. <br>
+မၾကာမီ..သူဟာ.အရမ္းပိန္လွီလာပါတယ္..<br><br>
+But he kept working on the same painting for many years. <br>
+ဒါေပမဲ့သူဟာ...ႏွစ္ေတြၾကာ..ပန္းခ်ီကားတစ္ခုကိုပဲဆက္ဆြဲေနတယ္..<br><br>
+He worked as hard as he could. <br>
+သူအတတ္ႏိုင္ဆံုး အလုပ္လုပ္တယ္..<br><br>
+Finally, he finished the painting. <br>
+ေနာက္ဆံုးေတာ့..သူ႕ပန္းခ်ီးကား ျပီးသြားတယ္..<br><br> 
+He was very happy and invited other artists to see it. <br>
+သူအရမ္းေပ်ာ္တယ္..ျပီးေတာ့..တစ္ျခားအႏုပညာရွင္ေတြကို..ၾကည့္ေစတယ္..<br><br>
+“I want your professional opinion,” he said. <br>
+မင္းတို႕သေဘာထားေတါ..ငါလိုခ်င္တယ္..သူကေျပာလိုက္တယ္..<br><br>
+He wanted them to judge it and compare it to other paintings. <br>
+သူက သူတို႕ကိုတျခား ပန္းခ်ီးကားေတြနဲ႕..ႏႈွိင္းယွန္ျပီး ဆံုးျဖတ္ေစခ်င္တာ..<br><br>
+Everyone was very excited as they went up the stairs to his apartment. <br>
+လူတိုင္းဟာ..စိတ္လႈပ္ရွားစြာ..သူတို႕အခန္းေပၚသို႕တက္သြားၾကပါတယ္..<br><br>
+Frenhofer was excited to show his painting, and the artists were excited to see it. <br>
+ဖရန္႕ဟိုဖာလည္း..သူ႕ပန္းခ်ီကားကို ျပရမွာကို..စိတ္လႈပ္ရွားေနတယ္..ျပီးေတာ့..အႏုပညာရွင္ေတြလည္းၾကည့္ရမွာ..စိတ္လႈပ္ရွားေနၾကတယ္..<br><br>
+“They’ll love it,” he thought. <br>
+သူတို႕ႏွစ္သက္လိမ့္္မယ္လို႕..သူကထင္ခဲ့တာ..<br><br>
+But they did not. <br>
+သူတို႕မၾကိဳက္ၾကဘူး..<br><br>
+They were surprised by his painting. <br>
+သူ႕ပန္းခ်ီကါးေၾကာင့္သူတို႕အံ့ၾသသြားၾကတယ္..<br><br>
+There was no white anywhere. <br>
+ဘယ္ေနရာမွာမွ..အျဖဴေရာင္မေတြ႕ရဘူး..<br><br>
+Frenhofer filled the whole painting with lines and colors. <br>
+ဖရန္႕ဟိုဖာ.သူ႕ပန္းခ်ီကားတစ္ခုလံုးကို..အေရာင္နဲ႕လိုင္းေတြနဲ႕ျဖည့္ထားတာ..<br><br>
+There was no space for a normal picture. <br>
+သမာန္..ပန္းခ်ီကားတစ္ခုနဲ႕ လံုးဝမတူဘူး..<br><br>
+It was full of strange shapes. <br>
+ပံုမွန္မဟုတ္တဲ့ ပံုသ႑န္ေတြနဲ႕ျပည့္ႏွက္ေနတယ္..<br><br>
+It looked bad to the other artists. <br>
+တစ္ျခားအႏုပညာရွင္ေတြ အျမင္မွာေတာ့..အရမ္းဆိုးပါတယ္..<br><br> 
+He used symbols, and they didn’t understand them. <br>
+သူက အမွတ္သားေတြကို..သံုးတယ္..ဒါေပမဲ့ သူတို႕က အဲ့ဒါေတြကို နားမလည္ၾကဘူး..<br><br>
+They thought it was terrible. <br>
+အရမ္းဆိုးတယ္လို႕..သူတို႕ထင္တယ္..<br><br>
+“Why did you paint this strange picture?” someone asked. <br>
+တစ္စံုတစ္ေယာက္က..နင္ဘာလို႕..ဒီထူးဆန္းတဲ့ ပန္းခ်ီကားကို..ဆြဲရတာလဲ..<br><br>
+They didn’t understand its beauty. <br>
+ပန္းခ်ီကားရဲ႕အလွပကို သူတို႕နားမလည္ၾကပါဘူး..<br><br>
+But after some time, many people began to like his painting. <br>
+ဒါေပနဲ႕..အခ်ိန္အနည္းငယ္ၾကာျပီးေနာက္မွာေတာ့..လူေတာ္ေတာ္မ်ာမး်ားသူ႕ပန္းခ်ီကားကို စျပီးၾကိုက္လာၾကပါတယ္..<br><br>
+People wrote articles about it in magazines. <br>
+မဂၢဇင္းေတြမွာ.အဲ့ဒီပန္းခ်ီကါးအေၾကာင္း လူေတြေဆာင္းပါးေရးၾကတယ္..<br><br>
+They said it was his best work. <br>
+သူ႕ရဲ႕အေကါင္းဆံုး အလုပ္ပဲလို႕..သူတို႕ကေျပာၾကတယ္..<br><br>
+They loved his strange symbols. <br>
+သူ႕ရဲ႕ထူးျခားတဲ့..အမွတ္သားေတြကို..သူတို႕ၾကိဳက္ၾကတယ္..<br><br>
+They loved his strange colors. <br>
+ထူးျခားတဲ့အေရာင္ေတြကိုလည္း သူတို႕ႏွစ္သက္ၾကတယ္..<br><br>
+Frenhofer’s painting reminded everyone that just because something was new didn’t mean that it was bad. <br>
+ဖရန္႕ဟိုဖာရဲ႕..ပန္းခ်ီးကားက..အသစ္ဆန္းေတြဟာ..ဆိုတယ္လို႕မဆိုလိုဘူးဆိုတာ..လူတိုင္းကို..အသိေပးလိုက္တာပဲ..<br><br> 
+He also helped them to realize that sometimes it takes people a little time to understand great things. <br>
+ထူးျခားတဲ့အရာေတြကို..နားလည္ဖို႕..တစ္ခါတစ္ေလ..လူေတြအတြက္..အခ်ိန္ၾကာတယ္ဆိုတာကိုနားလည္ဖို႕အတြက္လည္း..သူကလူေတြကို..ကူညီလိုက္တာ..ျဖစ္ပါတယ္..<br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

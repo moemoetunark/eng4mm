@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/7-CHILDHOOD MEMORY - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Did you have a happy childhood? <br>
+ေပ်ာ္ရႊတဲ့ကေလးဘဝတစ္ခု နင္ရွိခဲ့လား <br><br>
+Yes, I did. I enjoyed playing hide and seek with my peers. <br>
+ဟုတ္ကဲ့ ရွိခဲ့တယ္။ ငါ့သူငယ္ခ်င္းေတြနဲ႕ပုန္းတမ္းကစားတာေပ်ာ္ခဲ့တယ္<br><br>
+Did you experience your childhood in a city or countryside? <br>
+နင့္ကေလးဘဝကို..ေက်းလက္သို႕မဟုတ္ ျမိဳ႕ျပမွာေတြ႕ၾကံဳခဲ့လား <br><br>
+I spent my childhood in a rural area where I could see vast rice fields. <br>
+စပါးခင္းေတြအမ်ားၾကီးျမင္ရတဲ့ ေဝးလံတဲ့ေနရာမွာ ငါကေလးဘဝကိုျဖတ္သန္းခဲ့တယ္ <br><br>
+Did you usually skip class when you were a child? <br>
+ကေလးဘဝတုန္းက အတန္းပ်က္ခဲ့လား <br><br>
+Yes, I did, and many of my friends did, too. <br>
+ဟုတ္ကဲ့ပ်က္ခဲ့တယ္..ငါ့သူငယ္ခ်င္းေတြမ်ားၾကီးလည္းပ်က္ၾကတယ္..<br><br>
+Who were you with when you were a child? <br>
+ကေလးဘဝတုန္းက နင္ဘယ္သူနဲ႕တူတူရွိခဲ့လဲ <br><br>
+I was with my beloved family. <br>
+ငါ့ရဲ႕ခ်စ္လွစာေသာ မိသားစုနဲ႕တူတူေပါ့ <br><br>
+What did you want to be when you were a child? <br>
+ကေလးဘဝတုန္းက နင္ဘာျဖစ္ခ်င္ခဲ့လဲ <br><br>
+I dreamed of being a fashion designer. <br>
+ဖက္ရွင္ ဒီဇိုင္းနာျဖစ္ဖို႕ငါအိပ္မက္ခဲ့တယ္..<br><br>
+Who did you love the most when you were a child? <br>
+ကေလးဘဝတုန္းက ဘယ္သူ႕ကိုအမ်ားဆံုးခ်စ္ခဲ့လဲ <br><br>
+I loved my mom the most since she was always there and took care of me. <br>
+ငါ့အေမကိုအခ်စ္ဆံုးးေပါ့..သူမကငါ့ကိုအျမဲတမ္းဂရုစိုက္တယ္..<br><br>
+Who was your childhood hero? <br>
+ကေလးဘဝတုန္းက နင့္ရဲ႕သူရဲေကါင္းမဘယ္သူလဲ <br><br>
+Robin Hood, he took money from the rich and gave it to the poor. <br>
+ေရာ္ဘင္ဟူးသ္...သူကခ်မ္းသာတဲ့သူေတြဆီက ေငြေတြယူျပီး..ဆင္းရဲတဲ့သူေတြကို ေပးတဲ့သူေလ..<br><br>
+What reminds you of your childhood? <br>
+ကေလးဘဝက ဘာေတြကို အမွတ္ရလဲ..<br><br>
+Green rice fields which I happen to see everywhere remind me of my beautiful childhood. <br>
+စိမ္းလန္းတဲ့ စပါးခင္းေတြက ငါ့ရဲ႕လွပတဲ့ကေလးဘဝကိုသတိရေစတယ္..<br><br>
+Did you change a lot when you grew up? <br>
+ၾကီးလာေတာ့ နင္အမ်ားၾကီးေျပာင္းလဲသြားလား <br><br>
+Yes, of course. I’m more mature now both physically and mentally. <br>
+ေသခ်ာတာေပါ့..စိတ္ေပါင္းေရာ ကိုယ္ပါ..ကၽြန္ေနာ္ ပိုျပီးေတာ့ ရင့္က်က္လာတယ္..<br><br>
+Why is childhood important? <br>
+ကေလးဘဝက ဘာလို႕အေရးၾကီးတာလဲ <br><br>
+Because it shapes people into who they will become. <br>
+လူေတြဘာျဖစ္လာမယ္ဆိုတာကို..ပံုေဖာ္ေပးလို႕ေပါ့..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

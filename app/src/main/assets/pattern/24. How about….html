@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/024. How about... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+မိမိရဲ႕အၾကံျပဳခ်က္ကို..ေဖာ္ျပရန္ how about ........ကိုသံုးႏိုင္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ How about going for a spin in my new car? <br>
+ငါ့ရဲ႕ကားအသစ္နဲ႕ အေပ်ာ္စီးထြက္ၾကမယ္..<br><br>
+ How about minding your own business? <br>
+ကိုယ့္အလုပ္ပဲ..ကိုယ္ဂရုစိုက္.လိုက္ပါဦး..<br><br>
+ How about those Yankees! <br>
+ဒီ Yanakees ေတြဘယ္လိုလဲ..<br><br>
+ What about your holidays? <br>
+မင္းရဲ႕အားလပ္ရက္..ဘယ္လိုလဲ..<br><br>
+ What about his qualifications for the job? <br>
+အလုပ္တြက္..သူ႕ရဲ႕အရည္ခ်င္းေတြက..ဘယ္လိုလဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Husband: Is it time to get up already? <br>
+ေယာက္်ား း အိပ္ရာက ထဖို႕အခ်ိန္တန္ျပီလား..<br><br>
+Wife: Yes, Dear, it’s 6 a.m. You have to hurry up and get dressed.<br>
+မိန္းမ း ဟုတ္တယ္..အခ်စ္..မနက္ ၆နာရီထိုးျပီ။ နင္ျမန္ျမန္အဝတ္လဲရမယ္..<br><br>
+Husband: I guess so, hey honey how about making me a cup of coffee while I hop in the shower?<br>
+ေယာက္်ား း  ထင္တာပဲ....ေဟး..ဟန္နီ..ငါေရခ်ိဳးခန္းထဲမွာရွိေနတုန္း..ေဖာ္ဖီေလး ေဖ်ာ္ထားလိုက္ပါလား..<br><br>
+Wife: Sure, Dear. How would you like your coffee?<br>
+မိန္းမ း ေသခ်ာတာေပါ့..ေကာ္ဖီ ဘယ္လိုၾကိဳက္လဲ..<br><br>
+Husband: With milk and sugar, please. <br>
+ေယာ္က်ား း သၾကားနဲ႕..ႏို႕နဲ႕ လုပ္လိုက္.ေက်းဇူးျပဳလို႕..<br><br>
+Wife: Sure, right away. Now take that shower before it gets too late. <br>
+ခုပဲလုပ္လိုက္မယ္ေနာ္။ အရမ္းမေနာက္က်ခင္..ေရျမန္ျမန္ပဲ ခ်ိဳးလိုက္ေတာ့..<br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

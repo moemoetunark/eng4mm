@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/73-Handcraft Items - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you love handcraft items? <br>
+လက္လုပ္..ပစၥည္းတစ္ခု မင္းမွာရွိလား..<br><br>
+Yeah. My accessories are all hand-made. <br>
+ဟုတ္တယ္..ငါ့မွာရွိတဲ့..အပိုပစၥည္းေတြက အကုန္လပ္လုပ္ေတြခ်ည္းပဲ..<br><br>
+What handcraft item do you like? <br>
+ဘယ္..လက္လုပ္..ပစၥည္းကို မင္းၾကိဳက္သလဲ..
+Well, I’ve got many items, but I really fall in love with my bamboo handbag. <br>
+ငါ့မွာ ပစၥည္းေတြမ်ားၾကီးရွိတယ္..ဒါေပမဲ့..ဝါးနဲ႕လုပ္ထားတဲ့..လက္ဆြဲအိတ္ကိုေတာ့..ငါတကယ္..သေဘာေတြ႕ေနတာ..<br><br>
+Where did you buy it? <br>
+မင္းအဲ့ဒါ ဘယ္မွာဝယ္တာလဲ..<br><br>
+I bought it in a trip to the countryside. People make handcrafts from bamboo there. <br>
+ငါေက်းလပ္ေဒသသို႕ ခရီးသြားတုန္းက ဝယ္ခဲ့တာ။ အဲ့မွာလူေတြက..ဝါးပင္ေတြကေန...လက္မႈပစၥည္းေတြလုပ္ၾကတယ္ေလ..<br><br>
+Why do you like it? <br>
+အဲ့ဒါကို မင္းဘာလို႕ႏွစ္သက္တာလဲ..<br><br>
+Because it’s unique. I travel quite a lot, but can hardly find a similar one. <br>
+အဲ့ဒါက ထူးျခားတယ္ေလ..။ ကၽြန္ေနာ္..ခရီးမ်ားၾကီးသြားတယ္..အဲ့လိုပစၥည္းမ်ိဳးေတြ႕ဖို႕..တကယ္ရွားတာ..<br><br>
+What is it made of? <br>
+ဘယ္ဟာနဲ႕လုပ္ထားတာလဲ..<br><br>
+It’s made of 100% bamboo. <br>
+၁၀၀ရာႏႈန္း ဝါးနဲ႕လုပ္ထားတာ..<br><br>
+What does it look like? <br>
+ဘယ္လိုပံုသ႑န္ရွိလဲ...<br><br>
+Being made of traditional material, it looks trendy, though. My handcraft bag has A4 paper size, which is large enough to carry a bunch of stuff: makeup things, a wallet, and tissues. <br>
+ရိုးရာ..ကုန္ၾကမ္းေတြနဲ႕လုပ္ထားေပမဲ့...တကယ့္ကို..ဖက္ရွင္ဆန္တယ္.။ ငါ့လက္ဆြဲအိတ္က...a4 စာရြက္ဆိုက္ေလ...အဲ့ဒါက..ပစၥည္းေတြထည့္ဖို႕..လံုေလာက္ပါတယ္။ မိတ္ကပ္၊ ပိတ္ဆံအိတ္..နဲ႕တစ္ရွဴးေတြလိုဟာမ်ိဳးေပ့ါ။ <br><br>
+How is it made? <br>
+အဲ့ဒါကို ဘယ္လိုလုပ္သလဲ..<br><br>
+Luckily, I had a chance to see how it is made. People spent the whole day knitting hundreds of small bamboo fibers together to make one bag. <br>
+ကံေကါင္းလို႕..အဲ့ဒါ ဘယ္လိုလုပ္သလဲဆိုတာ..ျမင္ရဖို႕..အအခြင့္ေရးရခဲ့တယ္.။ လြယ္အိတ္တစ္လံုးရဖို႕..လူေတြက..တစ္ေနကုန္..ေသးငယ္တဲ့ ဝါးေတြကို..ယက္လုပ္ေနၾကရတာ..<br><br>
+Is it easy to make? <br>
+လုပ္ရတာ လြယ္လား..<br><br>
+Nope. I’m not really skillful and patient, so handcrafts seem super hard for me. <br>
+မလြယ္ဘူး။ ငါ့ကကၽြမ္းက်င္မႈမရွိ၊သည္းလည္းမခံႏိုင္..ဒါေၾကာင့္..လက္မႈပစၥည္းေတြကေတာ့..ငါ့အတြက္ ခက္မွခက္ပဲ..<br><br>
+What is special about it? <br>
+အဲ့ဒီဟာရဲ႕ထူးျခားခ်က္က ဘာလဲ..<br><br>
+The material itself is what makes it special. It’s eco-friendly as well. <br>
+ကုန္ၾကမ္းပစၥည္းက သူ႕ရဲ႕ထူးျခားမႈကိုျဖစ္ေစတာေပါ့။ သဘာဝပတ္ဝန္းက်င္နဲ႕..သဟဇာတျဖစ္တယ္ေလ...<br><br>
+Does it remind you of something? <br>
+အဲ့ဒီဟာက မင္းကို တစ္ခုခုကို သတိရေစလား..<br><br>
+Yup. It reminds me of the peaceful and quiet atmosphere of the countryside where I visited. <br>
+ဟုတ္တယ္..ကၽြန္ေနာ္လည္ပတ္ခဲ့တယ္..ျငိမ္းခ်မ္းတဲ့..ေက်းလက္ေဒသရဲ႕..သဘာဝပတ္ဝန္းက်င္ကို သတိရေစတယ္..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

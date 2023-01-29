@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/019. He is as... as... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+ဒီ pattern ကိုေတာ့..တစ္ဦးနဲ႕တစ္ဦးကိုႏႈိင္းယွဥ္တဲ့အခါ..။တစ္ဦးသည္တစ္ဦးနဲ႕အရည္ေသြးအရည္ခ်င္းတူတယ္လို႕ ေျပာခ်င္တဲ့အခါ သံုးပါတယ္..<br><br>
+I. EXAMPLES: -နမူနာမ်ား..<br><br>
+ He is as poor as a church mouse. <br>
+ ဘုရားေက်ာင္းက ၾကြက္ေလာက္..သူကဆင္းရဲတာ...<br><br>
+ He is as fit as a fiddle though he is already seventy. <br>
+ သူ႕အသက္ ၇၀ ဆုိေပမဲ့..သူမအရမ္းက်မ္းမာတာ..<br><br>
+ Shelly’s father is always as busy as a bee. <br>
+ ခ်ယ္လီအေဖက...ဖ်ားတစ္ေကါင္ကဲ့သို႕..အျမဲအလုပ္မ်ားေနတာ..(အရမ္းအလုပ္မ်ား)..<br><br>
+ The twin sisters are as different as night and day. <br>
+ ဒီအမႊာက ..ေန႕နဲ႕ညလို ကြာျခားတယ္..။ (အရမ္းကြာျခား) <br><br>
+ The lecture is as dull as ditch-water. <br>
+ ပို႕ခ်ခ်က္က...အရမ္းကို ျငီးေငြ႕ဖို႕ေကါင္းတာ..<br> <br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: Have you seen him run in a race? <br>
+သူျပိဳင္ပြဲဝင္တာ..မင္းျမင္ဘူးလား..<br><br>
+B: Yes. He’s as fast as the wind when he runs. <br>
+ဟုတ္တယ္..။ သူေျပးတဲ့အခါ..ေလေလာက္ ျမန္တာ..<br><br>
+A: But he’s not too good when it comes to studying.<br>
+ဒါေပမဲ့ ေလ့လာသင္ၾကာမႈမွာ..သူကမေတာ္ဘူးေနာ္..<br>
+B: One of my friends said he’s as dumb as a post. <br>
+ငါ့သူငယ္ခ်င္းတစ္ေယာက္က ေျပာတယ္..သူကေက်ာက္တိုင္ေလာက္ တံုးတာတဲ့ (အရမ္းတံုး၊အ၊ညဏ္ပုတ္)..<br><br>
+A: That’s not a nice thing to say. <br>
+အဲ့လို ေျပာဖို႕မေကါင္းပါဘူး..<br><br>
+B: Maybe it’s not nice, but it’s true. <br>
+မေကါင္းတာ ဟုတ္ပါတယ္..ဒါေပမဲ့ အမွန္ပဲေလ...<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

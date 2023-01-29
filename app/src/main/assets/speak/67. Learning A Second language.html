@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/67-Learning A Second Language - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you like learning languages? <br>
+ဘာသာစကားသင္ရတာကို မင္းႏွစ္သက္လား..<br><br>
+Yes, I do. I love traveling and talking to the local people in their mother tongue. <br>
+ဟုတ္ကဲ့ႏွစ္သက္တယ္။ ခရီးထြက္ျပီး..ေဒသခံလူေတြကို သူတို႕မိခင္ဘာသာစကားနဲ႕ေျပာရတာကို ကၽြန္ေနာ္ႏွစ္သက္တယ္..<br><br>
+What is your mother language? <br>
+မင္းရဲ႕ မိခင္ ဘာသာစကားက ဘာလဲ <br><br>
+I speak English. <br>
+ကၽြန္ေနာ္ အဂၤလိပ္စကားေျပာတယ္..<br><br>
+What second language are you learning? <br>
+ဘယ္ ဒုတိယ ဘာသာစကားတစ္ခု မင္းသင္ေနလဲ..<br><br>
+I’m learning Spanish. I fell in love with Spanish when I traveled to Spain last year. <br>
+ကၽြန္ေနာ္..စပိန္စကားသင္ေနတယ္..။ကၽြန္ေနာ္လြန္ခဲ့တဲ့ႏွစ္စပိန္ႏိုင္ငံကို ခရီးသြားခဲ့ခ်ိန္က..စပိန္ေတြကို..ခ်စ္ေနတာ..<br><br>
+Is that language popular in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ အဲ့ဒီစကားက လူၾကိဳက္မ်ားလား..<br><br>
+Yes. People in my country come from every corner of the world and Spanish is the second popular language spoken here according to the statistic. <br>
+ဟုတ္တယ္..ငါတို႕ႏိုင္ငံမွာ လူေတြက ကမၻာတစ္လႊားကေန လာၾကတာ..ျပီးေတာ့..စပိန္ဘာသာစကားစလည္း..စရင္းဇယားေတြအရ..ဒုတိယ လူသံုးအမ်ားဆံုး ဘာသာစကားတစ္ခုျဖစ္တယ္..<br><br>
+How often do you use that language? <br>
+အဲ့ဒီ ဘာသာစကားကို မင္းဘယ္ေလာက္အသံုးျပဳျဖစ္လဲ...<br><br>
+Quite a lot. I see Spanish people every day in the restaurant, bank or supermarket. <br>
+အမ်ားၾကီးသံုးျဖစ္ပါတယ္..စားေသာက္ဆုိင္၊ဘဏ္နဲ႕..ကုန္တိုက္ေတြမွာ..စပိန္ေတြနဲ႕..ေန႕တိုင္းေတြ႕တယ္.<br><br>
+How long have you been learning that language? <br>
+အဲ့ဒီ ဘာသာစကားသင္ေနတာ..ဘယ္ေလာက္ၾကျပီလဲ..<br><br>
+I’ve been learning it for 5 years. I’m in advanced class now. <br>
+ကၽြန္ေနာ္သင္ေနတာ..ငါးႏွစ္ရွိျပီ..ငါအခု အဆင့္ျမင့္ အတန္းကိုတက္ေနတယ္..<br><br>
+Why do you choose to learn that language? <br>
+မင္းအဲ့ဒီ ဘာသာစကားကိုသင္ဖို႕ဘာလို႕ေရြးခ်ယ္တာလ..<br><br>
+I’m interested in Spanish culture, and I’d like to use language as a tool to discover Spanish cultural values. <br>
+ငါက စပိန္ယာဥ္ေက်းမႈကို စိတ္ဝင္စားတယ္..ျပီးရင္..စပိန္ယာဥ္ေက်းမႈရဲ႕တန္ဖိုးေတြကိုရွာဖို႕..အဲ့ဒီဘာသာစကားကို..အသံုးခ်ခ်င္တယ္..<br><br>
+Who is your teacher? <br>
+မင္းရဲ႕ဆရာက ဘယ္သူလဲ..<br><br>
+An old Spanish teacher. She can also speak English fluently. <br>
+သက္ၾကီးပိုင္း..စပိန္လူမ်ိဳးဆရာတစ္ေယာက္ေလ။  သူကအဂၤလိပ္စကားလည္း ေကါင္းေကါင္းေျပာတတ္တယ္..<br><br>
+Why do people learn a second language? <br>
+လူေတြဘာလို႕ ဒုတိယ ဘာသာစကားတစ္ သင္ၾကတာလဲ..<br><br>
+There are many purposes. Some learn to do business, some learn to travel, some just learn for fun. <br>
+ရည္ရြယ္ခ်က္က မ်ားၾကီးရွိပါတယ္..တစ္ခ်ို႕က စီးပြားလုပ္ဖို႕သင္ၾကတယ္..တစ္ခ်ိဳ႕ကခရီးသြားဖို႕..သင္ၾကတယ္..တစ္ခ်ိဳ႕ကအေပ်ာ္သင္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

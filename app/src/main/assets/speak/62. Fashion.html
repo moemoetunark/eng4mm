@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/62-Fashion - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Are you a big fan of fashion? <br>
+မင္းက ဖက္ရွင္ ပရိတ္သတ္ၾကီးလား <br><br>
+Yes, I am. I believe every girl is crazy about fashion. <br>
+ဟုတ္တယ္..မိန္းကေလးတိုင္းကေတာ့ ဖက္ရွင္ရူးသြပ္ၾကတယ္လုိ႕ ငါယံုတယ္..<br><br>
+What style do you choose to wear? <br>
+ဝတ္တဲ့အခါ ဘယ္စတိုင္လ္ကို မင္းေရြးလဲ <br><br>
+Well, my favorite piece of clothes is a dress. Depending on the situation, I choose a formal or informal dress to wear. <br>
+ဝတ္စံုကေတာ့ ငါအႏွစ္သက္ဆံုးေပါ့။ အေျခေနေပၚမူတည္ျပီး..ပံုမွန္သို႕မဟုတ္..ဆန္းတာေလးေတြကို ေရြးတယ္..<br><br>
+Do you enjoy shopping for clothes? <br>
+အဝတ္စား ေစ်းဝယ္ထြက္ရတာကို မင္းႏွစ္သက္လား <br><br>
+Yes, I’m a shopaholic, actually. <br>
+ဟုတ္တယ္..ငါက ေစ်းဝယ္ရတာကို အရမ္းရူးသြပ္သူတစ္ေယာက္ပဲ <br><br>
+Is there any fashion icon who you want to wear the same? <br>
+မင္းအတုခိုးရွငိတဲ့ ဖက္ရွင္..စတားတစ္ေယာက္ေယာက္ရွိလား <br><br>
+Yes, I really admire Taylor Swift and wish to wear like her. <br>
+ဟုတ္တယ္..ငါက ေတလာဆြိကိုအရမ္းသေဘာက်တယ္..ျပီးရင္ သူမလိုဝတ္ခ်င္တယ္..<br><br>
+Do you create your own fashion style? <br>
+ကိုယ့္ရဲ႕ ကိုယ္ပိုင္ ..ဖက္ရွင္..စတိုင္လ္မင္း မင္းဖန္တီးလား..<br><br>
+No, I’m not a fashionista, so most of the time I just follow the fashion trend. <br>
+ငါက ဖက္ရွင္ဆရာတစ္ေယာက္မဟုတ္ဘူေလ...ဒါေၾကာင့္..အမ်ားေသာအားျဖင့္ေတာ့..ေခတ္စားေနတဲ့ ဖက္ရွင္ကိုပဲ လိုက္တယ္..<br><br>
+Do you prefer vintage or modern style? Why? <br>
+နင္က အရည္ေသြးေကါင္းတဲ့ေရွ႕ေဟာင္းပစၥည္းနဲ႕..ေခတ္ေပၚစတိုင္ဘာကို ပိုၾကိဳက္လဲ <br><br>
+Honestly, I love vintage style. Wearing classic clothes makes me feel like I’m special. <br>
+ရိုးသားေျပာရရင္..ငါက ေရွ႕ေဟာင္းကိုၾကိဳက္တယ္..။ အေကါင္းစားေတြဝတ္ရင္..ကိုယ့္ကိုယ္ကို..ထူးျခားသလိုခံစားရတယ္..<br><br>
+Have you ever attended in any fashion show? <br>
+ဖက္ရွင္ျပပြဲတစ္ခုခုကိုမင္း တက္ဖူးလား <br><br>
+Not in real life. I just watch them on TV. <br>
+လက္ေတြ႕ဘဝေတာ့ မတက္ဖူးဘူး။ TV မွာပဲၾကည့္တယ္..<br><br>
+What do people think about your fashion style? <br>
+လူေတြက မင္းရဲ႕ ဖက္ရွင္..စတိုင္လ္ကို ဘယ္လိုထင္ၾကလဲ <br><br>
+I don’t know exactly, and I don’t care much about it. I just wear what makes me comfortable and confident. <br>
+ငါေသခ်ာ မသိပါဘူး..ျပီးရင္သိပ္လည္းဂရုမစိုက္ပါဘူး..ငါ့ကိုယံုၾကည္မႈနဲ႕သက္ေတာင့္သက္သာရွိတာေတြကို ငါဝတ္တယ္..<br><br>
+Are you going to change your fashion style in the future? <br>
+အနက္ဂတ္မွာ ဖက္ရွင္စတိုင္လ္ေျပာင္းဖို႕ရွိလား <br><br>
+Well, I can’t tell. Maybe fashion is changeable, and I am, too. <br>
+အဲ့ဒါေတာ့ မေျပာႏိုင္ဘူးေလ..ဖက္လည္းေတြဟာ ေျပာင္းလဲႏိုင္သလဲ..ငါလည္းထို႕တူပါပဲ..<br><br>
+Is fashion important to people? <br>
+လူေတြအတြက္ ဖက္ရွင္က အေရးၾကီးလား <br><br>
+Yes, in my opinion. Fashion can partly reveal who you are. <br>
+ငါ့အထင္ေတာ့ ဟုတယ္..။ ဖက္ရွင္က မင္းဘယ္သူလဲဆိုတာ..တစ္စိတ္တစ္ပိုင္းထုတ္ေဖာ္ႏိုင္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

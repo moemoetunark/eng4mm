@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/050. I really go for... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I really go for .....ဆိုတာက အရမ္းသေဘာက်...ႏွစ္သက္တာကို..ဆိုလိုပါတယ္...<br>
+I. EXAMPLES: - သပမာမ်ား..<br><br>
+ I really go for Beethoven. <br>
+ Beethoven ကိုငါအရမ္းသေဘာက်တယ္..<br><br>
+ I really go for this house. It’s terrific. <br>
+ ငါဒီအိမ္အရမ္း သေဘာက်တယ္.။ ေတာ္ေတာ္ ေကါင္းတယ္..<br><br>
+ She goes for tall and handsome men. <br>
+ သူမက အရပ္ရွည္..ရုပ္ေခ်ာတဲ့ ေယာက္်ားေတြကို သေဘာအရမ္းက်တာ..<br><br>
+ I don’t go much for modernism. <br>
+ ေခတ္ေနာက္လိုက္တာ..ငါသိပ္မေဘာမက်ဘူး..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..
+A: Hey, I’m hungry. How about you? <br>
+ေဟး..ငါေတာ့ ဗိုက္ဆာေနျပီ...မင္းေကါ ဘယ္လိုလဲ..<br><br>
+B: Yeah, I can really go for some Chinese food right now. <br>
+အင္း...တရုပ္အစားစားအခ်ိဳ႕ဝယ္ဖို႕..မင္းအခု သြားလို႕ရပါတယ္..<br><br>
+A: That’s a great idea. Let’s go to a Chinese restaurant right now. <br>
+အၾကံေကါင္းေပါ့..ငါတို႕တရုတ္စားေသာက္ဆိုင္..သြားၾကစို႕ေလ..<br><br>
+B: OK. It’s my treat. <br>
+အိုေက..ငါပဲ ဒကါခံမယ္..<br><br>
+A: Are you sure? <br>
+မင္းေသခ်ာလို႕လား..<br><br>
+B: Yeah. You can pay next time. <br>
+ဟုတ္တယ္..ေနာက္တစ္ခါ မင္းေပးလို႕ရတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/40-Traffic Jam - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Are you comfortable with traffic jam? <br>
+လမ္္းပိတ္တာ..မင္းခံႏိုင္ရည္ရွိျပီလား..<br><br>
+Not at all. I feel annoyed. <br>
+လံုးဝမရွိဘူး..ငါအရမ္းစိတ္ပ်က္တယ္..<br><br>
+Why does it happen? <br>
+ဘာလို႕အဲ့ဒါ ျဖစ္ရတာလဲ <br><br>
+Because there are too many vehicles on the streets during rush hours, I bet. <br>
+ဒါထင္တာ..အလုပ္သြားအလုပ္ျပန္ခ်ိန္..ကားေတြက လမ္းမွာ မ်ားလြန္းလို႕ထင္တယ္..<br><br>
+How often do you sit in a traffic jam? <br>
+မင္း ဘယ္ေလာက္ ကားလမ္းပိတ္ျပီး..ထိုင္ေနရလဲ <br><br>
+Just every day, when I finish office hour and go back home. <br>
+ေန႕တိုင္းပါပဲ..အလုပ္ျပီးေတာ့. အိမ္ျပန္လာတဲ့အခ်ိန္မွာေပါ့..<br><br>
+What time in a day are you usually caught in a traffic jam? <br>
+ေန႕တေန႕မွာ ဘယ္အခ်ိန္က..လမ္းပိတ္ဆို႕မႈ..ပံုမွန္ျဖစ္သလဲ <br><br>
+In rush hour at 7 a.m and 5 p.m <br>
+အလုပ္သြားအလုပ္ျပန္ခ်ိန္..မနက္ ၇နာရီ..ညငါးနာရီေပါ့..<br><br>
+How long does it take to escape from the traffic jam? <br>
+လမ္းပိတ္ဆို႕မႈကေန လြတ္ဖို႕ဘယ္ေလာက္ၾကာသလဲ <br><br>
+At least half an hour. <br>
+အနည္းဆံုးနာရီဝက္ၾကာတယ္..<br><br>
+What do you do while waiting in a long line? <br>
+ေစာင့္ေနရတာအခါ..မင္းဘာလုပ္သလဲ <br><br>
+I often glance at my watch actually. <br>
+တကယ္က ငါနာရီကိုပဲၾကည့္ေနမိတာ..<br><br>
+Have you ever had any trouble caused by traffic jam? <br>
+လမ္းပိတ္ဆို႕မႈေၾကာင့္..ဒုကၡေတြ..မင္းေရာက္ဖူးလား..<br><br>
+Yes, just yesterday I was late for an important meeting with my clients. <br>
+ဟုတ္တယ္..မေန႕က..အေရးၾကီးတဲ့ေဖာက္သည္ေတြနဲ႕ ေတြ႕ဆံုးပြဲ ေနာက္က်သြားတယ္..<br><br>
+How has the traffic situation changed recently? <br>
+ေလာေလာဆယ္..လမ္းအေျခေနေတြ ဘယ္လို..ေျပာင္းသြားလဲ..<br><br>
+There are more vehicles, which makes traffic jam more and more serious. <br>
+ယာဥ္ေတြ ပိုျပီးတိုးလာတယ္..လမ္းပိတ္ဆို႕မႈျပသနာကို..ပိုပိုျပီး ဆိုးေစလိမ့္မယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

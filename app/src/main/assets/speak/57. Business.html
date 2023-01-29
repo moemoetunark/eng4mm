@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/57-Business - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Are you studying or working? <br>
+မင္း အလုပ္လုပ္ေနလား..ေက်ာင္းတက္ေနတာလား <br><br>
+I left school 3 years ago. I’m working now. <br>
+ငါေက်ာင္းထြက္တာ..သံုးႏွစ္ခန္႕မတိုင္မီးက၊ အခု အလုပ္လုပ္ေနျပီ။ <br><br>
+Are you self – employed or working for a company? <br>
+ကိုယ့္အလုပ္ကိုယ္လုပ္တာလား...ကုမၸဏီမွာ လုပ္တာလား <br><br>
+I’m self-employed. I used to work for a company 2 years ago. <br>
+ကိုယ့္ပိုင္အလုပ္ လုပ္ပါတယ္..။ လြန္ခဲ့တဲ့ ႏွစ္ႏွစ္ကေတာ့ ကုမၸဏီတစ္ခုမွာ လုပ္ခဲ့တယ္..<br><br>
+Are you running any business? <br>
+မင္း စီးပြားေရးတစ္ခု လုပ္ေနတာေပါ့ <br><br>
+Yes, I’m running a small business. <br>
+ဟုတ္တယ္..အေသးစား လုပ္ငန္းတစ္ခု..လုပ္ေနတာ..<br><br>
+What does your business sell? <br>
+မင္းလုပ္ငန္းက ဘာေရာင္းတာလဲ <br><br>
+I make and sell handmade cosmetics. <br>
+လက္လုပ္..အလွကုန္ပစၥည္းေတြ လုပ္ေရာင္းတယ္..<br><br>
+Do you have any difficulty running that business? <br>
+အဲ့ဒီ လုပ္ငန္းလုပ္ရတာ.ခက္ခဲမႈေတြ ရွိလား <br><br>
+Yes, I had some difficulties attracting customers at first, but everything is getting better now. <br>
+ဟုတ္တယ္..ပထမေတာ့..ေဖာက္သယ္ေတြကို ဆြဲေဆာင္ရတာ ခက္ခဲတယ္..ဒါေပမဲ့အခုေတာ့..ပိုတိုတက္လာေနတယ္..<br><br>
+Is that an online or offline business? <br>
+အဲ့ဒါ..အြန္လိုင္းကလုပ္တာလား..အျပင္မွာ လုပ္တာလား <br><br>
+I sell products online. It’s easier selling online than offline because I can take full advantage of my social network. <br>
+ပစၥည္းေတြကို အြန္လိုင္းက ေရာင္းတယ္။ ငါက လူႈကြန္ယက္ေတြကိ...အျပည့္ဝအသံုးခ်ႏိုင္ေတာ့..အျပင္မွာေရာင္းတာထက္..အြန္လိုင္းမွာေရာင္းတာ..ပိုလြယ္ကူတယ္..<br><br>
+When did you start the business? <br>
+အဲံဒီလုပ္ငန္း ဘယ္တုန္းကစခဲ့တာလဲ <br><br>
+I started running my own business 2 years ago. <br>
+လြန္ခဲ့တဲ့ ႏွစ္ႏွစ္မတိုင္မီက..ကိုယ္ပိုင္လုပ္ငန္းစတင္ခဲ့တာ..<br><br>
+What are some advantages of running your own business? <br>
+ကိုယ္ပုိင္အလုပ္ လုပ္ျခင္းရဲ႕ အက်ိဳးေက်းဇူးကဘာလဲ <br><br>
+I can take some days off whenever I feel tired, and I can make much more money compared to working for a company. <br>
+ဘယ္အခ်ိန္ေမာပန္းတာျဖစ္ျဖစ္..အလုပ္နားလို႕ရတယ္ေလ..ျပီးေတာ့..ကုမၸဏီမွာလုပ္တာနဲ႕ႏႈိင္းယွန္ရင္..ေငြလည္းပိုရတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

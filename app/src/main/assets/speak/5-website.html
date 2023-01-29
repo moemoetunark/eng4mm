@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/5-WEBSITE - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What type of websites do you often search for? <br>
+ဘယ္လို website အမ်ိဳးစားကို နင္ရွာေလ့ရွိလဲ...<br><br>
+It varies depending on my goal. <br>
+ငါဘာလိုခ်င္တယ္ဆိုတာ မူတယ္ျပီးကြာတာေပါ့ <br>
+I prefer entertainment and education websites such as facebook.com, wikipedia.org and VOA Special English. <br>
+VOA Special English, wikipedia.org, facebook.com တို႕လို..ပညာေရး..ေဖ်ာ္ေျဖေရးပါတဲ့ website ေတြကိုပိုၾကိုက္တယ္..<br><br>
+How long have you been using them? <br>
+နင္အဲ့ဒီ ဟာေတြသံုးေနတာ ဘယ္ေလာက္ၾကာျပီလဲ <br><br>
+I have been using these websites since I was a freshman at university. <br>
+ဒီ website ေတြကို တကၠသိုလ္တက္ခါကကတည္းက သံုးေနတာ..<br><br>
+What do you visit those websites for? <br>
+ဘာအတြက္နင္ ဒီ website ေတြကို သြားတာလဲ <br><br>
+I use them to study online or relax after working. <br>
+အြန္လိုင္းမွာ ေလ့လာဖို႕..သို႕မဟုတ္..အျပင္းေျဖဖို႕..အဲ့ဒီဟာေတြ ငါသံုးတယ္..<br><br>
+What’s your favorite website? <br>
+နင့္အၾကိဳက္ဆံုး website ကဘာလဲ <br><br>
+I think it’s probably youtube.com. <br>
+YouTube.com ျဖစ္မယ္လို႕ငါထင္တယ္..<br><br>
+Can you read websites in English? <br>
+အဂၤလိပ္လို websites ေတြနင္ဖတ္တတ္လား <br><br>
+Yes, I can. Most useful websites are written in English.<br>
+ဟုတ္ကဲ့..ဖတ္တတ္တယ္..အသံုးဝင္တဲ့ websites ေတြမ်ားစုက အဂၤလို ေရးထားတာ..<br><br>
+What’s the most popular website in your country? <br>
+နင္တုိ႕ႏိုင္ငံမွာ ဘယ္ website ကလူၾကိဳက္အမ်ားဆံုးလဲ <br><br>
+I’m not quite sure, but I guess it would be facebook.com. <br>
+ငါသိပ္မေသခ်ာဘူး..ဒါေပမဲ့..facebook.com ျဖစ္မယ္လို႕ ငါခန္႕မွန္းၾကည့္တယ္..<br><br>
+Do you think the youth should use websites as a reliable source of knowledge? <br>
+အားကိုးေလာက္တဲ့ ဗဟုသုတအရင္းအျမစ္ေတြအျဖစ္..websties ေတြကိုလူငယ္ေတြ သံုးသင့္တယ္လို႕နင္လား..<br><br>
+Not always, they should choose their sources carefully. <br>
+အားလံုးေတာ့ မဟုတ္ဘူး..။အရင္းျမစ္ေတြကို သထိထားျပီး ေရြးသင့္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

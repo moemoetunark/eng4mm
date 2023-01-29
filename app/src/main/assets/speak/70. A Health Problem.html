@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/70-A Health Problem - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What health problem did you have? <br>
+မင္းဘယ္ ဘာ က်မ္းမာေရးျပသနာရွိတယ္..<br><br>
+I had measles when I was 18. <br>
+အသက္ ၁၈ ႏွစ္တုန္းက ဝက္သက္ထြက္တယ္..<br><br>
+How did you have that health problem? <br>
+အဲ့ဒီ က်န္းမာေရးျပသနာ..ဘယ္လိုျဖစ္သြားတာလဲ.<br><br>
+I thought I catch measles from someone when they cough or sneeze. <br>
+တစ္ခုစံေယာက္က..ႏွာေခ်တဲ့အခါ...ကူးသြားတယ္လို႕ငါထင္တယ္.. <br><br>
+Was that serious? <br>
+ျပင္းထန္လား...<br><br>
+Not really, but it was unpleasant. I recovered after 10 days staying at home. <br>
+မျပင္းထန္ပါဘူး..ဒါေပမဲ့..စိတ္ပ်က္ဖို႕ေကါင္းတယ္.၊ အိမ္မွာ..၁၀ရက္နားလိုက္ေတာ့..သက္သာသြားတယ္..<br><br>
+What were some symptoms of that health problem? <br>
+အဲ့ဒီ က်မ္းမာေရးျပသနာရဲ႕ ေရာဂါလကၡဏာေတြက ဘာလဲ..<br><br>
+I had a cold and fever with a cough, a runny nose. The small grayish-white spots appeared on my body, too. <br>
+ႏွာေစး..ေခ်ာင္းဆိုး..ျပီး ဖ်ားတယ္.။ ျဖဴျပာေရာင္..အသက္ေတြလည္း ခႏၶာကိုယ္ေပၚမွာ ေပၚလာတယ္..<br><br>
+Did you take any medical treatment? <br>
+ေဆးကုသမႈ ခံယူခဲ့ရလား..<br><br>
+No, I didn’t. The situation wasn’t serious enough to be sent to the hospital then. <br>
+မခံခဲ့ရပါဘူး..။ ေဆးရံုသြားဖို႕ထဲ..အေျခေနက မဆိုးရြားခဲ့ဘူး..<br><br>
+How could you recover from it? <br>
+အဲ့ဒီ ဟာကေန..ဘယ္လို ျပန္သက္သာလာသလဲ..<br><br>
+Well, let me see, I drank a lot of water, avoided the direct light, and I had to stay off school for 10 days. <br>
+အင္း..စဥ္းစားၾကည့္လုိက္မယ္...ေရမ်ားမ်ားေသာက္တယ္..အလင္းေရာင္နဲ႕တိုက္ရိုက္ထိေတြ႕တာေရွာင္တယ္..ေက်ာင္းမတက္ပဲလည္း..၁၀ရက္ေနလိုက္ရတယ္..<br><br>
+What difficulties did you face because of that problem? <br>
+အဲ့ဒီ ျပသနာေၾကာင့္ ဘယ္လို အခက္ခဲေတြ ရွိခဲ့လဲ..<br><br>
+I couldn’t go out for a few days, which was boring. I’m not allowed to play outside and I felt so bad about it. <br>
+ရက္အနည္းငယ္..အျပင္မထက္ႏိုင္ခဲ့ဘူးေလ..ဒါက ျငီးေငြ႕ဖို႕ေကါင္းတယ္။ အျပင္မွာလည္း ကစားခြင့္မရဘူး..အဲ့းဒါ အရမ္းခံစားရဆိုးတယ္..<br><br>
+What do people do to prevent that health problem? <br>
+အဲ့ဒီ က်န္းမာေရးျပသနာကို ကာကြယ္ဖို႕..လူေတြဘာလုပ္ၾကသလဲ..
+By having measles vaccine. <br>
+ဝက္သက္ကါကြယ္ေဆး ထိုးျခင္းျဖင့္ေပါ့..<br><br>
+Is that health problem common in your country? <br>
+အဲ့ဒီ က်န္းမာေရးျပသနာ နင္တို႕ႏိုင္ငံမွာ အျဖစ္မ်ားလား..<br><br>
+Not really, due to the effectiveness of vaccination. <br>
+မမ်ားဘူးပါဘူး..ကါကြယ္ေဆးရဲ႕ အက်ိဳးေက်းဇူးေၾကာင့္ေပါ့..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

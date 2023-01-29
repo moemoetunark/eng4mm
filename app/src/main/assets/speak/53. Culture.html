@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/53-Culture - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Which culture do you belong to? <br>
+မင္းရဲ႕ ယာဥ္ေက်းမႈက ဘာလဲ <br><br>
+I was born and raised in America where my culture was shaped. <br>
+ငါက အေမရိကမွာေမြးဖြားၾကီးျပင္းခဲ့တာ..ငါ့ယာဥ္ေက်းမႈဆိုတာ..အဲ့မွာပဲ..ျဖစ္တည္လာတာေပါ့ <br><br>
+Is that a multicultural society? <br>
+အဲ့ဒါက ယာဥ္ေက်းမႈေတြ..စံုတဲ့..လူ႕အဖြဲ႕စည္းတစ္ခုလား <br><br>
+Yes, it is. My culture is a diverse mix of customs and traditions of various races and ethnicities. <br>
+ဟုတ္တယ္..ငါ့ရဲ႕ယာဥ္ေက်းမႈဟာလည္း.မတူတဲ့လူမ်ိဳး..ရိုးရာေတြနဲ႕..ေပါင္းစပ္ထားတာ..<br><br>
+How long has your country been practicing those customs? <br>
+မင္းတို႕ႏိုင္ငံ အဲ့လို..အစဥ္လာကို က်င့္သံုးေနတာ..ဘယ္ေလာက္ၾကာျပီလဲ <br><br>
+Well, it has a long history, around 10,000 years ago. <br>
+အင္း သမိုင္းကေတာ့..ရွည္တယ္..ႏွစ္တစ္ေသာင္းဝန္းက်င္ေပါ့ <br><br>
+What custom do you like the most? <br>
+ဘယ္အစဥ္လာကို မင္းအၾကိဳက္ဆံုးလဲ <br><br>
+I like practicing dining etiquette. That’s what makes me American whenever I travel to other countries. <br>
+ထမင္းစားတဲ့ခါက်င့္သံုးတဲ့..ရိုးရာက်င့္ဝတ္ေတြကို သေဘာက်တယ္..ဒါကလည္း ငါဘယ္သြားသြား ငါဟာအေမရိကန္တစ္ေယာက္ျဖစ္ေစတာေပါ့..<br><br>
+What are traditional costumes of men and women in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ မိန္းမေယာက္်ားေတြရဲ႕ ရိုးရာ ဝတ္စံုက ဘာလဲ <br><br>
+Cowboy hats and boots are American styles, but nowadays jeans and T-shirt are more preferable. <br>
+Cowboy စတိုင္လ္..ဦးထုတ္တဲ့...ဘုတ္ဖိနပ္ေတြက..အေမရိကန္..စတိုင္လ္ေလ..ဒါေပမဲ့ ခုေခတ္မွာေတာ့..T-shirt ကိုပိုျပီးၾကိဳက္ၾကတယ္..<br><br>
+Are you comfortable with tradition and customs of your culture? <br>
+မင္းယာဥ္ေက်းမႈရဲ႕အေလ့ထေတြ...ရိုးရာေတြနဲ႕..မင္းအသားက်ရဲ႕လား..<br><br>
+Of course. I was born with it. <br>
+ေသခ်ာတာေပါ့...ငါက အဲ့ဒါေတြနဲ႕ပဲ ေမြးလာတာေလ..<br><br>
+How do people greet each other? <br>
+လူေတြတစ္ေယာက္နဲ႕တစ္ေယာက္ ဘယ္လိုေတြ႕ဆံုၾကသလဲ <br><br>
+Well, it depends on the situation. In an informal communication, people just say ‘hi’. <br>
+ဒါက အေျခေနေပၚမူတည္ပါတယ္.။ ပံုမွန္ဆက္သြယ္ၾကတဲ့အခါေတာ့..လူေတြက "Hi" လို႕ပဲေျပာၾကတယ္..<br><br>
+Have you ever felt drawn to another land? <br>
+တစ္ျခားတစ္ႏိုင္ငံကိုသြားခ်င္တဲ့ ခံစားခ်က္မ်ိဳးျဖစ္ဖူးလား <br><br>
+Yes, I’m interested in Indian culture. I wish I can get there someday to attend a typical Indian wedding. <br>
+ဟုတ္တယ္..ငါအိႏၵိယယာဥ္ေက်းမႈကို စိတ္ဝင္စားတယ္။ တစ္ေန႕ရိုးရာလက္ထပ္ပြဲတစ္ခုကိုတစ္ေရာက္ဖို႕..အဲ့ဒီကိုေရာက္ႏိုင္ဖို႕..ဆႏၵရွိတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

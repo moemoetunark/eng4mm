@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/070. See that... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+->to make sure that someone does something or that something happens <br>
+တစ္ခုခုလုပ္ရန္..ေသခ်ာေအာင္ ေျပာတဲ့အခါ..see that...ကိုသံုးပါတယ္..<br><br>
+I. EXAMPLES: - ဥပမာ..<br><br>
+
+ See that the door is locked before you leave. <br>
+ မင္းမထြက္ခြာခင္..တံခါးေသခ်ာ ေသာ့ခတ္ေနာ္..<br><br>
+ See that you have enough sleep every day. <br>
+ ေန႕တိုင္းအိပ္ေရးဝဝ..အိပ္ေနာ္..<br><br>
+ See that you go to see your parents often. <br>
+ မိဘေတြဆီမၾကာခဏသြားလည္ေနာ္..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Employer: You were late to work again this morning. <br>
+အလုပ္ရွင္ ---- မင္း ဒီမနက္လည္း အလုပ္ေနာက္က်ျပန္ျပီ..<br><br>
+Employee: Yes, I’m sorry but I had to help my mother go to the hospital. She was sick. <br>
+အလုပ္သမား ----ဟုတ္ပါတယ္..ေဆာ္ရီးပါ..ငါ့အေမေဆးရံုတက္တာ..ကူညီေပးခဲ့ရတယ္.။ သူမေနမေကါင္းဘူး..<br><br>
+Employer: I don’t care what you had to do. You’re supposed to be on time. See that you’re not late again. <br>
+အလုပ္ရွင္--- မင္းမွာ ဘာလုပ္ရမယ္ဆိုတာ..ငါဂရုမစိုက္ဘူး။ မင္းဟာ အခ်ိန္မွန္ရမယ္။ ေနာက္တစ္ခါ ေနာက္မက်ေစနဲ႕..<br><br>
+Employee: But this was an emergency. <br>
+အလုပ္သမား --- ဒါေပမဲ့..အေရးေပၚျဖစ္ေနလို႕ေလ..<br><br>
+Employer: It’s your third emergency this month. <br>
+အလုပ္ရွင္ --- ဒီလ အေရးေပၚျဖစ္တာ..မင္းသံုးခါရွိေနျပီ..<br><br>
+Employee: Yeah well, my mother gets sick a lot.<br>
+အလုပ္သမား--- ဟုတ္တယ္..ငါ့အေမက တကယ္ေနမေကါင္းတာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

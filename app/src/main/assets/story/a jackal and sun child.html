@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/stories/10.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+A jackal is a wild dog with a big black back. <br>
+Jackal ဟာေက်ာမဲေခြးရိုင္းၾကီးတစ္ေကါင္ျဖစ္ပါတယ္<br><br>
+It resides in the desert. <br>
+သူဟာ ကႏၳာရထဲမွာေနပါတယ္..<br><br>
+But how did the jackal get his black back? <br>
+ဒါေပမဲ့..သူေက်ာဟာ ဘာေၾကာင့္ မဲသြားခဲ့ရတာလဲ<br><br>
+This was how it happened. <br>
+အျဖစ္ပ်က္ကေတာ့ ဒီလိုပါ…<br><br>
+One day, the jackal saw a girl. <br>
+တစ္ေန႕..Jackal ဟာမိန္းကေလးတစ္ေယာက္ကိုေတြ႕တယ္<br><br>
+She was sitting upon a rock. <br>
+သူမဟာ..ေက်ာက္တံုးေပၚမွာထိုင္ေနတယ္..<br><br>
+She was not a normal child. <br>
+သူမဟာ သာမာန္ကေလးတစ္ေယာက္ မဟုတ္ပါဘူး<br><br>
+She was a rare and beautiful sun child. <br>
+သူမဟာ..ရွားပါး…လွပတဲ့.ကေလးတစ္ေယာက္ျဖစ္ပါတယ္<br><br>
+She was bright and warm like the sun. <br>
+သူမဟာေနလိုေတာက္ပျပီး ေႏြးေထြးပါတယ္..<br><br>
+The child saw the jackal and smiled. <br>
+ကေလးဟာ Jackal ကိုျမင္ေတာ့..ျပံဳးျပလိုက္တယ္..<br><br>
+She said, “Jackal, I have been relaxing on this rock for too long. <br>
+သူမကေျပာတယ္..”Jackal ငါဒီမွာ.အပန္းေျဖေနတာ..ေတာ္ေတာ္ၾကာေနျပီ..<br><br>
+I must get home soon.<br>
+မၾကာခင္ငါ အိမ္သို႕ေရာက္မွျဖစ္မယ္..<br><br>
+But, I am slow and you are fast. <br>
+ဒါေပမဲ့..ငါကေႏွးေကြးတယ္..မင္းကျမန္တယ္ေလ..<br><br>
+You will likely get me home more quickly.” <br>
+မင္းငါ့ကို..အိမ္သို႕ျမန္ျမန္ပို႕ေပးမယ္ႏိုင္မယ္.<br><br>
+Then she requested, “Will you carry me home? <br>
+နင္ငါ့ကို သယ္ယူေပးမလား….သူမေတာင္းဆိုလိုက္တယ္..<br><br>
+If you do, I’ll give you a gift. <br>
+နင္သာ ငါ့ကိုသယ္ေပးမယ္ဆို..ငါနင့္ကို..လက္ေဆာင္းတစ္ခုေပးမယ္<br><br>
+This necklace belongs to me, but I will give it to you.” <br>
+ဒီလည္ဆြဲကို ငါပိုင္တယ္..ဒါေပမဲ့နင့္ကို ေပးမယ္.<br><br>
+The wild jackal agreed. <br>
+Jackal ကသေဘာတူလိုက္တယ္.<br><br>
+So the sun child sat on the dog’s back. <br>
+ဒါနဲ႕…ကေလးဟာ..ေခြးရဲ႕ေက်ာကုန္းမွာထို္င္တယ္..<br><br>
+They started to walk. <br>
+သူတို႕လမ္းစတင္ေလွ်ာက္ၾကတယ္..<br><br>
+But soon, the jackal felt ill. <br>
+ဒါေပမဲ့ မၾကာခင္ပဲ..Jackal ဟာေနမေကါင္းျဖစ္လာတယ္..<br><br>
+The sun child was very hot on his back. <br>
+ကေလးဟာ..သူ႕ေက်ာျပင္မွာ..အရမ္းပူလြန္းတယ္.<br><br>
+The heat was hurting his back very badly. <br>
+အပူရွိန္ဟာ သူ႕ကိုအရမ္းနာက်င္ေနေစတယ္..<br><br>
+“I made a terrible error in judgment.” he thought. <br>
+ငါဆံုးျဖတ္တာ..ေတာ္ေတာ္မွားျပီးလို႕.သူေတြးလိုက္တယ္.<br><br>
+He shouldn’t have agreed to carry her. <br>
+သူမကို…သယ္ယူဖို႕..သူသေဘာမတူသင့္ခဲ့ဘူးေလ..<br><br>
+So he asked her to get off. <br>
+ဒါနဲ႕..သူမကို..ဆင္းေပးဖို႕ေတာင္းဆိုလိုက္တယ္..<br><br>
+But she did not. <br>
+ဒါေပမဲ့ သူမ မဆင္းဘူး.<br><br>
+The jackal’s back continued to get hotter and hotter. <br>
+Jackal ရဲ႕ေက်ာဟာ ပူသထက္..ဆက္တိုက္ပူလာပါတယ္..<br><br>
+He had to get away from the sun child. <br>
+အဲ့ဒီကေလးဆီကေန..သူထြက္ေျပးရမယ္ေလ..<br><br>
+So he made a plan. ဒါေၾကာင့္..သူအစီစဥ္တစ္ခု ခ်လိုက္တယ္..<br><br>
+First, he ran as fast as he could. <br>
+ပထမ..တတ္ႏိုင္သမွ်အျမန္ေျပးမယ္..<br><br>
+He hoped the sun child would fall off. <br>
+ကေလးဟာ..ျပဳတ္က်လိမ့္မယ္လို႕..သူထင္ထားခဲ့တာ..<br><br>
+But she did not. <br>
+ဒါေပမဲ့ သူမ မျပဳတ္က်ခဲ့ပါဘူး<br><br>
+So when the sun child was looking at the sky, not aware of the jackal’s next plan, he jumped into a field of flowers. <br>
+ဒါနဲ႕..ကေလးဟာ..Jackalရဲ႕ေနာက္အစီစဥ္တစ္ခုကို..သတိမထားပဲ..ေကါင္းကင္ေပၚကိုၾကည့္ေနစဥ္..သူဟာ..ပန္းခင္းထဲသို႕..ခုန္ဆင္းလိုက္တယ္..<br><br>
+As a result, the child rolled off his back. <br>
+ရလာဒ္ကေတ့..ကေလးဟာ..သူ႕ရဲ႕ေက်ာကုန္းကေန..ျပဳတ္က်သြားတယ္..<br><br>
+The jackal ran away. <br>
+Jackal ထြက္ေျပးသြားခဲ့တယ္..<br><br>
+But the sun child left a mark on the jackal’s back, a visible black mark. <br>
+ဒါေပမဲ့ ကေလးဟာ..Jackal ရဲ႕ေက်ာကုန္းမွာ..အမဲေရာင္အမွတ္သားတစ္ခု..ခ်န္ထားခဲ့ပါတယ္..<br><br>
+Ever since his experience with the sun child, the jackal has had a black back. <br>
+ေနလိုပူတဲ့ကေလးနဲ႕သူေတြ႕ၾကံဳကတည္းက..Jackal ရဲ႕ေက်ာျပင္မွာ..အနက္ေရာင္ျဖစ္သြားပါေတာ့တယ္..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

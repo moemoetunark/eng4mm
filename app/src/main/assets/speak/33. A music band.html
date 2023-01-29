@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/33-A MUSIC BAND - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What’s your favorite music band? <br>
+မင္းရဲ႕ အႏွစ္သက္ဆံုး ဂီတအဖြဲ႕က ဘာလဲ <br><br>
+I’m a big fan of One Direction. There are 5 singers in the band. <br>
+ငါက One Direction ရဲ႕အမာခံပရိတ္သတ္တစ္ေယာက္ပဲ။ အဲ့ဒီအဖြဲ႕မွာ..အဆိုးေတာ္ ငါးေယာက္ပါတယ္..<br><br>
+Is it famous around the world? <br>
+ကမၻာတစ္လႊားမွာ နာမည္ၾကီးသလလား <br><br>
+Yes, it is. The band is well known around the world. Almost all teenagers love them. <br>
+ၾကီးတာေပါ့။ အဲ့ဒီဂီတဝိုင္းက တစ္ကမၻာလံုးသိၾကတယ္။ လူငယ္အားလံုးနီးပါး သူတို႕ကိုၾကိဳက္ၾကတယ္..<br><br>
+What’s their taste of music? <br>
+သူတို႕ဂီတ ရသက ဘာလဲ <br><br>
+They sing Pop music. Their most famous song may be “What Makes You Beautiful’’. <br>
+သူတို႕က Pop ကုိဆိုတယ္။ သူတို႕ရဲ႕နာမည္အေက်ာ္ဆံုးသီခ်င္းက.."What maks You Beautiful" ျဖစ္မယ္ထင္တယ္..<br><br>
+Are they good at dancing? <br>
+သူတို႕အကေတာ္လား <br><br>
+Yes, I think so. I fall in love with their every step. <br>
+ငါအဲ့လိုထင္တယ္။ သူတို႕ေျခလွမ္းတိုင္းကို ငါကခ်စ္ေနတာ..<br><br>
+Have you ever seen them in real life? <br>
+တကယ့္ဘဝမွာ..သူတို႕ကိုမင္းေတြ႕ဖူးလား <br><br>
+Nope, I just watch them on media. I wish I will see them one day. <br>
+မေတြ႕ဖူးပါဘူး၊ သူတို႕ကို မီဒီယာေပၚမွာၾကည့္တယ္၊ တစ္ေန႕ေတာ့ေတြ႕ရလိမ့္မယ္..ေမွ်ာ္လင့္တယ္။
+How often do you come to their show? <br>
+သူတို႕ Show ပြဲကိုမင္း ဘယ္ေလာက္လာျဖစ္လဲ <br><br>
+I watch videos almost every day. Listening to their songs helps me chill out. <br>
+ငါ ေန႕တုိင္းနီးပါး.ဗီြဒီယိုၾကည့္တယ္။ သူတို႕သီခ်င္းကို နားေထာင္ရတာ..ငါ့အေမာေတြေျပေစတယ္..<br><br>
+Can you sing their songs? <br>
+သူတို႕သီခ်င္းကို မင္းဆိုတတ္သလား <br><br>
+Yes, but only one song. I just keep singing it over and over again every day. <br>
+ဟုတ္ကဲ့....ဒါေပမဲ့တစ္ပုဒ္ထဲပဲ။ ငါအဲ့ဒီတစ္ပုဒ္ပဲေန႕တိုင္း ထပ္ကာထပ္ကာ ဆိုေနတာ..<br><br>
+Do your friends like them? <br>
+မင္းသူငယ္ခ်င္းေတြ သူတို႕ကိုၾကိုက္ၾကလား <br><br>
+Of course. We usually watch their performances and discuss it together. <br>
+ေသခ်ာတာေပါ့။ ငါတို႕ပံုမွန္..သူတို႕ေဖ်ာ္ေဖ်ေတြကိုၾကည့္တယ္..ျပီးရင္တူတူေဆြးေႏြးၾကတယ္..<br><br>
+Do they have anti-fans? <br>
+သူတို႕ကိုမၾကိဳက္တဲ့ ပရိတ္သတ္ေတြေကါရွိလား <br><br>
+Yes, every famous singer has anti-fans. <br>
+ရွိပါတယ္..ေက်ာ္ၾကားတဲ့အဆိုေတာ္တိုင္း ရွိၾကပါတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

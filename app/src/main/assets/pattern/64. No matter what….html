@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/064. No matter what... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+No matter what........ဘာပဲျဖစ္ျဖစ္ <br>
+ဒီ pattern ေလးမွာေတာ့. what ေနရာမွာ...တျခားစကားလုံးေတြျဖစ္တဲ့...when, how, who, where ...<br>
+စတဲ့ wh စကားလံုးေတြကိုလည္း..သံုးႏိုင္ပါတယ္...<br>
+No matter what......ဘာပဲျဖစ္ျဖစ္...<br>
+No matter when..........ဘယ္အခ်ိန္ပဲျဖစ္ျဖစ္...<br>
+No matter how........ဘယ္လိုပဲျဖစ္ျဖစ္...<br>
+No matter who.......ဘယ္သူပဲျဖစ္ျဖစ္..<br>
+No matter where ...ဘယ္ေနရာပဲျဖစ္ျဖစ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ No matter what he says, don’t believe him. <br>
+ သူဘာပဲေျပာေျပာ...သူ႕ကိုမယံုနဲ႕..<br><br>
+ No matter how you do it, it will be wrong. <br>
+ မင္း ဘယ္လိုပံုစံနဲ႕လုပ္လုပ္....မွားမွာပဲ..<br><br>
+ No matter where he goes, he carries his suitcase. <br>
+ သူဘယ္ေနရာကိုသြားသြား..သူ႕လက္ဆြဲအိတ္..အျမဲသယ္သြားတယ္..<br><br>
+ No matter how you spend your holiday, tell me about it. <br>
+ မင္းအားလပ္ရက္ ဘယ္လိုကုန္ဆံုးခဲ့တာ..ငါ့ကိုေျပာျပပါလား..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: What’s bothering you? <br>
+မင္း ဘာျဖစ္ေနတာလဲ..<br><br>
+B: I want to get out of here and get away from all my problems. <br>
+ငါဒီကထြက္ျပီး..ျပသနာနဲ႕..ေဝးေဝးကိုသြားခ်င္တယ္..<br><br>
+A: Are you sure that changing your location will solve your problems? <br>
+ေနရာေျပာင္းတာက..မင္းျပသနာကို..ေျဖရွင္းႏိုင္မယ္ဆိုတာ..ေသခ်ာလား..<br><br>
+B: No but at least things will be different. <br>
+မေသခ်ာဘူး..ဒါေပမဲ့..အနည္းဆံုး..ေတာ့ မတူေတာ့ဘူးေလ..<br><br>
+A: No, matter where you go, you will bring your problems with you. <br>
+မဟုတ္ဘူး...မင္းဘယ္သြားသြား..ျပသနာဆိုတာ..မင္းေနာက္ကို ပါလာမွာပဲ..<br><br>
+B: I guess you’re right. <br>
+မင္းမွန္တယ္လို႕..ငါထင္တယ္..
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

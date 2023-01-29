@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/24-SHOPPING - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you like shopping? <br>
+ေစ်းဝယ္ထြက္ရတာ နင္ၾကိဳက္လား
+Yes, I’m a shopaholic. <br>
+ဟုတ္တယ္..ေခ်ာ့ပင္းထြက္တာ..အရမ္းၾကိဳက္သူတစ္ေယာက္<br><br>
+What do you usually shop for? <br>
+နင္ပံုမွန္အားျဖင့္ ဘာေတြအတြက္ေစ်းဝယ္ထြက္လဲ <br><br>
+I usually shop for clothes. I’m a big fashion fan. <br>
+ပံုမွန္အားျဖင့္ အဝတ္စားေတြ ဝယ္ဖို႕ေပါ့...ငါက ဖက္ရွင္အရမ္းလိုက္စားသူေလ..<br><br>
+Where do you go shopping? <br>
+နင္ဘယ္မွာ ေစ်းဝယ္ထြက္လဲ <br><br>
+At some fashion boutiques in my neighborhood. <br>
+အိမ္နီးနားက ဖက္ရွင္ဆိုင္ေလးတစ္ခ်ိဳ႕ကိုသြားတယ္..<br><br>
+Are there many shops in your neighborhood? <br>
+နင္တို႕အိမ္နား ဆိုင္ေတြ အမ်ားၾကီးရွိလား <br><br>
+Yes. My area is the city center, so I have many choices of where to shop. <br>
+ဟုတ္တယ္..ငါ့ေနတဲ့ေနရာက ျမိဳ႕ထဲေလ..ဒါေၾကာင့္.ဘယ္မွာေစ်းရတဲ့ေနရာေတြ..ေရြးစရာအမ်ားၾကီး <br><br>
+Do you spend much money on shopping? <br>
+ေရွာ့ပင္းထြက္ဖို႕ နင္ေငြအမ်ားၾကီးသံုးလား <br><br>
+Yes and I’m usually broke at the end of the month. <br>
+ဟုတ္တယ္..ျပီးရင္ေတာ့..လကုန္ရန္ ေငြက ကုန္သြားတယ္..<br><br>
+Do you usually shop online? What items? <br>
+နင္အြန္လိုင္းမွာ ပံုမွန္ ေစ်းဝယ္လား...ဘယ္ဟာေတြကိုလဲ <br><br>
+Yes, but not really often. I only buy furniture online. <br>
+ဝယ္ပါတယ္..ဒါေပမဲ့ အမ်ားၾကီးေတာ့မဟုတ္ဘူး...အြန္လိုင္းက ပရိေဘာဂ ပစၥည္းေတြကိုပဲ ဝယ္တယ္..<br><br>
+What’s the difference between shopping online and offline? <br>
+အြန္လိုင္းမွွာ ေစ်းဝယ္ရတာနဲ႕..အျပင္မွာ ဝယ္ရတာ ဘာေတြကြာျခားလဲ <br><br>
+Unlike shopping offline, you cannot try on the pieces of clothes or check the material when shopping online. <br>
+အျပင္မွာ ဝယ္တာတဲ့မတူတာက...အြန္လိုင္းမွာဝယ္တဲ့အခါ..ပစၥည္းကိုစစ္ေဆးလို႕မရဘူး..ျပီးရင္..အစမ္းဝတ္ၾကည့္လည္းမရဘူး <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

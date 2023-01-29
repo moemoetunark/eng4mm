@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/36-NATURAL SCENERY - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you like visiting natural places? <br>
+သဘာဝေနရာေတြကို လည္ပတ္ရတာ မင္းႏွစ္သက္လား <br><br>
+Yes, I do. Being close to nature helps me release stress and worry. <br>
+ဟုတ္တယ္။ သဘာဝနဲ႕နီးနီးေလးေနတာကါ စိုးရိမ္ေသာကနဲ႕.စိတ္ဖီးစီးမႈေတြကို..ေျပေပ်ာက္ေစတယ္..<br><br>
+What’s the most impressive natural scenery you’ve ever seen? <br>
+မင္းျမင္ဖူးတဲ့.. အသာယာဆံုး သဘာဝရႈခင္းက ဘာလဲ <br><br>
+That’s the horseshoe of the Colorado River in Arizona. It’s such a great scenic place on Earth. <br>
+အရီဇုိးနားျပည္နယ္က ေကာ္လိုရာဒိုျမစ္ရဲ႕ျမင္ကြင္းေပါ့။ ကမၻာေပၚက အရမ္းလွတဲ့ေနရာတစ္ခုေလ <br><br>
+When did you see it? <br>
+နင္အဲ့ဒါ ဘယ္တုန္းက ျမင္ခဲ့တာလဲ <br><br>
+I visited the place last Summer holiday. <br>
+လြန္ခဲ့တဲ့ေႏြရာသီအားလပ္ရက္က ငါလည္ပတ္ခဲ့တာ <br><br>
+Who went with you? <br>
+မင္းနဲ႕အတူ ဘယ္သူပါလဲ <br><br>
+I went there with my family. We camped near the place. <br>
+ငါ့မိသားစုနဲ႕အတူသြားတာ။ ငါတို႕အဲ့ဒီေနရာနားမွာပဲ camp လုပ္ၾကတာ <br><br>
+What’s special about it? <br>
+အဲ့ေနရာက ဘာထူးျခားလို႕လဲ <br><br>
+I’m fond of the great nature there. It’s a horseshoe-shaped meander of Colorado river. <br>
+အဲ့ဒီေနရာရဲ႕ သဘာဝကိုငါႏွစ္သက္တယ္.။ ျမင္းခြာပံုစံနဲ႕တူတဲ့ ေကာ္လိုရာဒိုျမစ္ပံုသ႑ာန္ပဲ။ <br><br>
+How has it changed recently? <br>
+ေလာလာဆယ္..ဘယ္လိုေျပာင္းလဲသြားလဲ <br><br>
+It doesn’t change much actually. <br>
+အမွန္က သိပ္ေတာ့ မေျပာင္းလဲပါဘူး <br><br>
+What’s the next natural scenery you would like to visit? <br>
+မင္းလည္ပတ္ခ်င္တဲ့ ေနာက္သဘာဝရႈခင္းတစ္ခုက ဘာလဲ <br><br>
+My next destination would be the Maroon Bells in Colorado. I fell in love with mountain ranges and yellow flowers there. <br>
+ငါေနာက္သြားမယ့္ေနရာက..ေကာ္လိုရာဒိုက..Maroon Bells ျဖစ္မယ္။ အဲ့ေနရာက အဝါေရာင္းပန္းပြင့္ေနတဲ့..ေတာင္တန္းေတြကို ငါခ်စ္သြားတာ..<br><br>
+What can people get from visiting natural places? <br>
+သဘာဝေနရာေတြကိုလည္ပတ္ရင္..ဘာေတြရႏိုင္လဲ <br><br>
+People will get closer to Mother Nature. Children have more motivation to discover the world around them. <br>
+လူေတြသဘာဝတရားနဲ႕ပိုနီးစပ္လာမယ္။ ကေလးေတြဟာ သူတို႕ပတ္ဝန္းက်င္ကိုရွာေဖြလိုတဲ့စိတ္ေတြ ပိုတိုးလာမယ္..<br><br>
+What are some famous natural attractions in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ နာမည္ေက်ာ္တဲ့ သဘာဝေနရာေတြက ဘာေတြလလဲ <br><br>
+There are many such as Death Valley, Niagara Falls, the Redwoods, and the Grand Canyon, to name a few. <br>
+အမ်ားၾကီးရွိပါတယ္..အနည္းငယ္ေျပာရမယ္ဆို....Dealth Valley ရယ္၊ Niagara ေရတံခြန္ရယ္၊ Grand Canyon ရယ္စသျဖင့္ေပါ့ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/049. I’m thinking about... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I'm thinking about .....ဆိုတာကေတာ့..လြယ္ပါတယ္..တစ္ခုခုအေၾကာင္းကို..တစ္ခုခုလုပ္ဖို႕..စဥ္းစားေနတယ္ ဆိုတဲ့အဓိပၸါယ္ျဖစ္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ I’m thinking about moving to a new house. <br>
+ အိမ္အသစ္ေျပာင္းဖို႕ ငါစဥ္းစားေနတယ္..<br><br>
+ I’m thinking about taking a science course. <br>
+ သိပၸံသင္တန္းတစ္ခုတက္ဖို႕ ငါစဥ္းစားေနတယ္ <br><br>
+ I’m thinking about getting a divorce. <br>
+ ကြာရွင္းျပတ္စဲဖို႕..ငါစဥ္းစားေနတယ္ <br><br>
+II. DIALOGUES: -စကားေျပာခန္း..<br><br>
+A: What are you going to have for breakfast? <br>
+မနက္စာအတြက္..မင္းဘာစားမလဲ..<br><br>
+B: I’m thinking about having some eggs. <br>
+အဥ အနယ္းငယ္ စားမလား..စဥ္းစားေနတယ္..<br><br>
+A: That sounds good. Can you make some for me too? <br>
+ေကါင္းပါတယ္..။ ငါ့အတြက္နည္းနည္း လုပ္ေပးလို႕ရလား..<br><br>
+B: Sure. How many do you want? <br>
+ရတာေပါ့...နင္ဘယ္ေလာက္ လိုခ်င္လဲ..<br><br>
+A: I think I’ll have two eggs. <br>
+ငါ ႏွစ္ဥေလာက္ေတာ့ စားမယ္ထင္တယ္..<br><br>
+B: OK. Two eggs are coming right up. <br>
+အိုေက...အဥႏွစ္လံုး ခ်က္ခ်င္း လာေနျပီ..<br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

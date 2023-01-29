@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/64-Cosmetic - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What’s your favorite cosmetic item? <br>
+မင္းရဲ႕အၾကိဳက္ဆံုးအလွျပင္ ပစၥည္းကဘာလဲ <br><br>
+My favorite cosmetic item is a cherry red lipstick. <br>
+ငါ့အရဲ႕အၾကိဳက္ဆံုးအလွျပင္ ပစၥည္းက..အနီေရာင္ ခ်ယ္ရီ..ႏႈတ္ခမ္းဆိုးေဆးျဖစ္တယ္..<br><br>
+When did you buy it? <br>
+နင္ဘယ္တုန္းက ဝယ္ခဲ့တာလဲ <br><br>
+I bought it in a local cosmetic shop. <br>
+အနီးနားက..အလွကုန္ပစၥည္းဆိုင္က ဝယ္လာတာ..<br><br>
+How often do you use it? <br>
+မင္းအဲ့ဒါ ဘယ္ေလာက္ အသံုးျပဳလဲ <br><br>
+Almost every day. I sometimes change the color. <br>
+ေန႕တိုင္းနီးပါးပဲ။ တစ္ခါတစ္ေလ အေရာင္ေျပာင္းသံုတယ္..<br><br>
+How did it change your physical appearance? <br>
+အဲ့ဒါက နင္ရဲ႕ ရုပ္ရည္ကို ဘယ္လိုေျပာင္းလဲေစလဲ
+Oh. At first, I was hesitant to try because I thought it wouldn’t match my skin undertone, but when putting it on, the cherry red color did make me more charming and gorgeous. <br>
+ပထမေတာ့.ကိုယ့္အသားအေရနဲ႕မလိုက္ဘူးထင္လို႕....သံုးဖို႕တြန္႕ဆုတ္ေနခဲ့တာ...ဒါေပမဲ့ သံုးၾကည့္ေတာ့..အနီေရာင္ခ်ယ္ရီက ငါ့ကိုပိုျပီး လွပေစတယ္..<br><br>
+Is it expensive? <br>
+ေစ်းၾကီးလား <br><br>
+Nope. It is under $21only. <br>
+မၾကီးပါဘူး..၂၁ေဒၚလာ ေအာက္ပဲ <br><br>
+Is the brand name famous? <br>
+အဲ့ဒီ တံဆိပ္က နာမည္ေက်ာ္လား..<br><br>
+Yes, I think. M.A.C is well-known all around the world. M.A.C lipstick is an iconic product of the producer. <br>
+ဟုတ္မယ္...ထင္တယ္။ M.A.C ကိုတစ္ကမၻာလံုးမွာ..လူသိတယ္။ M.A.C ႏႈတ္ခမ္းဆိုးေဆးက အဲ့ဒီထုတ္လုပ္သူရဲ႕..စံျပထုတ္ကုန္တစ္ခုပဲ <br><br>
+How important are cosmetics according to you? <br>
+မင္းရဲ႕ သေဘာရဆို...အလွပစၥည္းေတြက ဘယ္လို အေရးၾကီးလဲ <br><br>
+Well, frankly, cosmetics are really important to women although I agree that the true beauty does come from inside. <br>
+ရိုးသားေျပာရရင္..တကယ့္စစ္မွန္တဲ့အလွတရားဆိုတာ..အတြင္းကလာတယ္ဆိုေပမဲ့..အလွပစၥည္းေတြကေတာ့ မိန္းမေတြအတြက္ တကယ္အေရးၾကီးပါတယ္..<br><br>
+Is it important to have a good-looking appearance? <br>
+အျပင္ပန္းသ႑န္လွဖို႕က အေရးၾကီးသလား <br><br>
+Sure. You will be given more opportunities if you’re good-looking. <br>
+ၾကီးပါတယ္...အရုပ္လွရင္..အခြင့္ေ၇းေတြ ပိုရမယ္..<br><br>
+Are cosmetics harmful? <br>
+အလွကုန္ပစၥည္း အႏၱရယ္ရွိလား <br><br>
+Yes, I guess. Some toxic chemicals in cosmetics may cause skin cancer. <br>
+ဟုတ္တယ္..ထင္တယ္။ တစ္ခ်ိုဳ႕အဆိမ္ပါနဲက ဓာတ္တုေတြက..အေရျပားကင္ဆာ ျဖစ္ေစတယ္..<br><br>
+Do you think beauty products are a waste of money? <br>
+အလွကုန္ပစၥည္းေတြကေငြကိုျဖဳန္းတီးတာပဲလို႕..နင္ထင္လား..<br><br>
+Not really as for me, I just spend my saving money on cosmetics. <br>
+ငါကေတာ့ လံုးဝမထင္ပါဘူး..ငါက စုထားတဲ့ေငြကို အလွကုန္ပစၥည္းေတြမွာပဲသံုးတာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

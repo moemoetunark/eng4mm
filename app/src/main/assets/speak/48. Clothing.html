@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/48-Clothing - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is your favorite item of clothing? <br>
+အဝတ္စားမွာ မင္းအၾကိဳက္ဆံုးတစ္ခုက ဘာလဲ..<br><br>
+My favorite one is a maxi dress. I wear it when hanging out with my friends or attending parties. <br>
+ငါ့အၾကိဳက္ဆံုးကေတာ့..ၾကီးတဲ့ဝတ္စံုတစ္ခုပဲ။ သူငယ္ခ်င္းေတြနဲ႕..ေတြ႕တဲ့အခါ..ပါတီပြဲတက္တဲ့အခါ..အဲ့ဒါ ဝတ္ျဖစ္တယ္..<br><br>
+When did you buy it? <br>
+မင္းဘယ္တုန္းက ဝယ္တာလဲ <br><br>
+My friend gave it to me as a birthday present when I turned to 21. <br>
+ငါ ၂၁ႏွစ္ျပည့္တဲ့ ေမြးေန႕မွာ ငါ့သူငယ္ခ်င္းကေန လက္ေဆာင္ေပးတာ..<br><br>
+Where did you buy it? <br>
+ဘယ္မွာဝယ္ခဲ့တာလဲ <br><br>
+I had no idea where my close friend bought it. <br>
+ငါ့ရဲ႕အရမ္းခင္တဲ့သူငယ္ခ်င္းဘယ္ကဝယ္တယ္ဆိုတာ ငါလည္းမသိဘူး <br><br>
+What color is it? <br>
+ဘာအေရာင္လဲ <br><br>
+It’s blue – my favorite color. <br>
+အျပာေရာင္ေလ..ငါ့အၾကိဳက္ဆံုးအေရာင္ေပါ့ <br><br>
+Was it expensive? <br>
+ေစ်းၾကီးလား <br><br>
+Yes, I guessed. <br>
+ဟုတ္မယ္..ထင္တယ္ <br>
+Why do you like it? <br>
+မင္းဘာလို႕ ၾကိဳက္ႏွစ္သက္တာလဲ <br><br>
+Well, I’m kind of short and plump, so it’s hard to find a piece of clothing that fits me perfectly, but that one does. I also love the color and style. <br>
+အင္း..ငါက..အရပ္ပုျပီးးဝတုတ္တုတ္ေလ..ဒါေၾကာင့္ ျပီးျပည့္စံုစြာေတာ္တဲ့အဝတ္စားရွာရတာခက္တယ္..ဒါေပမဲ့ ဒီတစ္ခုကေတာ့ ကြက္တိပဲ။ အေရာင္နဲ..စတိုင္လ္ကိုလည္း ငါသေဘာက်တယ္..<br><br>
+Do clothes help to build your personal brand? <br>
+အဝတ္စားေတြက..မင္းရဲ႕ကိုယ္ပိုင္ ပံုစံတည္ေဆာက္ဖို႕အတြက္ အေထာက္ကူျဖစ္လား..<br>
+Yes, I agree with it to some extent. I still believe that personal brand can be built from the inside rather than the outside. <br>
+ကၽြန္ေနာ္..တစ္ခ်ို႕တဝက္ေတာ့ သေဘာတူတယ္.။ ကိုယ္ပိုင္စတိုင္လ္ဆိုတာ..အျပင္ပန္းထက္..အတြင္းစိတ္ကေန တည္ေဆာက္ႏိုင္တယ္လို႕..ငါယံုၾကည္တယ္..<br><br>
+However, what you wear also plays an important role in saying who you are. <br>
+ဒါေပမဲ့..မင္းဝတ္တဲ့အရာေတြက..မင္းဘယ္သူလဲဆုိတဲ့အခန္းမွာ..အေရးပါတယ္..<br><br>
+Have you seen anybody wearing unusual clothes? <br>
+မူမမွန္တဲ့ အဝတ္စားဝတ္တဲ့ သူတစ္ေယာက္ေယာက္ မင္းျမင္ဖူးလား <br><br>
+Yes, I have, but I don’t think any fashion style is weird. I believe everybody has their own taste of fashion. <br>
+ဟုတ္ကဲ့.ျမင္ဖူးတယ္။ ဒါေပမဲ့..ဘယ္ဖက္ရွင္ပံုစံမဆို...မူမမွန္လို႕ေတာ့..ငါမထင္ဘူး.လူတိုင္းမွာ ကိုယ္ပိုင္..ဖက္ရွင္ခံစားမႈေတြ ရွိတယ္လို႕ ငါယံုတယ္...<br><br>
+How has your fashion style changed recently? <br>
+ေလာေလာဆယ္..မင္းရဲ႕ ဖက္ရွင္ စတိုင္လ္ေတြ ဘယ္လိုေျပာင္းလဲသြားလဲ <br><br>
+I always wore formal shirt and trousers whenever hanging out years ago, but now I change into casuals like jeans and T-shirt. <br>
+အရင္ႏွစ္ေတြက..အျပင္ထြက္တဲ့ဘယ္ခ်ိန္မဆို..ပံုမွန္ ရွပ္အဂ်ီကိုပဲကိုပဲ အျမဲဝတ္တယ္..ဒါေပမဲ့ အခုေတာ့..ဂ်ိမ္းနဲ႕ တီးရွပ္လို..ဟာေတြလည္း ေျပာင္းဝတ္ျဖစ္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

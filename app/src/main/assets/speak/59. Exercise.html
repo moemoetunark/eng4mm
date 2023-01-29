@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/59-Exercise - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you usually exercise? <br>
+မင္း ပံုမွန္ေလ့က်င့္ခန္း လုပ္လား <br><br>
+Yes, I do. Doing exercise is one of my good habits. <br>
+ဟုတ္ကဲ့ လုပ္တယ္။ ေလ့က်င့္ခန္းလုပ္တာက..ငါ့ရဲ႕ေကါင္းတ့ဲအေလ့က်င့္ေတြထဲက တစ္ခုျဖစ္ပါတယ္..<br><br>
+What sport do you play? <br>
+ဘာ အားကစားကို မင္း လုပ္သလဲ <br><br>
+Swimming is my favorite. I also play tennis.<br>
+ေရကူးတာက ငါ့အၾကိဳက္ဆံုးပဲ။ တင္းနစ္ကိုလည္း ကစားျဖစ္တယ္ <br><br>
+How often do you exercise? <br>
+မင္းဘယ္ေလာက္ ေလ့က်င့္ခန္း လုပ္ျဖစ္လဲ <br><br>
+I go jogging almost every day before breakfast. <br>
+မနက္စာ မစားမီ ေန႕တိုင္းနီပါး..အေႏွးေလွ်ာက္သြားျဖစ္တယ္..<br><br>
+When did you start doing exercise? <br>
+ေလ့က်င့္ခန္း ဘယ္တုန္းက စလုပ္ခဲ့တာလဲ <br><br>
+Just last year, actually. <br>
+လြန္ခဲ့တဲ့ ႏွစ္ကပါပဲ <br><br>
+Is there anyone who does exercise with you? <br>
+မင္းနဲကေလ့က်င့္ခန္းတူတူလုပ္တဲ့သူေကါရွိလား <br><br>
+I go jogging with my older brother. He’s a good company of mine. <br>
+င့ါအကိုနဲ႕.အေႏွးေလွ်ာက္သြားျဖစ္တယ္။ သူကငါ့ရဲ႕ အေဖာ္ေကါင္းတစ္ေယာက္ပဲ <br><br>
+What benefits can you get from exercising? <br>
+ေလ့က်င့္ခန္းလုပ္တာက ဘယ္လို အက်ိဳးေက်းဇူးေတြ ရႏိုင္လဲ <br><br>
+Well, a lot. Exercise helps reduce fat and build muscles. It also keeps me awake mentally during the whole day. <br>
+အင္း အမ်ားၾကီးပါပဲ။ ေလ့်က့္ခန္းေတြက..အဆီေတြက်ေစျပီး..ၾကြက္သားေတြကိုတည္ေဆာက္ေပးတယ္။ တစ္ေန႕တာအတြင္းလည္း ငါ့ကို တက္တက္ၾကြၾကြရွိေစတယ္<br><br>..
+Where do you exercise? <br>
+မင္း ဘယ္ေနရာမွာ ေလ့က်င့္ခန္း လုပ္သလဲ <br><br>
+At a nearby park. There are some exercise machines for people to use. <br>
+အနီးနားက ပန္းျခံတစ္မွာလုုပ္တယ္။ လူေတြသံုးဖို႕..ေလ့က်င့္ခန္းလုပ္တဲ့ စက္ေတြ အဲ့မွာရွိတယ္..<br><br>
+Why do you exercise? <br>
+မင္းဘာလို႕ေလ့က်င့္ခန္း လုပ္တာလဲ <br><br>
+I like moving. For me, life without moving is like a picture without color. <br>
+ငါက လႈပ္ရွားရတာကိုၾကိဳက္တယ္။ ငါ့အတြက္ေတာ့..လႈပ္ရွားမႈမရွိတဲ့ဘဝဟာ..အေရာင္မရွိတဲ့..ဓာတ္ပံုတစ္ပံလိုပါပဲ <br><br>
+Do people in your country do much exercises? <br>
+မင္းတို႕ႏိုင္ငံမွာ လူေတြ..ေလ့က်င့္ခန္း အမ်ားၾကီးလုပ္ျဖစ္ၾကလား <br><br>
+I don’t think so. They’re so busy working that they forget to do exercise. <br>
+ငါေတာ့ မထင္ဘူး။ သူတုိ႕က ေလ့က်င့္ခန္းလုပ္ဖို႕ေမ့ေလာက္ေအာင္ အလုပ္မ်ားၾကတာ..<br><br>
+What if people don’t do enough exercise? <br>
+လူေတြ ေလ့က်င့္ခန္း လံုလံုေလာက္ေလာက္ မလုပ္ၾကဘူးဆိုရင္ေကါ <br><br>
+Obviously, they’ll gain weights fast and become obese. <br>
+ရွင္းေနတာက..ဝိတ္ေတြတိုးမယ္..အဝလြန္ေရာဂါျဖစ္လာမယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

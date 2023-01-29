@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/15-A Favorite Movie - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you usually watch movies at home or at a movie theater? <br>
+မင္းပံုမွန္အားျဖင့္ ရုပ္ရွင္ကိုအိမ္မွာသို႕မဟုတ္ရုပ္ရွင္ရံုမွာၾကည့္လား <br><br>
+I usually watch movies on my laptop, sometimes I go to the movie theater. <br>
+ပံုမွန္အားျဖင့္ င့ါလက္ေတာ့မွာ ရုပ္ရွင္ၾကည့္တယ္..တစ္ခါတစ္ရံ..ရုပ္ရွင္ရံုသို႕သြားတယ္..<br><br>
+Is watching movies at the theater more interesting than watching movies at home? <br>
+ရုပ္ရွင္ရံုမွာၾကည့္တာက..အိမ္မွာၾကည့္တာထက္ ပိုျပီးစိတ္ဝင္စားစရာေကါင္းလား <br><br>
+Yes, definitely, because you can watch vivid images on a large screen with lively sound effects. <br>
+ေသခ်ာတာေပါ့..ေကါင္းမြန္တဲ့..အသံနဲ႕ၾကည္လင္တဲ့ရုပ္ပံုေတြကို screen ၾကီးမွာၾကည့္လို႕ရတယ္ေလ..<br><br>
+How often do you go to the movie theater? <br>
+ရုပ္ရွင္ရံုသို႕မင္းဘယ္ေလာက္သြားသလဲ <br><br>
+I often go to the movie theater every weekend. <br>
+ရုပ္ရွင္ရံုသို႕..စေန..တနဂၤေႏြရက္ေတြမွာ..မၾကာခဏသြားျဖစ္တယ္..<br><br>
+What’s your favorite type of movie? What movie of that type do you like? <br>
+မင္းဘယ္ရုပ္ရွင္အမ်ိဳးစားကိုၾကိဳက္လဲ။ အဲ့ဒီရုပ္ရွင္အမ်ိဳးစားရဲ႕ဘယ္ဇာတ္ကားကို မင္းၾကိဳက္သလဲ <br><br>
+My favorite type is comedy because whenever I watch one, I feel like there are no more worries in the world. I love the Mr.Bean movie series. <br>
+ကၽြန္ေနာ္အၾကိဳက္ဆံုးအမ်ိဳးစားက..ဟာသျဖစ္တယ္..ဘာေၾကာင့္ဆိုေတာ့..ကၽြန္ေနာ္ၾကည့္တဲ့အခါ..ကမၻာေပၚမွာ..စိုးရိမ္ေသာကေတြ မရွိေတာ့သလိုခံစားရတယ္..။ ကၽြေနာ္..မာစတာဘိန္း ဇာတ္ကားတြဲကိုႏွစ္သက္တယ္..    <br><br>
+
+Was that movie adapted from a book?<br>
+အဲ့ဒီဇာတ္ကားက စာအုပ္ကေနရိုက္တာလား..<br><br>
+No, the story is derived from funny situations in real life. <br>
+မဟုတ္ဘူး..ပံုျပင္ဇာတ္လမ္းေတြက တစ္ကယ့္ဘဝရဲ႕အေျခေနေတြက လာတာ..<br><br>
+Who are the actors/actresses in the movie? <br>
+ဇာတ္ကားထဲမွာ သရုပ္ေဆာင္မင္းသားး/မင္းသမီးက ဘယ္သူေတြလဲ <br><br>
+Mr. Bean is the main character, he is played by Rowan Atkinson who is from England. <br>
+မာစတာဘိန္းကေတာ့..အဓိက ဇာတ္ေကါင္ပါပဲ..သူ႕ကိုအဂၤလန္က..Rowan Atkinson ကရိုက္ကူးတာေလ..<br><br>
+Was it recommended by your friend, teacher or family? <br>
+အဲ့ဒီဟာကို..သူငယ္ခ်င္း..ဆရာ..သို႕မဟုတ္..မိသားစုက ညႊန္းတာလား <br><br>
+It was recommended by my classmate. <br>
+င့ါသူငယ္ခ်င္းတစ္ေယာက္ကေန..ညႊန္းလိုက္တာ..<br><br>
+Was the movie in your mother language or in English? <br>
+ဇာတ္ကားဟာမင္းရဲ႕မိခင္ဘာသားကားလား..သို႕မဟုတ္ အဂၤလိပ္လား..<br><br>
+It was in English, but I can also watch it with subtitles. <br>
+အဂၤလိပ္စကားပဲ..ဒါေပမဲ့..စာတန္းထိုးနဲ႕ၾကည့္လို႕လည္းရတယ္..<br><br>
+Should children watch violent movies? <br>
+ကေလးေတြ..အၾကမ္းဖက္ဇာတ္ကားေတြကို ၾကည့္သင့္လား 
+I don’t believe so. Young children are very impressionable and it could lead them to wanting to imitate the behavior. <br>
+ကၽြန္ေနာ္အဲ့သလို..မယံုၾကည္ဘူ။ ကေလးေတြက အရမ္းဦးေႏွာက္ထဲစြဲတတ္တယ္..ျပီးေတာ့..အျပဳမူေတြကို..အတုခိုးႏိုင္တယ္..<br><br>
+What’s the most important factor of a great movie? <br>
+ဇာတ္ကါးေကါင္းတစ္ခုရဲ႕အေရးၾကီးဆံုး အခန္းက႑ကဘာလဲ <br><br>
+I believe that plot and actors are among the factors which decide the success of a movie. <br>
+ဇာတ္လမ္းဇာတ္ေၾကာင္းနဲ႕သရုပ္ေဆာင္ေတြက..ေအာင္ျမင္တဲ့ဇာတ္ကားတစ္ခုကို ဆံုးျဖတ္ေပးတဲ့..က႑ေတြလို႕..ငါယံုၾကည္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

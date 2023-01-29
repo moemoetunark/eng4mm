@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/17-Parties - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+On what occasions do people in your country celebrate parties? <br>
+ဘယ္လိုအေျခေနမွာ မင္းတို႕ႏိုင္ငံကလူေတြ ပါတီပြဲေတြက်င့္ပၾကသလဲ <br><br>
+There are many occasions when people throw parties such as New Year’s eve, wedding engagments, family reunions, birthdays, etc, but sometimes people hold parties just when they meet up and want to have something fun to do. <br>
+လူေတြပါတီပြဲလုပ္တဲ့အခ်ိန္ခါေတြမ်ားၾကီးရွိပါတယ္..ႏွစ္သစ္ကူးခါ၊လက္ထပ္ေစ့စပ္ပြဲ၊မိသားစုေတြ႕ဆံုပြဲ၊ေမြးေန႕၊စသည္ျဖင့္ေပါ့။ ဒါေပမဲ့..တစ္ခါတစ္ေလမွာ..တစ္ခ်ိဳ႕လူေတြက..သူတို႕ေတြ႕တဲ့အခါ..ေပ်ာ္စရာအျဖစ္လည္း ပါတီပြဲလုပ္ၾကတယ္..<br><br>
+
+Are you a party animal? <br>
+မင္းပါတီပြဲကိုအရမ္းၾကိဳက္တဲ့သူလား <br><br>
+Yes, I am. I’m crazy about going to parties. I love meeting friends, drinking, and talking. <br>
+ဟုတ္တယ္..ငါပါတီပြဲသို႕သြားရတာ..အရူးမူးပဲ။ သူငယ္ခ်င္းေတြေတြ႕ရတာ၊ေသာက္တာ၊စကားေျပာရတာေတြကိုႏွစ္သက္တယ္..<br><br>
+When do parties often start and finish? <br>
+ပါတီပြဲေတြက ဘယ္အခ်ိန္စျပီး.ဘယ္ခ်ိန္ျပီးဆံုးၾကသလဲ <br><br>
+It depends on what kind of party it is. I believe the perfect time to have a party is in the evening, from 8-11 pm. <br>
+ဒါက ဘယ္လိုပါတီပြဲမ်ိဳးလဲဆိုတဲ့အေပၚမူတည္ပါတယ္။ င့ါအထင္ ပါတီပြဲစဖို႕အေကါင္းဆံုးအခ်ိန္က..ညေန၈နာရီကေန..၁၁နာရီထိျဖစ္တယ္. <br><br>
+Where are the parties thrown? <br>
+ပါတီပြဲေတြကို ဘယ္ေနရာမွာက်င့္ပၾကသလဲ <br><br>
+They are held inside or outside. Some formal events like weddings/housewarmings are organized inside while others like family reunions and birthdays may be held outside. <br>
+အတြင္းမွာသို႕မဟုတ္..အျပင္မွာလုပ္ၾကတာေပါ့။ လက္ထပ္ပြဲ၊အိမ္သစ္တက္ပြဲလိုပြဲေတြကို အိမ္ထဲလုပ္ၾကျပီး၊မိသားစုေတြ႕ဆံုပြဲ၊ေမြးေန႕ပြဲေတြလို ပြဲေတြကို အျပင္မွာလုပ္ၾကတယ္..<br><br>
+What do you usually wear when you come to a party? <br>
+ပါတီပြဲသို႕သြားတဲ့အခါ ပံုမွန္အားျဖင့္နင္ဘာေတြဝတ္ဆင္သလဲ <br><br>
+I often wear casual clothes like a T-shirt and jeans if I go to informal parties, and a dress for formal ones. <br>
+ပံုမွန္သမားရိုးက်ပါတီပြဲ႕ကိုသြားရင္ေတာ့..တီးရွပ္နဲ႕ဂ်ိမ္းေတြကိုဝတ္တယ္..အဲ့လိုပါတီပြဲေတြအတြက္ဝတ္စံုေတြေပါ့ 
+What do people do in the parties you attended? <br>
+နင္တက္ေရာက္တဲ့ပါတီပြဲမွာ လူေတြဘာလုပ္ၾကသလဲ <br><br>
+At the party, people talk, eat and drink together. Some go there to find business opportunities and new partners. <br>
+ပါတီပြဲမွာ လူေတြ..စကားေျပာၾက၊အတူတကြေသာက္ၾကတာေပါ့၊ တစ္ခ်ိဳ႕ေတြကေတာ့..စီးပြားေရးအခြင့္လမ္းနဲ႕..လက္ေဖာ္ကိုင္ဖက္သစ္ေတြရွာဖို႕ သြားၾကတယ္..<br><br>
+Do you enjoy drinking alcohol at the parties? <br>
+ပါတီပြဲမွာ အရက္ေသာက္ရတာကို နင္ႏွစ္သက္လား <br><br>
+Yes, a little beer can cheer me up. <br>
+ဟုတ္တယ္..ဘီယာနည္းနည္းကငါ့ကို ေပ်ာ္ရႊင္ေစတယ္..<br><br>
+Do people have to bring anything to the party? <br>
+ပါတီပြဲသို႕လူေတြမွာ တစ္ခုခုယူလာရလား <br><br>
+It’s not required, but sometimes visitors bring some gifts to show their love for the host. <br>
+မလိုအပ္ပါဘူး၊ဒါေပမဲ့တစ္ခါတစ္ေလေတာ့..လာလည္တဲ့သူေတြက ပါတီပြဲက်င့္ပတဲ့အိမ္ရွင္အတြက္..ခင္မင္မႈကိုျပသဖို႕အတြက္ လက္ေဆာင္ေတြယူလာၾကတယ္..<br><br>
+Why do people, especially the youth, love going to parties? <br>
+လူေတြ..အထူးသျဖင့္လူငယ္ေတြ ဘာလို႕ပါတီပြဲသြားတာ ႏွစ္သက္ၾကသလဲ <br><br>
+It’s just a good way for them to chill out after a long day. <br>
+ရွည္လ်ားတဲ့ေန႕တစ္ေန႕ေနာက္ အပန္းေျဖဖို႕ေကါင္းတဲ့ နည္းတစ္ခုျဖစ္လို႕ေပါ့ <br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

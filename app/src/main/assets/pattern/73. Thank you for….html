@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/073. Thank you for... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+
+Thank you for............အတြက္..မင္းကိုေက်းဇူးတင္ပါတယ္..<br><br>
+တစ္စံုတစ္ေယာက္ကို..တစ္ခုခုအတြက္ ေက်းဇူးတင္တဲ့အခါ ဒီ pattern ေလးကိုသံုးပါ..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ Thank you for what you have done for me. <br>
+ ငါ့အတြက္မင္းလုပ္ေပးတာေတြ..ေက်းဇူးတင္ပါတယ္..<br><br>
+ Thank you for your help. <br>
+ မင္းရဲ႕အကူညီတြက္..ေက်းဇူးတင္ပါတယ္..<br><br>
+ Thank you for the gift. <br>
+ မင္းရဲ႕လက္ေဆာင္အတြက္ ေက်းဇူးတင္ပါတယ္..<br><br>
+ Thank you for giving me a lift. <br>
+ ငါ့ကို ကူပီးမေပးတာ..ေက်းဇူးပါ..<br><br>
+ Thank you for your advice. <br>
+ မင္းရဲ႕အၾကံညာဏ္ေပးမႈအတြက္..ေက်းဇူးတင္ပါတယ္..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+
+A: I have a big favor to ask. <br>
+ငါမင္းကို အကူညီတစ္ခု ေတာင္းရမယ္..<br><br>
+B: What is it? <br>
+ဘာလဲ...<br><br>
+A: Well, I need to borrow $1,000 for the down payment on a car. <br>
+အင္း..ကားတစ္စီးအရစ္က်ဝယ္တာ..ေပးဖို႕..ေဒၚလာ.တစ္ေထာင္ေလာက္ ေခ်းဖို႕လိုအပ္ေနတယ္..<br><br>
+B: OK, I’ll lend you the money but you have to pay it back as soon as you can. <br>
+အိုေက..ငါမင္းကို ပုိက္ဆံေခ်းမယ္..ဒါေပမဲ့..မင္းတတ္ႏိုင္သမွ်အျမန္ဆံုး ျပန္ေပးရမယ္ေနာ္..<br><br>
+A: I promise I will. Thanks a million. <br>
+ငါေပးမယ္လို႕ ကတိေပးပါတယ္...။ ေက်းဇူးအမ်ားၾကီးတင္တယ္..<br><br>
+B: You’re welcome. <br>
+ၾကိဳဆိုပါတယ္...ကြာ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

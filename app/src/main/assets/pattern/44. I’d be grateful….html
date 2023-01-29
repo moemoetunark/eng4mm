@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/044. I’d be grateful... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I'm grateful ...............ဆိုတာကေတာ့..ေက်းဇူးတင္တာ.။ ေက်းဇူးသိတတ္တာ ျဖစ္ပါတယ္..<br>
+ဒီ Pattern ေလးကို..မိမိအတြက္ တစ္ပါးသူကို တစ္ခုခုလုပ္ေပးေစခ်င္တဲ့အခါ...ယဥ္ေက်းစြြာ ေတာင္းဆိုျခင္းျဖစ္ပါတယ္..<br><br>
+I. EXAMPLES: နမူနာမ်ား...<br><br>
+ I’d be grateful for your help. <br>
+ မင္းရဲ႕အကူညီတြက္..ေက်းဇူးတင္ပါတယ္..<br><br>
+ I’d be grateful if you’d be quiet. <br>
+ မင္းျငိမ္ျငိမ္ေလး ေနေပးရင္..ေက်းဇူးတင္ပါမယ္..<br><br>
+ I’d be grateful if you’d give me a hand. <br>
+ မင္းငါ့ကို ကူညီမယ္ဆို..ေက်းဇူးတင္ပါတယ္...<br><br>
+ I’d be grateful if you’d take care of my baby. <br>
+ ငါ့ရဲ႕ကေလးကို ဂရုစိုက္ေပးလွ်င္..ေက်းဇူးအရမ္းတင္မွာပဲ..<br><br>
+ I’d be grateful if you danced with me. <br>
+ မင္းသာငါနဲ႕ကမယ္ဆို...ေက်းဇူးအရမ္းတင္မွာပဲ..<br><br>
+II. DIALOGUES:
+
+A: How do you like the music at this dance club?
+
+B: It’s great. I love dancing.
+
+A: Me too. You know I’d be grateful if you’d dance with me.
+
+B: Sure, but first you have to do me a favor.
+
+A: What’s that?
+
+B: Well, I’d be grateful if you’d stop stepping on my foot.
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/048. I’m not really happy with... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I'm not really happy with ........ဆိုတာကေတာ့..တစ္ခုခုကို အျပည့္ဝ ေက်နပ္မႈ မရွိတဲ့အခါ သံုးပါတယ္. <br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ I’m not really happy with their performance. <br>
+ သူတို႕ရဲ႕လုပ္ေဆာင္ခ်က္..ငါသိပ္ေက်နပ္မႈ မရွိဘူး..<br><br>
+ I’m not really happy with your behavior. <br>
+ မင္းရဲ႕အျပဳမႈေတြကို ငါသိပ္မေက်နပ္ခ်င္ဘူး..<br><br>
+ I’m not really happy with your present situation. <br>
+ မင္းရဲ႕လက္ရွိအေျခေနကို.ငါသိပ္မေက်နပ္ခ်င္ဘူး <br><br>
+ I’m not really happy with their service. <br>
+ သူတို႕ရဲ႕ဝန္ေဆာင္မႈ ငါသိပ္မေက်နပ္ဘူး..<br><br>
+ I’m not really happy with my life. <br>
+ ငါ့ဘဝငါ သိပ္ေက်နပ္မႈမရွိဘူး..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: I’ve been so depressed lately. <br>
+အခုေနာက္ပိုင္း ငါအရမ္းစိတ္ဖီးစီးမႈမ်ားေနတယ္..<br><br>
+B: Why? What’s the matter? <br>
+ဘာေၾကာင့္လဲ..ဘာျဖစ္တာလဲ..<br><br>
+A: I’m getting older and I’m not happy with the way my life is going. <br>
+ငါ့အသက္ၾကီးလာတယ္...ျပီးေတာ့..ငါ့ဘဝမွာျဖစ္ေနတာေတြ..ငါသိပ္မေက်နပ္ခ်င္ဘူး <br><br>
+B: What’s so bad about it? <br>
+ဘယ္ဟာက အရမ္းဆိုးေနလို႕လဲ..<br><br>
+A: I just go from girlfriend to girlfriend and I’m never happy or satisfied. <br>
+ငါရည္းစားေတြတစ္ေယာက္ျပီးတစ္ေယာက္ေျပာင္းတယ္..ျပီးရင္..ေက်နပ္မႈ..ေပ်ာ္ရႊင္မႈမရွိဘူး..<br><br>
+B: I think you’re thinking too much about yourself. You need to concentrate on helping others. <br>
+မင္းက မင္းအေၾကာင္းပဲ အလြန္စဥ္းစားေနတာကို...သူမ်ားကိုကူညီဖုိ႕လည္း..အာရံုစိုက္လိုက္ဦး..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

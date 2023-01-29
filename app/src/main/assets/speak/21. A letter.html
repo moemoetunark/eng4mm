@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/21-A LETTER - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Who wrote the letter to you? <br>
+ဒီစာကိုမင္းဆီ ဘယ္သူေရးတာလဲ <br><br>
+My dad wrote the letter to me when he was on a business trip.<br><br>
+ငါ့အေဖကသူလုပ္ငန္းနဲကခရီးထြက္ေနတဲ့အခါ..ငါ့ဆီေရးခဲ့တာ  <br><br>
+Did you keep the letter? <br>
+မင္းစာကို သိမ္းထားခဲ့လား <br><br>
+Yes, I put it in a folder. Whenever I’m down, reading his letter would be a good way to cheer me up. <br>
+ဟုတ္တယ္..folder တစ္ခုထဲမွာသိမ္းထားခဲ့တယ္။ ငါစိတ္ဓာတ္က်ေနတဲ့အခါ..သူ႕စာကိုဖတ္တာက ..ငါ့ကိုစိတ္အားတက္ေစဖို႕နည္းလမ္းေကါင္းတစ္ခုပဲ <br><br>
+What was the letter about? <br>
+စာက ဘာအေၾကာင္းရာလဲ <br><br>
+He told me about his new workplace and how things were there. <br>
+သူငါ့ကို သူ႕လုပ္ငန္းသစ္အေၾကာင္းေျပာတယ္..ျပီးေတာ့ အဲ့မွာအေျခေနက ဘယ္လိုဆိုတာေပါ့ <br><br>
+How did you feel about the letter? <br>
+စာနဲ႕ပတ္သက္လို႕မင္းဘာခံစားရသလဲ <br><br>
+I was glad to know that he was fine in another city. <br>
+တစ္ျခားျမိဳ႕တစ္ခုမွာ..သူအဆင္ေျပာေနသားက်တယ္ဆိုတာ သိရလို႕ဝမ္းသာမိတယ္..<br><br>
+Do you have a letter collection? <br>
+မင္းစာေတြကို စုေဆာင္းထားလား..<br><br>
+Yes. I collect all the letters from family and friends. It’s one of my hobbies. <br>
+ဟုတ္တယ္..ငါ့သူငယ္ခ်င္းေတြနဲ႕မိသားစုဆီက စာအားလံုးကို စုထားတယ္။ အဲ့ဒါ ငါ့ဝါသနာပဲ <br><br>
+Do you like writing letters or emails? <br>
+မင္းစာေရးတာသို႕မဟုတ္..email ေရးတာကိုႏွစ္သက္လား <br><br>
+I prefer writing paper letters. <br>
+ငါစာရြက္ေပၚမွာ..ေရးရတာကို ပိုၾကိဳက္တယ္..<br><br>
+Do people in your country usually write letters? <br>
+နင္တို႕ႏိုင္ငံမွာ လူေတြစာေရးၾကသလား..<br><br>
+Years ago they did. Now people prefer emails. <br>
+အရင္ႏွစ္ေတြတုန္းကေတာ့ေရးၾကပါတယ္။ အခုေတာ့.လူေတြက email ကိုပိုႏွစ္သက္ၾကတယ္..<br><br>
+What’s the difference between emails and hand-written letters? <br>
+လက္ေရးစာနဲ႕..email ကဘာကြာျခားသလဲ <br><br>
+Emails are much more convenient than letters because they’re free to send and they get there instantly. 
+However, letters are much more special. <br>
+အလကါးပို႕လို႕ရတာရယ္..ခ်က္ခ်င္းေရာက္တာရယ္ေၾကာင့္...emai က Letters စာပို႕တာထက္..ပိုအဆင္ေျပတယ္..။ဒါေပမဲ့ စာေရးတာကေတာ့..ပိုျပီးခံစားခ်က္ထူးတာေပါ့ <br><br>
+Why should we write letters to friends or relatives? <br>
+ေဆြမ်ိဳးသို႕မဟုတ္..မိတ္ေဆြမ်ားထံသို႕ငါတို႕ ဘာေၾကာင့္စာေရးသင့္သလဲ <br><br>
+It’s a good way to show love to people you care about. <br>
+မင္းဂရုစိုက္အေလးထားတဲ့လူေတြကို..ေမတၱာတရားကို ျပသဖို႕နည္းလမ္းေကါင္းတစ္ခုျဖစ္လို႕ေပါ့..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/65-Indoor Game - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What indoor game do you like to play? <br>
+အိမ္ထဲမွာကစားရတဲ့ အားကစားမ်ိဳး ဘယ္ဟာကို ကစားလဲ.
+Uhm, I’m fond of playing bowling. <br>
+ဘိုးလင္းကစားနည္းကို ငါအရမ္းႏွစ္သက္တယ္..<br><br>
+When did you start playing it? <br>
+အဲ့ဒီဟာကို နင္ဘယ္တုန္းက စကားခဲ့တာလဲ <br><br>
+I’ve just started bowling. It’s been 3 weeks so far. <br>
+စတင္တာပဲ ရွိေသးတယ္။ သံုးပတ္ေတာ့ ရွိျပီး။
+Who do you play it with? <br>
+ဘယ္သူနဲကအတူ ကစားလဲ..<br><br>
+Most of the time I play with my friends when we hang out together. Sometimes, I also go bowling with my cousins. <br>
+အမ်ားဆံုးကေတာ့..သူငယ္ခ်င္းေတြနဲ႔ ေတြ႕တဲ့အခါ..ကစားတယ္..တစ္ခါတစ္ရံ..ငါ့ရဲ႕ ဝမ္းကြဲနဲ႕လည္း..ကစားတယ္..<br><br>
+Where do you play? <br>
+နင္..ဘယ္မွာ ကစားလဲ <br><br>
+At a nearby shopping mall. There is an entertainment area where people can play various games. <br>
+အနီးနားက ေစ်းဝယ္ကုန္တိုက္မွာေလ.။ အဲ့မွာ လူေတြ ကစားနည္းေတြ မ်ားၾကီးကစားလို႕ရတဲ့ေနရာရွိတယ္..<br><br>
+Is it easy to play? <br>
+ကစားရတာ လြယ္ကူလား..<br><br>
+Yes, quite easy. The bowler has to knock down as many pins as possible, ideally all of them. <br>
+ဟုတ္ကဲ့..အရမ္းလြယ္ပါတယ္.။ ဘိုးလင္းကစားတဲ့သူက..ရႏုိင္သမွ်..ပုလင္းေတြကိုလွဲခ်ဖို႕ပါပဲ..အေကါင္းဆံုးက အားလံုးကိုေပါ့..<br><br>
+Are you usually the winner? <br>
+ပံုမွန္အားျဖင့္ မင္းႏိုင္လား..<br><br>
+Nope, because I’m just a beginner. My friends are much more experienced in playing it. <br>
+မႏိုင္ပါဘူး..ငါက အခုမွစကားသူပဲေလ.။ င့ါသူငယ္ခ်င္းက ပိုျပီးကစားတာ..အေတြ႕ၾကံဳရွိတယ္..<br><br>
+Why do you like it? <br>
+မင္းအဲ့ဒါ ဘာလို႕ႏွစ္သက္တာလဲ..<br><br>
+Well, going bowling is quite enjoyable. I love it when my friends cheer me up. <br>
+ဘိုးလင္းကစားတာက ေပ်ာ္ဖို႕ေကါင္းတယ္.။ ငါ့သူငယ္ခ်င္းေတြ ငါ့ကိုအားေပးတဲ့အခါလည္း ေပ်ာ္တယ္..<br><br>
+Is it popular in your country? <br>
+နင္တို႕ႏိုင္ငံမွာ လူၾကိုက္မ်ားလား..<br><br>
+Yes, people playing almost everywhere. There are nearly 3,000 bowling centers in my country. <br>
+ဟုတ္တယ္..ေနရာတိုင္းနီးပါး..လူေတြကစားၾကတယ္..။ ငါတို႕ႏိုင္ငံမွာ ဘိုးလင္းကစားတဲ့ေနရာ..သံုးေထာင္နီးပါရွိတယ္..
+What are other indoor games in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ..အိမ္တြင္းကစားရတဲ့ အျခား အားကစားေတြက ဘာေတြလဲ
+There are many such as board game, table tennis, squash, boxing and so on. <br>
+ခံုတင္ကစားနည္းေတြ..စားပြဲတင္..တင္းနစ္..Squash..လက္ေဝွ႕စသည္ျဖင့္ အမ်ားၾကီးရွိပါတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

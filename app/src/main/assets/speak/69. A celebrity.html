@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/69-A Celebrity - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Who is a famous celebrity that you admire? <br>
+မင္း ေလးစားရတဲ့..နာမည္ေက်ာ္..တစ္ေယာက္က ဘယ္သူလဲ..<br><br>
+Well, I’m a big fan of Miley Ray Cyrus, an American singer, songwriter, and actress. <br>
+ကၽြန္ေနာ္က အေမရိကန္..အဆိုေတာ္..ေတးေရးနဲ႕ သရုပ္ေဆာင္..မိုင္လီ..ေရး စိုင္းရ္ပ္ ရဲ႕အမာခံပရိတ္သတ္တစ္ေယာက္ပါ..<br><br>
+Why do you admire her? <br>
+သူမကို မင္းဘာလို႕ ေလးစားတာလဲ..<br><br>
+Well, she’s at my age, but what she’s achieved is acknowledged worldwide. <br>
+သူမက င့ါအသက္ရြယ္မွာပဲရွိတယ္..ဒါေပမဲ့ သူမရဲ႕ေအာင္ျမင္မႈက..တစ္ကမၻာလံုးမွာ..မသိမွတ္ျပဳခံေနရျပီ..<br><br>
+What is special about her? <br>
+သူမရဲ႕ထူးျခားခ်က္က ဘာလဲ..<br><br>
+I just fall in love with her beautiful voice. I can’t stop listening to her songs again and again. My favorite songs of hers are Jolene and Wrecking Ball. <br>
+ငါက သူမရဲ႕ ခ်စ္စရာအသံေလးကို ခ်စ္ေနတာ.။သူမသီခ်င္းကို ထပ္ကါထပ္ကါ မနားေထာင္ပဲ မေနႏိုင္ဘူး။ သူမရဲ႕သီခ်င္းေတြထဲက..ငါ့အၾကိဳက္ဆံုးကေတာ့..Jolene နဲ႕ Wrecking Ball သီခ်င္းပဲ..<br><br>
+Is she well-known worldwide? <br>
+သူမ တကမၻာလံုးမွာ..နာမည္ေက်ာ္လား..<br><br>
+Yes, she is. She’s a teen idol. <br>
+ဟုတ္တယ္..လူငယ္ေတြရဲ႕..Idol တစ္ေယာက္ပဲ..<br><br>
+Do you see her on TV or in reality? <br>
+နင္သူမကို အျပင္မွာေတြ႕လား..TV မွာေတြ႕လား..<br><br>
+Most of the time I see her on TV. <br>
+အမ်ားဆံုးေတာ့ TV မွာေတြ႕တယ္..<br><br>
+Do your friends love her, too? <br>
+မင္းသူငယ္ခ်င္းေတြလည္း သူမကို ၾကိဳက္ၾကလား..<br><br>
+Yes, they do. We usually enjoy her songs, movies together. <br>
+ဟုတ္တယ္...ငါတို႕အတူတူ..သူမရဲ႕ ဇာတ္ကားနဲ႕သီခ်င္းေတြကို...ခံစားၾကတယ္..<br><br>
+Do you want to be like her? <br>
+နင္သူမလိုျဖစ္ခ်င္လား..<br><br>
+Yes, being a well-known singer is my dream. <br>
+ဟုတ္တယ္..ေက်ာ္ၾကားတဲ့ အဆိုေတာ္ျဖစ္ဖို႕..ငါ့အိပ္မက္ပါပဲ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

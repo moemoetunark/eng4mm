@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/8-FAVORITE ROOMS - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+How many rooms are there in your house? <br>
+နင့္အိမ္မွာ ဘယ္ႏွစ္ခန္းရွိလဲ <br><br>
+There are 6 rooms: a living room, 2 bedrooms, a bathroom and a kitchen. <br>
+ေျခာက္ခန္းရွိတယ္..ေနခန္းတစ္ခန္း..အိမ္ခန္းႏွစ္ခန္း၊ ေရခ်ိဳးခန္းနဲ႕ မီးဖိုးေခ်ာင္ <br><br>
+Which floor is your bedroom on? <br>
+နင့္အခန္းက ဘယ္အထပ္မွာလဲ <br><br>
+My bedroom is on the first floor of a three-storey house. <br>
+သံုးထပ္အိမ္မွာ..ငါ့အခန္းက ပထမထပ္မွာရွိတယ္...<br><br>
+Is it big or small? <br>
+အခန္းၾကီးလား..ငယ္လား <br><br>
+It’s not very spacious, just enough to put necessary furniture in. <br>
+သိပ္ေတာ့ မက်ယ္ဘူး..လိုအပ္တဲ့ပရိေဘာဂေတြထပ္ႏိုင္ရံုေလာက္ပါပဲ..<br><br>
+What color is your bedroom painted? <br>
+အိပ္ခန္းကို ဘယ္အေရာင္သုတ္ထားလဲ <br><br>
+It’s painted pink, my favorite color. <br>
+ပန္းေရာင္သုတ္ထားတယ္..ငါ့အၾကိဳက္ဆံုးအေရာင္ေပါ့ <br><br>
+Do you love your room? Why? <br>
+နင့္အခန္းကို ႏွစ္သက္လား..ဘာလို႕လဲ <br><br>
+I love it very much because it is my private space whenever I go home. <br>
+ငါဘယ္အခ်ိန္ပဲအိမ္မွာေနေန..ငါ့ရဲ႕တစ္ကိုယ္ေရခန္းဖို႕..ငါအရမ္းႏွစ္သက္တယ္..<br><br>
+What furniture does your bedroom contain? <br>
+နင့္အခန္းမွာ ဘာပရိေဘာဂေတြ ရွိလဲ <br><br>
+It contains a bed, a desk, and a clothing closet. <br>
+အိပ္ရာရယ္..စားပြဲခံုရယ္..အဝတ္စားထည့္တဲ့ ဗီရိုေပါ့..<br><br>
+What do you do in it? <br>
+အခန္းထဲမွာ နင္ဘာလုပ္သလဲ <br><br>
+Well, I spend most of my free time there reading books and sleeping. <br>
+ငါ့ရဲ႕အားလပ္တဲ့အခ်ိန္အမ်ားစုကုိ..စာဖတ္ရင္း..အိပ္ရင္း..ျဖတ္သန္းတာေပါ့..<br><br>
+How much time do you spend in your room? <br>
+နင့္အခန္းထဲမွာ အခ်ိန္ဘယ္ေလာက္ေနလဲ <br><br>
+About 10 hours a day, especially in the evening.<br>
+တစ္ေန႕ ၁၀နာရီခန္႕ေပါ့...အထူးသျဖင့္ မနက္ခင္းမွာ..<br><br>
+Do you share your room with anyone else? <br>
+နင့္အခန္းကို တစ္ျခားတစ္ေယာက္ကိုေကါ..ေပးေနလား <br><br>
+No, everyone in my family has their own room, so I stay there alone. <br>
+ေပးမေနဘူး..ငါ့မိသားစုမွာ အားလံုးကိုယ္ပိုင္အခန္းရွိၾကတယ္..ဒါေၾကာင့္ငါတစ္ေယာက္တည္းပဲေနတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

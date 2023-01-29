@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/034. I cannot wait to... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I can't wait to + V1. ..မေစာင့္ႏုိင္ေတာ့ဘူး..<br>
+ဒီ pattern ေလးကိုေတာ့..တစ္ခုခုအတြက္..မေစာင့္ႏိုင္ေတာ့ဘူး..မေစာင့္ႏိုင္ေအာင္ကို..ျဖစ္ေနတယ္..အရမ္းရခ်င္..ျဖစ္ခ်င္ေနတဲ့အခါ သံုးပါတယ္..<br><br>
+I. EXAMPLES: - ဥပမာ..<br><br>
+ I can’t wait to see my family. <br>
+ ငါ့မိသားစုနဲ႕ေတြ႕ရဖို႕မေစာင့္ႏိုင္ေတာ့ဘူး..(အရမ္းေတြ႕ခ်င္ေန) <br><br>
+ I can’t wait to hear from you. <br>
+ မင္းဆီက..ၾကားရဖို႕မေစာင့္ႏိုင္ေတာ့ဘူး..<br><br>
+ I can’t wait to buy a computer. <br>
+ ကြန္ပ်ဴတာတစ္လံုးဝယ္ဖို႕..မေစာင့္ႏိုင္ျဖစ္ေနတယ္..(အရမ္းဝယ္ခ်င္ေန) <br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Daughter: Only two days until my birthday! I can’t wait! <br>
+သမီး း ငါ့ေမြးေန႕ေရာက္ဖို႕၂ရက္ပဲလိုေတာ့တယ္။ မေစာင့္ႏိုင္ေတာ့ဘူး..<br><br>
+Mom: Now don’t get too excited, you still have lots of homework to do.<br>
+အေမ  း  အခု အရမ္းစိတ္မလႈပ္ရွားေနနဲ႕။ နင့္မွာ..အိမ္စာေတြလုပ္စရာ အမ်ားၾကီးရွိေသးတယ္..<br><br>
+Daughter: I hope a lot of people come to my party. <br>
+သမီး : ေမြးေန႕ပြဲသို႕လူအမ်ားၾကီးလာမယ္ ေမွ်ာ္္လင့္တယ္..<br><br>
+Mom: Did I tell you that Aunt Jenny will be there? <br>
+အေမ : အန္တီ ဂ်င္နီလာမယ္ဆိုတာ..ငါနဲကိုေျပာျပီးျပီလား..<br><br>
+Daughter: Really! That’s great! Oh, I can’t wait to see her. <br>
+သမီး : တကယ္လား: အရမ္းမိုက္တယ္၊ ငါသူမကိုေတြ႕ဖို႕မေစာင့္ႏိုင္ေတာ့ဘူး. <br><br>
+Mom:  Me too.  OK, now get  back to your homework.  You still have lots to do before your birthday. <br>
+ငါေရာပဲ။ အိုေက...အခုအိမ္စာလုပ္ေတာ့၊ ေမြးေန႕မတိုင္ခင္နင့္မွာ လုပ္စရာေတြ အမ်ားၾကီးရွိေသးတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

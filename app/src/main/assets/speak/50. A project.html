@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/50-A Project - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What project did you work on? <br>
+မင္းဘယ္ စီမံကိန္းမွာ အလုပ္လုပ္ေနလဲ <br><br>
+I made an English poster about our environment. <br>
+သဘာဝ ပတ္ဝန္းက်င္နဲပတ္သက္တဲ့..ပိုစတာေလးေတြ..အဂၤလိပ္လို လုပ္တယ္..<br><br>
+Was that an indoor or outdoor project? <br>
+အဲ့ဒါက အိမ္တြင္း သို႕မဟုတ္..အိမ္ျမင္..စီမံကိန္းလား <br><br>
+The project was carried out mostly outdoor, only the last phase was conducted indoor. <br>
+စီမံကိန္းကို အိမ္ျပင္မွာေဆာင္ရြက္တာမ်ားတယ္..ေနာက္ဆံုးတစ္ဆင့္ကိုပဲ အိမ္တြင္းလုပ္တာ..<br><br>
+Who was involved in the project? <br>
+စီမံကိန္းမွာ ဘယ္သူေတြ ပါဝင္လဲ <br><br>
+My teammates and an advisory teacher. <br>
+င့ါအသင္းသားေတြနဲ႕..အၾကံေပးဆရာေပါ့..<br><br>
+What did you do? <br>
+မင္းဘာလုပ္လဲ <br><br>
+We had a field trip to the countryside where we studied insects and plants. <br>
+ပိုးမႊားနဲ႕..အပင္ေတြကို ေက်းလက္မွာ ေလ့လာေရးခရီးတစ္ခု ငါတို႕ထြက္ခဲ့ၾကတယ္..
+Was it a successful project? <br>
+အဲ့ဒီ စီမံကိန္း ေအာင္ျမင္လား <br><br>
+Yes. We received compliments from our professor. <br>
+ဟုတ္တယ္..ငါတို႕ပါေမာကၡဆီက ခ်ီးမႊတ္းမႈကို ငါတို႕လက္ခံရရွိတယ္..<br><br>
+Who was your advisory teacher? <br>
+မင္းရဲ႕အၾကံေပးဆရာက ဘယ္သူလဲ <br><br>
+Our Science teacher, Mr.John. We learned a lot from him. <br>
+ငါတို႕ရဲ႕ သိပၸြဆရာ..Mr. Johnေပါ့။ ငါတို႕သူ႕ဆီကေန မ်ားစြာ သင္ယူခဲ့ၾကတယ္..<br><br>
+What did you learn after the project? <br>
+စီမံကိန္းျပီးသြားေတာ့...မင္းတို႕ဘာေတြ သင္ယူႏုိင္ခဲ့လဲ <br><br>
+I learned how to write contents and decorate posters. <br>
+စာေတြဘယ္လိုေရးရမယ္ဆိုတာနဲ႕..ပိုစတာေတြကို ဘယ္လိုအလွဆင္ရမယ္ဆိုတာ..သင္ယူခဲ့တယ္..<br><br>
+Did you like your partners? <br>
+မင္းရဲ႕လုပ္ေဖာ္ကိုင္ဖက္ကိုေကါ..ႏွစ္သက္ခဲ့လား <br><br>
+Yes. Most of them were friendly and responsible. I particularly liked Michael, the leader of my team. <br>
+ဟုတ္ကဲ့..သူတို႕အားလံုးနီးပါး..ေဖာ္ေရြၾကျပီးးတာဝန္ေက်ပြန္ၾကတယ္။ အထူးသျဖင့္ မိုက္ကယ္ကို သေဘာက်တယ္..ငါတို႕ရဲ႕ အသင္းေခါင္းေဆာင္ေပါ့။ <br><br>
+What did you get after the project? <br>
+စီမံကိန္းျပီးသြားေတာ့..မင္းဘာရလိုက္လဲ <br><br>
+After the project, I know how to work in a team and cooperate well with my teammates. <br>
+စီမံကိန္းျပီးနေနာက္မွာ..အသင္းဖြဲ႕နဲ႕ဘယ္လိုအလုပ္လုပ္ရမွာနဲ႕..ဘယ္လိုပူေပါင္းေဆာင္ရြက္မလဲဆိုတတာ..သိလာတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

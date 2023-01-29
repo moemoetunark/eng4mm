@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/56-Communication - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What’re your favorite means of communication? <br>
+မင္းရဲ႕အၾကိဳက္ဆံုး ဆက္သြယ္ေရးစနစ္က ဘာလဲ <br><br>
+I prefer talking directly to people. <br>
+ငါက လူေတြကို တိုက္ရိုက္စကားေျပာရတာကို ပိုၾကိဳက္တယ္..<br><br>
+How do you keep in touch with your friends? <br>
+မင္းသူငယ္ခ်င္းေတြနဲ႕အဆက္သြယ္ အျမဲရွိေနေအာင္ ဘယ္လိုလုပ္လဲ <br><br>
+I’m so busy that I don’t often hang out with friends, so I usually get in touch with them using social networks or phone. <br>
+အလုပ္မ်ားေတာ့..ကၽြန္ေနာ္...သူငယ္ခ်င္းေတြနဲ႕.ေလွ်ာက္လည္မျဖစ္ဘူး..ဒါေၾကာင့္..ဖုန္းသို႕မဟုတ္..လူမႈကြန္ယက္သံုးျပီး သူတို႕နဲ႕အဆက္သြယ္လုပ္တာေပါ့ <br><br>
+Do you get in touch with your family by phone? <br>
+မင္းမိသားစုကို ဖုန္းနဲ႕အဆက္သြယ လုပ္လား <br><br>
+Yes, I do. I live away from my family, so phone would be an ideal means of communication. <br>
+လုပ္တာေပါ့။ ငါက မိသားစုနဲ႕အေဝးၾကီးမွာေနတာ..ဒါေၾကာင့္..ဖုန္းက အေကါင္းဆံုးဆက္သြယ္ေရး စနစ္ပဲ <br><br>
+Do you usually write letters or emails? <br>
+ပံုမွန္အားျဖင့္..အီးမဲလ္ သို႕မဟုတ္..စာေရးလား <br><br>
+I used to write letters when the Internet hasn’t been used widely. Now I prefer emails due to its convenience. <br>
+အင္တာနက္ကို က်ယ္က်ယ္ျဖန္႕ျဖန္႕အသံုးမျပဳခင္ေတာ့..စာေရးေလ့ရွိတယ္..အခုေတာ့..အဆင္ေျပတာေၾကာင့္..အီးမဲလ္ကိုပဲ ပိုႏွစ္သက္တယ္..<br><br>
+What are some advantages of using a mobile phone? <br>
+မိုဘိုင္းဖုန္းသံုးျခင္းရဲ႕..အက်ိဳးေက်းဇူးတစ္ခ်ိဳ႕က ဘာေတြလဲ <br><br>
+That’s the easiest means of communication, I think. Mobile phones are portable. Just dial the numbers and you can immediately get connected with anyone you want. <br>
+ငါ့အထင္..အဲ့ဒါက အလြယ္ကူဆံုး ဆယ္သြယ္ေရးစနစ္တစ္ခုပဲ။ မိုဘိုင္းေတြက သယ္ေဆာင္ရလြယ္တယ္။ နံပါတ္ကိုေခၚလိုက္တာနဲ႕..ဘယ္သူနဲ႕ေျပာခ်င္ခ်င္...ခ်က္ျခင္းဆက္သြယ္လို႕ရတယ္ေလ..<br><br>
+Do you like handwriting letters? <br>
+လက္ေရးစာေတြကို မင္းၾကိဳက္လား <br><br>
+Yes, I do. I like to keep handwriting letters as keepsakes. <br>
+ဟုတ္..ၾကိဳက္တယ္..။ အမွတ္တရသိမ္းထားမယ္ဆို.လက္ေရးနဲ႕ေရးရတာကို ႏွစ္သက္တယ္..<br><br>
+Do you use social networks? <br>
+လူမႈကြန္ယက္ေတြကို မင္းအသံုးျပဳလား <br><br>
+Yes, the youth now can hardly live without social networks. <br>
+ဟုတ္တယ္..အခုေခတ္..လူငယ္ေတြက..လူမႈကြန္ယက္မဲ့..ေနဖို႕ခက္ခဲလြန္းတယ္..<br><br>
+Do you need communication skills using social networks? <br>
+လူမႈကြန္ယက္သံုးတာ..ဆက္သြယ္ေရး ဆိုင္ရာ ကၽြမ္းက်င္ဖို႕လိုအပ္လား <br><br>
+Sure. Even in social networks.<br>
+ေသခ်ာတာေပ့ါ။ လူမႈကြန္ယက္ေတြမွာေတာင္ေနာ္..<br><br>
+How have social networks changed communication?<br>
+လူမႈကြန္ယက္ေတြက ဆက္သြယ္ေရးကို ဘယ္လိုေျပာင္းလဲ လိုက္ျပီလဲ <br><br>
+People prefer talking online rather than directly. Because of the illusion of social networks, people tend to forget necessary skills to communicate with others in real life.<br>
+လူေတြက တိုက္ရိုက္စကားေျပာတာထက္..လိုင္းကေျပာရတာ..ပိုၾကိဳက္တယ္။ လူမႈကြန္ယက္မွာ..နစ္မြန္းေနတာေၾကာင့္..လူေတြက..တကယ့္ဘဝမွာ..ဆက္သြယ္ဖို႕လိုအပ္တဲ့..ကၽြမ္းက်င္မႈေတြကို ေမ့ေနၾကတာ..<br><br>
+Do you have good communication skills in your opinion?<br>
+မင္းရဲ႕အထင္ရ..ေကါင္းတဲ့ ဆက္သြယ္ေရးးစြမ္းရည္ ရွိတယ္လို႕မင္းထင္လား<br><br>
+Maybe yes. People are quite happy talking to me.<br>
+ျဖစ္ႏိုင္တယ္..လူေတြက ငါ့ကိုစကားေျပာရတာကို ေပ်ာ္ၾကတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

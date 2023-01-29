@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/28-SPORTS - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What sport do you like? <br>
+မင္း ဘယ္အားကစားကို ႏွစ္သက္လဲ <br><br>
+I like playing badminton. <br>
+ကၽြန္ေနာ္ ၾကက္ေတာင္ ရိုက္ရတာကို ႏွစ္သက္တယ္..<br><br>
+Is it easy to play that sport? <br>
+အဲ့ဒီ အားကစားကို ကစားရတာ လြယ္ကူသလား <br><br>
+Yes, it’s pretty easy to play. <br>
+ဟုတ္တယ္..ကစားရတာ အရမ္းလြယ္တယ္..<br><br>
+Is that sport popular in your country? <br>
+မင္းတို႕ႏိုင္ငံမွာ အဲ့ဒီ အားကစား..လူၾကိဳက္မ်ားလား <br><br>
+Yes, it is. <br>
+ဟုတ္ပါတယ္..<br><br>
+How long have you been practicing that sport? <br>
+အဲ့ဒီ အားကစားကို မင္းေလ့က်င့္ေနတာ..ဘယ္ေလာက္ၾကာျပီလဲ <br><br>
+I have been practicing it for 5 years. <br>
+ကၽြန္ေနာ္ေလ့က်င့္ေနတာ..ငါးႏွစ္ၾကာျပီ <br><br>
+Who do you play sports with? <br>
+အားကစား မင္းဘယ္သူနဲ႕တူတူလုပ္သလဲ <br><br>
+I play badminton with my friends, sometimes with my brother. <br>
+ၾကက္ေတာင္ကို ငါ့သူငယ္ခ်င္းေတြနဲ႕ကစားတယ္..တစ္ခါတစ္ေလေတာ့..ငါ့ညီနဲ႕ေပါ့ <br><br>
+How often do you play that sport? <br>
+မင္းအဲ့ဒီ အားကစားကို ဘယ္ေလာက္ ကစားျဖစ္လဲ <br><br>
+I play badminton every weekend. <br>
+တနဂၤေႏြ၊စေနရက္တိုင္းမွာ..ကစားျဖစ္တယ္..<br><br>
+What benefits can you get from that sport? <br>
+အဲ့ဒီအားကစားကေန..ဘယ္လိုအက်ိဳးေက်းဇဴးေတြရရွိလဲ <br><br>
+It helps strengthen my muscles because while playing, I have to move continuously. It is good to burn calories as well. <br>
+ကစားတဲ့အခါ ဆက္ဆိုက္လႈပ္ရွားေနရေတာ့..ငါ့ရဲ႕ ၾကြက္သားေတြကို သန္မာေစတယ္.။ ကိုလိုရီေတြကို ေလာင္ကၽြမ္းေစတယ္..<br><br>
+Do you like watching football? Online or offline? <br>
+မင္းေဘာလံုးၾကည့္ရတာႏွစ္သက္လား..အြန္လိုင္းမွာၾကည့္လား အျပင္မွာၾကည့္လား <br><br>
+Yes, I do. I prefer watching football offline and online. Going to the stadium, shouting and cheering are good to release stress. <br>
+ဟုတ္..ႏွစ္သက္ပါတယ္..အြန္လိုင္းမွာၾကည့္ရတာထက္ အျပင္မွာၾကည့္ရတာကို ပိုၾကိဳက္တယ္..ေအာ္ဟစ္အားေပးတာက..စိတ္ဖီးစီးမႈေတြကို ေလ်ာ့ေစတယ္..<br><br>
+What is your favorite football team? <br>
+နင့္ရဲ႕အၾကိဳက္ဆံုး ေဘာလံုးအသင္းက ဘာလဲ <br><br>
+I like the Manchester United Football Club, also known as “The Red Devils”. <br>
+သရဲနီလို႕ သိၾကတဲ့ မန္ယူေဘာလံုးအသင္းကို ငါႏွစ္သက္တယ္..<br><br>
+Why is sport important? <br>အားကစားက ဘာလို႕အေရးၾကီးလဲ <br><br>
+Sports are sources of recreation. People can learn how to encourage team spirit when they play sports, too. <br>
+အားကစားဆိုတာ..ေပ်ာ္ရႊင္မႈရဲ႕အရင္းျမစ္ျဖစ္တယ္၊ အားကစားလုပ္တဲ့အခါ..အသင္းစိတ္ဓာတ္ကို ဘယ္လိုအားေပးရမလဲဆုိတာကိုလည္း သင္ယူလို႕ရတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

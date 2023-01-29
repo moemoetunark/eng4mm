@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/004. As far as… (is) (am) (are) concerned,... - Basic Englis.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I. EXAMPLES: - နမူနာမ်ား <br> <br>
+As far as I'm concern - ဆိုတာ..တစ္ခုခုအေပၚမိမိတစ္ေယာက္တည္းရဲ႕ သေဘာထား -opinion ေဖာ္ျပျခင္းျဖစ္ပါတယ္..<br><br>
+ As far as I’m concerned, I don’t mind that you wear this mini-skirt. <br>
+ငါ့ရဲ႕ထင္ျမင္ခ်က္ကိုေျပာရရင္..အဲ့ဒီ စကတ္ေလးကိုနင္ဝတ္တာ..ငါအျပစ္မေျပာလိုဘူး <br><br>
+ The coat is fine as far as color is concerned, but it is not very good quality. <br>
+ အေရာင္အရဆိုရင္ေတာ့..ကုတ္အဂ်ၤ ီက ေကါင္းပါတယ္..ဒါေပမဲ့..အရည္ေသြးကသိပ္မေကါင္းဘူး <br><br>
+ So far as he’s concerned, nothing is as important as his daughter. <br>
+သူ႕တစ္ေယာက္တည္းသေဘာထားအရေတာ့...သူ႕သမီးေလာက္ ဘယ္အရာမွ အေရးမၾကီးဘူး <br>
+<br>
+ II. DIALOGUES: - စကားေျပာခန္း <br><br>
+
+A: Have you seen the movie, Silence of the Lambs? <br>
+Silence of the Lambs ဆိုတဲ့ဇာတ္ကါး နင္ၾကည့္ျပီးျပီလား...<br>
+<br>
+B: Yes. It gave me the creeps. <br>
+ဟုတ္တယ္..ငါ့ကိုအရမ္းစိတ္ပ်က္ေစတယ္..<br> <br>
+A: Come on, it wasn’t that bad. <br>
+လာစမ္းပါ။ အဲ့ေလာက္ထိလည္း မဆိုးပါဘူး <br>
+<br>
+B:  Yes, it was. As far as I’m concerned, I’m never going to see another movie like that again. <br>
+ဟုတ္တယ္..။ ငါ့သေဘာအရဆိုရင္..အဲ့လိုဇာတ္ကားမ်ိဳးေနာက္ ဘယ္ေတာ့မွ ထပ္မၾကည့္ေတာ့ဘူး <br>
+<br>
+A: Well, as far as the plot is concerned, I think it’s an interesting movie. <br>
+ဇာတ္လမ္းဇာတ္ကြက္အရဆိုရင္ေတာ့..စိတ္ဝင္စားစရာေကါင္းတဲ့ ဇာတ္ကားတစ္ခုလို႕ထင္တယ္..<br>
+<br>
+B: Yes, but some of the scenes were too gory. <br>
+ဟုတ္ပါတယ္..ဒါေပမဲ့ တစ္ခ်ိဳ႕ျမင္ကြင္းေတြက..လံုးဝအနိဌာရံုပဲ။ <br>
+<br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

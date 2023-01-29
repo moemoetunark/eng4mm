@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/005. Be careful with… - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+ဒီအခန္းမွာေတာ့ Be careful - သတိထားထားပါဆိုတဲ့ patternေလးကို စကားေျပာတဲ့အခ်ိန္မွာ ဘယ္လိုခ်ဲ႕ထြင္သံုးႏိုင္သလဲဆိုတာ ..ျဖစ္ပါတယ္...<br>
+Be careful ရဲ႕ေနာက္မွာ with/that/ to + V1 ေတြလိုက္တာကို..ေအာက္မွာေပးထားတ့ဲ ဝါက်ေလးေတြကို ၾကည့္ျပီးေလ့လာႏိုင္ပါတယ္...<br>
+Be careful with the wet paint. <br>
+အဲ့ဒီစိုေနတဲ့ ေဆးေရာင္ေတြကိုသတိထားပါ <br><br>
+ Be careful that you don’t  catch a cold. Put on more clothes before you go out. <br>
+ အေအးမမိေအာင္ သတိထားပါ။ အျပင္မထြက္ခင္..အဝတ္စားေတြ ထူထူဝတ္ပါ..<br><br>
+ Be careful not to spill the milk. <br>
+ ႏို႕မဖိတ္သြားေအာင္ သတိထားပါ..<br><br>
+ II. DIALOGUES: <br>
+ စကားေျပာခန္း <br><br>
+
+A:  She has been calling me for several days now.  I  think she’s interested in me.<br>
+အခုဆို သူမငါ့ကိုဖုန္းဆက္ေနတာ..ရက္ေတြၾကာေနျပီ။ ငါ့အထင္သူမ ငါ့ကို စိတ္ဝင္စားေနတာျဖစ္တယ္..<br><br>
+B: Are you sure? I think she already has a boyfriend.<br>
+မင္းေသခ်ာလို႕လား..။ သူမမွာ ဘဲရွိျပီးသား ငါထင္တယ္..<br><br>
+A: How do you know?<br>
+မင္းဘယ္လိုသိတာလဲ...<br><br>
+B: A friend of hers told me. I’d be careful if I were you.
+သူမရဲ႕သူငယ္ခ်င္းတစ္ေယာက္ကါ ငါ့ကိုေျပာတ။ ငါသာမင္းေနရာဆို..သတိထားမယ္..<br><br>
+A: Why? <br>
+ဘာလို႕လဲ..<br><br>
+B: Because I heard her boyfriend is a weightlifter.
+ငါၾကားတာ..သူမဘဲက...ဝိုက္မတဲ့သူတဲ့...<br><br>
+A: Wow! You’re right. I guess I better not call her. <br>
+ဝိုး..မင္းမွန္တယ္။ ငါသူမကို..ဖုန္းမဆက္တာပဲ ေကါင္းမယ္ထင္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

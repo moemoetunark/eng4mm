@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/75-Success - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What success did you achieve? <br>
+ဘယ္လို ေအာင္ျမင္မႈ မင္းရခဲ့သလဲ..<br><br>
+I don’t know if it matters to someone or not, but passing the entrance exam to university was a huge success for me. <br>
+တစ္ျခားတစ္ေယာက္တြက္ အေရးၾကီးမၾကီးေတာ့..ငါမသိဘူး..ဒါေပမဲ့..ငါ့အတြက္ေတာ့..တကၠသိုလ္ဝင္ခြင့္.စာေမးပြဲေအာင္တာဟာ..ၾကီးမားနဲ႕ ေအာင္ျမင္မႈတစ္ခုပါပဲ..<br><br>
+When did you get that success? <br>
+မင္းတုန္းက မင္းအဲ့ဒီ ေအာင္ျမင္မႈ ရခဲ့တာလဲ..<br><br>
+I got it 6 years ago. It’s been 2 years since I left university. <br>
+လြန္ခဲ့တဲ့...၆ႏွစ္မတုိင္မီကေလ။ ငါတကၠသိုလ္ထြက္ကတည္းကဆို..ႏွစ္ႏွစ္ရွိျပီး။ 
+Was there anyone who supported you? <br>
+မင္းကို ေထာက္ပံုတဲ့တစ္တစ္ေယာက္ ရွိခဲ့လား..<br><br>
+My family supported me a lot. My mom prepared good meals for me while my dad helped me with hard math problems. <br>
+ငါ့မိသားစု ငါ့ကို အမ်ားၾကီးေထာက္ပံုတယ္။ ငါ့အေဖက..ခက္ခဲတဲ့.သခၤခ်ာေတြကို..ကူေပးျပီး..အေမကေတာ့..အစားစာေကါင္းေတြ ျပင္ဆင္ေပးတယ္..<br><br>
+Was it hard to get that success? <br>
+အဲ့ဒီ ေအာင္ျမင္မႈကိုရဖို႕ ခက္ခဲ သလား..<br><br>
+It was hard for me since I wasn’t good at academic subjects at all. <br>
+စာေပဘာသာရပ္ေတြက ငါကသိပ္မေတာ္ေတာ့..ငါ့အတြက္ေတာ့ ခက္ခဲပါတယ္..<br><br>
+What were some difficulties in achieving success? <br>
+ေအာင္ျမင္မႈကိုရဖို႕..အခက္ခဲေတြက ဘာေတြလဲ..<br><br>
+The period before the exam was quite stressful. I was so obsessed with it that I had a serious headache. <br>
+စာေမးပြဲမတိုင္ခင္..အခ်ိန္က အရမ္းဖိအားမ်ားတယ္။  ေခါင္းေတြအရမ္းကိုက္ေလာက္တဲ့အထိ..ငါ့အဲ့ဒါနဲ႕..နစ္မြန္းေနခဲ့ရတာ..<br><br>
+How did you get it? <br>
+မင္းဘယ္လိုရခဲ့သလဲ..<br><br>
+I stuck to books day and night. I just stopped reading and writing when I felt I knew thoroughly about the matters. <br>
+ေန႕ေရာညပါ..စာအုပ္နဲ႕မခြာဘူး။ အဲ့ဒီကိစၥနဲ႕ ပတ္သက္ျပီး...ငါျပည့္ျပည့္စံုစံု သိသြားျပီးလို႕ခံစားရတဲ့အခ်ိန္မွ..စာဖတ္တာနဲ႕ေရးတာကို ရပ္တန္႕ခဲ့တာ..<br><br>
+How did you feel when you were successful? <br>
+ေအာင္ျမင္မႈရေတာ့ မင္းဘယ္လို ခံစားခဲ့ရသလဲ..<br><br>
+I was over the moon then. I was looking forward to campus life. <br>
+ကၽြန္ေနာ္ အရမ္းေပ်ာ္ခဲ့တယ္ (လအေပၚေရာက္ေနသလို..ခံစားရ)။  တကၠသိုလ္က ဘဝကို ငါေမွ်ာ္လင့္ေစာင့္စားေနမိတာေပါ့။ <br><br>
+How did your life change after that success? <br>
+အဲ့ဒီ ေအာင္ျမင္မႈရျပီးေနာက္ေတာ့..မင္းဘဝ ဘယ္လိုေျပာင္းလဲသြားခဲ့လဲ...<br><br>
+I had a chance to learn my favorite major at my desired university and then got a high-paying job in an active working environment. <br>
+ငါတက္ခ်င္တဲ့ တကၠသိုလ္တစ္ခုမွာ..ငါအႏွစ္သက္ဆံုးေမဂ်ာကိုသင္ဖို႕အခြင့္ေရးရခဲ့တယ္..ျပီးေတာ့.တက္ၾကြမႈပတ္ဝန္းက်င္ရွိတဲ့..လစာေကါင္းတဲ့ အလုပ္တစ္ခုပါ ရခဲ့တယ္..<br><br>
+What is your key to success?
+I don’t particularly have any key to success. Just work hard and try your best, everything good will come to you.
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

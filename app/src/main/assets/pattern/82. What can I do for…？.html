@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/082. What can I do for...？ - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What can I do for.....? ကၽြန္ေနာ္ ဘာကူညီ/ဘာလုပ္ေပးရမလဲ..<br><br>
+I. EXAMPLES: နမူနာမ်ား..<br><br>
+
+ What can I do for you? <br>
+ မင္းအတြက္ငါ ဘာလုပ္ေပးရမလဲ..<br><br>
+ What can I do to cheer her up? <br>
+ သူမကိုအားေပးဖို႕..ငါဘာလုပ္ရမလဲ..<br><br>
+ What can I do to make him satisfied? <br>
+ သူေက်နပ္ေအာင္..ငါဘာလုပ္ေပးရမလဲ..<br><br>
+ What can I do to stop them? <br>
+ သူတို႕ကိုတားဆီးဖို႕ ငါဘာလုပ္ရမလဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Customer: Excuse me, are you the tailor? <br>
+ေဖာက္သည္ း  တစ္ဆိတ္ေလာက္..မင္းက အပ္ခ်ဳပ္သမားလား..<br><br>
+Tailor: Yes, I am. What can I do for you? <br>
+အပ္ခ်ဳပ္သမား း  ဟုတ္ပါတယ္.။ ကၽြန္ေနာ္ ဘာကူညီေပးရမလဲ..<br><br>
+Customer: Well, I’d like to have a business suit made for me. <br>
+ေဖာက္သည္ း အလုပ္ဝတ္စံုတစ္ခု လုပ္ခိုင္းခ်င္တယ္..<br><br>
+Tailor: Sure, let me take your measurements then you can tell me what style you’d like. <br>
+အပ္ခ်ဳပ္သမား --- ရတာေပါ့..ကၽြန္ေနာ္..မင္းကို တိုင္းတာရမယ္..ျပီးရင္..မင္းဘာစတိုင္လ္ၾကိဳက္တာ..ေျပာလို႕ရတယ္..<br><br>
+Customer: When do you think you can finish the suit? <br>
+ေဖာက္သည္ ----ဝတ္စံုဘယ္ေတာ့..ျပီးႏုိင္မယ္..လို႕ထင္လဲ..<br><br>
+Tailor: Well, it  depends on what  style you want.  Business suits usually take about a week to finish. <br>
+အပ္ခ်ဳပ္သမား ---ဒါက မင္းဘယ္လို..စတိုင္လ္လိုခ်င္သလဲအေပၚမူတည္တယ္.။ လုပ္ငန္းခြင္ဝတ္စံုကေတာ့..ပံုမွန္အားျဖင့္..တစ္ပတ္ၾကာတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

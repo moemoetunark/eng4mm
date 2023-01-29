@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/66-Phone Conversation - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you usually talk on the phone? <br>
+နင္ ဖုန္းမွာ ပံုမွန္စကားေျပာလား..<br><br>
+Yes, I do. It’s a good way to keep in touch. <br>
+ဟုတ္တယ္...ေျပာတယ္.။ ဆက္သြယ္မျပတ္ထားဖို႕..နည္းေကါင္းပဲေလ..<br><br>
+What was your favorite phone conversation? <br>
+ဖုန္းမွာေျပာတဲ့ အၾကိဳက္ဆံုး စကားေျပာခန္းတစ္ခုက ဘာလဲ <br><br>
+It was when I talked to my interviewer. He did give me the good news that I got the job. <br>
+အင္တာဗ်ဴးေမးတဲ့သူနဲ႕ေျပာတဲ့အခါတုန္းကေလ....သူကငါအလုပ္ရတယ္ဆိုတာ..သတင္းေကါင္းေပးလိုက္တာ..<br><br>
+When did you have the conversation? <br>
+အဲ့ဒီ စကားေျပာခန္း ဘယ္တုန္းက ကလဲ <br><br>
+I don’t remember exactly, but It’s been 2 years so far, I guess. <br>
+ငါတိက် မမွတ္မိဘူး...ဒါေပမဲ့..ႏွစ္ႏွစ္ခန္းကလို႕ေတာ့ထင္တယ္..<br><br>
+Who did you talk to? <br>
+ဘယ္သူနဲ႕စကားေျပာခဲ့တာလဲ..
+I talked to the owner of the restaurant where I’m working as a cashier. <br>
+ငါေငြကိုင္မျဖစ္ အလုပ္လုပ္ေနတဲ့..စားေသာက္ဆိုင္က ပိုင္ရွင္နဲ႕ေျပာတာ..<br><br>
+What did you talk about? <br>
+နင္တို႕ဘာေတြေျပာခဲ့ၾကလဲ..<br><br>
+He offered me the position and congratulated me. <br>
+ငါ့ကို ရာထူးကိုေပးတယ္..ျပီးေတာ့..Congrast လုပ္တယ္..<br><br>
+Why did you find the conversation interesting? <br>
+စကားေျပာခန္းက ဘာလို႕စိတ္ဝင္စားဖို႕ေကါင္းတာလဲ..<br><br>
+Actually, it was more exciting than interesting. I was waiting for it for so long, and finally, he did make it come true. <br>
+စိတ္ဝင္စားဖို႕ေကါင္းတာထက္..စိတ္လႈပ္ရွားဖို႕ေကါင္းတာ.။ အဲ့ဒါရဖို႕ငါအၾကာၾကီးေစာင့္ေနခဲ့ရတာ..ေနာက္ဆံုးေတာ့..အမွန္တကယ္ျဖစ္လာေအာင္ သူလုပ္ေပးခဲ့တာေပါ့..<br><br>
+Do you prefer talking directly or talking on the phone? <br>
+ဒါရိုက္ စကားေျပာရတာၾကိဳက္လား..ဖုန္းနဲ႕ေျပာရတာကို ၾကိဳက္လား..<br><br>
+Personally, talking directly is much better to me since it’s more lively and authentic. <br>
+ကၽြန္ေနာ္..တစ္ေယာက္တည္းထင္ေျပာရရင္..တိုက္ရိုက္စကားေျပာတာ ပိုေကါင္းတယ္..ဘာလို႕ဆိုေတာ့..အသက္ဝင္မႈရွိတယ္..ျပီးေတာ့..စစ္လည္းစစ္မွန္တယ္..<br><br>
+Who do you usually talk to on the phone? <br>
+ဖုန္းေပၚမွာ ဘယ္သူ႕ကိုမင္း..ပံုမွန္စကားေျပာျဖစ္လဲ..<br><br>
+I talk to my mom almost every day. I will be missing the conversation every evening with mom if one day she stops calling me. <br>
+အေမနဲ႕ေန႕တုိင္းနီးပါးေျပာျဖစ္တယ္..တစ္ေန႕သူမငါ့ကို ဖုန္းမဆက္ဘူးဆို..ငါက..အေမနဲ႕ဖုန္းေျပာရတာကို လြမ္းေနတာ..<br><br>
+What are the differences between talking directly and phoning? <br>
+ဖုန္းနဲ႕ေျပာတာနဲ႕.တို္က္ရိုက္..စကားေျပာတာ..ဘာေတြကြာျခားလဲ..<br><br>
+Well, talking directly seems more exciting since you can see facial expression, eye contact while talking on the phone, you can only listen to the voice. <br>
+ဖုန္းနဲ႕ေျပာေတာ့..အသံပဲနားေထာင္ရျပီးး..တိုက္ရိုက္စကားေျပာေတာ့..မ်က္လံုးခ်င္းဆက္သြယ္မႈ...မ်က္ႏွာထားေလးေတြအကုန္ ျမင္ရေတာ့..ပို္စိတ္လႈပ္ရွားဖို႕ေကါင္းတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

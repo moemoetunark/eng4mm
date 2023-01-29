@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/35-NEIGHBOR - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Who is your neighbor? <br>
+မင္းရဲ႕ အိမ္းနားခ်င္းက ဘယ္သူလဲ <br><br>
+My neighbor is a university student. He lives next to my apartment. <br>
+ငါ့ရဲ႕အိမ္နီးခ်င္းက တကၠသိုလ္ေက်ာင္းသားတစ္ေယာက္ပဲ။ သူကငါ့အခန္းနဲ႕ကပ္ျပီးေနတာ..<br><br>
+When did you become neighbors? <br>
+အိမ္နီးခ်င္းေတြျဖစ္တာ ၾကာျပီလား <br><br>
+I first met him when I moved to this apartment 2 years ago. <br>
+လြန္ခဲ့တဲ့ႏွစ္ႏွစ္က ငါဒီအခန္းကိုေျပာင္းလာတုန္းက..သူ႕ကိုပထမေတြ႕တာ..<br><br>
+Is he friendly? <br>
+သူက ေဖာ္ေရြတတ္သလား <br><br>
+Yes, he is. He always smiles when he sees me. <br>
+ဟုတ္ပါတယ္..။ သူငါ့ကိုျမင္တဲ့အခါ..အျမဲျပံဳးျပတယ္..<br><br>
+How often do you see him? <br>
+နင္သူ႕ကိုဘယ္ေလာက္ ေတြ႕ျဖစ္လဲ <br><br>
+Every day at the gate. Sometimes I invite him to my apartment when I throw a party. <br>
+ေန႕တိုင္း လမ္းဝမွာေတြ႕တယ္..တစ္ခါတစ္ေလ..ငါ့အခန္းမွာ ပါတီပြဲလုပ္တဲ့အခါ..သူ႕ကိုဖိတ္တယ္..<br><br>
+Do you have any problems with him? <br>
+သူနဲ႕မင္း ျပသနာရွိလား <br><br>
+Only once when he sang karaoke too loud, which kept me awake all night. We ended up talking to each other the next day, and he never sang karaoke at midnight from then on. <br>
+သူ ကါရာအိုေက..ဆူညံစြာဖြင့္တဲ့တစ္ခါပဲ။ အဲ့တုန္းက တစ္ညလံုးအိပ္မရခဲ့ဘူး။ ေနာက္ေန႕ေတာ့ငါတို႕စကားေျပာျဖစ္တယ္..။ အဲ့ဒီအခ်ိန္ကစျပီး သူကါရာအိုေက..ညနက္သန္ေခါင္..ဘယ္ေတာ့မွ မဆိုေတာ့ဘူး <br><br>
+Does he usually help you? <br>
+သူက မင့္ကို ကူညီေပးလား..<br><br>
+Yes, he does. He usually helps me run errands. <br>
+သူကူညီေပးပါတယ္။ သူငါ့ကုိခရီးတိုေလးေတြသြားကူညီေပးတယ္..<br><br>
+Would you be sad if he moves to another area? <br>
+တစ္ျခားတစ္ေနရာသို႕ သူေျပာင္းသြားမယ္ဆို..နင္ဝမ္နည္းမွာလား <br><br>
+Yes, of course. That will upset me if he leaves. <br>
+ဟုတ္တာေပါ့။ သူထြက္သြားရင္ ငါစိတ္ပ်က္လိမ့္မယ္..<br><br>
+What’s the difference between friends and neighbors? <br>
+သူငယ္ခ်င္းနဲ႕..အိမ္နီခ်င္း ဘာေတြကြာလဲ <br><br>
+I’m not quite sure, but I think the difference may lie in the relationship. A friend can be someone you share your feelings with, while a neighbor can just be someone living next door. <br>
+ငါသိပ္မေသခ်ာဘူး..ဒါေပမဲ့ျခားနားမႈကေတာ့..ဆက္ဆံေရးအေပၚမွာ မူတည္ႏိုင္တယ္။ သူငယ္ခ်င္းဆိုတာ..မိမိခံစားခ်က္ေတြကို မွ်ေဝႏိုင္တဲ့သူ...အိမ္နီးခ်င္းဆိုတာကေတာ့..အနီးနားဆံုးေလးမွာ ေနတဲ့သူတစ္ေယာက္ပဲေပ့ါ။ <br><br>
+What do you need to be a good neighbor? <br>
+ေကါင္းတဲ့ အိမ္နီးခ်င္းတစ္ေယာက္ျဖစ္ဖို႕..ဘာေတြလိုအပ္လဲ <br><br>
+Being respectful is the most important factor in building a good relationship. <br>
+ေကါင္းမြန္တဲ့ဆက္ဆံေရးတစ္ခုကိုတည္ေဆာက္ဖို႕..ဂါရဝတရားက အေရးၾကီးဆံုးပါပဲ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

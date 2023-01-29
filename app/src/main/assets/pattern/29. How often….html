@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/029. How often... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+ံHow often..............? ဘယ္ႏွစ္ၾကိမ္...<br><br>
+How often ဆိုတာ..တစ္ခုခုကို..ဘယ္ႏွစ္ၾကိမ္၊ဘယ္ေလာက္ထိ..လုပ္သလဲလို႕ ေမးတဲ့အခါ သံုးတဲ့ pattern ေလးျဖစ္ပါတယ္..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+ How often is there a leap year? <br>
+ ရက္ထပ္ႏွစ္..ဘယ္ႏွစ္ႏွစ္ရွိလဲ..<br><br>
+ How often is there a flight to Shanghai? <br>
+ ရွန္ဟိုင္းသို႕..ခရီးစဥ္ဘယ္ႏွစ္ခု ရွိသလဲ..<br><br>
+ How often do you write to your parents? <br>
+ မင္းမိဘဆီသို႕..စာဘယ္ေလာက္ ေရးျဖစ္လဲ..<br><br>
+II. DIALOGUES: -စကားေျပာခန္း..<br><br>
+A: I’ve been having bad dreams lately. <br>
+ခုတစ္ေလာ..ငါအိပ္မက္ဆိုးေတြ မက္ေနတယ္..<br><br>
+B: Really? How often? <br>
+တကယ္လား..ဘယ္ေလာက္ေတာင္ မက္လဲ..<br><br>
+A: Just about every night. <br>
+ညတိုင္းနီးပါးပဲ..<br><br>
+B: What do you dream about? <br>
+ဘယ္လိုဟာေတြကို မက္လဲ..<br><br>
+A: I dream about  being in a boat  and suddenly a storm comes and I drown because I can’t swim. <br>
+ငါေလွေပၚမွာ..အိပ္မက္တယ္.ျပီးေတာ့..မုန္တိုင္းကရုတ္တရက္လာတယ္..ငါကေရမကူးတတ္ေတာ့..နစ္သြားတယ္..<br><br>
+B: Maybe you should learn how to swim. Then you won’t have any nightmares. <br>
+နင္ေရကူးသင္ သင့္တယ္.။ ဒါဆို..ေၾကာက္စရာ အိပ္မက္ဆိုးေတြ..မရွိေတာ့ဘူးေလ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

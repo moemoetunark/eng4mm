@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/021. He is so... that... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+so ......that ဆိုတာ...စကားဆက္ျဖစ္ပါတယ္..တစ္ခုခုကို...ဘယ္ေလာက္ထိ..လုပ္ခ်င္တာ...ဘယ္ေလာက္ထိ...စိတ္ဝင္စားတာ..စသည္ကိုေဖာ္ျပရန္သံုးႏိုင္ပါတယ္.--ဥမာ..
+ငါဂိမ္းကစားရတာကို..အခ်ိန္တိုင္းကစားေနခ်င္တဲ့အထိ..စိတ္ဝင္စားတယ္..စသည့္ျဖင့္ေပါ့။   နမူနာဝါက်မွာ ေသခ်ာေလ့လာပါ..<br><br>
+I. EXAMPLES: - နမူနာ ဝါက်မ်ား..<br><br>
+I was so interested in the film that I went to see it several times. <br>
+အဲ့ဒီဇာတ္ကားကို ..အခါမ်ားစြာၾကည့္ခ်င္တဲ့ထိ..ငါစိတ္ဝင္စားတာ..<br><br>
+ It’s so hot that none of us want to go out. <br>
+ ငါတို႕တစ္ေယာက္မွ..အျပင္မထြက္ခ်င္ေလာက္တဲ့ထိ..အရမ္းပူေနတာ..<br><br>
+ He speaks French so well that we think he is a Frenchman. <br>
+ ငါတို႕သူ႕ကို..ျပင္သစ္တစ္ေယာက္လို႕ထင္ရတဲ့အထိ..သူက ျပင္သစ္စကားကို ေကါင္းေကါင္းေျပာတတ္တာ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..  <br><br>
+A: Can you believe the weather we’re been having lately? <br>
+ေနာက္ပိုင္းမွငါတို႕ၾကံဳရတဲ့ ရာသီဥတု..မင္းယံုႏိုင္လား..<br><br>
+B: Yeah, it’s really hot, isn’t it? <br>
+ဟုတ္တယ္..အရမ္းပူတယ္ေနာ္..မပူဘူးလား..<br><br>
+A: It’s so hot you can fry an egg on the sidewalk. <br>
+လူသြားစၾကၤ ံမွာ..ၾကက္ဥျပဳတ္လို႕ရတဲ့ထိကို ပူေနတာ..<br><br>
+B: Maybe you’re exaggerating a little bit. <br>
+မင္း နည္းနည္းေတာ့ ပိုေနျပီ ေနာ္..<br><br>
+A: OK, maybe it’s not that hot. But it’s hot enough to get a heat stroke. <br>
+အိုေက..အဲ့ေလာက္ထိ မပူဘူး ထားပါေတာ့။ ဒါေပမဲ့. အပူလွ်ပ္ဖို႕ေတာ့..လံုေလာက္တယ္..<br><br>
+B: You make it sound so hot, I don’t want to leave my air-conditioned house. <br>
+မင္းၾကားရတာ..သိပ္ကိုပူေနတဲ့ပံု...အဲယားကြန္တပ္ထားတဲ့ ငါ့အိပ္ကေန..မထြက္ခြာခ်င္ဘူး..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

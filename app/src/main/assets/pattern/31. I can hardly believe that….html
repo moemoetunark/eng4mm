@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/031. I can hardly believe that... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+I can hardly believe that......... ဆိုတာ...ယံုရခက္တယ္..<br>
+ဒီစကားေျပာ pattern ကိုေတာ့..တစ္ခုခုျဖစ္သြားတာ..ျဖစ္ေနတာကို..မယံုၾကည္ႏိုင္ေအာင္ ခံစားရတဲ့ <br>
+အခ်ိန္မွာသံုးႏိုင္ပါတယ္...<br>
+I. EXAMPLES: - နမူနာမ်ား ယ္...<br><br>
+
+ I can hardly believe that he is deaf; he can understand us so well. <br>
+သူက နားပင္းေနတယ္ဆိုတာ..ယံုရခက္တယ္။ သူငါတို႕ေျပာတာ အကုန္နားလည္ႏိုင္တာပဲ..<br><br>
+ I can hardly believe that Paul was put in prison for bribery. <br>
+လာဘတ္ေပးလာဘ္ယူမႈအတြက္ ေပါလ္တစ္ေယာက္ ေထာင္ခ်ခံရတာ..ေတာ္ေတာ္ယံုရခက္ေနတယ္..<br><br>
+ I can hardly believe what I have seen. <br>
+ျမင္ရတာ ယံုေတာင္မယံုႏို္င္စရာပဲ..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Employer: I have some bad news for you.<br>
+အလုပ္ရွင္ : မင္းအတြက္ သတင္းဆိုးတစ္ခု ရွိတယ္..<br><br>
+Employee: What’s the matter?<br>
+အလုပ္သမား း   ဘာျဖစ္လို႕လဲ...<br><br>
+Employer: Our company has been having some financial troubles and we have to lay off some workers.<br>
+အလုပ္ရွင္ း ငါတို႕ကုမၸဏီမွာ ေငြးေရးအခက္ခဲအနည္းငယ္ရွိေနတယ္...အလုပ္သမားတစ္ခ်ိဳ႕ကိုေလ်ာ့ခ်ရမယ္..<br><br>
+Employee: Really?<br>
+အလုပ္သမား း  တကယ္လား..<br><br>
+Employer: I’m afraid so and you’re one of the workers whose job we’ll have to cut. <br>
+အလုပ္ရွင္ း ဟုတ္ပါတယ္..ျပီးေတာ့မင္းဟာ..အလုပ္ျဖဳတ္ခံရမယ့္သူေတြထဲက..တစ္ေယာက္ျဖစ္တယ္..<br><br>
+Employee: I can hardly believe my ears! I never thought I would lose my job here. <br>
+ငါ့နားနဲ႕ၾကားရတာေတာင္..မယံုႏိုင္စရာပဲ။ ဒီမွာ..င့ါအလုပ္ျပဳတ္မယ္လို႕..ဘယ္တုန္းကမွ မေတြးခဲ့ဘူး..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

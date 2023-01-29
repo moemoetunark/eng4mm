@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/61-Art - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What’s your favorite work of art? <br>
+မင္းရဲ႕အႏွစ္သက္ဆံုး အႏုပညာ တစ္ခုကဘာလဲ  <br><br>
+There’s a special photograph named ‘The Napalm Girl’. <br>
+'The Napalm Girl' လို႕ေခၚတဲ့ ဓာတ္ပံုကေတာ့ အရမ္းထူးျခားတယ္..<br><br>
+When did you see it? <br>
+မင္းဘယ္တုန္းက ျမင္ခဲ့တာလဲ <br><br>
+I accidentally saw it 5 years ago, when I traveled to Vietnam. <br>
+လြန္ခဲ့တဲ့ ငါးႏွစ္မတိုင္မီက ငါဗီယက္နမ္ကို..ခရီးသြားတုန္းက..မထင္မွတ္ပဲေတြ႕တာ..<br><br>
+Where did you see it? <br>
+ဘယ္ေနရာမွာေတြ႕ခဲ့တာလဲ <br><br>
+In Museum of Vietnamese History. The photo was solemnly hung in an eye-catching position in the room. <br>
+ဗီယက္နမ္ သမုိင္းျပတိုက္မွာေလ။ အခန္းထဲ လူေတြမ်က္စိက်ႏိုင္တဲ့..ေနရာမွာ..တစ္ခုတည္းထားတာ..<br><br>
+Why do you like it? <br>
+အဲ့ဒါကို မင္းဘာလို႕ႏွစ္သက္တာလဲ <br><br>
+The photo captured a naked 9 –year-old girl, running away from the napalm attack, which is really touching. <br>
+ဓာတ္ပံုက.napalm တိုက္ခိုက္မႈကေန..ထြက္ေပးေနတဲ့..ကိုးႏွစ္အရြယ္..အဝတ္မပါတဲ့ မိန္းကေလးပံုေလ..တကယ္.ခံစားရေစတယ္..<br><br>
+What’s special about it? <br>
+အဲ့ဒီဓာတ္ပံု ဘာထူးျခားလုိ႕လဲ <br><br>
+Thanks to the photo, the photographer was awarded the Pulitzer prize for Spot News Photography. <br>
+အဲ့ဒီဓာတ္ပံုေၾကာင့္ ဓာတ္ပံုဆရာဟာ...သတင္းဓာတ္ပံုျပိဳင္ပြဲမွာ..Pulitzer ဆုကိုရသြားတာ..<br><br>
+Do your friends like it, too? <br>
+မင္းသူငယ္ခ်င္းေတြလည္းႏွစ္သက္ၾကလား <br><br>
+Yes, they do. The photo did touch their souls, too. <br>
+ၾကိဳက္ၾကတာေကါ့.။ ဓာတ္ပံုက သူတို႕ႏွစ္လံုးသားကိုလည္း ဆြဲေဆာင္သြားတယ္..<br><br>
+Do you want to be an artist? <br>
+မင္းက အႏုပညာရွင္တစ္ေယာက္ျဖစ္ခ်င္လား <br><br>
+Nope, although I’m quite interested in art. <br>
+စိတ္ေတာ့အရမ္းဝင္စားေပမဲ့ မျဖစ္ခ်င္ပါဘူး <br><br>
+What qualities does a person need to be an artist? <br>
+အႏုပညာရွင္တစ္ေယာက္ျဖစ္ဖို႕ ဘယ္လိုအရည္ခ်င္းေတြလိုအပ္သလဲ <br><br>
+An artist needs to be creative and sensitive to things around him, I think. <br>
+ငါ့အထင္..အႏုပညာရွင္ဆိုတာ သူ႕ပတ္ဝန္းက်င္မွာရွိတဲ့အရာေတြကို ဖန္တီးႏိုင္စြမ္း..ခံစားႏုိင္စြမ္းရွိသူျဖစ္ဖို႕လိုတယ္..<br><br>
+How do children develop their talent for art? <br>
+ကေလးေတြဟာ အႏုပညာအတြက္ သူတို႕ပင္ကိုအရည္ေသြး ဘယ္လိုတိုးႏိုင္သလဲ <br><br>
+Children’s talent for art should be recognized and nurtured as early as possible so that they can reach their full potential. <br>
+ကေလးေတြရဲ႕ အႏုပညာပါရမီကိုအသိမွတ္ျပဳသင့္တယ္..ျပီးရင္..အျမင့္ဆံုးေအာင္ျမင္မႈရဖို႕..ေစာႏိုင္သမွ်အေစာဆံုး သူတို႕ကို ျပဳစု ပ်ိဳးေထာင္သင့္တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

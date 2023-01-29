@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/010. Don’t ever... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+တစ္စံုတစ္ေယာက္ကို..တစ္ခုခုကို ဘယ္ေတာ့မွ မလုပ္ဖို႕ တိုက္တြန္းတဲ့အခါ..ဒီ pattern ေလးကိုသံဳးပါ...<br><br>
+I. EXAMPLES: -နမူနာမ်ား..<br><br>
+ Don’t ever lose these papers. They are of great importance to our company.<br>
+ ဒီစာရြက္ေတြကို ဘယ္ေတာ့မွ မေပ်ာက္ေစနဲ႕။ အဲ့ဒါေတြက နင္တို႕ကုမၸဏီအတြက္ အရမ္းအေရးၾကီးတယ္..<br><br>
+ Don’t ever miss a good opportunity. <br>
+ အခြင့္ေရးေကါင္းတစ္ခုကို..ဘယ္ေတာ့မွ မလြတ္ေစနဲ႕..<br><br>
+ Don’t ever arrive late for an interview. <br>
+ အင္တာဗ်ဴးသို႕ဘယ္ေတာ့မွ..ေနာက္က်မွ..မေရာက္ေစနဲ႕..<br><br>
+II. DIALOGUES: -စကားေျပာခန္း...<br><br>
+Son: Mom, can I go swimming in the pool now?
+အေမ..အခု.ေရကူမွာ ေရကူးသြားလို႕ရလား..<br><br>
+Mother: But you just had your lunch. <br>
+နင္ ေန႕လည္စာ စားျပီးတာပဲ ရွိေသးတယ္ေလ..<br><br>
+Son: I know but it’s hot and I want to cool off. <br>
+ဟုတ္တယ္..ဒါေပမဲ့..အရမ္းပူတယ္..ေအးသြားေအာင္ေပါ့..<br><br>
+Mother: Don’t ever go swimming right after eating or else you’ll get cramps.
+စားျပီး..ျပီးခ်င္း..ဘယ္ေတာ့မွ.ေရမကူးနဲ႕..ၾကြက္တက္လိမ့္မယ္..<br><br>
+Son: When can I go swimming then? <br>
+ဒါဆုိ..ဘယ္အခ်ိန္..ေရကူးသြားလို႕ရလဲ..<br><br>
+Mother: Why don’t you wait for at least a half an hour. <br>
+အနည္းဆံုး နာရီဝက္ေလာက္ေတာ့ ေစာင့္လိုက္ေပါ့..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

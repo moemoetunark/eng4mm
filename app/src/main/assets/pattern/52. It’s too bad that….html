@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/052. It’s too bad that... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+it is too bad that........... အရမ္းဆိုးတယ္...<br><br>
+တစ္ခုခုျဖစ္သြားတာ..အရမ္းဆိုးတယ္...စိတ္ပ်က္ဖို႕ေကါင္းတယ္...စတဲ့ အဓိပၸါယ္ေတြနဲ႕သံုးပါတယ္...<br><br>
+I. EXAMPLES:- နမူနာမ်ား <br><br>
+ It’s too bad that we lost the match. <br>
+ ငါတို႕ဒီ ပြဲရႈံးသြားတာ..အရမ္းဆိုးတယ္..<br><br>
+ It’s too bad that we have to cancel the get-together. <br>
+ ငါတို႕ေတြ႕ဆံုပြဲကို..ဖ်က္လိုက္ရမွာ..အရမ္းဆိုးတာပဲ..<br><br>
+ It’s too bad that you can’t come. <br>
+ မင္းမလာႏိုင္တာ..အရမ္းဆိုးတာပဲ...<br><br>
+ It’s too bad. <br>
+ အရမ္းဆိုးတယ္..<br>
+ It’s too bad that the rain spoiled our picnic. <br>
+ ငါတို႕..ေပ်ာ္ပြဲစားထြက္တာ..မိုးဖ်က္လိုက္တာ..အရမ္းဆိုးတာပဲ...<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: What happened to Steve? I haven’t seen him at work for a long time. <br>
+စတိဗ္တစ္ေယာက္..ဘာျဖစ္တာလဲ..။ သူ႕ကိုအလုပ္မွာမေတြ႕တာ..ေတာ္ေတာ္ၾကာျပီ..<br><br>
+B: He was fired because of his poor work performance. <br>
+အလုပ္စြမ္းေဆာင္ရည္ညံ့တဲ့အတြက္ေၾကာင့္..သူအလုပ္ျဖဳတ္ခံလိုက္ရတာ..<br><br>
+A: It’s too bad he’s gone. He had such a good sense of humor. <br>
+သူမရွိတာ..အရမ္းဆိုးတယ္..။ သူကတကယ္..ဟာသာညာဏ္ရွိတဲ့သူပဲ..<br><br>
+B: Yes, but he also had a serious drinking problem which affected his work. <br>
+ဟုတ္တယ္..ဒါေပမဲ့..သူ႕အလုပ္ကိုထိခိုက္ေစတဲ့..အရမ္းေသာက္တဲ့ ျပသနာလည္းသူ႕မွာရွိတယ္..<br><br>
+A: I didn’t know that. <br>
+ငါအဲ့ဒါ မသိခဲ့ပါဘူး..<br><br>
+B: Yeah. He had such potential too. It’s too bad. <br>
+ဟုတ္ပါတယ္..သူကအလားလာေကါင္းတဲ့သူတစ္ေယာက္ပါ။ အရမ္းဆိုးတယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

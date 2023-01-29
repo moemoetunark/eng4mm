@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/018. Not...until... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+not ....until ဆိုတာ..တစ္စံုတစ္ခု..မတိုင္မီအထိလို႕အဓိပၸါယ္ရပါတယ္...ေအာက္မွာေပးထားတဲ့ နမူနာေလးေတြမွာ ေသခ်ာေလ့လာပါ..<br><br>
+I. EXAMPLES: - နမူနာမ်ား..<br><br>
+
+ Don’t tell him the bad news until he finishes his exam. <br>
+ သူ႕စာေမးပြဲျပီးတဲ့ထိ...သတင္းဆိုးကို မေျပာနဲ႕ေနာ္..။ (စာေမးပြဲမျပီးခင္မေျပာနဲ႕) <br><br>
+ The secret was not discovered until he was dead. <br>
+ သူေသသြားသည့္ထိ..လွ်ဳိ႕ဝွက္ခ်က္ကို.မေတြ႕ခဲ့ၾကဘူး        (ေသျပီးမွေတြ႕) <br><br>
+ I won’t stop shouting until you let me go. <br>
+ နင္င့ါကို ေပးသြားတဲ့အထိ..ငါေအာ္ေနတာကို..မရပ္တန္႕ဘူး <br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+A: I heard that Bill got divorced. <br>
+ဘဲလ္တစ္ေယာက္..ကြာရွင္းျပတ္စဲတယ္လို႕ၾကားတယ္..<br><br>
+B: Yes, he is really sad now. <br>
+ဟုတ္တယ္..သူအခုအရမ္းဝမ္းနည္းေနတာ..<br><br>
+A:I thought he wanted to get divorced because he didn’t love his wife anymore. <br>
+သူ႕မိန္းမကို သူမခ်စ္ေတာ့လို႕..ကြာရွင္းခ်င္တာ..ျဖစ္မယ္လို႕..ငါထင္တယ္..<br><br>
+B: Yes, but he didn’t realize how much he needed her until they got divorced. <br>
+ဟုတ္တယ္..ဒါေပမဲ့...သူဟာ သူမကိုဘယ္ေလာက္ထိ လုိအပ္သလဲဆိုတာကို..သူတို႕ကြာရွင္းတဲ့ထိ နားမလည္ခဲ့ဘူး <br><br>
+A: Yeah. Well now it’s too late. She already has another husband. <br>
+ဟုတ္တယ္..ဒါေပမဲ့အခု..သိပ္ေနာက္က်သြားျပီ။ သူမမွာ..တစ္ျခားေယာက္်ားရေနျပီ..<br><br>
+B: That’s  too bad.  Sometimes people often don’t  appreciate  what  they have until they lose it.<br>
+အရမ္းဆိုးတယ္။ တစ္ခါတစ္ေလမွာေလ..လူေတြက သူတို႕မွာရွိတာကို...ဆံုးရႈံးသြားတဲ့အထိတန္ဖိုးမထားၾကဘူး..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

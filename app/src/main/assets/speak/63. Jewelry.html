@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/63-Jewelry - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What’s your favorite item of jewelry? <br>
+မင္းအႏွစ္သက္ဆံုး ရတာနာ ပစၥည္းက ဘာလဲ <br><br>
+Well, I have quite a lot of ornaments, but my favorite one is a necklace. <br>
+ငါ့မွာ တံဆာေတြအမ်ားၾကီးရွိတယ္..ဒါေပမဲ့ အၾကိဳက္ဆံုးကေတာ့..လည္ဆြဲဘယက္ေပါ့..<br><br>
+When did you buy it? <br>
+မင္း ဘယ္တုန္းက ဝယ္တာလဲ <br><br>
+Uhm…I don’t remember exactly when, but I guess I bought it years ago. <br>
+အမ္း...အတိက်ေတာ့ မမွတ္မိဘူး..ဒါေပမဲ့..ငါဝယ္တာ..ႏွစ္ေတြေတာ့ ၾကာျပီထင္တယ္..<br><br>
+What’s it made of? <br> 
+ဘာနဲ႕လုပ္ထားတာလဲ အဲ့ဒါက <br><br>
+It’s made of silver. <br>
+ေငြရဲ႕လုပ္ထားတာ..<br><br>
+How does it look? <br>
+ဘယ္လို ပံုစံလဲ <br><br>
+It looks gorgeous with a ruby clover –shaped pendant. <br>
+ပတၱျမားဆြဲသီးေလးနဲ႕ဆို အရမ္းလွတာ..<br><br>
+Why do you like it? <br>
+မင္းအဲ့ဒါ ဘာလို႕ႏွစ္သက္တာလဲ <br><br>
+I believe it can bring me good luck in everything I do. <br>
+ဘာပဲလုပ္လုပ္..ကံေကါင္းမႈေတြ ယူေဆာင္လာႏိုင္တယ္လို႕..ငါယံုၾကည္တယ္..<br><br>
+What’s special about it? <br>
+အဲ့ဒါရဲ႕ ထူးျခားတာက ဘာလဲ <br><br>
+I love the vintage style of my necklace. It really goes with my classic dresses. <br>
+ငါ့လည္ဆြဲရဲ႕..ပံုစံေလးကိုၾကိဳက္တယ္..ငါ့ရဲ႕ဝတ္စံုနဲ႕လည္းအရမ္းလိုက္တယ္..<br><br>
+Does it remind you of something? <br>
+မင္းတစ္ခုခုကို သတိရေစလား <br><br>
+Yes, I spent my first month’s salary buying it, so the necklace encourages me to work hard and earn more money every day. <br>
+ဟုတ္တယ္..ငါ့ရဲ႕ပထမဆံုးလစာကို အဲ့ဒါအတြက္ပဲသံုးလုိက္တာ..ဒါေၾကာင့္ အဲ့ဒီ လည္ဆြဲက ငါ့ကို အလုပ္ပိုျပီး ပိုက္ဆံေတြ...မ်ားမ်ားရေအာင္..တြန္းအားေပးတယ္..<br><br>
+How much does it cost? <br>
+ဘယ္ေလာက္ က်သင့္ခဲ့လဲ..
+Around $400 if I’m not mistaken. <br>
+ေဒၚလာ ၄၀၀ခန္႕ က်ခဲ့တယ္.တယ္..<br><br>
+Do you usually wear it? <br>
+အဲ့ဒါကို နင္ပံုမွန္ဝတ္လား <br><br>
+Yes, I just wear it all the time. I’ll be missing it if I don’t see it. <br>
+ဟုတ္တယ္..အခ်ိန္တိုင္းဝတ္တယ္..အဲ့ဒါမေတြ႕ရေတာ့..ငါကလြမ္းေနတာ..<br><br>
+
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

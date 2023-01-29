@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/stories/16.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+Do you ever wonder where the moon and the sun came from?<br>
+ေနနဲ႕လတို႕ဟာ ဘယ္ကျဖစ္လာသလဲဆိုတာ..သင္စဥ္းစားမိလား။။<br><br>
+The Inuit people of Alaska have a theory.<br>
+အလစကာျပည္နယ္က အင္ဆူလူမ်ိဳးမွာ..သီအိုရီတစ္ခု ရွိပါတယ္.<br><br>
+They tell a story about a beautiful girl.<br>
+လွပတဲ့ မိန္းကေလးတစ္ေယာက္အေၾကာင္း ပံုျပင္ကိုသူတို႕ေျပာၾကတယ္..<br><br>
+She was very nice. 
+သူမက အရမ္းစိတ္သေဘာထားေကါင္းပါတယ္.<br><br>
+In contrast, her brother was a mean little boy. <br>
+ဆန္႕က်င္ဖက္အေနျဖင့္..သူမရဲ႕ေမာင္ကေတာ့..ဆုိးတဲ့ေယာက္်ားေလးတစ္ေယာက္ျဖစ္ပါတယ္.<br>
+One day he proposed something.<br>
+တစ္ေန႕ေတာ့..သူတစ္ခုေျပာတယ္..<br><br>
+“We should go to a party,” he said.<br>
+ငါတို႕ပါတီပြဲသို႕သြားသ့င္တယ္လို႕...သူကေျပာတယ္..<br><br>
+The girl accepted. <br>
+မိန္းကေလးက လက္ခံလိုက္တယ္.<br><br>
+First, it was necessary for her to prepare.<br>
+ပထမ..သူမ ျပင္ဆင္ဖို႕လိုပ္အပ္တယ္.. <br><br>
+She arranged her hair and put on nice clothes. <br>
+This required a lot of time. ဒါက အခ်ိန္မ်ားၾကီးလိုတယ္ေလ..<br><br>
+But the girl worked hard, and soon she had success.<br>
+ဒါေပမဲ့..မိန္းကေလးဟာၾကိဳးစားေတာ့..မၾကာမီး ေအာင္ျမင္သြားတယ္.. <br><br>
+She looked perfect.<br>
+သူမ လံုးဝလွေနတယ္..<br><br>
+They attended the party together. <br>
+သူတို႕ပါတီပြဲသို႕အတူတူတက္ၾကတယ္..<br><br>
+The girl was having fun.<br>
+မိန္းကေလးဟာ..ေပ်ာ္ေနပါတယ္..<br><br>
+Later, she walked into the bathroom.<br>
+ေနာက္တာ့..သူမ ေရခ်ိဳးခန္းထဲသို႕ဝင္သြားတယ္<br><br>
+Suddenly, the lights were turned off! <br>
+ရုတ္တရက္..မီးျပတ္သြားတယ္..<br><br>
+Someone grabbed her hair and tore her clothes.<br>
+တစ္စံုတစ္ေယာက္ဟာ.သူမရဲ႕ဆံပ္ကို..ဆြဲျပီး..အဝတ္စားေတြကို..ဆုတ္ဆြဲပါတယ္.<br><br>
+She ran out of the bathroom.<br>
+သူမ ေရခ်ိဳးခန္းကေန..ထြက္ေျပးတယ္..<br><br>
+She wanted to know who did this to her.<br>
+ဒါဘယ္သူလုပ္တယ္ဆိုတာကို..သူမသိခ်င္တယ္..<br><br>
+Then she had an idea. She fixed her hair again.<br>
+ဒါနဲ႕သူမ..အၾကံတစ္ခု ရသြားတယ္...သူမဆံပင္ေတြကို..ျပန္ျပီးျပင္ဆင္လိုက္တယ္..<br><br>
+This time it was even more beautiful.<br>
+ဒီတစ္ခါေတာ့..သူမဟာ ပိုျပီးေတာင္ လွေနပါတယ္..<br><br>
+She even balanced beautiful jewels in it.<br>
+ရတာနာေတြေတာင္..သူမ ဝတ္ထားလိုက္တယ္..<br><br>
+She wanted to encourage the person to grab it again.<br>
+အဲ့ဒီလူက ေနာက္ထပ္..တစ္ဖန္..ဆုတ္ဆြဲေစခ်င္ေနတာ..<br><br>
+She put black dirt in her hair.<br>
+အနက္ေရာ္..အညစ္ေၾကးကို သူမဆံပင္မွာ..ထားလိုက္တယ္..<br><br>
+The purpose of this was to catch the person.<br>
+ရည္ရြယ္ခ်က္ကေတာ့...လုပ္တဲ့သူကို ဖမ္းမယ္ေပါ့..<br><br>
+She went to the bathroom again, and it was the same pattern.<br>
+ေရခ်ိဳးခန္းထဲ (အိမ္သာခန္း) သူမထပ္ျပီးဝယင္သြားတယ္..အလားတူပဲ..<br><br>
+The lights went off, and someone grabbed her hair.<br>
+မီးပ်က္သြားတယ္..တစ္စံုတစ္ေယာက္က..သူမဆံပင္ကို..ဆြဲပါတယ္..<br><br>
+When he released it, his hand was black.<br>
+သူက လႊတ္လိုက္တဲ့အခါေတာ့..သူမွာအမဲေရာင္..ေပသြားတယ္..<br><br>
+The girl returned to the party.<br>
+မိန္းကေလးဟာ..ပါတီပြဲသို႕ျပန္လာတယ္..<br><br>
+She knew there was only a single person with a black hand.<br>
+အမဲေရာင္လက္နဲ႕..လူတစ္ေယာက္ပဲရွိတာကို..သူမသိလိုက္တယ္..<br><br>
+When she saw that person, he was very familiar.<br>
+သူမ အဲ့ဒီလူကို..ေတြ႕တဲ့အခါ..အရမမ္းရင္းႏွီးသလိုျဖစ္ေနတယ္..<br><br>
+It was her brother! He ran into the woods.<br>
+ဒါက သူမ ေမာင္ေလးပဲျဖစ္ပါတယ္..သူသစ္ေတာထဲ.ဝင္ေျပးသြားတယ္.<br><br>
+The girl ran after him.<br>
+မိန္းကေလးဟာ သူ႕ေနာက္လိုက္သြားတယ္..<br><br>
+They both carried fire so they could see in the dark.<br>
+အေျမာင္မွာ ျမင္ရဖို..သူတို႕ႏွစ္ေယာက္စလံုးမွာ..မီးေတြ သယ္ထားၾကပါတယ္..<br><br>
+The smoke went into the air.<br>
+မီးခိုးေတြ ေလထဲသို႕ထြက္လာတယ္..<br><br>
+As they ran, they grew.<br>
+သူတို႕ေျပးေတာ့..မီးခိုးေတြ..ပိုျပီးထြက္လာတယ္..<br><br>
+They became huge.<br>
+ေတာ္ေတာ္ ၾကီးလာတယ္.<br><br>
+Then they went into space.<br>
+အဲ့ေနာက္..သူတို႕..ေလဟာနယ္ထဲေရာက္သြားတယ္..<br><br>
+When the girl’s fire went out, she hung in the sky.<br>
+မိန္းကေလးရဲ႕ မီးေသသြားတဲ့အခါ..သူမဟာ..ေကါင္းကင္မွာ..တြဲေနပါေတာ့တယ္.<br><br>
+She became the moon, and her brother became the sun.<br>
+သူမဟာ..လျဖစ္လာျပီး..သူမရဲ႕ေမာင္ေလးကေတာ့ေနျဖစ္သြားခဲ့ပါတယ္..<br><br>
+They chase each other forever.<br>
+သူတို႕တစ္ေယာက္ကိုတစ္ေယာက္ ထာယရ လိုက္ေနၾကပါေတာ့တယ္..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

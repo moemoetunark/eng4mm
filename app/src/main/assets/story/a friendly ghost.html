@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+	width: 100%;
+	height:auto;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/stories/12.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+A nice woman lived by a large river. <br>
+သေဘာေကါင္းတဲ့မိန္းမတစ္ေယာက္..ျမစ္ၾကီးတစ္ခုရဲ႕အနီးနားမွာေနပါတယ္..<br>
+She loved children. <br>
+သူမဟာ ကေလးေတြကိုခ်စ္တယ္..<br><br>
+She wanted to help them in any way. <br>
+ဘာျဖစ္ျဖစ္..သူမဟာ ကေလးေတြကို..ကူညီခ်င္တယ္..<br><br>
+She loved her community, and everyone in the community loved her. <br>
+သူမဟာ..သူ႕မရဲ႕ပတ္ဝတ္က်င္ကိုခ်စ္တယ္..ပတ္ဝန္းက်င္က သူေတြအားလံုးလည္း သူမကိုခ်စ္ၾကပါတယ္..<br><br>
+She lived a very long time and became very wise. <br>
+သူမအသက္ေတာ္ေတာ္ရွည္ခဲ့ပါတယ္....အရမ္းလည္း ပညာရွိလာတယ္..<br><br>
+When she died, she became a ghost. <br>
+သူမေသတ့ဲအခါမွာေတာ့...သရဲတေစၦတစ္ေကါင္ျဖစ္လာခဲ့ပါတယ္..<br><br>
+She was dead, but every night she returned to her community. <br>
+သူမေသတားခဲ့ပါတယ္..ဒါေပမဲ့..ညတိုင္းသူမရဲ႕ပတ္ဝန္က်င္သို႕ျပန္လာတယ္..<br><br>
+She wanted to help children and not to cause them fright. <br>
+သူမဟာကေလးေတြကို..ကူညီခ်င္တယ္..သူတို႕ကိုလည္း မေၾကာက္ေစခ်င္ဘူး..<br><br>
+But she had a scary voice. <br>
+ဒါေပမဲ့..အရမ္းေၾကာက္စရာေကါင္းတဲ့အသံတစ္ခု သူမၾကားလိုက္ရတယ္..<br><br>
+Children were afraid of her, but the ghost was a good one. <br>
+ကေလးေတြက .သူမကိုေၾကာက္ၾကတယ္.ဒါေပမဲ့...သရဲက လူေကါင္းတစ္ေယာက္ျဖစ္ပါတယ္..<br><br>
+She only scared them to help them. <br>
+သူတို႕ကိုကူညီဖို႕..အတြက္ပဲ သူကေျခာက္ပါတယ္..<br><br>
+One night, some children and a dog were playing by the river. <br>
+တညမွာေတာ့..ကေလးတစ္ခ်ို႕နဲ႕ ေခြးတစ္ေကါင္ဟာ..ျမစ္နားမွာ ကစားေနၾကတယ္..<br><br>
+They were having fun with their pet. <br>
+သူတို႕ရဲ႕အခ်စ္ေတာ္ ေခြးေလးနဲ႕သူတို႕ေပ်ာ္ေနၾကတာ္..<br>
+But they were far from home. <br>
+သူတို႕အိမ္နဲ႕အရမ္းေဝးတယ္..<br><br>
+Then the weather became bad. <br>
+ျပီးေတာ့..ရာသီဥတုကလည္း ဆိုးလာတယ္..<br><br>
+It rained and rained. <br>
+မိုးေတြဆက္တိုက္ရြာလာတယ္..<br><br>
+The river was rising. <br>
+ျမစ္ေရေတြကလည္း တက္လာတယ္..<br><br>
+It was very dark. <br>
+အရမ္းလည္းေမွာင္လာတယ္.<br>
+The children knew they were lost. <br>
+သူတို႕လမ္းေပ်ာက္ေနျပီဆိုတာ..ကေလးေတြက သိလိုက္ၾကတယ္..<br><br>
+They needed to go north, but they didn’t know which direction it was. <br>
+သူတို႕ေျမာက္ဖက္သို႕သြားရမွာျဖစ္ပါတယ္..ဒါေပမဲ့.ဘယ္ဖက္သို႕ဦးတည္ေနတယ္ဆိုတာ..သူတို႕မသိပါဘူး..<br><br>
+When the moon came out, they saw a ghost by the river. <br>
+လထြက္လာတဲ့အခါမွာေတာ့..သူတို႕ဟာ..ျမစ္နားက သရဲတစ္ေကါင္ကိုျမင္ပါတယ္..<br><br>
+The ghost said, “Go away!” <br>
+ထြက္သြားၾကလို႕..သရဲကေျပာလိုက္တယ္..<br><br>
+The children felt great fright.<br>
+ကေလးေတြ အရမ္းေၾကာက္သြားၾကတယ္..<br><br>
+They knew it was a ghost. <br>
+သရဲတစ္ေကါင္ဆိုတာေတာ့..သူတို႕သိတယ္...<br><br>
+Then the ghost moved closer. <br>
+ျပီးေတာ့ ..သရဲဟာ..အနီးသို႕ကပ္လာတယ္..<br><br>
+She yelled again, “Go away!” <br>
+ထြက္သြားၾကလို႕..သူမထပ္ျပီးေအာ္လိုက္တယ္..<br><br>
+The children became very upset. <br>
+ကေလးေတြ.အရမ္းဝမ္းနည္းသြားၾကတယ္..<br><br>
+Some of them began to cry. <br>
+တစ္ခ်ို႕ကေလးေတြက..စျပီးငိုၾကတယ္..<br><br>
+The children knew they had a choice: they could escape, or they could stay and face this scary individual in the dark. <br>
+ကေလးေတြက..သူတို႕မွာ အခြင့္ေရးတစ္ခုရွိတာ..သိၾကတယ္..သူတို႕လြတ္ေအာင္ေျပးမလား..သူိ႕မဟုတ္..ေၾကာက္စရာေကါင္းတဲ့အေမွာင္ညကို ရင္ဆိုင္မလားဆိုတာေပါ့..<br><br>
+The children ran a long distance away. <br>
+ကေလးေတြဟာ...ထြက္ေပးလာခဲ့ၾကတယ္..<br><br>
+The ghost followed them all the way. <br>
+သရဲဟာလည္းသူတို႕ေနာက္က လမ္းတစ္ေလွ်ာက္လိုက္ပါလာခဲ့တယ္..<br><br>
+Finally, the children reached home. <br>
+ေနာက္ဆံုးေတာ့..ကေလးေတြ အိမ္သို႕ေရာက္သြားခဲ့ၾကတယ္..<br><br>
+The ghost was very happy. <br>
+သရဲက အရမ္းေပ်ာ္သြားတယ္..<br><br>
+Soon the river rose higher and higher. <br>
+မၾကာမီ...ျမစ္ေရဟာ..ျမင့္သထက္ ျမင့္လာပါတယ္..<br><br>
+It was very dangerous. <br>
+အႏၱရယ္အရမ္းမ်ားပါတယ္..<br><br>
+The ghost had helped the children survive! <br>
+သရဲက ကေလးေတြ အသက္ကို ကယ္လိုက္တာျဖစ္ပါတယ္..<br><br>
+She had saved them from the rising water. <br>
+ျမင့္တက္လာေနတဲ့ေရကေန..သူတို႕ကို..ကယ္ဆယ္လိုက္တာ..ျဖစ္ပါတယ္..<br><br>
+She also used her power to lead them home. <br>
+သူတို႕ကို..အိမ္သို႕ေရာက္ဖို႕.သူမရဲ႕စြမ္းအားေတြကို အသံုးျပဳခဲ့တယ္..<br><br>
+Sometimes, meeting a ghost has advantages. <br>
+တစ္ခါတစ္ေလမွာ..သရဲကိုေတြ႕တာဟာ..အက်ိဳးျဖစ္တယ္..<br><br>
+A ghost can save your life.<br>
+သရဲဟာ သင့္ရဲ႕အသက္ကို ကယ္တင္ႏိုင္တယ္..<br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

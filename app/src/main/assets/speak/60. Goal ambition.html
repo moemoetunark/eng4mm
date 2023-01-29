@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/60-Goal Ambition - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+What is your current short-term goal? <br>
+မင္းရဲ႕လက္ရွိ...ေရတိုး ပန္းတိုင္က ဘာလဲ <br><br>
+I’m determined to get a scholarship to study post-graduate abroad. <br>
+ႏိုင္ငံျခားမွာ..ဘြဲ႕လြန္အတြက္ စေကါေလာရွစ္ရဖို႕..ပိုင္းျဖတ္ထားတယ္..<br><br>
+When did you start thinking about this goal? <br>
+အဲ့ဒီပန္းတိုင္ကို ဘယ္တုန္းက စတင္ေတြးျဖစ္တာလဲ <br><br>
+I started thinking about it when I left university. <br>
+တကၠသိုလ္ကထြက္တဲ့အခါ..အဲ့ဒါကို စတင္စဥ္းစားျဖစ္တယ္..<br><br>
+What difficulties do you have in order to achieve it? <br>
+အဲ့ဒီပန္းတိုင္းကိုရဖို႕..ဘာအတြက္ခဲေတြ မင္းမွာ ရွိေနလဲ <br><br>
+Spending a lot of time searching it, I haven’t found any scholarship that fits my needs. <br>
+အဲ့ဒါကိုအခ်ိန္ေပးျပီးရွာေဖြေနတာ...ငါ့လိုအပ္ခ်က္နဲ႕ကိုက္တာကို မေတြ႕ေသးဘူး <br><br>
+Do you need any help to achieve that goal? <br>
+အ့ဲဒီပန္းတိုင္ ေအာင္ျမင္ဖို႕..မင္းအကူညီ လုိအပ္လား <br><br>
+I really need spiritual encouragement from my family and friends. <br>
+င့ါမိသားစုနဲ႕..သူငယ္ခ်င္းေတြဆီကေန..စိတ္ပိုင္းဆိုင္ရာ...ခြန္အားေတြ လိုအပ္တယ္..<br><br>
+Do your parents support you to achieve that goal? <br>
+အဲ့ဒီပန္းတိုင္ကိုရဖို႕..မင္းရဲ႕မိဘေတြကို မင္းကိုေထာက္ပံ့ၾကလား <br><br>
+Yes, they do. They’re always by my side and support me when needed. <br>
+ဟုတ္ကဲ့..သူတို႕ကငါလိုအပ္တဲ့အခါ..ငါ့အနားမွာ အျမဲရွိၾကပါတယ္..<br><br>
+Do you think it’s important to set goals? <br>
+ပန္းတိုင္ရွိဖို႕ဆိုတာ အေရးၾကီးတယ္လို႕မင္းထင္လား <br><br>
+Sure. We all need to have some goals to drive ourselves towards them. Setting goals is a necessary step to do in order to succeed in doing something. <br>
+ေသခ်ာတာေပါ့...သြားရမည့္ပန္းတိုင္ေတြေတာ့..ငါတို႕မွာ ရွိဖို႕လိုအပ္တယ္.။ ပန္းတိုင္း ခ်မွတ္တာဟာ..တစ္ခုခုလုပ္တဲ့အခါ..ေအာင္ျမင္ဖို႕အတြက္..လိုအပ္တဲ့ေျခလွမ္းတစ္ခုပါပဲ..<br><br>
+What are the important qualities to achieve goals? <br>
+ပန္းတိုင္တစ္ခုကိုရဖို႕..အေရးၾကီးတဲ့..အရည္ခ်င္းေတြက ဘာေတြလဲ <br><br>
+Well, you need to be persistent to what you desire to get. Commitment and patience are needed, too. <br>
+အင္း မင္းလိုခ်င္တာကိုရဖို႕..တာရွည္ခံႏိုင္တဲ့လံုးလဝီရိယလိုတယ္။ပိုင္းျဖတ္ႏိင္မႈနဲ႕သည္းခံမႈလည္း လိုအပ္တယ္ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'Open Internet to listen',
+        author: '.',
+        url: 'https://www.moemoetun.me/newapp/12-A Memorable Event - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+How many events have you joined this year? What were they about? <br>
+ဒီႏွစ္ ျဖစ္ရပ္ဘယ္ႏွစ္မွာ မင္းပါဝင္ပူးေပါင္းသလဲ...ဘယ္လိုအေၾကာင္းရာေတြလဲ <br><br>
+I have joined more than 10 events so far, most of which were about education. <br>
+ကၽြန္ေနာ္ အျဖစ္ပ်က္ ၁၀ခုေလာက္မွာပါျပီးျပီ...အမ်ားစုကေတာ့..ပညာေရးအေၾကင္းေတြပါ။ <br><br>
+What was your most memorable event? <br>
+မင္းရဲ႕အမွတ္ရစရာအေကါင္းဆံုး အျဖစ္ပ်က္ကဘာလဲ <br><br>
+The most memorable for me was an international study conference, in which I was introduced to some famous universities in Europe to study overseas. <br>
+ႏိုင္ငံျခားမွာစသင္ဖို႕..ဥေရာပေက်ာ္ၾကားတဲ့တကၠသိုလ္ေတြကို မိတ္ဆက္ေပးတဲ့..ႏိုင္ငံတကာေလ့လာေရး..ညီလာခံကေတာ့..ငါ့အတြက္မွတ္ရဆံုးျဖစ္တယ္...<br><br>
+Was it organized indoors or outdoors? <br>
+တံခါးပိတ္လား..တံခါးဖြင့္လား <br><br>
+It was an indoor event. <br>
+တ္ခါးပိတ္..တစ္ခုပါ..<br><br>
+Who sponsored the event? <br>
+ဘယ္သူက ေထာက္ပံုလဲ <br><br>
+The event organizer was the Education Department of American Center, but the universities introduced in the conference were the ones who paid. <br>
+စီစဥ္သူကေတာ့ အေမရိကန္စင္တာ ပညာေရးဌာနကပဲ...ဒါေပမဲ့..ညီလာခဲ့မွာ..မိတ္ဆက္တဲ့တကၠသိုလ္ေတြကေတာ့..ပိုက္ဆံေထာက္ပံုတယ္..<br><br>
+Who went to the event with you? <br>
+မင္းဘယ္သူနဲ႕သြားခဲ့တာလဲ <br><br>
+I went there with my friends, who shared the same interest in studying abroad as me. <br>
+ငါ့ကဲ့သို႕ႏိုင္ငံျခားမွာ စာသင္ဖို႕စိတ္ဝင္စားမႈတူတဲ့ သူငယ္ခ်င္းေတြနဲ႕သြားခဲ့တယ္..<br><br>
+What were some performances in the event?<br>
+ဘယ္လို တင္ဆက္မႈေတြ ပါဝင္သလဲ <br><br>
+There were not many performances. Each university representative just had a speech to introduce their school to students and then they hosted Q&A session.<br>
+တင္ဆက္မႈေတြက မ်ားစားမဟုတ္ပါဘူး..တကၠသိုလ္တစ္ခုခ်င္းစီက ကိုယ္စလွယ္ေတြက ေက်ာင္းသားေတြကို သူတို႕ေက်ာင္းကို မိတ္ဆက္တဲ့စကားေျပာတယ္..ျပီးရင္..ေမးေျဖက႑လုပ္တယ္..<br><br>
+Was the event shown on TV? <br>
+အျဖစ္ပ်က္ကို TV မွာျပလား..<br><br>
+The event was not aired, but there were television advertisements for it. <br>
+TV မွာေတာ့မလႊင့္ဘူး..ဒါေပမဲ့ ေၾကာ္ျခာေတြ တခ်ို႕ေတာ့ရွိတယ္..<br><br>
+How would someone market an event? <br>
+အပ်က္ျဖစ္တစ္ခုကို..ဘယ္လို ေၾကာ္ျငာမလဲ..<br><br>
+Taking advantage of social media is a smart way to promote an event. <br>
+အျဖစ္ပ်က္တစ္ခုကို..promotion လုပ္မယ္ဆိုရင္..လူမႈကြန္ယက္ေတြရဲ႕အားသာခ်က္ကိုယူတာကလိမၼာပါးနပ္မႈပဲ <br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>

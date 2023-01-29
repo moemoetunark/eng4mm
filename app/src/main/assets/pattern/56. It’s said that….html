@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///android_asset/audio_player/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(file:///android_asset/font/zawgyi.woff);
+}
+p {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+button {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+div {
+   font-family: myFirstFont;
+    font-size: 17px;
+}
+
+body {
+margin:0;
+background-color: white;
+}
+
+.navbar {
+  font-family: myFirstFont;
+  overflow: hidden;
+  background-color: #black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+   font-family: myFirstFont;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  font-family: myFirstFont;
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ <div id="player1" class="aplayer"></div>
+    <script src="file:///android_asset/audio_player/APlayer.min.js"></script>
+	<script>
+	var ap1 = new APlayer({
+    element: document.getElementById('player1'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#F1F41F',
+    preload: 'metadata',
+	listmaxheight: '113px',
+    mode: 'circulation',
+    music: {
+        title: 'A Red Apple',
+        author: 'A mother and a baby',
+        url: 'https://www.moemoetun.me/app-pattern-mp3/056. It’s said that... - Basic English Speaking.mp3',
+        pic: 'file:///android_asset/audio_player/icon.png'
+    }
+});
+ap1.on('play', function () {
+    console.log('play');
+});
+ap1.on('play', function () {
+    console.log('play play');
+});
+ap1.on('pause', function () {
+    console.log('pause');
+});
+ap1.on('canplay', function () {
+    console.log('canplay');
+});
+ap1.on('playing', function () {
+    console.log('playing');
+});
+ap1.on('ended', function () {
+    console.log('ended');
+});
+ap1.on('error', function () {
+    console.log('error');
+});
+</script>
+	</div>
+<div class="main">
+<br>
+<p>
+ဒီ အခန္းမွာေတာ့...
+It is said that...<br>
+It should be pointed out that....<br>
+It has been proved that....<br>
+It will be noted that......<br> 
+စတဲ့ pattern ေလးေတြသံုးပံုကို နမူနာ ဝါက်ေလးေတြနဲ႕ ရွင္းျပသြားမွာျဖစ္ပါတယ္...<br><br>
+I. EXAMPLES: - နမူနာ ဝါက်မ်ား <br><br>
+ It is said that he is quite a handsome young man. <br>
+ သူဟာငယ္ရြယ္ျပီး..အေတာ္တန္ရုပ္ေခ်ာတဲ့သူလို႕ေျပာၾကတယ္..<br><br>
+ It’s said that a new president will be appointed. <br>
+ သမၼတအသစ္ခန္႕မယ္လို႕..ေျပာၾကတယ္...<br><br>
+ It  should be pointed out  that  your proposals are theoretically correct  but practically impossible. <br>
+ မင္းရဲ႕အၾကံျပဳခ်က္က...သိအုိရီအရမွန္ေပမဲ့..လက္ေတြ႕မွာ..မျဖစ္ႏိုင္ဘူးဆိုတာလည္း ေဖာ္ျပသင့္တယ္..<br><br>
+ It has been proven that your method is the best. <br>
+ မင္းရဲ႕ နည္းစနစ္က..အေကါင္းဆံုးဆိုတာ...သက္ေသထူလိုက္တာပဲ..<br><br>
+ It will be noted that what they have done to him is wrong. <br>
+ သူတို႕..သူအေပၚအမွားလုပ္ခဲ့တာ..မွားတယ္ဆိုတာ..သိရတယ္..<br><br>
+II. DIALOGUES: - စကားေျပာခန္း..<br><br>
+Judge: So, you’ve come to beg for the life of your son? <br>
+တရားသူၾကီး း  မင္းသားရဲ႕အသက္ကို..ခ်မ္းသားေပးဖို႕..ေတာင္းဆုိဖို႕လာတယ္ေပါ့..<br><br>
+Woman: Yes, Your honor. <br>
+မိန္းမၾကီး း ဟုတ္ပါတယ္.ဂုဏ္သေရရွိ လူၾကီးမင္းရွင္...<br><br>
+Judge: And why do you think I should pardon him? <br>
+တရားသူၾကီး း  ငါက သူ႕ကိုခြင့္လႊတ္သင့္တယ္လို႕..နင္ဘာလို႕ထင္တာလဲ..<br><br>
+Woman: It is said that you are a just but merciful man. <br>
+မိန္းမၾကီး း သင္ဟာ..တရားမွ်တျပီး..ၾကင္နာသနားတတ္သူလို႕ေျပာၾကတယ္..<br><br>
+Judge: Mercy is given to those who show mercy. <br>
+တရားသူၾကီး  း  သနားညွာတာမႈဆိုတာ..သနားညွာတာတတ္သူကိုပဲ ေပးတာ..<br><br>
+Woman: But, Your honor, he’s my son, my own flesh and blood. <br>
+မိန္းမၾကီး   း ဒါေပမဲ့ သူက ကၽြန္မရဲ႕ အေသြးသားပါ..တရားသူၾကီးမင္း..<br><br>
+Judge: He may be your own flesh and blood, but he’s a cold-blooded murderer. <br>
+တရားသူၾကီး း သူကမင္းရ႕အေသြးသားေတာ့ဟုတ္မယ္..ဒါေပမဲ့..သူဟာ သူေအးတဲ့ လူသတ္သမားတစ္ေယာက္ပဲ..<br><br>
+</p>
+<button id="hide">စာကိုေဖ်ာက္ထားရန္</button>
+<button id="show">စာျပန္ေဖာ္ရန္</button>
+</body>
+</html>
